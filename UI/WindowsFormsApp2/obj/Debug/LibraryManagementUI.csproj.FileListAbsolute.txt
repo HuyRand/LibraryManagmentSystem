@@ -1,0 +1,46 @@
+C:\Users\Admin\Documents\GitHub\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\LibraryManagementUI.csprojAssemblyReference.cache
+C:\Users\Admin\Documents\GitHub\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form1.resources
+C:\Users\Admin\Documents\GitHub\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form2.resources
+C:\Users\Admin\Documents\GitHub\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\QuanLiThuVienGUI.frmManHinhChinh.resources
+C:\Users\Admin\Documents\GitHub\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\Admin\Documents\GitHub\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\LibraryManagementUI.csproj.GenerateResource.cache
+C:\Users\Admin\Documents\GitHub\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\LibraryManagementUI.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\GitHub\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+C:\Users\Admin\Documents\GitHub\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\obj\Debug\LibraryManagementUI.csprojAssemblyReference.cache
+D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form1.resources
+D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form2.resources
+D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmMainMenu.resources
+D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\obj\Debug\LibraryManagementUI.csproj.GenerateResource.cache
+D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\obj\Debug\LibraryManagementUI.csproj.CoreCompileInputs.cache
+D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\bin\Debug\BouncyCastle.Crypto.dll
+D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\bin\Debug\Google.Protobuf.dll
+D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\bin\Debug\K4os.Compression.LZ4.dll
+D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\bin\Debug\K4os.Hash.xxHash.dll
+D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\bin\Debug\MySql.Data.dll
+D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\bin\Debug\System.Buffers.dll
+D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\bin\Debug\System.Memory.dll
+D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\bin\Debug\System.Numerics.Vectors.dll
+D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\bin\Debug\Ubiety.Dns.Core.dll
+D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\bin\Debug\Zstandard.Net.dll
+D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\bin\Debug\Google.Protobuf.pdb
+D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\bin\Debug\Google.Protobuf.xml
+D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\bin\Debug\K4os.Compression.LZ4.xml
+D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\bin\Debug\K4os.Hash.xxHash.xml
+D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\bin\Debug\MySql.Data.xml
+D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\bin\Debug\System.Buffers.xml
+D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\bin\Debug\System.Memory.xml
+D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\bin\Debug\System.Numerics.Vectors.xml
+D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\obj\Debug\LibraryManagementUI.csproj.CopyComplete
+D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmRegisterNewMember.resources
+D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmAddNewBook.resources
