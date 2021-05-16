@@ -44,3 +44,6 @@ D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\bin\Deb
 D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\obj\Debug\LibraryManagementUI.csproj.CopyComplete
 D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmRegisterNewMember.resources
 D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmAddNewBook.resources
+D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.borrowBookLine.resources
+D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmBorrowTicket.resources
+D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmReturnTicket.resources

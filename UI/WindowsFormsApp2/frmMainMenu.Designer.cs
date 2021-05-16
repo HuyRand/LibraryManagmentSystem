@@ -44,6 +44,7 @@
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
             this.sttError = new System.Windows.Forms.StatusStrip();
             this.sttErrorLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.tcMainMenu = new System.Windows.Forms.TabControl();
             this.tpMember = new System.Windows.Forms.TabPage();
             this.panel11 = new System.Windows.Forms.Panel();
@@ -151,7 +152,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnHuy = new System.Windows.Forms.Button();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStrip1.SuspendLayout();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
             this.toolStripContainer1.TopToolStripPanel.SuspendLayout();
@@ -237,6 +237,7 @@
             this.createBorrowTicketToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.R)));
             this.createBorrowTicketToolStripMenuItem.Size = new System.Drawing.Size(309, 26);
             this.createBorrowTicketToolStripMenuItem.Text = "Create borrow ticket";
+            this.createBorrowTicketToolStripMenuItem.Click += new System.EventHandler(this.createBorrowTicketToolStripMenuItem_Click);
             // 
             // createReturnTicketToolStripMenuItem
             // 
@@ -245,6 +246,7 @@
             | System.Windows.Forms.Keys.R)));
             this.createReturnTicketToolStripMenuItem.Size = new System.Drawing.Size(309, 26);
             this.createReturnTicketToolStripMenuItem.Text = "Create return ticket";
+            this.createReturnTicketToolStripMenuItem.Click += new System.EventHandler(this.createReturnTicketToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
@@ -320,6 +322,11 @@
             this.sttErrorLabel.Name = "sttErrorLabel";
             this.sttErrorLabel.Size = new System.Drawing.Size(0, 16);
             this.sttErrorLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 16);
             // 
             // tcMainMenu
             // 
@@ -1512,11 +1519,6 @@
             this.btnHuy.TabIndex = 4;
             this.btnHuy.Text = "button1";
             this.btnHuy.UseVisualStyleBackColor = true;
-            // 
-            // toolStripStatusLabel1
-            // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 16);
             // 
             // frmMainMenu
             // 

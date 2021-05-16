@@ -101,11 +101,23 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmReturnBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReturnBook.Designer.cs">
+      <DependentUpon>frmReturnBook.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAddNewBook.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmAddNewBook.Designer.cs">
       <DependentUpon>frmAddNewBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBorrowTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBorrowTicket.Designer.cs">
+      <DependentUpon>frmBorrowTicket.cs</DependentUpon>
     </Compile>
     <Compile Include="frmRegisterNewMember.cs">
       <SubType>Form</SubType>
@@ -121,14 +133,35 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="borrowBookLine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="borrowBookLine.Designer.cs">
+      <DependentUpon>borrowBookLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="returnBookLine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="returnBookLine.Designer.cs">
+      <DependentUpon>returnBookLine.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="borrowBookLine.resx">
+      <DependentUpon>borrowBookLine.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmReturnBook.resx">
+      <DependentUpon>frmReturnBook.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAddNewBook.resx">
       <DependentUpon>frmAddNewBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBorrowTicket.resx">
+      <DependentUpon>frmBorrowTicket.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMainMenu.resx">
       <DependentUpon>frmMainMenu.cs</DependentUpon>

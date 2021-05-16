@@ -40,5 +40,17 @@ namespace WindowsFormsApp2
             frmAddNewBook f = new frmAddNewBook();
             f.ShowDialog();
         }
+
+        private void createBorrowTicketToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBorrowTicket f = new frmBorrowTicket();
+            f.ShowDialog();
+        }
+
+        private void createReturnTicketToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmReturnTicket f = new frmReturnTicket();
+            f.ShowDialog();
+        }
     }
 }
