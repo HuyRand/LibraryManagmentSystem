@@ -10,7 +10,6 @@ C:\Users\Admin\Documents\GitHub\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\D
 D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\obj\Debug\LibraryManagementUI.csprojAssemblyReference.cache
 D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form1.resources
 D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form2.resources
-D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmMainMenu.resources
 D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
 D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\obj\Debug\LibraryManagementUI.csproj.GenerateResource.cache
 D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\obj\Debug\LibraryManagementUI.csproj.CoreCompileInputs.cache
@@ -47,3 +46,5 @@ D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\obj\Deb
 D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.borrowBookLine.resources
 D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmBorrowTicket.resources
 D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmReturnTicket.resources
+D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmPenaltyBill.resources
+D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmMainMenu.resources

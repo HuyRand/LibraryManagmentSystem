@@ -4,18 +4,25 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp2
 {
+               
     public partial class frmMainMenu : Form
     {
+        
+        
+        
         public frmMainMenu()
         {
-            InitializeComponent();
+            InitializeComponent();         
         }
+
+
 
         private void btnRegisterNewMember_Click(object sender, EventArgs e)
         {
@@ -52,5 +59,13 @@ namespace WindowsFormsApp2
             frmReturnTicket f = new frmReturnTicket();
             f.ShowDialog();
         }
+
+        private void receivePenaltyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPenaltyBill f = new frmPenaltyBill();
+            f.ShowDialog();
+        }
+
+      
     }
 }

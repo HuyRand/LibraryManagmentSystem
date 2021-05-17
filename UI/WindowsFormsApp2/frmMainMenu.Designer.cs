@@ -48,7 +48,7 @@
             this.tcMainMenu = new System.Windows.Forms.TabControl();
             this.tpMember = new System.Windows.Forms.TabPage();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.dgvUserInfo = new System.Windows.Forms.DataGridView();
+            this.dgvMemberInfo = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbSearchWithMemberName = new System.Windows.Forms.Label();
             this.lbSearchWithCardnumber = new System.Windows.Forms.Label();
@@ -160,7 +160,7 @@
             this.tcMainMenu.SuspendLayout();
             this.tpMember.SuspendLayout();
             this.panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvUserInfo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMemberInfo)).BeginInit();
             this.panel1.SuspendLayout();
             this.flowLayoutPanel4.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
@@ -259,6 +259,7 @@
             this.receivePenaltyToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
             this.receivePenaltyToolStripMenuItem.Size = new System.Drawing.Size(309, 26);
             this.receivePenaltyToolStripMenuItem.Text = "Receive penalty ";
+            this.receivePenaltyToolStripMenuItem.Click += new System.EventHandler(this.receivePenaltyToolStripMenuItem_Click);
             // 
             // tìmKiếmBạnĐọcToolStripMenuItem
             // 
@@ -361,29 +362,29 @@
             // 
             // panel11
             // 
-            this.panel11.Controls.Add(this.dgvUserInfo);
+            this.panel11.Controls.Add(this.dgvMemberInfo);
             this.panel11.Location = new System.Drawing.Point(4, 4);
             this.panel11.Margin = new System.Windows.Forms.Padding(4);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(633, 591);
             this.panel11.TabIndex = 3;
             // 
-            // dgvUserInfo
+            // dgvMemberInfo
             // 
-            this.dgvUserInfo.AllowUserToAddRows = false;
-            this.dgvUserInfo.AllowUserToDeleteRows = false;
-            this.dgvUserInfo.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dgvUserInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvUserInfo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvUserInfo.Location = new System.Drawing.Point(0, 0);
-            this.dgvUserInfo.Margin = new System.Windows.Forms.Padding(4);
-            this.dgvUserInfo.Name = "dgvUserInfo";
-            this.dgvUserInfo.ReadOnly = true;
-            this.dgvUserInfo.RowHeadersWidth = 51;
-            this.dgvUserInfo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvUserInfo.Size = new System.Drawing.Size(633, 591);
-            this.dgvUserInfo.TabIndex = 0;
-            this.dgvUserInfo.TabStop = false;
+            this.dgvMemberInfo.AllowUserToAddRows = false;
+            this.dgvMemberInfo.AllowUserToDeleteRows = false;
+            this.dgvMemberInfo.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dgvMemberInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMemberInfo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvMemberInfo.Location = new System.Drawing.Point(0, 0);
+            this.dgvMemberInfo.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvMemberInfo.Name = "dgvMemberInfo";
+            this.dgvMemberInfo.ReadOnly = true;
+            this.dgvMemberInfo.RowHeadersWidth = 51;
+            this.dgvMemberInfo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvMemberInfo.Size = new System.Drawing.Size(633, 591);
+            this.dgvMemberInfo.TabIndex = 0;
+            this.dgvMemberInfo.TabStop = false;
             // 
             // panel1
             // 
@@ -1548,7 +1549,7 @@
             this.tcMainMenu.ResumeLayout(false);
             this.tpMember.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvUserInfo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMemberInfo)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.flowLayoutPanel4.ResumeLayout(false);
@@ -1598,7 +1599,7 @@
         private System.Windows.Forms.TabControl tcMainMenu;
         private System.Windows.Forms.TabPage tpMember;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.DataGridView dgvUserInfo;
+        private System.Windows.Forms.DataGridView dgvMemberInfo;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbSearchWithMemberName;
         private System.Windows.Forms.Label lbSearchWithCardnumber;
