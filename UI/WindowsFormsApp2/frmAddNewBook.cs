@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 ﻿using MySql.Data.MySqlClient;
 using System;
+=======
+﻿using System;
+>>>>>>> c0b40bb500d8910a2dd6cd66370ec3b447f1a5c3
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,6 +26,7 @@ namespace WindowsFormsApp2
         {
             this.Close();
         }
+<<<<<<< HEAD
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
@@ -35,5 +40,7 @@ namespace WindowsFormsApp2
             MessageBox.Show("Added");
             Close();
         }
+=======
+>>>>>>> c0b40bb500d8910a2dd6cd66370ec3b447f1a5c3
     }
 }

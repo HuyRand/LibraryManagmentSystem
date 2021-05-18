@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 ﻿using MySql.Data.MySqlClient;
 using System;
+=======
+﻿using System;
+>>>>>>> c0b40bb500d8910a2dd6cd66370ec3b447f1a5c3
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,7 +13,11 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+<<<<<<< HEAD
 using LibraryManagementClasses;
+=======
+
+>>>>>>> c0b40bb500d8910a2dd6cd66370ec3b447f1a5c3
 namespace WindowsFormsApp2
 {
                
@@ -20,12 +28,20 @@ namespace WindowsFormsApp2
         
         public frmMainMenu()
         {
+<<<<<<< HEAD
             InitializeComponent();
             Program.connectionString = "SERVER=" + Program.server + ";" + "DATABASE=" +
                 Program.database + ";" + "UID=" + Program.uid + ";" + "PASSWORD=" + Program.password + ";";
             Program.connection = new MySql.Data.MySqlClient.MySqlConnection(Program.connectionString);
 
         }
+=======
+            InitializeComponent();         
+        }
+
+
+
+>>>>>>> c0b40bb500d8910a2dd6cd66370ec3b447f1a5c3
         private void btnRegisterNewMember_Click(object sender, EventArgs e)
         {
             frmRegisterNewMember f = new frmRegisterNewMember();
@@ -68,6 +84,7 @@ namespace WindowsFormsApp2
             f.ShowDialog();
         }
 
+<<<<<<< HEAD
         private void connectToTheDbServerToolStripMenuItem_Click(object sender, EventArgs e)
         {
             try
@@ -159,5 +176,8 @@ namespace WindowsFormsApp2
 
         }
 
+=======
+      
+>>>>>>> c0b40bb500d8910a2dd6cd66370ec3b447f1a5c3
     }
 }

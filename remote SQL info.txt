@@ -2,4 +2,8 @@ Host: sql6.freesqldatabase.com
 Database name: sql6413004
 Database user: sql6413004
 Database password: i93FYbMF3P
+<<<<<<< HEAD
 Port number: 3306
+=======
+Port number: 3306
+>>>>>>> c0b40bb500d8910a2dd6cd66370ec3b447f1a5c3

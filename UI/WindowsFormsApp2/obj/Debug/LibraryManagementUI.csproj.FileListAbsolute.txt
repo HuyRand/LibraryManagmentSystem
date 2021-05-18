@@ -48,6 +48,7 @@ D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\obj\Deb
 D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmReturnTicket.resources
 D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmPenaltyBill.resources
 D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmMainMenu.resources
+<<<<<<< HEAD
 C:\Users\new user\Desktop\Library Man Duy-Branch\LibraryManagmentSystem\UI\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
 C:\Users\new user\Desktop\Library Man Duy-Branch\LibraryManagmentSystem\UI\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
 C:\Users\new user\Desktop\Library Man Duy-Branch\LibraryManagmentSystem\UI\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
@@ -134,3 +135,5 @@ C:\Users\new user\Desktop\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\L
 C:\Users\new user\Desktop\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\LibraryManagementUI.csproj.CopyComplete
 C:\Users\new user\Desktop\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
 C:\Users\new user\Desktop\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+=======
+>>>>>>> c0b40bb500d8910a2dd6cd66370ec3b447f1a5c3
