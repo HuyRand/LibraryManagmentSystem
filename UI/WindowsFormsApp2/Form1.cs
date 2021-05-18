@@ -18,10 +18,11 @@ namespace WindowsFormsApp2
         {
             InitializeComponent();
             Program.connectionString = "SERVER=" + Program.server + ";" + "DATABASE=" +
-                Program.database + ";" + "UID=" + Program.uid + ";" + "PASSWORD=" + Program.password + ";";
+               Program.database + ";" + "UID=" + Program.uid + ";" + "PASSWORD=" + Program.password + ";";
             Program.connection = new MySql.Data.MySqlClient.MySqlConnection(Program.connectionString);
+          
 
-        }
+    }
         private void button1_Click(object sender, EventArgs e)
         {
             

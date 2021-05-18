@@ -25,14 +25,19 @@ namespace WindowsFormsApp2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            DateTime ass = dateTimePicker1.Value;
+
+            string ass = dateTimePicker1.Value.Date.ToString("yyyy-MM-dd");
+            DateTime dt = DateTime.ParseExact(ass, "yyyy-MM-dd", System.Globalization.CultureInfo.InvariantCulture);
+            Console.WriteLine(dt.ToString("yyyy-MM-dd"));
+
 
             string sql = "INSERT INTO `MEMBER` (MEMID, NAME, DOB, NUMBER_OF_BOOK_ALLOWED, EMAIL, ADDRESS, MEM_IMG_ID) " +
-              $"VALUES ('{textBox1.Text}', '{textBox2.Text}', '{dateTimePicker1.Value}', '{textBox3.Text}', '{textBox4.Text}', '{textBox5.Text}', '{textBox6.Text}');";
+              $"VALUES ('{textBox1.Text}', '{textBox2.Text}', '{dt.ToString("yyyy-MM-dd")}', '{textBox3.Text}', '{textBox4.Text}', '{textBox5.Text}', '{textBox6.Text}');";
             MySqlCommand cmd = new MySqlCommand(sql, Program.connection);
             MySqlDataReader rdr = cmd.ExecuteReader();
             rdr.Close();
             MessageBox.Show("Added");
+            Close();
         }
     }
 }

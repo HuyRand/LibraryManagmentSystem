@@ -8,35 +8,38 @@ namespace LibraryManagementClasses
 {
     public class Book
     {
-		string NAME;
-		string PUBLISHER;
-		string AUTHOR;
-		bool AVAILABLE;
-		string CATEGORY;
-		double PRICE;
-		int year;
-		string BOOK_IMG_ID;
+        public int BOOKID;
+        public string NAME;
+        public string PUBLISHER;
+        public string AUTHOR;
+        public bool AVAILABLE;
+        public string CATEGORY;
+        public double PRICE;
+        public int YEAR;
+        public string BOOK_IMG_ID;
         public Book()
         {
+            BOOKID = 0;
             NAME = "unknown";
             PUBLISHER = "unknown";
             AUTHOR = "unknow";
             AVAILABLE = false;
             CATEGORY = "unknown";
             PRICE = 0;
-            year = 0;
+            YEAR = 0;
             BOOK_IMG_ID = "PATH";
         }
 
-        public Book(string Name, string Pub, string Author, bool Status, string Category, double price, int year,string image_id)
+        public Book(int BookID,string Name, string Pub, string Author,  string Category, bool Status, double price, int Year,string image_id)
         {
+            BOOKID = BookID;
             NAME = Name;
             PUBLISHER = Pub;
             AUTHOR = Author;
             AVAILABLE = Status;
             CATEGORY = Category;
             PRICE = price;
-            year = year;
+            YEAR = Year;
             // path is AppDomain.CurrentDomain.BaseDirectory + "/Book_Images/" + BOOK_IMG_ID;
             BOOK_IMG_ID = image_id;
         }

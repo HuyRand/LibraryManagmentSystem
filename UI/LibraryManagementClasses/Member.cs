@@ -8,14 +8,16 @@ namespace LibraryManagementClasses
 {
 	public class Member
 	{
-		string NAME;
-		DateTime DOB;
-		int NUMBER_OF_BOOK_ALLOWED;
-		string EMAIL;
-		string ADDRESS;
-		string MEM_IMG_ID;
+		public int MEMID;
+		public string NAME;
+		public DateTime DOB;
+		public int NUMBER_OF_BOOK_ALLOWED;
+		public string EMAIL;
+		public string ADDRESS;
+		public string MEM_IMG_ID;
 		public Member()
 		{
+			MEMID = 0;
 			NAME = "unknown";
 			DOB = DateTime.Today;
 			NUMBER_OF_BOOK_ALLOWED = 0;
@@ -24,8 +26,9 @@ namespace LibraryManagementClasses
 			MEM_IMG_ID = "PATH";
 		}
 
-		public Member(string name,DateTime DoB, int Number_Of_Book_Allowed, string Email, string Address)
+		public Member(int memid,string name,DateTime DoB, int Number_Of_Book_Allowed, string Email, string Address)
 		{
+			MEMID = memid;
 			NAME = name;
 			DOB = DoB;
 			NUMBER_OF_BOOK_ALLOWED = Number_Of_Book_Allowed;

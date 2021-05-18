@@ -42,6 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Book.cs" />
+    <Compile Include="Borrower.cs" />
+    <Compile Include="Location.cs" />
     <Compile Include="Member.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
