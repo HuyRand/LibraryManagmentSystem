@@ -1,0 +1,18 @@
+D:\UIT STUFF\LibraryManagmentSystem-main\LibraryManagmentSystem-main\UI\LibraryManagementClasses\bin\Debug\LibraryManagementClasses.dll
+D:\UIT STUFF\LibraryManagmentSystem-main\LibraryManagmentSystem-main\UI\LibraryManagementClasses\bin\Debug\LibraryManagementClasses.pdb
+D:\UIT STUFF\LibraryManagmentSystem-main\LibraryManagmentSystem-main\UI\LibraryManagementClasses\obj\Debug\LibraryManagementClasses.csprojAssemblyReference.cache
+D:\UIT STUFF\LibraryManagmentSystem-main\LibraryManagmentSystem-main\UI\LibraryManagementClasses\obj\Debug\LibraryManagementClasses.csproj.CoreCompileInputs.cache
+D:\UIT STUFF\LibraryManagmentSystem-main\LibraryManagmentSystem-main\UI\LibraryManagementClasses\obj\Debug\LibraryManagementClasses.dll
+D:\UIT STUFF\LibraryManagmentSystem-main\LibraryManagmentSystem-main\UI\LibraryManagementClasses\obj\Debug\LibraryManagementClasses.pdb
+C:\Users\new user\Desktop\Library Man Duy-Branch\LibraryManagmentSystem\UI\LibraryManagementClasses\obj\Debug\LibraryManagementClasses.csprojAssemblyReference.cache
+C:\Users\new user\Desktop\Library Man Duy-Branch\LibraryManagmentSystem\UI\LibraryManagementClasses\obj\Debug\LibraryManagementClasses.csproj.CoreCompileInputs.cache
+C:\Users\new user\Desktop\Library Man Duy-Branch\LibraryManagmentSystem\UI\LibraryManagementClasses\obj\Debug\LibraryManagementClasses.dll
+C:\Users\new user\Desktop\Library Man Duy-Branch\LibraryManagmentSystem\UI\LibraryManagementClasses\obj\Debug\LibraryManagementClasses.pdb
+C:\Users\new user\Desktop\Library Man Duy-Branch\LibraryManagmentSystem\UI\LibraryManagementClasses\bin\Debug\LibraryManagementClasses.dll
+C:\Users\new user\Desktop\Library Man Duy-Branch\LibraryManagmentSystem\UI\LibraryManagementClasses\bin\Debug\LibraryManagementClasses.pdb
+C:\Users\new user\Desktop\Library Man my-Branch\LibraryManagmentSystem\UI\LibraryManagementClasses\bin\Debug\LibraryManagementClasses.dll
+C:\Users\new user\Desktop\Library Man my-Branch\LibraryManagmentSystem\UI\LibraryManagementClasses\bin\Debug\LibraryManagementClasses.pdb
+C:\Users\new user\Desktop\Library Man my-Branch\LibraryManagmentSystem\UI\LibraryManagementClasses\obj\Debug\LibraryManagementClasses.csprojAssemblyReference.cache
+C:\Users\new user\Desktop\Library Man my-Branch\LibraryManagmentSystem\UI\LibraryManagementClasses\obj\Debug\LibraryManagementClasses.csproj.CoreCompileInputs.cache
+C:\Users\new user\Desktop\Library Man my-Branch\LibraryManagmentSystem\UI\LibraryManagementClasses\obj\Debug\LibraryManagementClasses.dll
+C:\Users\new user\Desktop\Library Man my-Branch\LibraryManagmentSystem\UI\LibraryManagementClasses\obj\Debug\LibraryManagementClasses.pdb
