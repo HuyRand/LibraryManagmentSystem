@@ -35,8 +35,6 @@
             this.lbNamxbEX = new System.Windows.Forms.Label();
             this.txbNewBookPrice = new System.Windows.Forms.TextBox();
             this.lbNewBookPrice = new System.Windows.Forms.Label();
-            this.dtplbNewBookAdmitDate = new System.Windows.Forms.DateTimePicker();
-            this.lbNewBookAdmitDate = new System.Windows.Forms.Label();
             this.txbPublishYear = new System.Windows.Forms.TextBox();
             this.txbNewBookPublisher = new System.Windows.Forms.TextBox();
             this.txbNewBookAuthor = new System.Windows.Forms.TextBox();
@@ -62,8 +60,6 @@
             this.panel1.Controls.Add(this.lbNamxbEX);
             this.panel1.Controls.Add(this.txbNewBookPrice);
             this.panel1.Controls.Add(this.lbNewBookPrice);
-            this.panel1.Controls.Add(this.dtplbNewBookAdmitDate);
-            this.panel1.Controls.Add(this.lbNewBookAdmitDate);
             this.panel1.Controls.Add(this.txbPublishYear);
             this.panel1.Controls.Add(this.txbNewBookPublisher);
             this.panel1.Controls.Add(this.txbNewBookAuthor);
@@ -80,9 +76,9 @@
             this.panel1.Controls.Add(this.lbNewBookAuthor);
             this.panel1.Controls.Add(this.lbNewBookPublisher);
             this.panel1.Location = new System.Drawing.Point(16, 15);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(625, 620);
+            this.panel1.Size = new System.Drawing.Size(625, 575);
             this.panel1.TabIndex = 17;
             // 
             // lbMasSachEX
@@ -117,8 +113,8 @@
             // 
             // txbNewBookPrice
             // 
-            this.txbNewBookPrice.Location = new System.Drawing.Point(144, 529);
-            this.txbNewBookPrice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbNewBookPrice.Location = new System.Drawing.Point(143, 480);
+            this.txbNewBookPrice.Margin = new System.Windows.Forms.Padding(4);
             this.txbNewBookPrice.Name = "txbNewBookPrice";
             this.txbNewBookPrice.Size = new System.Drawing.Size(463, 22);
             this.txbNewBookPrice.TabIndex = 7;
@@ -127,38 +123,17 @@
             // 
             this.lbNewBookPrice.AutoSize = true;
             this.lbNewBookPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNewBookPrice.Location = new System.Drawing.Point(6, 524);
+            this.lbNewBookPrice.Location = new System.Drawing.Point(4, 477);
             this.lbNewBookPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbNewBookPrice.Name = "lbNewBookPrice";
             this.lbNewBookPrice.Size = new System.Drawing.Size(62, 25);
             this.lbNewBookPrice.TabIndex = 19;
             this.lbNewBookPrice.Text = "Price:";
             // 
-            // dtplbNewBookAdmitDate
-            // 
-            this.dtplbNewBookAdmitDate.CustomFormat = "dd/MM/yyyy";
-            this.dtplbNewBookAdmitDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtplbNewBookAdmitDate.Location = new System.Drawing.Point(144, 406);
-            this.dtplbNewBookAdmitDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.dtplbNewBookAdmitDate.Name = "dtplbNewBookAdmitDate";
-            this.dtplbNewBookAdmitDate.Size = new System.Drawing.Size(265, 22);
-            this.dtplbNewBookAdmitDate.TabIndex = 5;
-            // 
-            // lbNewBookAdmitDate
-            // 
-            this.lbNewBookAdmitDate.AutoSize = true;
-            this.lbNewBookAdmitDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNewBookAdmitDate.Location = new System.Drawing.Point(4, 406);
-            this.lbNewBookAdmitDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbNewBookAdmitDate.Name = "lbNewBookAdmitDate";
-            this.lbNewBookAdmitDate.Size = new System.Drawing.Size(114, 25);
-            this.lbNewBookAdmitDate.TabIndex = 17;
-            this.lbNewBookAdmitDate.Text = "Admit Date:";
-            // 
             // txbPublishYear
             // 
-            this.txbPublishYear.Location = new System.Drawing.Point(144, 466);
-            this.txbPublishYear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbPublishYear.Location = new System.Drawing.Point(145, 414);
+            this.txbPublishYear.Margin = new System.Windows.Forms.Padding(4);
             this.txbPublishYear.Name = "txbPublishYear";
             this.txbPublishYear.Size = new System.Drawing.Size(463, 22);
             this.txbPublishYear.TabIndex = 6;
@@ -166,7 +141,7 @@
             // txbNewBookPublisher
             // 
             this.txbNewBookPublisher.Location = new System.Drawing.Point(144, 348);
-            this.txbNewBookPublisher.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbNewBookPublisher.Margin = new System.Windows.Forms.Padding(4);
             this.txbNewBookPublisher.Name = "txbNewBookPublisher";
             this.txbNewBookPublisher.Size = new System.Drawing.Size(463, 22);
             this.txbNewBookPublisher.TabIndex = 4;
@@ -174,7 +149,7 @@
             // txbNewBookAuthor
             // 
             this.txbNewBookAuthor.Location = new System.Drawing.Point(144, 287);
-            this.txbNewBookAuthor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbNewBookAuthor.Margin = new System.Windows.Forms.Padding(4);
             this.txbNewBookAuthor.Name = "txbNewBookAuthor";
             this.txbNewBookAuthor.Size = new System.Drawing.Size(463, 22);
             this.txbNewBookAuthor.TabIndex = 3;
@@ -182,8 +157,8 @@
             // btnCancel
             // 
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Location = new System.Drawing.Point(508, 577);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancel.Location = new System.Drawing.Point(508, 532);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(100, 28);
             this.btnCancel.TabIndex = 9;
@@ -193,8 +168,8 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(383, 577);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAdd.Location = new System.Drawing.Point(382, 532);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(100, 28);
             this.btnAdd.TabIndex = 8;
@@ -207,7 +182,7 @@
             this.cbNewBookGenre.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbNewBookGenre.FormattingEnabled = true;
             this.cbNewBookGenre.Location = new System.Drawing.Point(144, 226);
-            this.cbNewBookGenre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbNewBookGenre.Margin = new System.Windows.Forms.Padding(4);
             this.cbNewBookGenre.Name = "cbNewBookGenre";
             this.cbNewBookGenre.Size = new System.Drawing.Size(265, 24);
             this.cbNewBookGenre.TabIndex = 2;
@@ -215,7 +190,7 @@
             // txbNewBookID
             // 
             this.txbNewBookID.Location = new System.Drawing.Point(144, 169);
-            this.txbNewBookID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbNewBookID.Margin = new System.Windows.Forms.Padding(4);
             this.txbNewBookID.Name = "txbNewBookID";
             this.txbNewBookID.Size = new System.Drawing.Size(463, 22);
             this.txbNewBookID.TabIndex = 1;
@@ -235,7 +210,7 @@
             // 
             this.lbPublishYear.AutoSize = true;
             this.lbPublishYear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPublishYear.Location = new System.Drawing.Point(5, 461);
+            this.lbPublishYear.Location = new System.Drawing.Point(4, 410);
             this.lbPublishYear.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbPublishYear.Name = "lbPublishYear";
             this.lbPublishYear.Size = new System.Drawing.Size(125, 25);
@@ -256,7 +231,7 @@
             // txbNewBookName
             // 
             this.txbNewBookName.Location = new System.Drawing.Point(144, 111);
-            this.txbNewBookName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbNewBookName.Margin = new System.Windows.Forms.Padding(4);
             this.txbNewBookName.Name = "txbNewBookName";
             this.txbNewBookName.Size = new System.Drawing.Size(463, 22);
             this.txbNewBookName.TabIndex = 0;
@@ -312,9 +287,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(657, 642);
+            this.ClientSize = new System.Drawing.Size(657, 597);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmAddNewBook";
@@ -344,8 +319,6 @@
         private System.Windows.Forms.Label lbNewBookAuthor;
         private System.Windows.Forms.Label lbNewBookPublisher;
         private System.Windows.Forms.TextBox txbPublishYear;
-        private System.Windows.Forms.DateTimePicker dtplbNewBookAdmitDate;
-        private System.Windows.Forms.Label lbNewBookAdmitDate;
         private System.Windows.Forms.TextBox txbNewBookPrice;
         private System.Windows.Forms.Label lbNewBookPrice;
         private System.Windows.Forms.Label lbNamxbEX;

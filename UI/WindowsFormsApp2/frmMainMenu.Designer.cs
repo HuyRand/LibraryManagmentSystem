@@ -108,8 +108,7 @@
             this.btnBookInfoDetail = new System.Windows.Forms.Button();
             this.txbBookPrice = new System.Windows.Forms.TextBox();
             this.lbBookPrice = new System.Windows.Forms.Label();
-            this.dtpAdmitDay = new System.Windows.Forms.DateTimePicker();
-            this.lbAdmitDate = new System.Windows.Forms.Label();
+            this.lbAvailable = new System.Windows.Forms.Label();
             this.txbPublishYear = new System.Windows.Forms.TextBox();
             this.txbPublisher = new System.Windows.Forms.TextBox();
             this.txbAuthor = new System.Windows.Forms.TextBox();
@@ -152,6 +151,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnHuy = new System.Windows.Forms.Button();
+            this.rbtnAvailable = new System.Windows.Forms.RadioButton();
             this.menuStrip1.SuspendLayout();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
             this.toolStripContainer1.TopToolStripPanel.SuspendLayout();
@@ -290,7 +290,7 @@
             this.toolStripContainer1.ContentPanel.Controls.Add(this.sttError);
             this.toolStripContainer1.ContentPanel.Controls.Add(this.tcMainMenu);
             this.toolStripContainer1.ContentPanel.Margin = new System.Windows.Forms.Padding(4);
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(1293, 708);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(1293, 706);
             this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.toolStripContainer1.Location = new System.Drawing.Point(0, 0);
             this.toolStripContainer1.Margin = new System.Windows.Forms.Padding(4);
@@ -942,6 +942,7 @@
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.rbtnAvailable);
             this.panel4.Controls.Add(this.lbNamxbEX);
             this.panel4.Controls.Add(this.lbMasSachEX);
             this.panel4.Controls.Add(this.lbGiaTriEX);
@@ -950,8 +951,7 @@
             this.panel4.Controls.Add(this.btnBookInfoDetail);
             this.panel4.Controls.Add(this.txbBookPrice);
             this.panel4.Controls.Add(this.lbBookPrice);
-            this.panel4.Controls.Add(this.dtpAdmitDay);
-            this.panel4.Controls.Add(this.lbAdmitDate);
+            this.panel4.Controls.Add(this.lbAvailable);
             this.panel4.Controls.Add(this.txbPublishYear);
             this.panel4.Controls.Add(this.txbPublisher);
             this.panel4.Controls.Add(this.txbAuthor);
@@ -1053,27 +1053,16 @@
             this.lbBookPrice.TabIndex = 19;
             this.lbBookPrice.Text = "Price:";
             // 
-            // dtpAdmitDay
+            // lbAvailable
             // 
-            this.dtpAdmitDay.CustomFormat = "dd/MM/yyyy";
-            this.dtpAdmitDay.Enabled = false;
-            this.dtpAdmitDay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpAdmitDay.Location = new System.Drawing.Point(144, 385);
-            this.dtpAdmitDay.Margin = new System.Windows.Forms.Padding(4);
-            this.dtpAdmitDay.Name = "dtpAdmitDay";
-            this.dtpAdmitDay.Size = new System.Drawing.Size(265, 34);
-            this.dtpAdmitDay.TabIndex = 11;
-            // 
-            // lbAdmitDate
-            // 
-            this.lbAdmitDate.AutoSize = true;
-            this.lbAdmitDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAdmitDate.Location = new System.Drawing.Point(4, 385);
-            this.lbAdmitDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbAdmitDate.Name = "lbAdmitDate";
-            this.lbAdmitDate.Size = new System.Drawing.Size(114, 25);
-            this.lbAdmitDate.TabIndex = 17;
-            this.lbAdmitDate.Text = "Admit Date:";
+            this.lbAvailable.AutoSize = true;
+            this.lbAvailable.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAvailable.Location = new System.Drawing.Point(4, 385);
+            this.lbAvailable.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbAvailable.Name = "lbAvailable";
+            this.lbAvailable.Size = new System.Drawing.Size(98, 25);
+            this.lbAvailable.TabIndex = 17;
+            this.lbAvailable.Text = "Available:";
             // 
             // txbPublishYear
             // 
@@ -1521,6 +1510,16 @@
             this.btnHuy.Text = "button1";
             this.btnHuy.UseVisualStyleBackColor = true;
             // 
+            // rbtnAvailable
+            // 
+            this.rbtnAvailable.AutoSize = true;
+            this.rbtnAvailable.Location = new System.Drawing.Point(144, 392);
+            this.rbtnAvailable.Name = "rbtnAvailable";
+            this.rbtnAvailable.Size = new System.Drawing.Size(17, 16);
+            this.rbtnAvailable.TabIndex = 44;
+            this.rbtnAvailable.TabStop = true;
+            this.rbtnAvailable.UseVisualStyleBackColor = true;
+            // 
             // frmMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1652,8 +1651,7 @@
         private System.Windows.Forms.Button btnBookInfoDetail;
         private System.Windows.Forms.TextBox txbBookPrice;
         private System.Windows.Forms.Label lbBookPrice;
-        private System.Windows.Forms.DateTimePicker dtpAdmitDay;
-        private System.Windows.Forms.Label lbAdmitDate;
+        private System.Windows.Forms.Label lbAvailable;
         private System.Windows.Forms.TextBox txbPublishYear;
         private System.Windows.Forms.TextBox txbPublisher;
         private System.Windows.Forms.TextBox txbAuthor;
@@ -1706,5 +1704,6 @@
         private System.Windows.Forms.StatusStrip sttError;
         private System.Windows.Forms.ToolStripStatusLabel sttErrorLabel;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.RadioButton rbtnAvailable;
     }
 }
