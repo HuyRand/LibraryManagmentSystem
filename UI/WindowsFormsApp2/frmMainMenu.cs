@@ -16,8 +16,6 @@ namespace WindowsFormsApp2
     public partial class frmMainMenu : Form
     {
         
-        
-        
         public frmMainMenu()
         {
             InitializeComponent();
@@ -159,5 +157,69 @@ namespace WindowsFormsApp2
 
         }
 
+        private void frmMainMenu_Load(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable();
+            Program.connectionString = "SERVER=" + Program.server + ";" + "DATABASE=" +
+                Program.database + ";" + "UID=" + Program.uid + ";" + "PASSWORD=" + Program.password + ";";
+            Program.connection = new MySql.Data.MySqlClient.MySqlConnection(Program.connectionString);
+            string query = "select * from MEMBER";
+
+            using (MySqlConnection con = new MySqlConnection(Program.connectionString))
+            {
+                con.Open();
+                MySqlCommand cmd = new MySqlCommand(query, con);
+                MySqlDataReader reader = cmd.ExecuteReader();
+                dt.Load(reader);
+                dgvMemberInfo.DataSource = dt;
+            }
+
+            DataTable dt1 = new DataTable();
+            string query1 = "select * from BOOK";
+
+            using (MySqlConnection con = new MySqlConnection(Program.connectionString))
+            {
+                con.Open();
+                MySqlCommand cmd = new MySqlCommand(query1, con);
+                MySqlDataReader reader = cmd.ExecuteReader();
+                dt1.Load(reader);
+                dgvBookInfo.DataSource = dt1;
+            }
+        }
+
+        private void dgvMemberInfo_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int i;
+            i = dgvMemberInfo.CurrentRow.Index;
+            txbSearchWithCardnumber.Text = dgvMemberInfo.Rows[i].Cells[0].Value.ToString();
+            txbSearchWithMemberName.Text = dgvMemberInfo.Rows[i].Cells[1].Value.ToString();
+            txbMemberName.Text = dgvMemberInfo.Rows[i].Cells[1].Value.ToString();
+            txbIdentityNumber.Text = dgvMemberInfo.Rows[i].Cells[3].Value.ToString();
+            dtpDayOfBirth.Text = dgvMemberInfo.Rows[i].Cells[2].Value.ToString();
+            txbMemberEmail.Text = dgvMemberInfo.Rows[i].Cells[4].Value.ToString();
+            txbMemberAddress.Text = dgvMemberInfo.Rows[i].Cells[5].Value.ToString();
+            cbMemberType.Text = dgvMemberInfo.Rows[i].Cells[6].Value.ToString();
+            //txbMemberOwedMoney.Text = dgvMemberInfo.Rows[i].Cells[4].Value.ToString();
+            //dtpRegiserDay.Text = dgvMemberInfo.Rows[i].Cells[4].Value.ToString();
+        }
+
+        private void dgvBookInfo_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int i;
+            i = dgvBookInfo.CurrentRow.Index;
+            txbSearchWithBookID.Text = dgvBookInfo.Rows[i].Cells[0].Value.ToString();
+            txbSearchWithBookName.Text = dgvBookInfo.Rows[i].Cells[1].Value.ToString();
+            cbSearchWithGenre.Text = dgvBookInfo.Rows[i].Cells[4].Value.ToString();
+            txbSearchWithAuthor.Text = dgvBookInfo.Rows[i].Cells[3].Value.ToString();
+            txbBookName.Text = dgvBookInfo.Rows[i].Cells[1].Value.ToString();
+            txbBookID.Text = dgvBookInfo.Rows[i].Cells[0].Value.ToString();
+            cbGenre.Text = dgvBookInfo.Rows[i].Cells[4].Value.ToString();
+            txbAuthor.Text = dgvBookInfo.Rows[i].Cells[3].Value.ToString();
+            txbPublisher.Text = dgvBookInfo.Rows[i].Cells[2].Value.ToString();
+            //dtpAdmitDay.Text = dgvBookInfo.Rows[i].Cells[4].Value.ToString();
+            txbPublishYear.Text = dgvBookInfo.Rows[i].Cells[7].Value.ToString();
+            txbBookPrice.Text = dgvBookInfo.Rows[i].Cells[6].Value.ToString();
+            cbBookState.Text = dgvBookInfo.Rows[i].Cells[5].Value.ToString();
+        }
     }
 }

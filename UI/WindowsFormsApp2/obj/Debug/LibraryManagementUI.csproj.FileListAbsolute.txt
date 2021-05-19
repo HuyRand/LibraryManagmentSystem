@@ -177,3 +177,46 @@ C:\Users\new user\Desktop\Library Man my-Branch\LibraryManagmentSystem\UI\Window
 C:\Users\new user\Desktop\Library Man my-Branch\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\LibraryManagementUI.csproj.CopyComplete
 C:\Users\new user\Desktop\Library Man my-Branch\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
 C:\Users\new user\Desktop\Library Man my-Branch\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+F:\University Data\UIT K14.1\HK_IV\Nhập môn CNPM\Library project\LibraryManagmentSystem\UI\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+F:\University Data\UIT K14.1\HK_IV\Nhập môn CNPM\Library project\LibraryManagmentSystem\UI\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+F:\University Data\UIT K14.1\HK_IV\Nhập môn CNPM\Library project\LibraryManagmentSystem\UI\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+F:\University Data\UIT K14.1\HK_IV\Nhập môn CNPM\Library project\LibraryManagmentSystem\UI\WindowsFormsApp2\bin\Debug\BouncyCastle.Crypto.dll
+F:\University Data\UIT K14.1\HK_IV\Nhập môn CNPM\Library project\LibraryManagmentSystem\UI\WindowsFormsApp2\bin\Debug\Google.Protobuf.dll
+F:\University Data\UIT K14.1\HK_IV\Nhập môn CNPM\Library project\LibraryManagmentSystem\UI\WindowsFormsApp2\bin\Debug\K4os.Compression.LZ4.dll
+F:\University Data\UIT K14.1\HK_IV\Nhập môn CNPM\Library project\LibraryManagmentSystem\UI\WindowsFormsApp2\bin\Debug\K4os.Compression.LZ4.Streams.dll
+F:\University Data\UIT K14.1\HK_IV\Nhập môn CNPM\Library project\LibraryManagmentSystem\UI\WindowsFormsApp2\bin\Debug\K4os.Hash.xxHash.dll
+F:\University Data\UIT K14.1\HK_IV\Nhập môn CNPM\Library project\LibraryManagmentSystem\UI\WindowsFormsApp2\bin\Debug\LibraryManagementClasses.dll
+F:\University Data\UIT K14.1\HK_IV\Nhập môn CNPM\Library project\LibraryManagmentSystem\UI\WindowsFormsApp2\bin\Debug\MySql.Data.dll
+F:\University Data\UIT K14.1\HK_IV\Nhập môn CNPM\Library project\LibraryManagmentSystem\UI\WindowsFormsApp2\bin\Debug\System.Buffers.dll
+F:\University Data\UIT K14.1\HK_IV\Nhập môn CNPM\Library project\LibraryManagmentSystem\UI\WindowsFormsApp2\bin\Debug\System.Memory.dll
+F:\University Data\UIT K14.1\HK_IV\Nhập môn CNPM\Library project\LibraryManagmentSystem\UI\WindowsFormsApp2\bin\Debug\System.Numerics.Vectors.dll
+F:\University Data\UIT K14.1\HK_IV\Nhập môn CNPM\Library project\LibraryManagmentSystem\UI\WindowsFormsApp2\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+F:\University Data\UIT K14.1\HK_IV\Nhập môn CNPM\Library project\LibraryManagmentSystem\UI\WindowsFormsApp2\bin\Debug\Ubiety.Dns.Core.dll
+F:\University Data\UIT K14.1\HK_IV\Nhập môn CNPM\Library project\LibraryManagmentSystem\UI\WindowsFormsApp2\bin\Debug\Zstandard.Net.dll
+F:\University Data\UIT K14.1\HK_IV\Nhập môn CNPM\Library project\LibraryManagmentSystem\UI\WindowsFormsApp2\bin\Debug\LibraryManagementClasses.pdb
+F:\University Data\UIT K14.1\HK_IV\Nhập môn CNPM\Library project\LibraryManagmentSystem\UI\WindowsFormsApp2\bin\Debug\Google.Protobuf.pdb
+F:\University Data\UIT K14.1\HK_IV\Nhập môn CNPM\Library project\LibraryManagmentSystem\UI\WindowsFormsApp2\bin\Debug\Google.Protobuf.xml
+F:\University Data\UIT K14.1\HK_IV\Nhập môn CNPM\Library project\LibraryManagmentSystem\UI\WindowsFormsApp2\bin\Debug\K4os.Compression.LZ4.xml
+F:\University Data\UIT K14.1\HK_IV\Nhập môn CNPM\Library project\LibraryManagmentSystem\UI\WindowsFormsApp2\bin\Debug\K4os.Compression.LZ4.Streams.xml
+F:\University Data\UIT K14.1\HK_IV\Nhập môn CNPM\Library project\LibraryManagmentSystem\UI\WindowsFormsApp2\bin\Debug\K4os.Hash.xxHash.xml
+F:\University Data\UIT K14.1\HK_IV\Nhập môn CNPM\Library project\LibraryManagmentSystem\UI\WindowsFormsApp2\bin\Debug\MySql.Data.xml
+F:\University Data\UIT K14.1\HK_IV\Nhập môn CNPM\Library project\LibraryManagmentSystem\UI\WindowsFormsApp2\bin\Debug\System.Buffers.xml
+F:\University Data\UIT K14.1\HK_IV\Nhập môn CNPM\Library project\LibraryManagmentSystem\UI\WindowsFormsApp2\bin\Debug\System.Memory.xml
+F:\University Data\UIT K14.1\HK_IV\Nhập môn CNPM\Library project\LibraryManagmentSystem\UI\WindowsFormsApp2\bin\Debug\System.Numerics.Vectors.xml
+F:\University Data\UIT K14.1\HK_IV\Nhập môn CNPM\Library project\LibraryManagmentSystem\UI\WindowsFormsApp2\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+F:\University Data\UIT K14.1\HK_IV\Nhập môn CNPM\Library project\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\LibraryManagementUI.csprojAssemblyReference.cache
+F:\University Data\UIT K14.1\HK_IV\Nhập môn CNPM\Library project\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.borrowBookLine.resources
+F:\University Data\UIT K14.1\HK_IV\Nhập môn CNPM\Library project\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form1.resources
+F:\University Data\UIT K14.1\HK_IV\Nhập môn CNPM\Library project\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form2.resources
+F:\University Data\UIT K14.1\HK_IV\Nhập môn CNPM\Library project\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmPenaltyBill.resources
+F:\University Data\UIT K14.1\HK_IV\Nhập môn CNPM\Library project\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmReturnTicket.resources
+F:\University Data\UIT K14.1\HK_IV\Nhập môn CNPM\Library project\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmAddNewBook.resources
+F:\University Data\UIT K14.1\HK_IV\Nhập môn CNPM\Library project\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmBorrowTicket.resources
+F:\University Data\UIT K14.1\HK_IV\Nhập môn CNPM\Library project\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmMainMenu.resources
+F:\University Data\UIT K14.1\HK_IV\Nhập môn CNPM\Library project\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmRegisterNewMember.resources
+F:\University Data\UIT K14.1\HK_IV\Nhập môn CNPM\Library project\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+F:\University Data\UIT K14.1\HK_IV\Nhập môn CNPM\Library project\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\LibraryManagementUI.csproj.GenerateResource.cache
+F:\University Data\UIT K14.1\HK_IV\Nhập môn CNPM\Library project\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\LibraryManagementUI.csproj.CoreCompileInputs.cache
+F:\University Data\UIT K14.1\HK_IV\Nhập môn CNPM\Library project\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\LibraryManagementUI.csproj.CopyComplete
+F:\University Data\UIT K14.1\HK_IV\Nhập môn CNPM\Library project\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+F:\University Data\UIT K14.1\HK_IV\Nhập môn CNPM\Library project\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
