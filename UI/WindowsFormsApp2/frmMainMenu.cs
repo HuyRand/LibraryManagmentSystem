@@ -187,7 +187,10 @@ namespace WindowsFormsApp2
             }
         }
 
-        private void dgvMemberInfo_CellContentClick(object sender, DataGridViewCellEventArgs e)
+      
+      
+
+        private void dgvMemberInfo_SelectionChanged(object sender, EventArgs e)
         {
             int i;
             i = dgvMemberInfo.CurrentRow.Index;
@@ -203,7 +206,7 @@ namespace WindowsFormsApp2
             //dtpRegiserDay.Text = dgvMemberInfo.Rows[i].Cells[4].Value.ToString();
         }
 
-        private void dgvBookInfo_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dgvBookInfo_SelectionChanged(object sender, EventArgs e)
         {
             int i;
             i = dgvBookInfo.CurrentRow.Index;
