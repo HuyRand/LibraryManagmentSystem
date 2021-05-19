@@ -254,3 +254,5 @@ C:\Users\Admin\Documents\GitHub\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\D
 C:\Users\Admin\Documents\GitHub\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmMainMenu.resources
 C:\Users\Admin\Documents\GitHub\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmRegisterNewMember.resources
 C:\Users\Admin\Documents\GitHub\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\LibraryManagementUI.csproj.CopyComplete
+D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\bin\Debug\LibraryManagementClasses.dll
+D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\bin\Debug\LibraryManagementClasses.pdb

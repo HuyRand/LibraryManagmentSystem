@@ -90,6 +90,7 @@ namespace WindowsFormsApp2
             {
                 MessageBox.Show(ex.ToString());
             }
+            Program.connection.Close();
         }
 
         private void frmMainMenu_FormClosing(object sender, FormClosingEventArgs e)
@@ -192,26 +193,25 @@ namespace WindowsFormsApp2
 
         private void dgvMemberInfo_SelectionChanged(object sender, EventArgs e)
         {
+            
             int i;
-            i = dgvMemberInfo.CurrentRow.Index;
-            txbSearchWithCardnumber.Text = dgvMemberInfo.Rows[i].Cells[0].Value.ToString();
-            txbSearchWithMemberName.Text = dgvMemberInfo.Rows[i].Cells[1].Value.ToString();
-            txbMemberName.Text = dgvMemberInfo.Rows[i].Cells[1].Value.ToString();
-            txbIdentityNumber.Text = dgvMemberInfo.Rows[i].Cells[3].Value.ToString();
-            dtpDayOfBirth.Text = dgvMemberInfo.Rows[i].Cells[2].Value.ToString();
-            txbMemberEmail.Text = dgvMemberInfo.Rows[i].Cells[4].Value.ToString();
-            txbMemberAddress.Text = dgvMemberInfo.Rows[i].Cells[5].Value.ToString();
-            cbMemberType.Text = dgvMemberInfo.Rows[i].Cells[6].Value.ToString();
-            //txbMemberOwedMoney.Text = dgvMemberInfo.Rows[i].Cells[4].Value.ToString();
-            //dtpRegiserDay.Text = dgvMemberInfo.Rows[i].Cells[4].Value.ToString();
+            if (dgvMemberInfo.CurrentRow != null )
+            { i = dgvMemberInfo.CurrentRow.Index;
+                txbMemberName.Text = dgvMemberInfo.Rows[i].Cells[1].Value.ToString();
+                txbIdentityNumber.Text = dgvMemberInfo.Rows[i].Cells[3].Value.ToString();
+                dtpDayOfBirth.Text = dgvMemberInfo.Rows[i].Cells[2].Value.ToString();
+                txbMemberEmail.Text = dgvMemberInfo.Rows[i].Cells[4].Value.ToString();
+                txbMemberAddress.Text = dgvMemberInfo.Rows[i].Cells[5].Value.ToString();
+                cbMemberType.Text = dgvMemberInfo.Rows[i].Cells[6].Value.ToString();
+                //txbMemberOwedMoney.Text = dgvMemberInfo.Rows[i].Cells[4].Value.ToString();
+                //dtpRegiserDay.Text = dgvMemberInfo.Rows[i].Cells[4].Value.ToString();
+            }
         }
 
         private void dgvBookInfo_SelectionChanged(object sender, EventArgs e)
         {
             int i;
-            i = dgvBookInfo.CurrentRow.Index;
-            txbSearchWithBookID.Text = dgvBookInfo.Rows[i].Cells[0].Value.ToString();
-            txbSearchWithBookName.Text = dgvBookInfo.Rows[i].Cells[1].Value.ToString();
+            i = dgvBookInfo.CurrentRow.Index;           
             cbSearchWithGenre.Text = dgvBookInfo.Rows[i].Cells[4].Value.ToString();
             txbSearchWithAuthor.Text = dgvBookInfo.Rows[i].Cells[3].Value.ToString();
             txbBookName.Text = dgvBookInfo.Rows[i].Cells[1].Value.ToString();
@@ -223,6 +223,77 @@ namespace WindowsFormsApp2
             txbPublishYear.Text = dgvBookInfo.Rows[i].Cells[7].Value.ToString();
             txbBookPrice.Text = dgvBookInfo.Rows[i].Cells[6].Value.ToString();
             cbBookState.Text = dgvBookInfo.Rows[i].Cells[5].Value.ToString();
+        }
+        private void LoaddgvMemberInfo()
+        {
+            DataTable dt = new DataTable();
+            Program.connectionString = "SERVER=" + Program.server + ";" + "DATABASE=" +
+                Program.database + ";" + "UID=" + Program.uid + ";" + "PASSWORD=" + Program.password + ";";
+            Program.connection = new MySql.Data.MySqlClient.MySqlConnection(Program.connectionString);
+            string query = "select * from MEMBER";
+
+            using (MySqlConnection con = new MySqlConnection(Program.connectionString))
+            {
+                con.Open();
+                MySqlCommand cmd = new MySqlCommand(query, con);
+                MySqlDataReader reader = cmd.ExecuteReader();
+                dt.Load(reader);
+                dgvMemberInfo.DataSource = dt;
+            }
+        }
+
+        private void btnSearchUser_Click(object sender, EventArgs e)
+        {
+            do
+            {
+                foreach (DataGridViewRow row in dgvMemberInfo.Rows)
+                {
+                    try
+                    {
+                        dgvMemberInfo.Rows.Remove(row);
+                    }
+                    catch (Exception) { }
+                }
+            } while (dgvMemberInfo.Rows.Count > 0);
+
+            string strCardNumber = txbSearchWithCardnumber.Text;
+            string strName = txbSearchWithMemberName.Text;           
+
+            if (strName == "" && strCardNumber == "")
+            {
+                DataTable dt = new DataTable();
+                Program.connectionString = "SERVER=" + Program.server + ";" + "DATABASE=" +
+                    Program.database + ";" + "UID=" + Program.uid + ";" + "PASSWORD=" + Program.password + ";";
+                Program.connection = new MySql.Data.MySqlClient.MySqlConnection(Program.connectionString);
+                string query = "select * from MEMBER";
+
+                using (MySqlConnection con = new MySqlConnection(Program.connectionString))
+                {
+                    con.Open();
+                    MySqlCommand cmd = new MySqlCommand(query, con);
+                    MySqlDataReader reader = cmd.ExecuteReader();
+                    dt.Load(reader);
+                    dgvMemberInfo.DataSource = dt;
+                }
+            }
+            else
+            {
+                string query = "SELECT * FROM `MEMBER` WHERE NAME  like '%" + strName + "%' AND MEMID like '" + strCardNumber +"%'";
+                DataTable dt = new DataTable();
+                Program.connectionString = "SERVER=" + Program.server + ";" + "DATABASE=" +
+                    Program.database + ";" + "UID=" + Program.uid + ";" + "PASSWORD=" + Program.password + ";";
+                Program.connection = new MySql.Data.MySqlClient.MySqlConnection(Program.connectionString);
+                ;
+
+                using (MySqlConnection con = new MySqlConnection(Program.connectionString))
+                {
+                    con.Open();
+                    MySqlCommand cmd = new MySqlCommand(query, con);
+                    MySqlDataReader reader = cmd.ExecuteReader();
+                    dt.Load(reader);
+                    dgvMemberInfo.DataSource = dt;
+                }
+            }
         }
     }
 }

@@ -439,6 +439,7 @@
             this.btnSearchUser.TabIndex = 2;
             this.btnSearchUser.Text = "Search";
             this.btnSearchUser.UseVisualStyleBackColor = true;
+            this.btnSearchUser.Click += new System.EventHandler(this.btnSearchUser_Click);
             // 
             // txbSearchWithMemberName
             // 
@@ -790,7 +791,6 @@
             this.dgvBookInfo.Size = new System.Drawing.Size(636, 597);
             this.dgvBookInfo.TabIndex = 1;
             this.dgvBookInfo.TabStop = false;
-
             this.dgvBookInfo.SelectionChanged += new System.EventHandler(this.dgvBookInfo_SelectionChanged);
             // 
             // panel2
