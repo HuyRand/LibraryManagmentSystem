@@ -90,7 +90,6 @@ namespace WindowsFormsApp2
             {
                 MessageBox.Show(ex.ToString());
             }
-            Program.connection.Close();
         }
 
         private void frmMainMenu_FormClosing(object sender, FormClosingEventArgs e)

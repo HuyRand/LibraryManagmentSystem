@@ -259,3 +259,6 @@ D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\bin\Deb
 D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmMemberInfo.resources
 D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmBookInfo.resources
 D:\Docs\Năm 2\Nhập môn công nghệ phần mềm\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmBorrowedBooks.resources
+C:\Users\new user\Desktop\Library Man my-Branch\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmBookInfo.resources
+C:\Users\new user\Desktop\Library Man my-Branch\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmMemberInfo.resources
+C:\Users\new user\Desktop\Library Man my-Branch\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmBorrowedBooks.resources
