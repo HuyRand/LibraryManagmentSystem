@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,6 +23,22 @@ namespace WindowsFormsApp2
             this.Close();
         }
 
-        
+        private void frmBorrowedBooks_Load(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable();
+            Program.connectionString = "SERVER=" + Program.server + ";" + "DATABASE=" +
+                Program.database + ";" + "UID=" + Program.uid + ";" + "PASSWORD=" + Program.password + ";";
+            Program.connection = new MySql.Data.MySqlClient.MySqlConnection(Program.connectionString);
+            string query = "select * from BORROW";
+
+            using (MySqlConnection con = new MySqlConnection(Program.connectionString))
+            {
+                con.Open();
+                MySqlCommand cmd = new MySqlCommand(query, con);
+                MySqlDataReader reader = cmd.ExecuteReader();
+                dt.Load(reader);
+                dgvBorrowedBooks.DataSource = dt;
+            }
+        }
     }
 }

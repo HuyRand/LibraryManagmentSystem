@@ -76,6 +76,7 @@
             this.Name = "frmBorrowedBooks";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Borrowed books";
+            this.Load += new System.EventHandler(this.frmBorrowedBooks_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvBorrowedBooks)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

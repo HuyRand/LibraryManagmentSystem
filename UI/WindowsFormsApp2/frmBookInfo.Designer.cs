@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnCancle = new System.Windows.Forms.Button();
             this.pnlBookPicture = new System.Windows.Forms.Panel();
             this.cbState = new System.Windows.Forms.ComboBox();
             this.lbState = new System.Windows.Forms.Label();
@@ -48,7 +49,6 @@
             this.lbPublisher = new System.Windows.Forms.Label();
             this.lbBookInfomation = new System.Windows.Forms.Label();
             this.btnHuy = new System.Windows.Forms.Button();
-            this.btnCancle = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -78,6 +78,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1127, 809);
             this.panel1.TabIndex = 18;
+            // 
+            // btnCancle
+            // 
+            this.btnCancle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancle.Location = new System.Drawing.Point(923, 735);
+            this.btnCancle.Name = "btnCancle";
+            this.btnCancle.Size = new System.Drawing.Size(187, 60);
+            this.btnCancle.TabIndex = 39;
+            this.btnCancle.Text = "Cancle";
+            this.btnCancle.UseVisualStyleBackColor = true;
+            this.btnCancle.Click += new System.EventHandler(this.btnCancle_Click);
             // 
             // pnlBookPicture
             // 
@@ -264,17 +275,6 @@
             this.btnHuy.Text = "button2";
             this.btnHuy.UseVisualStyleBackColor = true;
             // 
-            // btnCancle
-            // 
-            this.btnCancle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancle.Location = new System.Drawing.Point(923, 735);
-            this.btnCancle.Name = "btnCancle";
-            this.btnCancle.Size = new System.Drawing.Size(187, 60);
-            this.btnCancle.TabIndex = 39;
-            this.btnCancle.Text = "Cancle";
-            this.btnCancle.UseVisualStyleBackColor = true;
-            this.btnCancle.Click += new System.EventHandler(this.btnCancle_Click);
-            // 
             // frmBookInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -290,6 +290,7 @@
             this.Name = "frmBookInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Book infomation";
+            this.Load += new System.EventHandler(this.frmBookInfo_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

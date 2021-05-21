@@ -320,6 +320,7 @@
             this.Name = "frmMemberInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Member Infomation";
+            this.Load += new System.EventHandler(this.frmMemberInfo_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
