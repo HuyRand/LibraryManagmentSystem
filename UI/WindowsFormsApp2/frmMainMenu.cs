@@ -259,5 +259,61 @@ namespace WindowsFormsApp2
             frmBorrowedBooks f = new frmBorrowedBooks();
             f.ShowDialog();
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            
+            string sql = $"DELETE FROM MEMBER WHERE 'MEMID' = {txbIdentityNumber.Text};";
+            MySqlCommand cmd = new MySqlCommand(sql, Program.connection);
+            MySqlDataReader rdr = cmd.ExecuteReader();
+            MessageBox.Show("deleted");
+            rdr.Close();
+
+        }
+
+        private void btnDeleteBook_Click(object sender, EventArgs e)
+        {
+            string sql = $"DELETE FROM BOOK WHERE 'BOOKID' = {txbBookID.Text};";
+            MySqlCommand cmd = new MySqlCommand(sql, Program.connection);
+            MySqlDataReader rdr = cmd.ExecuteReader();
+            MessageBox.Show("deleted");
+            rdr.Close();
+
+        }
+
+        private void btnChange_Click(object sender, EventArgs e)
+        {
+
+            string sql = $"UPDATE MEMBER\n" +
+                $"SET\n" +
+                $"NAME = {txbMemberName.Text},\n" +
+                $"DOB = {dtpDayOfBirth.Value.ToString("yyyy-MM-dd")},\n" +
+                $"EMAIL = {txbMemberEmail.Text},\n" +
+                $"ADDRESS = {txbMemberAddress.Text},\n" +
+                $"WHERE MEMID = {txbIdentityNumber.Text};";
+
+            MySqlCommand cmd = new MySqlCommand(sql, Program.connection);
+            MySqlDataReader rdr = cmd.ExecuteReader();
+            MessageBox.Show("updated");
+            rdr.Close();
+
+        }
+
+        private void btnChangeBookInfo_Click(object sender, EventArgs e)
+        {
+            string sql = $"UPDATE BOOK\n" +
+               $"SET\n" +
+               $"NAME = {txbBookName.Text},\n" +
+               $"PUBLISHER = {txbPublisher.Text},\n" +
+               $"CATEGORY = {cbGenre.GetItemText(cbGenre.SelectedItem)},\n" +
+               $"PRICE = {txbBookPrice.Text},\n" +
+               $"YEAR = {txbPublishYear.Text},\n" +
+               $"WHERE BOOKID = {txbBookID.Text};";
+
+            MySqlCommand cmd = new MySqlCommand(sql, Program.connection);
+            MySqlDataReader rdr = cmd.ExecuteReader();
+            MessageBox.Show("updated");
+            rdr.Close();
+        }
     }
 }

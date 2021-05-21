@@ -52,11 +52,29 @@
             this.lbNewBookGenre = new System.Windows.Forms.Label();
             this.lbNewBookAuthor = new System.Windows.Forms.Label();
             this.lbNewBookPublisher = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.LocationID = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txbNewBookLoca_ID = new System.Windows.Forms.TextBox();
+            this.txbNewBookRowNumber = new System.Windows.Forms.TextBox();
+            this.txbNewBookSection_ID = new System.Windows.Forms.TextBox();
+            this.txbNewBookShelf_ID = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.txbNewBookShelf_ID);
+            this.panel1.Controls.Add(this.txbNewBookSection_ID);
+            this.panel1.Controls.Add(this.txbNewBookRowNumber);
+            this.panel1.Controls.Add(this.txbNewBookLoca_ID);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.LocationID);
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.lbMasSachEX);
             this.panel1.Controls.Add(this.lbGiaTriEX);
             this.panel1.Controls.Add(this.lbNamxbEX);
@@ -81,7 +99,7 @@
             this.panel1.Controls.Add(this.lbNewBookPublisher);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(469, 504);
+            this.panel1.Size = new System.Drawing.Size(732, 575);
             this.panel1.TabIndex = 17;
             // 
             // lbMasSachEX
@@ -171,9 +189,9 @@
             // btnCancel
             // 
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Location = new System.Drawing.Point(381, 469);
+            this.btnCancel.Location = new System.Drawing.Point(494, 504);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(124, 44);
             this.btnCancel.TabIndex = 9;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -181,9 +199,9 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(287, 469);
+            this.btnAdd.Location = new System.Drawing.Point(332, 504);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 23);
+            this.btnAdd.Size = new System.Drawing.Size(124, 44);
             this.btnAdd.TabIndex = 8;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -283,6 +301,84 @@
             this.lbNewBookPublisher.TabIndex = 9;
             this.lbNewBookPublisher.Text = "Publisher:";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(514, 35);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(186, 31);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "Book Location";
+            // 
+            // LocationID
+            // 
+            this.LocationID.AutoSize = true;
+            this.LocationID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LocationID.Location = new System.Drawing.Point(484, 90);
+            this.LocationID.Name = "LocationID";
+            this.LocationID.Size = new System.Drawing.Size(91, 20);
+            this.LocationID.TabIndex = 24;
+            this.LocationID.Text = "Location ID";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(484, 137);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(101, 20);
+            this.label2.TabIndex = 25;
+            this.label2.Text = "Row Number";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(484, 233);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(67, 20);
+            this.label3.TabIndex = 26;
+            this.label3.Text = "Shelf ID";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(484, 185);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(84, 20);
+            this.label4.TabIndex = 27;
+            this.label4.Text = "Section ID";
+            // 
+            // txbNewBookLoca_ID
+            // 
+            this.txbNewBookLoca_ID.Location = new System.Drawing.Point(591, 92);
+            this.txbNewBookLoca_ID.Name = "txbNewBookLoca_ID";
+            this.txbNewBookLoca_ID.Size = new System.Drawing.Size(109, 20);
+            this.txbNewBookLoca_ID.TabIndex = 28;
+            // 
+            // txbNewBookRowNumber
+            // 
+            this.txbNewBookRowNumber.Location = new System.Drawing.Point(591, 139);
+            this.txbNewBookRowNumber.Name = "txbNewBookRowNumber";
+            this.txbNewBookRowNumber.Size = new System.Drawing.Size(109, 20);
+            this.txbNewBookRowNumber.TabIndex = 29;
+            // 
+            // txbNewBookSection_ID
+            // 
+            this.txbNewBookSection_ID.Location = new System.Drawing.Point(591, 187);
+            this.txbNewBookSection_ID.Name = "txbNewBookSection_ID";
+            this.txbNewBookSection_ID.Size = new System.Drawing.Size(109, 20);
+            this.txbNewBookSection_ID.TabIndex = 30;
+            // 
+            // txbNewBookShelf_ID
+            // 
+            this.txbNewBookShelf_ID.Location = new System.Drawing.Point(591, 235);
+            this.txbNewBookShelf_ID.Name = "txbNewBookShelf_ID";
+            this.txbNewBookShelf_ID.Size = new System.Drawing.Size(109, 20);
+            this.txbNewBookShelf_ID.TabIndex = 31;
+            // 
             // frmAddNewBook
             // 
             this.AcceptButton = this.btnAdd;
@@ -290,7 +386,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(493, 522);
+            this.ClientSize = new System.Drawing.Size(756, 599);
             this.Controls.Add(this.panel1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -328,5 +424,14 @@
         private System.Windows.Forms.Label lbNamxbEX;
         private System.Windows.Forms.Label lbGiaTriEX;
         private System.Windows.Forms.Label lbMasSachEX;
+        private System.Windows.Forms.TextBox txbNewBookShelf_ID;
+        private System.Windows.Forms.TextBox txbNewBookSection_ID;
+        private System.Windows.Forms.TextBox txbNewBookRowNumber;
+        private System.Windows.Forms.TextBox txbNewBookLoca_ID;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label LocationID;
+        private System.Windows.Forms.Label label1;
     }
 }
