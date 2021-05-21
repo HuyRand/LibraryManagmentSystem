@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp2
 {
-    public partial class frmPenaltyBill : Form
+    public partial class frmBorrowedBooks : Form
     {
-        public frmPenaltyBill()
+        public frmBorrowedBooks()
         {
             InitializeComponent();
         }
@@ -21,5 +21,7 @@ namespace WindowsFormsApp2
         {
             this.Close();
         }
+
+        
     }
 }

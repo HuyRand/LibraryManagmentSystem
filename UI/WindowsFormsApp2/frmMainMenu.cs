@@ -295,5 +295,25 @@ namespace WindowsFormsApp2
                 }
             }
         }
+
+        
+
+        private void btnShowBookDetail_Click(object sender, EventArgs e)
+        {
+            frmBookInfo f = new frmBookInfo();
+            f.ShowDialog();
+        }
+
+        private void btnShowMemberDetail_Click(object sender, EventArgs e)
+        {
+            frmMemberInfo f = new frmMemberInfo();
+            f.ShowDialog();
+        }
+
+        private void borrowedBooksDetailToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBorrowedBooks f = new frmBorrowedBooks();
+            f.ShowDialog();
+        }
     }
 }

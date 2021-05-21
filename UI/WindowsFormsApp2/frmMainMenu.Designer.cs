@@ -38,6 +38,7 @@
             this.createReturnTicketToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.receivePenaltyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.borrowedBooksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tìmKiếmBạnĐọcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tìmKiếmSáchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thốngKêSáchTrảTrễToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -62,12 +63,13 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnShowMemberDetail = new System.Windows.Forms.Button();
             this.lbTenbandocEX = new System.Windows.Forms.Label();
             this.lbEmailEX = new System.Windows.Forms.Label();
             this.lbCmndEX = new System.Windows.Forms.Label();
             this.dtpRegiserDay = new System.Windows.Forms.DateTimePicker();
             this.txbMemberOwedMoney = new System.Windows.Forms.TextBox();
-            this.lbRegistrationDay = new System.Windows.Forms.Label();
+            this.lbRegistrationDate = new System.Windows.Forms.Label();
             this.lbMemberOwedMoney = new System.Windows.Forms.Label();
             this.btnUserInfoDetail = new System.Windows.Forms.Button();
             this.txbMemberAddress = new System.Windows.Forms.TextBox();
@@ -101,6 +103,7 @@
             this.btnDeleteBook = new System.Windows.Forms.Button();
             this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.btnShowBookDetail = new System.Windows.Forms.Button();
             this.lbNamxbEX = new System.Windows.Forms.Label();
             this.lbMasSachEX = new System.Windows.Forms.Label();
             this.lbGiaTriEX = new System.Windows.Forms.Label();
@@ -109,8 +112,6 @@
             this.btnBookInfoDetail = new System.Windows.Forms.Button();
             this.txbBookPrice = new System.Windows.Forms.TextBox();
             this.lbBookPrice = new System.Windows.Forms.Label();
-            this.dtpAdmitDay = new System.Windows.Forms.DateTimePicker();
-            this.lbAdmitDate = new System.Windows.Forms.Label();
             this.txbPublishYear = new System.Windows.Forms.TextBox();
             this.txbPublisher = new System.Windows.Forms.TextBox();
             this.txbAuthor = new System.Windows.Forms.TextBox();
@@ -153,6 +154,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnHuy = new System.Windows.Forms.Button();
+            this.borrowedBooksDetailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
             this.toolStripContainer1.TopToolStripPanel.SuspendLayout();
@@ -188,7 +190,8 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.updateToolStripMenuItem,
-            this.ManageborrowReturnToolStripMenuItem});
+            this.ManageborrowReturnToolStripMenuItem,
+            this.borrowedBooksToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1293, 28);
@@ -269,6 +272,14 @@
             this.receivePenaltyToolStripMenuItem.Size = new System.Drawing.Size(309, 26);
             this.receivePenaltyToolStripMenuItem.Text = "Receive penalty ";
             this.receivePenaltyToolStripMenuItem.Click += new System.EventHandler(this.receivePenaltyToolStripMenuItem_Click);
+            // 
+            // borrowedBooksToolStripMenuItem
+            // 
+            this.borrowedBooksToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.borrowedBooksDetailToolStripMenuItem});
+            this.borrowedBooksToolStripMenuItem.Name = "borrowedBooksToolStripMenuItem";
+            this.borrowedBooksToolStripMenuItem.Size = new System.Drawing.Size(132, 24);
+            this.borrowedBooksToolStripMenuItem.Text = "Borrowed books";
             // 
             // tìmKiếmBạnĐọcToolStripMenuItem
             // 
@@ -514,12 +525,13 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.btnShowMemberDetail);
             this.panel3.Controls.Add(this.lbTenbandocEX);
             this.panel3.Controls.Add(this.lbEmailEX);
             this.panel3.Controls.Add(this.lbCmndEX);
             this.panel3.Controls.Add(this.dtpRegiserDay);
             this.panel3.Controls.Add(this.txbMemberOwedMoney);
-            this.panel3.Controls.Add(this.lbRegistrationDay);
+            this.panel3.Controls.Add(this.lbRegistrationDate);
             this.panel3.Controls.Add(this.lbMemberOwedMoney);
             this.panel3.Controls.Add(this.btnUserInfoDetail);
             this.panel3.Controls.Add(this.txbMemberAddress);
@@ -539,6 +551,20 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(593, 606);
             this.panel3.TabIndex = 3;
+            // 
+            // btnShowMemberDetail
+            // 
+            this.btnShowMemberDetail.BackColor = System.Drawing.Color.DarkGray;
+            this.btnShowMemberDetail.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnShowMemberDetail.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnShowMemberDetail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShowMemberDetail.Location = new System.Drawing.Point(335, 13);
+            this.btnShowMemberDetail.Name = "btnShowMemberDetail";
+            this.btnShowMemberDetail.Size = new System.Drawing.Size(115, 39);
+            this.btnShowMemberDetail.TabIndex = 26;
+            this.btnShowMemberDetail.Text = "show detail";
+            this.btnShowMemberDetail.UseVisualStyleBackColor = false;
+            this.btnShowMemberDetail.Click += new System.EventHandler(this.btnShowMemberDetail_Click);
             // 
             // lbTenbandocEX
             // 
@@ -589,24 +615,23 @@
             // 
             // txbMemberOwedMoney
             // 
-            this.txbMemberOwedMoney.Enabled = false;
             this.txbMemberOwedMoney.Location = new System.Drawing.Point(144, 489);
             this.txbMemberOwedMoney.Margin = new System.Windows.Forms.Padding(4);
             this.txbMemberOwedMoney.Name = "txbMemberOwedMoney";
             this.txbMemberOwedMoney.Size = new System.Drawing.Size(432, 34);
             this.txbMemberOwedMoney.TabIndex = 20;
             // 
-            // lbRegistrationDay
+            // lbRegistrationDate
             // 
-            this.lbRegistrationDay.AutoSize = true;
-            this.lbRegistrationDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbRegistrationDay.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lbRegistrationDay.Location = new System.Drawing.Point(1, 558);
-            this.lbRegistrationDay.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbRegistrationDay.Name = "lbRegistrationDay";
-            this.lbRegistrationDay.Size = new System.Drawing.Size(148, 24);
-            this.lbRegistrationDay.TabIndex = 21;
-            this.lbRegistrationDay.Text = "Registration day:";
+            this.lbRegistrationDate.AutoSize = true;
+            this.lbRegistrationDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbRegistrationDate.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lbRegistrationDate.Location = new System.Drawing.Point(1, 558);
+            this.lbRegistrationDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbRegistrationDate.Name = "lbRegistrationDate";
+            this.lbRegistrationDate.Size = new System.Drawing.Size(154, 24);
+            this.lbRegistrationDate.TabIndex = 21;
+            this.lbRegistrationDate.Text = "Registration date:";
             // 
             // lbMemberOwedMoney
             // 
@@ -660,7 +685,6 @@
             // 
             this.cbMemberType.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cbMemberType.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cbMemberType.Enabled = false;
             this.cbMemberType.FormattingEnabled = true;
             this.cbMemberType.Location = new System.Drawing.Point(144, 418);
             this.cbMemberType.Margin = new System.Windows.Forms.Padding(4);
@@ -692,7 +716,7 @@
             // 
             this.lbMemberName.AutoSize = true;
             this.lbMemberName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMemberName.Location = new System.Drawing.Point(4, 73);
+            this.lbMemberName.Location = new System.Drawing.Point(3, 87);
             this.lbMemberName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbMemberName.Name = "lbMemberName";
             this.lbMemberName.Size = new System.Drawing.Size(75, 25);
@@ -701,7 +725,7 @@
             // 
             // txbMemberName
             // 
-            this.txbMemberName.Location = new System.Drawing.Point(144, 73);
+            this.txbMemberName.Location = new System.Drawing.Point(144, 87);
             this.txbMemberName.Margin = new System.Windows.Forms.Padding(4);
             this.txbMemberName.Name = "txbMemberName";
             this.txbMemberName.Size = new System.Drawing.Size(432, 34);
@@ -954,6 +978,7 @@
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.btnShowBookDetail);
             this.panel4.Controls.Add(this.lbNamxbEX);
             this.panel4.Controls.Add(this.lbMasSachEX);
             this.panel4.Controls.Add(this.lbGiaTriEX);
@@ -962,8 +987,6 @@
             this.panel4.Controls.Add(this.btnBookInfoDetail);
             this.panel4.Controls.Add(this.txbBookPrice);
             this.panel4.Controls.Add(this.lbBookPrice);
-            this.panel4.Controls.Add(this.dtpAdmitDay);
-            this.panel4.Controls.Add(this.lbAdmitDate);
             this.panel4.Controls.Add(this.txbPublishYear);
             this.panel4.Controls.Add(this.txbPublisher);
             this.panel4.Controls.Add(this.txbAuthor);
@@ -981,6 +1004,20 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(593, 655);
             this.panel4.TabIndex = 6;
+            // 
+            // btnShowBookDetail
+            // 
+            this.btnShowBookDetail.BackColor = System.Drawing.Color.DarkGray;
+            this.btnShowBookDetail.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnShowBookDetail.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnShowBookDetail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShowBookDetail.Location = new System.Drawing.Point(340, 14);
+            this.btnShowBookDetail.Name = "btnShowBookDetail";
+            this.btnShowBookDetail.Size = new System.Drawing.Size(115, 39);
+            this.btnShowBookDetail.TabIndex = 43;
+            this.btnShowBookDetail.Text = "show detail";
+            this.btnShowBookDetail.UseVisualStyleBackColor = false;
+            this.btnShowBookDetail.Click += new System.EventHandler(this.btnShowBookDetail_Click);
             // 
             // lbNamxbEX
             // 
@@ -1065,31 +1102,9 @@
             this.lbBookPrice.TabIndex = 19;
             this.lbBookPrice.Text = "Price:";
             // 
-            // dtpAdmitDay
-            // 
-            this.dtpAdmitDay.CustomFormat = "dd/MM/yyyy";
-            this.dtpAdmitDay.Enabled = false;
-            this.dtpAdmitDay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpAdmitDay.Location = new System.Drawing.Point(144, 385);
-            this.dtpAdmitDay.Margin = new System.Windows.Forms.Padding(4);
-            this.dtpAdmitDay.Name = "dtpAdmitDay";
-            this.dtpAdmitDay.Size = new System.Drawing.Size(265, 34);
-            this.dtpAdmitDay.TabIndex = 11;
-            // 
-            // lbAdmitDate
-            // 
-            this.lbAdmitDate.AutoSize = true;
-            this.lbAdmitDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAdmitDate.Location = new System.Drawing.Point(4, 385);
-            this.lbAdmitDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbAdmitDate.Name = "lbAdmitDate";
-            this.lbAdmitDate.Size = new System.Drawing.Size(114, 25);
-            this.lbAdmitDate.TabIndex = 17;
-            this.lbAdmitDate.Text = "Admit Date:";
-            // 
             // txbPublishYear
             // 
-            this.txbPublishYear.Location = new System.Drawing.Point(144, 446);
+            this.txbPublishYear.Location = new System.Drawing.Point(144, 448);
             this.txbPublishYear.Margin = new System.Windows.Forms.Padding(4);
             this.txbPublishYear.Name = "txbPublishYear";
             this.txbPublishYear.Size = new System.Drawing.Size(435, 34);
@@ -1097,7 +1112,7 @@
             // 
             // txbPublisher
             // 
-            this.txbPublisher.Location = new System.Drawing.Point(144, 327);
+            this.txbPublisher.Location = new System.Drawing.Point(144, 360);
             this.txbPublisher.Margin = new System.Windows.Forms.Padding(4);
             this.txbPublisher.Name = "txbPublisher";
             this.txbPublisher.Size = new System.Drawing.Size(435, 34);
@@ -1105,7 +1120,7 @@
             // 
             // txbAuthor
             // 
-            this.txbAuthor.Location = new System.Drawing.Point(144, 266);
+            this.txbAuthor.Location = new System.Drawing.Point(144, 283);
             this.txbAuthor.Margin = new System.Windows.Forms.Padding(4);
             this.txbAuthor.Name = "txbAuthor";
             this.txbAuthor.Size = new System.Drawing.Size(435, 34);
@@ -1135,7 +1150,7 @@
             // 
             this.lbPublishYear.AutoSize = true;
             this.lbPublishYear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPublishYear.Location = new System.Drawing.Point(1, 452);
+            this.lbPublishYear.Location = new System.Drawing.Point(1, 454);
             this.lbPublishYear.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbPublishYear.Name = "lbPublishYear";
             this.lbPublishYear.Size = new System.Drawing.Size(128, 25);
@@ -1187,7 +1202,7 @@
             // 
             this.lbAuthor.AutoSize = true;
             this.lbAuthor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAuthor.Location = new System.Drawing.Point(4, 272);
+            this.lbAuthor.Location = new System.Drawing.Point(4, 289);
             this.lbAuthor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbAuthor.Name = "lbAuthor";
             this.lbAuthor.Size = new System.Drawing.Size(76, 25);
@@ -1198,7 +1213,7 @@
             // 
             this.lbPublisher.AutoSize = true;
             this.lbPublisher.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPublisher.Location = new System.Drawing.Point(4, 327);
+            this.lbPublisher.Location = new System.Drawing.Point(6, 366);
             this.lbPublisher.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbPublisher.Name = "lbPublisher";
             this.lbPublisher.Size = new System.Drawing.Size(99, 25);
@@ -1533,6 +1548,13 @@
             this.btnHuy.Text = "button1";
             this.btnHuy.UseVisualStyleBackColor = true;
             // 
+            // borrowedBooksDetailToolStripMenuItem
+            // 
+            this.borrowedBooksDetailToolStripMenuItem.Name = "borrowedBooksDetailToolStripMenuItem";
+            this.borrowedBooksDetailToolStripMenuItem.Size = new System.Drawing.Size(243, 26);
+            this.borrowedBooksDetailToolStripMenuItem.Text = "Borrowed books detail";
+            this.borrowedBooksDetailToolStripMenuItem.Click += new System.EventHandler(this.borrowedBooksDetailToolStripMenuItem_Click);
+            // 
             // frmMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1628,7 +1650,7 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.DateTimePicker dtpRegiserDay;
         private System.Windows.Forms.TextBox txbMemberOwedMoney;
-        private System.Windows.Forms.Label lbRegistrationDay;
+        private System.Windows.Forms.Label lbRegistrationDate;
         private System.Windows.Forms.Label lbMemberOwedMoney;
         private System.Windows.Forms.Button btnUserInfoDetail;
         private System.Windows.Forms.TextBox txbMemberAddress;
@@ -1666,8 +1688,6 @@
         private System.Windows.Forms.Button btnBookInfoDetail;
         private System.Windows.Forms.TextBox txbBookPrice;
         private System.Windows.Forms.Label lbBookPrice;
-        private System.Windows.Forms.DateTimePicker dtpAdmitDay;
-        private System.Windows.Forms.Label lbAdmitDate;
         private System.Windows.Forms.TextBox txbPublishYear;
         private System.Windows.Forms.TextBox txbPublisher;
         private System.Windows.Forms.TextBox txbAuthor;
@@ -1721,5 +1741,9 @@
         private System.Windows.Forms.ToolStripStatusLabel sttErrorLabel;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripMenuItem connectToTheDbServerToolStripMenuItem;
+        private System.Windows.Forms.Button btnShowMemberDetail;
+        private System.Windows.Forms.Button btnShowBookDetail;
+        private System.Windows.Forms.ToolStripMenuItem borrowedBooksToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem borrowedBooksDetailToolStripMenuItem;
     }
 }

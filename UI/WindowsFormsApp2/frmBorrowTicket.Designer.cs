@@ -97,7 +97,6 @@
             // 
             // txbBorrowMemberCardNumber
             // 
-            this.txbBorrowMemberCardNumber.Enabled = false;
             this.txbBorrowMemberCardNumber.Location = new System.Drawing.Point(162, 74);
             this.txbBorrowMemberCardNumber.Margin = new System.Windows.Forms.Padding(4);
             this.txbBorrowMemberCardNumber.Name = "txbBorrowMemberCardNumber";
@@ -131,7 +130,6 @@
             // 
             // txblbBorrowMemberName
             // 
-            this.txblbBorrowMemberName.Enabled = false;
             this.txblbBorrowMemberName.Location = new System.Drawing.Point(761, 70);
             this.txblbBorrowMemberName.Margin = new System.Windows.Forms.Padding(4);
             this.txblbBorrowMemberName.Name = "txblbBorrowMemberName";

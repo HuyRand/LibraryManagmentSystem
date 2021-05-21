@@ -101,6 +101,24 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmBookInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookInfo.Designer.cs">
+      <DependentUpon>frmBookInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMemberInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMemberInfo.Designer.cs">
+      <DependentUpon>frmMemberInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBorrowedBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBorrowedBooks.Designer.cs">
+      <DependentUpon>frmBorrowedBooks.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPenaltyBill.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,6 +177,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBookInfo.resx">
+      <DependentUpon>frmBookInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMemberInfo.resx">
+      <DependentUpon>frmMemberInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBorrowedBooks.resx">
+      <DependentUpon>frmBorrowedBooks.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPenaltyBill.resx">
       <DependentUpon>frmPenaltyBill.cs</DependentUpon>

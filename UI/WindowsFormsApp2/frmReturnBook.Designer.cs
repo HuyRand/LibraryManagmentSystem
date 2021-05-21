@@ -38,12 +38,12 @@
             this.pnReturnedBookList = new System.Windows.Forms.Panel();
             this.lbReturnBook = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.lbPenalty = new System.Windows.Forms.Label();
+            this.lbDaysBorrowed = new System.Windows.Forms.Label();
+            this.lbBookName = new System.Windows.Forms.Label();
+            this.lbBookID = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.chkChoseBook = new System.Windows.Forms.CheckBox();
-            this.lbBookID = new System.Windows.Forms.Label();
-            this.lbBookName = new System.Windows.Forms.Label();
-            this.lbDaysBorrowed = new System.Windows.Forms.Label();
-            this.lbPenalty = new System.Windows.Forms.Label();
             this.dtbReturnDate = new System.Windows.Forms.DateTimePicker();
             this.txbTotalOwedMoney = new System.Windows.Forms.TextBox();
             this.lbReturnDate = new System.Windows.Forms.Label();
@@ -85,7 +85,6 @@
             // 
             // txbReturnMemberCardNumber
             // 
-            this.txbReturnMemberCardNumber.Enabled = false;
             this.txbReturnMemberCardNumber.Location = new System.Drawing.Point(161, 70);
             this.txbReturnMemberCardNumber.Margin = new System.Windows.Forms.Padding(4);
             this.txbReturnMemberCardNumber.Name = "txbReturnMemberCardNumber";
@@ -107,7 +106,6 @@
             // 
             // txbReturnMemberName
             // 
-            this.txbReturnMemberName.Enabled = false;
             this.txbReturnMemberName.Location = new System.Drawing.Point(781, 69);
             this.txbReturnMemberName.Margin = new System.Windows.Forms.Padding(4);
             this.txbReturnMemberName.Name = "txbReturnMemberName";
@@ -172,6 +170,58 @@
             this.panel4.Size = new System.Drawing.Size(1093, 50);
             this.panel4.TabIndex = 19;
             // 
+            // lbPenalty
+            // 
+            this.lbPenalty.AutoEllipsis = true;
+            this.lbPenalty.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbPenalty.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPenalty.Location = new System.Drawing.Point(837, 4);
+            this.lbPenalty.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbPenalty.Name = "lbPenalty";
+            this.lbPenalty.Size = new System.Drawing.Size(251, 43);
+            this.lbPenalty.TabIndex = 30;
+            this.lbPenalty.Text = "Penalty";
+            this.lbPenalty.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbDaysBorrowed
+            // 
+            this.lbDaysBorrowed.AutoEllipsis = true;
+            this.lbDaysBorrowed.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbDaysBorrowed.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDaysBorrowed.Location = new System.Drawing.Point(559, 4);
+            this.lbDaysBorrowed.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbDaysBorrowed.Name = "lbDaysBorrowed";
+            this.lbDaysBorrowed.Size = new System.Drawing.Size(279, 43);
+            this.lbDaysBorrowed.TabIndex = 29;
+            this.lbDaysBorrowed.Text = "Days Borrowed ";
+            this.lbDaysBorrowed.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbBookName
+            // 
+            this.lbBookName.AutoEllipsis = true;
+            this.lbBookName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbBookName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbBookName.Location = new System.Drawing.Point(240, 4);
+            this.lbBookName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbBookName.Name = "lbBookName";
+            this.lbBookName.Size = new System.Drawing.Size(321, 43);
+            this.lbBookName.TabIndex = 27;
+            this.lbBookName.Text = "Book name";
+            this.lbBookName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbBookID
+            // 
+            this.lbBookID.AutoEllipsis = true;
+            this.lbBookID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbBookID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbBookID.Location = new System.Drawing.Point(53, 4);
+            this.lbBookID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbBookID.Name = "lbBookID";
+            this.lbBookID.Size = new System.Drawing.Size(191, 43);
+            this.lbBookID.TabIndex = 26;
+            this.lbBookID.Text = "BookID";
+            this.lbBookID.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // panel6
             // 
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -192,58 +242,6 @@
             this.chkChoseBook.Size = new System.Drawing.Size(18, 17);
             this.chkChoseBook.TabIndex = 1;
             this.chkChoseBook.UseVisualStyleBackColor = true;
-            // 
-            // lbBookID
-            // 
-            this.lbBookID.AutoEllipsis = true;
-            this.lbBookID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbBookID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbBookID.Location = new System.Drawing.Point(53, 4);
-            this.lbBookID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbBookID.Name = "lbBookID";
-            this.lbBookID.Size = new System.Drawing.Size(191, 43);
-            this.lbBookID.TabIndex = 26;
-            this.lbBookID.Text = "BookID";
-            this.lbBookID.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lbBookName
-            // 
-            this.lbBookName.AutoEllipsis = true;
-            this.lbBookName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbBookName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbBookName.Location = new System.Drawing.Point(240, 4);
-            this.lbBookName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbBookName.Name = "lbBookName";
-            this.lbBookName.Size = new System.Drawing.Size(321, 43);
-            this.lbBookName.TabIndex = 27;
-            this.lbBookName.Text = "Book name";
-            this.lbBookName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lbDaysBorrowed
-            // 
-            this.lbDaysBorrowed.AutoEllipsis = true;
-            this.lbDaysBorrowed.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbDaysBorrowed.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDaysBorrowed.Location = new System.Drawing.Point(559, 4);
-            this.lbDaysBorrowed.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbDaysBorrowed.Name = "lbDaysBorrowed";
-            this.lbDaysBorrowed.Size = new System.Drawing.Size(279, 43);
-            this.lbDaysBorrowed.TabIndex = 29;
-            this.lbDaysBorrowed.Text = "Days Borrowed ";
-            this.lbDaysBorrowed.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lbPenalty
-            // 
-            this.lbPenalty.AutoEllipsis = true;
-            this.lbPenalty.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbPenalty.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPenalty.Location = new System.Drawing.Point(837, 4);
-            this.lbPenalty.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbPenalty.Name = "lbPenalty";
-            this.lbPenalty.Size = new System.Drawing.Size(251, 43);
-            this.lbPenalty.TabIndex = 30;
-            this.lbPenalty.Text = "Penalty";
-            this.lbPenalty.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // dtbReturnDate
             // 
