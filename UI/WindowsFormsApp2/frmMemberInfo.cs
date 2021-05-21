@@ -13,6 +13,7 @@ namespace WindowsFormsApp2
     public partial class frmMemberInfo : Form
     {
         private string nameMember, idMember, dateMember, mailMember, typeMember, addressMember, registerdayMember, ownMember;
+
         public frmMemberInfo()
         {
             InitializeComponent();
@@ -53,11 +54,11 @@ namespace WindowsFormsApp2
         {
             txbMemberName.Text = nameMember;
             txbIdentityNumber.Text = idMember;
-            dtpDateOfBirth.Text = dateMember;
+            txbDateOfBirth.Text = dateMember;
             txbMemberEmail.Text = mailMember;
             cbMemberType.Text = typeMember;
             txbMemberAddress.Text = addressMember;
-            dtpRegistrationDate.Text = registerdayMember;
+            txbRegistrationDate.Text = registerdayMember;
             txbTotalOwedMoney.Text = ownMember;
         }
     }

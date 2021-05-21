@@ -39,17 +39,17 @@
             this.txbIdentityNumber = new System.Windows.Forms.TextBox();
             this.cbMemberType = new System.Windows.Forms.ComboBox();
             this.txbMemberEmail = new System.Windows.Forms.TextBox();
-            this.dtpDateOfBirth = new System.Windows.Forms.DateTimePicker();
             this.txbMemberAddress = new System.Windows.Forms.TextBox();
             this.lbTotalOwedMoney = new System.Windows.Forms.Label();
             this.lbRegistrationDate = new System.Windows.Forms.Label();
             this.btnCreateReturnTicket = new System.Windows.Forms.Button();
             this.txbTotalOwedMoney = new System.Windows.Forms.TextBox();
-            this.dtpRegistrationDate = new System.Windows.Forms.DateTimePicker();
             this.btnCreateBorrowTicket = new System.Windows.Forms.Button();
             this.btnHuy = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnCancle = new System.Windows.Forms.Button();
+            this.txbDateOfBirth = new System.Windows.Forms.TextBox();
+            this.txbRegistrationDate = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -170,16 +170,6 @@
             this.txbMemberEmail.Size = new System.Drawing.Size(351, 22);
             this.txbMemberEmail.TabIndex = 3;
             // 
-            // dtpDateOfBirth
-            // 
-            this.dtpDateOfBirth.CustomFormat = "dd/MM/yyyy";
-            this.dtpDateOfBirth.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpDateOfBirth.Location = new System.Drawing.Point(187, 118);
-            this.dtpDateOfBirth.Margin = new System.Windows.Forms.Padding(4);
-            this.dtpDateOfBirth.Name = "dtpDateOfBirth";
-            this.dtpDateOfBirth.Size = new System.Drawing.Size(265, 22);
-            this.dtpDateOfBirth.TabIndex = 2;
-            // 
             // txbMemberAddress
             // 
             this.txbMemberAddress.Location = new System.Drawing.Point(811, 176);
@@ -232,16 +222,6 @@
             this.txbTotalOwedMoney.Size = new System.Drawing.Size(351, 22);
             this.txbTotalOwedMoney.TabIndex = 16;
             // 
-            // dtpRegistrationDate
-            // 
-            this.dtpRegistrationDate.CustomFormat = "dd/MM/yyyy";
-            this.dtpRegistrationDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpRegistrationDate.Location = new System.Drawing.Point(187, 235);
-            this.dtpRegistrationDate.Margin = new System.Windows.Forms.Padding(4);
-            this.dtpRegistrationDate.Name = "dtpRegistrationDate";
-            this.dtpRegistrationDate.Size = new System.Drawing.Size(265, 22);
-            this.dtpRegistrationDate.TabIndex = 15;
-            // 
             // btnCreateBorrowTicket
             // 
             this.btnCreateBorrowTicket.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -267,16 +247,16 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.txbRegistrationDate);
+            this.panel1.Controls.Add(this.txbDateOfBirth);
             this.panel1.Controls.Add(this.btnHuy);
             this.panel1.Controls.Add(this.btnCancle);
             this.panel1.Controls.Add(this.btnCreateBorrowTicket);
-            this.panel1.Controls.Add(this.dtpRegistrationDate);
             this.panel1.Controls.Add(this.txbTotalOwedMoney);
             this.panel1.Controls.Add(this.btnCreateReturnTicket);
             this.panel1.Controls.Add(this.lbRegistrationDate);
             this.panel1.Controls.Add(this.lbTotalOwedMoney);
             this.panel1.Controls.Add(this.txbMemberAddress);
-            this.panel1.Controls.Add(this.dtpDateOfBirth);
             this.panel1.Controls.Add(this.txbMemberEmail);
             this.panel1.Controls.Add(this.cbMemberType);
             this.panel1.Controls.Add(this.txbIdentityNumber);
@@ -305,6 +285,20 @@
             this.btnCancle.Text = "Cancle";
             this.btnCancle.UseVisualStyleBackColor = true;
             this.btnCancle.Click += new System.EventHandler(this.btnCancle_Click);
+            // 
+            // txbDateOfBirth
+            // 
+            this.txbDateOfBirth.Location = new System.Drawing.Point(187, 122);
+            this.txbDateOfBirth.Name = "txbDateOfBirth";
+            this.txbDateOfBirth.Size = new System.Drawing.Size(265, 22);
+            this.txbDateOfBirth.TabIndex = 20;
+            // 
+            // txbRegistrationDate
+            // 
+            this.txbRegistrationDate.Location = new System.Drawing.Point(187, 239);
+            this.txbRegistrationDate.Name = "txbRegistrationDate";
+            this.txbRegistrationDate.Size = new System.Drawing.Size(265, 22);
+            this.txbRegistrationDate.TabIndex = 21;
             // 
             // frmMemberInfo
             // 
@@ -340,16 +334,16 @@
         private System.Windows.Forms.TextBox txbIdentityNumber;
         private System.Windows.Forms.ComboBox cbMemberType;
         private System.Windows.Forms.TextBox txbMemberEmail;
-        private System.Windows.Forms.DateTimePicker dtpDateOfBirth;
         private System.Windows.Forms.TextBox txbMemberAddress;
         private System.Windows.Forms.Label lbTotalOwedMoney;
         private System.Windows.Forms.Label lbRegistrationDate;
         private System.Windows.Forms.Button btnCreateReturnTicket;
         private System.Windows.Forms.TextBox txbTotalOwedMoney;
-        private System.Windows.Forms.DateTimePicker dtpRegistrationDate;
         private System.Windows.Forms.Button btnCreateBorrowTicket;
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnCancle;
+        private System.Windows.Forms.TextBox txbDateOfBirth;
+        private System.Windows.Forms.TextBox txbRegistrationDate;
     }
 }

@@ -64,11 +64,10 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.btnShowMemberDetail = new System.Windows.Forms.Button();
             this.lbTenbandocEX = new System.Windows.Forms.Label();
             this.lbEmailEX = new System.Windows.Forms.Label();
             this.lbCmndEX = new System.Windows.Forms.Label();
-            this.dtpRegiserDay = new System.Windows.Forms.DateTimePicker();
+            this.dtpRegistrationerDate = new System.Windows.Forms.DateTimePicker();
             this.txbMemberOwedMoney = new System.Windows.Forms.TextBox();
             this.lbRegistrationDate = new System.Windows.Forms.Label();
             this.lbMemberOwedMoney = new System.Windows.Forms.Label();
@@ -104,7 +103,6 @@
             this.btnDeleteBook = new System.Windows.Forms.Button();
             this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.btnShowBookDetail = new System.Windows.Forms.Button();
             this.lbNamxbEX = new System.Windows.Forms.Label();
             this.lbMasSachEX = new System.Windows.Forms.Label();
             this.lbGiaTriEX = new System.Windows.Forms.Label();
@@ -316,11 +314,11 @@
             this.toolStripContainer1.ContentPanel.AutoScroll = true;
             this.toolStripContainer1.ContentPanel.Controls.Add(this.sttError);
             this.toolStripContainer1.ContentPanel.Controls.Add(this.tcMainMenu);
-            this.toolStripContainer1.ContentPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.toolStripContainer1.ContentPanel.Margin = new System.Windows.Forms.Padding(4);
             this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(1293, 708);
             this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.toolStripContainer1.Location = new System.Drawing.Point(0, 0);
-            this.toolStripContainer1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.toolStripContainer1.Margin = new System.Windows.Forms.Padding(4);
             this.toolStripContainer1.Name = "toolStripContainer1";
             this.toolStripContainer1.Size = new System.Drawing.Size(1293, 736);
             this.toolStripContainer1.TabIndex = 2;
@@ -366,7 +364,7 @@
             this.tcMainMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tcMainMenu.ItemSize = new System.Drawing.Size(150, 50);
             this.tcMainMenu.Location = new System.Drawing.Point(0, 0);
-            this.tcMainMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tcMainMenu.Margin = new System.Windows.Forms.Padding(4);
             this.tcMainMenu.Name = "tcMainMenu";
             this.tcMainMenu.SelectedIndex = 0;
             this.tcMainMenu.Size = new System.Drawing.Size(1293, 676);
@@ -379,9 +377,9 @@
             this.tpMember.Controls.Add(this.flowLayoutPanel4);
             this.tpMember.Controls.Add(this.flowLayoutPanel3);
             this.tpMember.Location = new System.Drawing.Point(4, 54);
-            this.tpMember.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tpMember.Margin = new System.Windows.Forms.Padding(4);
             this.tpMember.Name = "tpMember";
-            this.tpMember.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tpMember.Padding = new System.Windows.Forms.Padding(4);
             this.tpMember.Size = new System.Drawing.Size(1285, 618);
             this.tpMember.TabIndex = 0;
             this.tpMember.Text = "   Member  ";
@@ -391,7 +389,7 @@
             // 
             this.panel11.Controls.Add(this.dgvMemberInfo);
             this.panel11.Location = new System.Drawing.Point(4, 4);
-            this.panel11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel11.Margin = new System.Windows.Forms.Padding(4);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(633, 591);
             this.panel11.TabIndex = 3;
@@ -404,7 +402,7 @@
             this.dgvMemberInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMemberInfo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvMemberInfo.Location = new System.Drawing.Point(0, 0);
-            this.dgvMemberInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvMemberInfo.Margin = new System.Windows.Forms.Padding(4);
             this.dgvMemberInfo.Name = "dgvMemberInfo";
             this.dgvMemberInfo.ReadOnly = true;
             this.dgvMemberInfo.RowHeadersWidth = 51;
@@ -423,7 +421,7 @@
             this.panel1.Controls.Add(this.txbSearchWithMemberName);
             this.panel1.Controls.Add(this.txbSearchWithCardnumber);
             this.panel1.Location = new System.Drawing.Point(645, 4);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(628, 114);
             this.panel1.TabIndex = 0;
@@ -451,7 +449,7 @@
             // btnSearchUser
             // 
             this.btnSearchUser.Location = new System.Drawing.Point(500, 14);
-            this.btnSearchUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSearchUser.Margin = new System.Windows.Forms.Padding(4);
             this.btnSearchUser.Name = "btnSearchUser";
             this.btnSearchUser.Size = new System.Drawing.Size(121, 79);
             this.btnSearchUser.TabIndex = 2;
@@ -462,7 +460,7 @@
             // txbSearchWithMemberName
             // 
             this.txbSearchWithMemberName.Location = new System.Drawing.Point(204, 57);
-            this.txbSearchWithMemberName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbSearchWithMemberName.Margin = new System.Windows.Forms.Padding(4);
             this.txbSearchWithMemberName.Name = "txbSearchWithMemberName";
             this.txbSearchWithMemberName.Size = new System.Drawing.Size(285, 34);
             this.txbSearchWithMemberName.TabIndex = 1;
@@ -470,7 +468,7 @@
             // txbSearchWithCardnumber
             // 
             this.txbSearchWithCardnumber.Location = new System.Drawing.Point(204, 14);
-            this.txbSearchWithCardnumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbSearchWithCardnumber.Margin = new System.Windows.Forms.Padding(4);
             this.txbSearchWithCardnumber.Name = "txbSearchWithCardnumber";
             this.txbSearchWithCardnumber.Size = new System.Drawing.Size(285, 34);
             this.txbSearchWithCardnumber.TabIndex = 0;
@@ -482,7 +480,7 @@
             this.flowLayoutPanel4.Controls.Add(this.btnChange);
             this.flowLayoutPanel4.Controls.Add(this.btnDelete);
             this.flowLayoutPanel4.Location = new System.Drawing.Point(645, 482);
-            this.flowLayoutPanel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.flowLayoutPanel4.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel4.Name = "flowLayoutPanel4";
             this.flowLayoutPanel4.Size = new System.Drawing.Size(629, 118);
             this.flowLayoutPanel4.TabIndex = 2;
@@ -490,7 +488,7 @@
             // btnRegisterNewMember
             // 
             this.btnRegisterNewMember.Location = new System.Drawing.Point(4, 4);
-            this.btnRegisterNewMember.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRegisterNewMember.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegisterNewMember.Name = "btnRegisterNewMember";
             this.btnRegisterNewMember.Size = new System.Drawing.Size(201, 111);
             this.btnRegisterNewMember.TabIndex = 0;
@@ -501,7 +499,7 @@
             // btnChange
             // 
             this.btnChange.Location = new System.Drawing.Point(213, 4);
-            this.btnChange.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnChange.Margin = new System.Windows.Forms.Padding(4);
             this.btnChange.Name = "btnChange";
             this.btnChange.Size = new System.Drawing.Size(201, 111);
             this.btnChange.TabIndex = 1;
@@ -512,7 +510,7 @@
             // btnDelete
             // 
             this.btnDelete.Location = new System.Drawing.Point(422, 4);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(201, 111);
             this.btnDelete.TabIndex = 2;
@@ -527,18 +525,17 @@
             this.flowLayoutPanel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.flowLayoutPanel3.Controls.Add(this.panel3);
             this.flowLayoutPanel3.Location = new System.Drawing.Point(645, 126);
-            this.flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
             this.flowLayoutPanel3.Size = new System.Drawing.Size(628, 349);
             this.flowLayoutPanel3.TabIndex = 1;
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.btnShowMemberDetail);
             this.panel3.Controls.Add(this.lbTenbandocEX);
             this.panel3.Controls.Add(this.lbEmailEX);
             this.panel3.Controls.Add(this.lbCmndEX);
-            this.panel3.Controls.Add(this.dtpRegiserDay);
+            this.panel3.Controls.Add(this.dtpRegistrationerDate);
             this.panel3.Controls.Add(this.txbMemberOwedMoney);
             this.panel3.Controls.Add(this.lbRegistrationDate);
             this.panel3.Controls.Add(this.lbMemberOwedMoney);
@@ -556,25 +553,10 @@
             this.panel3.Controls.Add(this.lbMemberEmail);
             this.panel3.Controls.Add(this.lbMemberAddress);
             this.panel3.Location = new System.Drawing.Point(4, 4);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(593, 606);
             this.panel3.TabIndex = 3;
-            // 
-            // btnShowMemberDetail
-            // 
-            this.btnShowMemberDetail.BackColor = System.Drawing.Color.DarkGray;
-            this.btnShowMemberDetail.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnShowMemberDetail.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnShowMemberDetail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShowMemberDetail.Location = new System.Drawing.Point(335, 14);
-            this.btnShowMemberDetail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnShowMemberDetail.Name = "btnShowMemberDetail";
-            this.btnShowMemberDetail.Size = new System.Drawing.Size(115, 39);
-            this.btnShowMemberDetail.TabIndex = 26;
-            this.btnShowMemberDetail.Text = "show detail";
-            this.btnShowMemberDetail.UseVisualStyleBackColor = false;
-            this.btnShowMemberDetail.Click += new System.EventHandler(this.btnShowMemberDetail_Click);
             // 
             // lbTenbandocEX
             // 
@@ -612,21 +594,20 @@
             this.lbCmndEX.Size = new System.Drawing.Size(0, 18);
             this.lbCmndEX.TabIndex = 23;
             // 
-            // dtpRegiserDay
+            // dtpRegistrationerDate
             // 
-            this.dtpRegiserDay.CustomFormat = "dd/MM/yyyy";
-            this.dtpRegiserDay.Enabled = false;
-            this.dtpRegiserDay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpRegiserDay.Location = new System.Drawing.Point(157, 558);
-            this.dtpRegiserDay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.dtpRegiserDay.Name = "dtpRegiserDay";
-            this.dtpRegiserDay.Size = new System.Drawing.Size(265, 34);
-            this.dtpRegiserDay.TabIndex = 19;
+            this.dtpRegistrationerDate.CustomFormat = "dd/MM/yyyy";
+            this.dtpRegistrationerDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpRegistrationerDate.Location = new System.Drawing.Point(157, 558);
+            this.dtpRegistrationerDate.Margin = new System.Windows.Forms.Padding(4);
+            this.dtpRegistrationerDate.Name = "dtpRegistrationerDate";
+            this.dtpRegistrationerDate.Size = new System.Drawing.Size(265, 34);
+            this.dtpRegistrationerDate.TabIndex = 19;
             // 
             // txbMemberOwedMoney
             // 
             this.txbMemberOwedMoney.Location = new System.Drawing.Point(144, 489);
-            this.txbMemberOwedMoney.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbMemberOwedMoney.Margin = new System.Windows.Forms.Padding(4);
             this.txbMemberOwedMoney.Name = "txbMemberOwedMoney";
             this.txbMemberOwedMoney.Size = new System.Drawing.Size(432, 34);
             this.txbMemberOwedMoney.TabIndex = 20;
@@ -658,17 +639,18 @@
             // btnUserInfoDetail
             // 
             this.btnUserInfoDetail.Location = new System.Drawing.Point(9, 4);
-            this.btnUserInfoDetail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnUserInfoDetail.Margin = new System.Windows.Forms.Padding(4);
             this.btnUserInfoDetail.Name = "btnUserInfoDetail";
             this.btnUserInfoDetail.Size = new System.Drawing.Size(568, 62);
             this.btnUserInfoDetail.TabIndex = 0;
             this.btnUserInfoDetail.Text = "Detail";
             this.btnUserInfoDetail.UseVisualStyleBackColor = true;
+            this.btnUserInfoDetail.Click += new System.EventHandler(this.btnUserInfoDetail_Click);
             // 
             // txbMemberAddress
             // 
             this.txbMemberAddress.Location = new System.Drawing.Point(144, 356);
-            this.txbMemberAddress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbMemberAddress.Margin = new System.Windows.Forms.Padding(4);
             this.txbMemberAddress.Name = "txbMemberAddress";
             this.txbMemberAddress.Size = new System.Drawing.Size(432, 34);
             this.txbMemberAddress.TabIndex = 5;
@@ -678,7 +660,7 @@
             this.dtpDayOfBirth.CustomFormat = "dd/MM/yyyy";
             this.dtpDayOfBirth.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpDayOfBirth.Location = new System.Drawing.Point(144, 222);
-            this.dtpDayOfBirth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpDayOfBirth.Margin = new System.Windows.Forms.Padding(4);
             this.dtpDayOfBirth.Name = "dtpDayOfBirth";
             this.dtpDayOfBirth.Size = new System.Drawing.Size(265, 34);
             this.dtpDayOfBirth.TabIndex = 3;
@@ -686,7 +668,7 @@
             // txbMemberEmail
             // 
             this.txbMemberEmail.Location = new System.Drawing.Point(144, 281);
-            this.txbMemberEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbMemberEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txbMemberEmail.Name = "txbMemberEmail";
             this.txbMemberEmail.Size = new System.Drawing.Size(432, 34);
             this.txbMemberEmail.TabIndex = 4;
@@ -697,7 +679,7 @@
             this.cbMemberType.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbMemberType.FormattingEnabled = true;
             this.cbMemberType.Location = new System.Drawing.Point(144, 418);
-            this.cbMemberType.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbMemberType.Margin = new System.Windows.Forms.Padding(4);
             this.cbMemberType.Name = "cbMemberType";
             this.cbMemberType.Size = new System.Drawing.Size(265, 37);
             this.cbMemberType.TabIndex = 6;
@@ -706,7 +688,7 @@
             // 
             this.txbIdentityNumber.Enabled = false;
             this.txbIdentityNumber.Location = new System.Drawing.Point(144, 148);
-            this.txbIdentityNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbIdentityNumber.Margin = new System.Windows.Forms.Padding(4);
             this.txbIdentityNumber.Name = "txbIdentityNumber";
             this.txbIdentityNumber.Size = new System.Drawing.Size(432, 34);
             this.txbIdentityNumber.TabIndex = 2;
@@ -736,7 +718,7 @@
             // txbMemberName
             // 
             this.txbMemberName.Location = new System.Drawing.Point(144, 87);
-            this.txbMemberName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbMemberName.Margin = new System.Windows.Forms.Padding(4);
             this.txbMemberName.Name = "txbMemberName";
             this.txbMemberName.Size = new System.Drawing.Size(432, 34);
             this.txbMemberName.TabIndex = 1;
@@ -748,7 +730,7 @@
             this.lbIdentityNumber.Location = new System.Drawing.Point(4, 156);
             this.lbIdentityNumber.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbIdentityNumber.Name = "lbIdentityNumber";
-            this.lbIdentityNumber.Size = new System.Drawing.Size(127, 20);
+            this.lbIdentityNumber.Size = new System.Drawing.Size(128, 20);
             this.lbIdentityNumber.TabIndex = 3;
             this.lbIdentityNumber.Text = "Identity number:";
             // 
@@ -792,9 +774,9 @@
             this.tpBook.Controls.Add(this.flowLayoutPanel2);
             this.tpBook.Controls.Add(this.flowLayoutPanel5);
             this.tpBook.Location = new System.Drawing.Point(4, 54);
-            this.tpBook.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tpBook.Margin = new System.Windows.Forms.Padding(4);
             this.tpBook.Name = "tpBook";
-            this.tpBook.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tpBook.Padding = new System.Windows.Forms.Padding(4);
             this.tpBook.Size = new System.Drawing.Size(1285, 618);
             this.tpBook.TabIndex = 1;
             this.tpBook.Text = "    Book   ";
@@ -804,7 +786,7 @@
             // 
             this.panel12.Controls.Add(this.dgvBookInfo);
             this.panel12.Location = new System.Drawing.Point(4, 4);
-            this.panel12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel12.Margin = new System.Windows.Forms.Padding(4);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(636, 597);
             this.panel12.TabIndex = 8;
@@ -817,7 +799,7 @@
             this.dgvBookInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvBookInfo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvBookInfo.Location = new System.Drawing.Point(0, 0);
-            this.dgvBookInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvBookInfo.Margin = new System.Windows.Forms.Padding(4);
             this.dgvBookInfo.Name = "dgvBookInfo";
             this.dgvBookInfo.ReadOnly = true;
             this.dgvBookInfo.RowHeadersWidth = 51;
@@ -840,7 +822,7 @@
             this.panel2.Controls.Add(this.btnBookSearch);
             this.panel2.Controls.Add(this.txbSearchWithBookID);
             this.panel2.Location = new System.Drawing.Point(648, 4);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(628, 186);
             this.panel2.TabIndex = 0;
@@ -848,7 +830,7 @@
             // txbSearchWithBookName
             // 
             this.txbSearchWithBookName.Location = new System.Drawing.Point(128, 57);
-            this.txbSearchWithBookName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbSearchWithBookName.Margin = new System.Windows.Forms.Padding(4);
             this.txbSearchWithBookName.Name = "txbSearchWithBookName";
             this.txbSearchWithBookName.Size = new System.Drawing.Size(332, 34);
             this.txbSearchWithBookName.TabIndex = 1;
@@ -859,7 +841,7 @@
             this.cbSearchWithGenre.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbSearchWithGenre.FormattingEnabled = true;
             this.cbSearchWithGenre.Location = new System.Drawing.Point(128, 98);
-            this.cbSearchWithGenre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbSearchWithGenre.Margin = new System.Windows.Forms.Padding(4);
             this.cbSearchWithGenre.Name = "cbSearchWithGenre";
             this.cbSearchWithGenre.Size = new System.Drawing.Size(332, 37);
             this.cbSearchWithGenre.TabIndex = 2;
@@ -877,7 +859,7 @@
             // txbSearchWithAuthor
             // 
             this.txbSearchWithAuthor.Location = new System.Drawing.Point(128, 143);
-            this.txbSearchWithAuthor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbSearchWithAuthor.Margin = new System.Windows.Forms.Padding(4);
             this.txbSearchWithAuthor.Name = "txbSearchWithAuthor";
             this.txbSearchWithAuthor.Size = new System.Drawing.Size(332, 34);
             this.txbSearchWithAuthor.TabIndex = 3;
@@ -915,7 +897,7 @@
             // btnBookSearch
             // 
             this.btnBookSearch.Location = new System.Drawing.Point(469, 14);
-            this.btnBookSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBookSearch.Margin = new System.Windows.Forms.Padding(4);
             this.btnBookSearch.Name = "btnBookSearch";
             this.btnBookSearch.Size = new System.Drawing.Size(152, 161);
             this.btnBookSearch.TabIndex = 4;
@@ -926,7 +908,7 @@
             // txbSearchWithBookID
             // 
             this.txbSearchWithBookID.Location = new System.Drawing.Point(128, 14);
-            this.txbSearchWithBookID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbSearchWithBookID.Margin = new System.Windows.Forms.Padding(4);
             this.txbSearchWithBookID.Name = "txbSearchWithBookID";
             this.txbSearchWithBookID.Size = new System.Drawing.Size(332, 34);
             this.txbSearchWithBookID.TabIndex = 0;
@@ -938,7 +920,7 @@
             this.flowLayoutPanel2.Controls.Add(this.btnChangeBookInfo);
             this.flowLayoutPanel2.Controls.Add(this.btnDeleteBook);
             this.flowLayoutPanel2.Location = new System.Drawing.Point(648, 482);
-            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(629, 118);
             this.flowLayoutPanel2.TabIndex = 5;
@@ -946,7 +928,7 @@
             // btnAddNewBook
             // 
             this.btnAddNewBook.Location = new System.Drawing.Point(4, 4);
-            this.btnAddNewBook.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddNewBook.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddNewBook.Name = "btnAddNewBook";
             this.btnAddNewBook.Size = new System.Drawing.Size(201, 111);
             this.btnAddNewBook.TabIndex = 5;
@@ -957,7 +939,7 @@
             // btnChangeBookInfo
             // 
             this.btnChangeBookInfo.Location = new System.Drawing.Point(213, 4);
-            this.btnChangeBookInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnChangeBookInfo.Margin = new System.Windows.Forms.Padding(4);
             this.btnChangeBookInfo.Name = "btnChangeBookInfo";
             this.btnChangeBookInfo.Size = new System.Drawing.Size(201, 111);
             this.btnChangeBookInfo.TabIndex = 100;
@@ -969,7 +951,7 @@
             // 
             this.btnDeleteBook.Enabled = false;
             this.btnDeleteBook.Location = new System.Drawing.Point(422, 4);
-            this.btnDeleteBook.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDeleteBook.Margin = new System.Windows.Forms.Padding(4);
             this.btnDeleteBook.Name = "btnDeleteBook";
             this.btnDeleteBook.Size = new System.Drawing.Size(201, 111);
             this.btnDeleteBook.TabIndex = 17;
@@ -984,14 +966,13 @@
             this.flowLayoutPanel5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.flowLayoutPanel5.Controls.Add(this.panel4);
             this.flowLayoutPanel5.Location = new System.Drawing.Point(648, 198);
-            this.flowLayoutPanel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.flowLayoutPanel5.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel5.Name = "flowLayoutPanel5";
             this.flowLayoutPanel5.Size = new System.Drawing.Size(628, 276);
             this.flowLayoutPanel5.TabIndex = 6;
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.btnShowBookDetail);
             this.panel4.Controls.Add(this.lbNamxbEX);
             this.panel4.Controls.Add(this.lbMasSachEX);
             this.panel4.Controls.Add(this.lbGiaTriEX);
@@ -1013,25 +994,10 @@
             this.panel4.Controls.Add(this.lbAuthor);
             this.panel4.Controls.Add(this.lbPublisher);
             this.panel4.Location = new System.Drawing.Point(4, 4);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(593, 655);
             this.panel4.TabIndex = 6;
-            // 
-            // btnShowBookDetail
-            // 
-            this.btnShowBookDetail.BackColor = System.Drawing.Color.DarkGray;
-            this.btnShowBookDetail.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnShowBookDetail.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnShowBookDetail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShowBookDetail.Location = new System.Drawing.Point(340, 14);
-            this.btnShowBookDetail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnShowBookDetail.Name = "btnShowBookDetail";
-            this.btnShowBookDetail.Size = new System.Drawing.Size(115, 39);
-            this.btnShowBookDetail.TabIndex = 43;
-            this.btnShowBookDetail.Text = "show detail";
-            this.btnShowBookDetail.UseVisualStyleBackColor = false;
-            this.btnShowBookDetail.Click += new System.EventHandler(this.btnShowBookDetail_Click);
             // 
             // lbNamxbEX
             // 
@@ -1068,10 +1034,9 @@
             // 
             // cbBookState
             // 
-            this.cbBookState.Enabled = false;
             this.cbBookState.FormattingEnabled = true;
             this.cbBookState.Location = new System.Drawing.Point(144, 599);
-            this.cbBookState.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbBookState.Margin = new System.Windows.Forms.Padding(4);
             this.cbBookState.Name = "cbBookState";
             this.cbBookState.Size = new System.Drawing.Size(265, 37);
             this.cbBookState.TabIndex = 14;
@@ -1090,17 +1055,18 @@
             // btnBookInfoDetail
             // 
             this.btnBookInfoDetail.Location = new System.Drawing.Point(4, 4);
-            this.btnBookInfoDetail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBookInfoDetail.Margin = new System.Windows.Forms.Padding(4);
             this.btnBookInfoDetail.Name = "btnBookInfoDetail";
             this.btnBookInfoDetail.Size = new System.Drawing.Size(585, 62);
             this.btnBookInfoDetail.TabIndex = 5;
             this.btnBookInfoDetail.Text = "Detail";
             this.btnBookInfoDetail.UseVisualStyleBackColor = true;
+            this.btnBookInfoDetail.Click += new System.EventHandler(this.btnBookInfoDetail_Click);
             // 
             // txbBookPrice
             // 
             this.txbBookPrice.Location = new System.Drawing.Point(144, 524);
-            this.txbBookPrice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbBookPrice.Margin = new System.Windows.Forms.Padding(4);
             this.txbBookPrice.Name = "txbBookPrice";
             this.txbBookPrice.Size = new System.Drawing.Size(435, 34);
             this.txbBookPrice.TabIndex = 13;
@@ -1119,7 +1085,7 @@
             // txbPublishYear
             // 
             this.txbPublishYear.Location = new System.Drawing.Point(144, 448);
-            this.txbPublishYear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbPublishYear.Margin = new System.Windows.Forms.Padding(4);
             this.txbPublishYear.Name = "txbPublishYear";
             this.txbPublishYear.Size = new System.Drawing.Size(435, 34);
             this.txbPublishYear.TabIndex = 12;
@@ -1127,7 +1093,7 @@
             // txbPublisher
             // 
             this.txbPublisher.Location = new System.Drawing.Point(144, 359);
-            this.txbPublisher.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbPublisher.Margin = new System.Windows.Forms.Padding(4);
             this.txbPublisher.Name = "txbPublisher";
             this.txbPublisher.Size = new System.Drawing.Size(435, 34);
             this.txbPublisher.TabIndex = 10;
@@ -1135,7 +1101,7 @@
             // txbAuthor
             // 
             this.txbAuthor.Location = new System.Drawing.Point(144, 283);
-            this.txbAuthor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbAuthor.Margin = new System.Windows.Forms.Padding(4);
             this.txbAuthor.Name = "txbAuthor";
             this.txbAuthor.Size = new System.Drawing.Size(435, 34);
             this.txbAuthor.TabIndex = 9;
@@ -1146,7 +1112,7 @@
             this.cbGenre.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbGenre.FormattingEnabled = true;
             this.cbGenre.Location = new System.Drawing.Point(144, 206);
-            this.cbGenre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbGenre.Margin = new System.Windows.Forms.Padding(4);
             this.cbGenre.Name = "cbGenre";
             this.cbGenre.Size = new System.Drawing.Size(265, 37);
             this.cbGenre.TabIndex = 8;
@@ -1155,7 +1121,7 @@
             // 
             this.txbBookID.Enabled = false;
             this.txbBookID.Location = new System.Drawing.Point(144, 134);
-            this.txbBookID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbBookID.Margin = new System.Windows.Forms.Padding(4);
             this.txbBookID.Name = "txbBookID";
             this.txbBookID.Size = new System.Drawing.Size(435, 34);
             this.txbBookID.TabIndex = 7;
@@ -1185,7 +1151,7 @@
             // txbBookName
             // 
             this.txbBookName.Location = new System.Drawing.Point(144, 76);
-            this.txbBookName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbBookName.Margin = new System.Windows.Forms.Padding(4);
             this.txbBookName.Name = "txbBookName";
             this.txbBookName.Size = new System.Drawing.Size(435, 34);
             this.txbBookName.TabIndex = 6;
@@ -1243,10 +1209,10 @@
             this.tpStatistics.Controls.Add(this.pnlTypeOfStatistic);
             this.tpStatistics.Controls.Add(this.dgvStatistics);
             this.tpStatistics.Location = new System.Drawing.Point(4, 54);
-            this.tpStatistics.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tpStatistics.Margin = new System.Windows.Forms.Padding(4);
             this.tpStatistics.Name = "tpStatistics";
-            this.tpStatistics.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tpStatistics.Size = new System.Drawing.Size(1257, 618);
+            this.tpStatistics.Padding = new System.Windows.Forms.Padding(4);
+            this.tpStatistics.Size = new System.Drawing.Size(1285, 618);
             this.tpStatistics.TabIndex = 5;
             this.tpStatistics.Text = "  Statistics  ";
             this.tpStatistics.UseVisualStyleBackColor = true;
@@ -1254,7 +1220,7 @@
             // btnPrintList
             // 
             this.btnPrintList.Location = new System.Drawing.Point(1021, 258);
-            this.btnPrintList.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPrintList.Margin = new System.Windows.Forms.Padding(4);
             this.btnPrintList.Name = "btnPrintList";
             this.btnPrintList.Size = new System.Drawing.Size(251, 70);
             this.btnPrintList.TabIndex = 5;
@@ -1264,7 +1230,7 @@
             // btnShowList
             // 
             this.btnShowList.Location = new System.Drawing.Point(721, 258);
-            this.btnShowList.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnShowList.Margin = new System.Windows.Forms.Padding(4);
             this.btnShowList.Name = "btnShowList";
             this.btnShowList.Size = new System.Drawing.Size(251, 70);
             this.btnShowList.TabIndex = 4;
@@ -1286,7 +1252,7 @@
             this.dtmThongKe.CustomFormat = "MM/yyyy";
             this.dtmThongKe.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtmThongKe.Location = new System.Drawing.Point(960, 181);
-            this.dtmThongKe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtmThongKe.Margin = new System.Windows.Forms.Padding(4);
             this.dtmThongKe.Name = "dtmThongKe";
             this.dtmThongKe.Size = new System.Drawing.Size(311, 34);
             this.dtmThongKe.TabIndex = 2;
@@ -1298,7 +1264,7 @@
             this.pnlTypeOfStatistic.Controls.Add(this.rdoSachTraTre);
             this.pnlTypeOfStatistic.Controls.Add(this.label1);
             this.pnlTypeOfStatistic.Location = new System.Drawing.Point(692, 7);
-            this.pnlTypeOfStatistic.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlTypeOfStatistic.Margin = new System.Windows.Forms.Padding(4);
             this.pnlTypeOfStatistic.Name = "pnlTypeOfStatistic";
             this.pnlTypeOfStatistic.Size = new System.Drawing.Size(579, 150);
             this.pnlTypeOfStatistic.TabIndex = 1;
@@ -1307,7 +1273,7 @@
             // 
             this.rdoTheLoai.AutoSize = true;
             this.rdoTheLoai.Location = new System.Drawing.Point(83, 91);
-            this.rdoTheLoai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdoTheLoai.Margin = new System.Windows.Forms.Padding(4);
             this.rdoTheLoai.Name = "rdoTheLoai";
             this.rdoTheLoai.Size = new System.Drawing.Size(292, 33);
             this.rdoTheLoai.TabIndex = 2;
@@ -1319,7 +1285,7 @@
             this.rdoSachTraTre.AutoSize = true;
             this.rdoSachTraTre.Checked = true;
             this.rdoSachTraTre.Location = new System.Drawing.Point(83, 49);
-            this.rdoSachTraTre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdoSachTraTre.Margin = new System.Windows.Forms.Padding(4);
             this.rdoSachTraTre.Name = "rdoSachTraTre";
             this.rdoSachTraTre.Size = new System.Drawing.Size(222, 33);
             this.rdoSachTraTre.TabIndex = 1;
@@ -1342,7 +1308,7 @@
             this.dgvStatistics.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvStatistics.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvStatistics.Location = new System.Drawing.Point(8, 7);
-            this.dgvStatistics.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvStatistics.Margin = new System.Windows.Forms.Padding(4);
             this.dgvStatistics.Name = "dgvStatistics";
             this.dgvStatistics.ReadOnly = true;
             this.dgvStatistics.RowHeadersWidth = 51;
@@ -1354,10 +1320,10 @@
             this.tpRegulation.Controls.Add(this.btnUpdateRegulation);
             this.tpRegulation.Controls.Add(this.panel5);
             this.tpRegulation.Location = new System.Drawing.Point(4, 54);
-            this.tpRegulation.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tpRegulation.Margin = new System.Windows.Forms.Padding(4);
             this.tpRegulation.Name = "tpRegulation";
-            this.tpRegulation.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tpRegulation.Size = new System.Drawing.Size(1257, 618);
+            this.tpRegulation.Padding = new System.Windows.Forms.Padding(4);
+            this.tpRegulation.Size = new System.Drawing.Size(1285, 618);
             this.tpRegulation.TabIndex = 6;
             this.tpRegulation.Text = "  Regulation  ";
             this.tpRegulation.UseVisualStyleBackColor = true;
@@ -1366,7 +1332,7 @@
             // 
             this.btnUpdateRegulation.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdateRegulation.Location = new System.Drawing.Point(949, 319);
-            this.btnUpdateRegulation.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnUpdateRegulation.Margin = new System.Windows.Forms.Padding(4);
             this.btnUpdateRegulation.Name = "btnUpdateRegulation";
             this.btnUpdateRegulation.Size = new System.Drawing.Size(323, 90);
             this.btnUpdateRegulation.TabIndex = 1;
@@ -1378,7 +1344,7 @@
             this.panel5.Controls.Add(this.panel7);
             this.panel5.Controls.Add(this.panel6);
             this.panel5.Location = new System.Drawing.Point(12, 9);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1260, 303);
             this.panel5.TabIndex = 0;
@@ -1392,7 +1358,7 @@
             this.panel7.Controls.Add(this.label8);
             this.panel7.Controls.Add(this.label7);
             this.panel7.Location = new System.Drawing.Point(647, 5);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(609, 294);
             this.panel7.TabIndex = 1;
@@ -1401,7 +1367,7 @@
             // 
             this.txbQuyDinhTienPhat.Enabled = false;
             this.txbQuyDinhTienPhat.Location = new System.Drawing.Point(284, 134);
-            this.txbQuyDinhTienPhat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbQuyDinhTienPhat.Margin = new System.Windows.Forms.Padding(4);
             this.txbQuyDinhTienPhat.Name = "txbQuyDinhTienPhat";
             this.txbQuyDinhTienPhat.Size = new System.Drawing.Size(307, 34);
             this.txbQuyDinhTienPhat.TabIndex = 8;
@@ -1420,7 +1386,7 @@
             // 
             this.txbQuyDinhKhoangCachNamXB.Enabled = false;
             this.txbQuyDinhKhoangCachNamXB.Location = new System.Drawing.Point(284, 80);
-            this.txbQuyDinhKhoangCachNamXB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbQuyDinhKhoangCachNamXB.Margin = new System.Windows.Forms.Padding(4);
             this.txbQuyDinhKhoangCachNamXB.Name = "txbQuyDinhKhoangCachNamXB";
             this.txbQuyDinhKhoangCachNamXB.Size = new System.Drawing.Size(307, 34);
             this.txbQuyDinhKhoangCachNamXB.TabIndex = 6;
@@ -1459,7 +1425,7 @@
             this.panel6.Controls.Add(this.label3);
             this.panel6.Controls.Add(this.label2);
             this.panel6.Location = new System.Drawing.Point(5, 5);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(631, 294);
             this.panel6.TabIndex = 0;
@@ -1468,7 +1434,7 @@
             // 
             this.txbQuyDinhTuoiToiThieu.Enabled = false;
             this.txbQuyDinhTuoiToiThieu.Location = new System.Drawing.Point(277, 80);
-            this.txbQuyDinhTuoiToiThieu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbQuyDinhTuoiToiThieu.Margin = new System.Windows.Forms.Padding(4);
             this.txbQuyDinhTuoiToiThieu.Name = "txbQuyDinhTuoiToiThieu";
             this.txbQuyDinhTuoiToiThieu.Size = new System.Drawing.Size(335, 34);
             this.txbQuyDinhTuoiToiThieu.TabIndex = 8;
@@ -1477,7 +1443,7 @@
             // 
             this.txbQuyDinhTuoiToiDa.Enabled = false;
             this.txbQuyDinhTuoiToiDa.Location = new System.Drawing.Point(277, 134);
-            this.txbQuyDinhTuoiToiDa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbQuyDinhTuoiToiDa.Margin = new System.Windows.Forms.Padding(4);
             this.txbQuyDinhTuoiToiDa.Name = "txbQuyDinhTuoiToiDa";
             this.txbQuyDinhTuoiToiDa.Size = new System.Drawing.Size(335, 34);
             this.txbQuyDinhTuoiToiDa.TabIndex = 7;
@@ -1486,7 +1452,7 @@
             // 
             this.txbQuyDinhSoNgayDuocMuon.Enabled = false;
             this.txbQuyDinhSoNgayDuocMuon.Location = new System.Drawing.Point(277, 187);
-            this.txbQuyDinhSoNgayDuocMuon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbQuyDinhSoNgayDuocMuon.Margin = new System.Windows.Forms.Padding(4);
             this.txbQuyDinhSoNgayDuocMuon.Name = "txbQuyDinhSoNgayDuocMuon";
             this.txbQuyDinhSoNgayDuocMuon.Size = new System.Drawing.Size(333, 34);
             this.txbQuyDinhSoNgayDuocMuon.TabIndex = 6;
@@ -1495,7 +1461,7 @@
             // 
             this.txbQuyDinhSoSachDuocMuon.Enabled = false;
             this.txbQuyDinhSoSachDuocMuon.Location = new System.Drawing.Point(279, 245);
-            this.txbQuyDinhSoSachDuocMuon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbQuyDinhSoSachDuocMuon.Margin = new System.Windows.Forms.Padding(4);
             this.txbQuyDinhSoSachDuocMuon.Name = "txbQuyDinhSoSachDuocMuon";
             this.txbQuyDinhSoSachDuocMuon.Size = new System.Drawing.Size(333, 34);
             this.txbQuyDinhSoSachDuocMuon.TabIndex = 5;
@@ -1555,7 +1521,7 @@
             // 
             this.btnHuy.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnHuy.Location = new System.Drawing.Point(1333, 1231);
-            this.btnHuy.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnHuy.Margin = new System.Windows.Forms.Padding(4);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(100, 28);
             this.btnHuy.TabIndex = 4;
@@ -1572,7 +1538,7 @@
             this.Controls.Add(this.toolStripContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "frmMainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -1655,7 +1621,7 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.DateTimePicker dtpRegiserDay;
+        private System.Windows.Forms.DateTimePicker dtpRegistrationerDate;
         private System.Windows.Forms.TextBox txbMemberOwedMoney;
         private System.Windows.Forms.Label lbRegistrationDate;
         private System.Windows.Forms.Label lbMemberOwedMoney;
@@ -1748,8 +1714,6 @@
         private System.Windows.Forms.ToolStripStatusLabel sttErrorLabel;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripMenuItem connectToTheDbServerToolStripMenuItem;
-        private System.Windows.Forms.Button btnShowMemberDetail;
-        private System.Windows.Forms.Button btnShowBookDetail;
         private System.Windows.Forms.ToolStripMenuItem borrowedBooksToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem borrowedBooksDetailToolStripMenuItem;
     }

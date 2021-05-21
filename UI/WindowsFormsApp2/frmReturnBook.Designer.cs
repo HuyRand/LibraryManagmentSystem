@@ -35,7 +35,6 @@
             this.txbReturnMemberName = new System.Windows.Forms.TextBox();
             this.lbReturnMemberCardNumber = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pnReturnedBookList = new System.Windows.Forms.Panel();
             this.lbReturnBook = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lbPenalty = new System.Windows.Forms.Label();
@@ -50,11 +49,13 @@
             this.lbTotalOwedMoney = new System.Windows.Forms.Label();
             this.btnHuy = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.dgvReturnBook = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReturnBook)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -128,22 +129,12 @@
             // panel3
             // 
             this.panel3.AutoScroll = true;
-            this.panel3.Controls.Add(this.pnReturnedBookList);
+            this.panel3.Controls.Add(this.dgvReturnBook);
             this.panel3.Location = new System.Drawing.Point(5, 172);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1117, 277);
+            this.panel3.Size = new System.Drawing.Size(1104, 277);
             this.panel3.TabIndex = 18;
-            // 
-            // pnReturnedBookList
-            // 
-            this.pnReturnedBookList.AutoSize = true;
-            this.pnReturnedBookList.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pnReturnedBookList.Location = new System.Drawing.Point(4, 4);
-            this.pnReturnedBookList.Margin = new System.Windows.Forms.Padding(4);
-            this.pnReturnedBookList.Name = "pnReturnedBookList";
-            this.pnReturnedBookList.Size = new System.Drawing.Size(1089, 268);
-            this.pnReturnedBookList.TabIndex = 19;
             // 
             // lbReturnBook
             // 
@@ -315,6 +306,16 @@
             this.panel2.Size = new System.Drawing.Size(1137, 457);
             this.panel2.TabIndex = 20;
             // 
+            // dgvReturnBook
+            // 
+            this.dgvReturnBook.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvReturnBook.Location = new System.Drawing.Point(4, -3);
+            this.dgvReturnBook.Name = "dgvReturnBook";
+            this.dgvReturnBook.RowHeadersWidth = 51;
+            this.dgvReturnBook.RowTemplate.Height = 24;
+            this.dgvReturnBook.Size = new System.Drawing.Size(1091, 278);
+            this.dgvReturnBook.TabIndex = 1;
+            // 
             // frmReturnTicket
             // 
             this.AcceptButton = this.btnHuy;
@@ -331,12 +332,12 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReturnBook)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -350,7 +351,6 @@
         private System.Windows.Forms.TextBox txbReturnMemberName;
         private System.Windows.Forms.Label lbReturnMemberCardNumber;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel pnReturnedBookList;
         private System.Windows.Forms.Label lbReturnBook;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label lbPenalty;
@@ -365,5 +365,6 @@
         private System.Windows.Forms.Label lbTotalOwedMoney;
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.DataGridView dgvReturnBook;
     }
 }

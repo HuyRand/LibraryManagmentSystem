@@ -312,17 +312,8 @@ namespace WindowsFormsApp2
             }
         }
 
-        public void btnShowBookDetail_Click(object sender, EventArgs e)
-        {
-            frmBookInfo f = new frmBookInfo(txbBookName.Text, txbBookID.Text, cbGenre.Text, txbAuthor.Text, cbBookState.Text, txbPublisher.Text, txbPublishYear.Text, txbBookPrice.Text);
-            f.ShowDialog();
-        }
-
-        private void btnShowMemberDetail_Click(object sender, EventArgs e)
-        {
-            frmMemberInfo f = new frmMemberInfo(txbMemberName.Text, txbIdentityNumber.Text, dtpDayOfBirth.Text, txbMemberEmail.Text, cbMemberType.Text, txbMemberAddress.Text, dtpRegiserDay.Text, txbMemberOwedMoney.Text);
-            f.ShowDialog();
-        }
+      
+       
 
         private void borrowedBooksDetailToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -438,6 +429,18 @@ namespace WindowsFormsApp2
                     dgvBookInfo.DataSource = dt;
                 }
             }
+        }
+
+        private void btnUserInfoDetail_Click(object sender, EventArgs e)
+        {
+            frmMemberInfo f = new frmMemberInfo(txbMemberName.Text, txbIdentityNumber.Text, dtpDayOfBirth.Text, txbMemberEmail.Text, cbMemberType.Text, txbMemberAddress.Text, dtpRegistrationerDate.Text, txbMemberOwedMoney.Text);
+            f.ShowDialog();
+        }
+
+        private void btnBookInfoDetail_Click(object sender, EventArgs e)
+        {
+            frmBookInfo f = new frmBookInfo(txbBookName.Text, txbBookID.Text, cbGenre.Text, txbAuthor.Text, cbBookState.Text, txbPublisher.Text, txbPublishYear.Text, txbBookPrice.Text);
+            f.ShowDialog();
         }
     }
 }

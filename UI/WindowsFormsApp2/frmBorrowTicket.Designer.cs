@@ -49,12 +49,13 @@
             this.chkChonSach = new System.Windows.Forms.CheckBox();
             this.lbBorrowedBook = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pnBorrowBookList = new System.Windows.Forms.Panel();
+            this.dgvBorrowBook = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBorrowBook)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -298,22 +299,22 @@
             // panel3
             // 
             this.panel3.AutoScroll = true;
-            this.panel3.Controls.Add(this.pnBorrowBookList);
+            this.panel3.Controls.Add(this.dgvBorrowBook);
             this.panel3.Location = new System.Drawing.Point(5, 172);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1117, 277);
             this.panel3.TabIndex = 18;
             // 
-            // pnBorrowBookList
+            // dgvBorrowBook
             // 
-            this.pnBorrowBookList.AutoSize = true;
-            this.pnBorrowBookList.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pnBorrowBookList.Location = new System.Drawing.Point(4, 4);
-            this.pnBorrowBookList.Margin = new System.Windows.Forms.Padding(4);
-            this.pnBorrowBookList.Name = "pnBorrowBookList";
-            this.pnBorrowBookList.Size = new System.Drawing.Size(1089, 268);
-            this.pnBorrowBookList.TabIndex = 19;
+            this.dgvBorrowBook.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvBorrowBook.Location = new System.Drawing.Point(2, -4);
+            this.dgvBorrowBook.Name = "dgvBorrowBook";
+            this.dgvBorrowBook.RowHeadersWidth = 51;
+            this.dgvBorrowBook.RowTemplate.Height = 24;
+            this.dgvBorrowBook.Size = new System.Drawing.Size(1091, 278);
+            this.dgvBorrowBook.TabIndex = 0;
             // 
             // frmBorrowTicket
             // 
@@ -338,7 +339,7 @@
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBorrowBook)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -361,10 +362,10 @@
         private System.Windows.Forms.CheckBox chkChonSach;
         private System.Windows.Forms.Label lbBorrowedBook;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel pnBorrowBookList;
         private System.Windows.Forms.ComboBox cbTimSachTheoMa;
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.Label lbError;
         private System.Windows.Forms.Label cbSearchBookWithID;
+        private System.Windows.Forms.DataGridView dgvBorrowBook;
     }
 }

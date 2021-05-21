@@ -308,3 +308,6 @@ F:\University Data\UIT K14.1\HK_IV\Nhập môn CNPM\RightNowProject\LibraryManag
 F:\University Data\UIT K14.1\HK_IV\Nhập môn CNPM\RightNowProject\LibraryManagmentSystem\UI\WindowsFormsApp2\bin\Debug\System.Numerics.Vectors.xml
 F:\University Data\UIT K14.1\HK_IV\Nhập môn CNPM\RightNowProject\LibraryManagmentSystem\UI\WindowsFormsApp2\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 F:\University Data\UIT K14.1\HK_IV\Nhập môn CNPM\RightNowProject\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\LibraryManagementUI.csproj.CopyComplete
+C:\Users\Admin\Documents\GitHub\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmBookInfo.resources
+C:\Users\Admin\Documents\GitHub\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmMemberInfo.resources
+C:\Users\Admin\Documents\GitHub\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmBorrowedBooks.resources
