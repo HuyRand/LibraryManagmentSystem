@@ -286,10 +286,10 @@ namespace WindowsFormsApp2
 
             string sql = $"UPDATE MEMBER\n" +
                 $"SET\n" +
-                $"NAME = {txbMemberName.Text},\n" +
-                $"DOB = {dtpDayOfBirth.Value.ToString("yyyy-MM-dd")},\n" +
-                $"EMAIL = {txbMemberEmail.Text},\n" +
-                $"ADDRESS = {txbMemberAddress.Text},\n" +
+                $"NAME = '{txbMemberName.Text}',\n" +
+                $"DOB = '{dtpDayOfBirth.Value.ToString("yyyy-MM-dd")}',\n" +
+                $"EMAIL = '{txbMemberEmail.Text}',\n" +
+                $"ADDRESS = '{txbMemberAddress.Text}'\n" +
                 $"WHERE MEMID = {txbIdentityNumber.Text};";
 
             MySqlCommand cmd = new MySqlCommand(sql, Program.connection);
@@ -303,13 +303,14 @@ namespace WindowsFormsApp2
         {
             string sql = $"UPDATE BOOK\n" +
                $"SET\n" +
-               $"NAME = {txbBookName.Text},\n" +
-               $"PUBLISHER = {txbPublisher.Text},\n" +
-               $"CATEGORY = {cbGenre.GetItemText(cbGenre.SelectedItem)},\n" +
+               $"NAME = '{txbBookName.Text}',\n" +
+               $"PUBLISHER = '{txbPublisher.Text}',\n" +
+               $"CATEGORY = '{cbGenre.Text}',\n" +
                $"PRICE = {txbBookPrice.Text},\n" +
-               $"YEAR = {txbPublishYear.Text},\n" +
+               $"YEAR = {txbPublishYear.Text}\n" +
                $"WHERE BOOKID = {txbBookID.Text};";
 
+            MessageBox.Show(sql);
             MySqlCommand cmd = new MySqlCommand(sql, Program.connection);
             MySqlDataReader rdr = cmd.ExecuteReader();
             MessageBox.Show("updated");
