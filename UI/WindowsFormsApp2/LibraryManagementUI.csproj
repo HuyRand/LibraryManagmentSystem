@@ -213,6 +213,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -233,6 +234,44 @@
       <Project>{87630ac0-1272-4a0d-8013-e11b8d20977a}</Project>
       <Name>LibraryManagementClasses</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic16.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic17.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picBack.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\pic10.jpg" />
+    <Content Include="Resources\pic13.jpg" />
+    <Content Include="Resources\pic14.jpg" />
+    <Content Include="Resources\pic15.jpg" />
+    <Content Include="Resources\pic3.jpg" />
+    <Content Include="Resources\pic4.jpg" />
+    <Content Include="Resources\pic5.jpg" />
+    <Content Include="Resources\pic8.jpg" />
+    <Content Include="Resources\pic9.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -26,10 +26,6 @@ namespace WindowsFormsApp2
             txbPrice.Text = priceBook;
         }
 
-        public frmBookInfo()
-        {
-            InitializeComponent();
-        }
         public frmBookInfo(string name, string id, string genre, string author, string state, string publisher, string publishyear, string price)
         {
             InitializeComponent();
@@ -46,6 +42,11 @@ namespace WindowsFormsApp2
         private void btnCancle_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        public frmBookInfo()
+        {
+            InitializeComponent();
         }
     }
 }

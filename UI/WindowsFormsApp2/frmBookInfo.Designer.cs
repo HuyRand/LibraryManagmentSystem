@@ -49,7 +49,11 @@
             this.lbPublisher = new System.Windows.Forms.Label();
             this.lbBookInfomation = new System.Windows.Forms.Label();
             this.btnHuy = new System.Windows.Forms.Button();
+            this.picimageBook = new System.Windows.Forms.PictureBox();
+            this.customInstaller1 = new MySql.Data.MySqlClient.CustomInstaller();
             this.panel1.SuspendLayout();
+            this.pnlBookPicture.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picimageBook)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -93,6 +97,7 @@
             // pnlBookPicture
             // 
             this.pnlBookPicture.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.pnlBookPicture.Controls.Add(this.picimageBook);
             this.pnlBookPicture.Location = new System.Drawing.Point(598, 66);
             this.pnlBookPicture.Name = "pnlBookPicture";
             this.pnlBookPicture.Size = new System.Drawing.Size(512, 640);
@@ -275,6 +280,19 @@
             this.btnHuy.Text = "button2";
             this.btnHuy.UseVisualStyleBackColor = true;
             // 
+            // picimageBook
+            // 
+            this.picimageBook.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.picimageBook.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.picBack;
+            this.picimageBook.ErrorImage = global::WindowsFormsApp2.Properties.Resources.picBack;
+            this.picimageBook.Image = global::WindowsFormsApp2.Properties.Resources.pic11;
+            this.picimageBook.Location = new System.Drawing.Point(3, 3);
+            this.picimageBook.Name = "picimageBook";
+            this.picimageBook.Size = new System.Drawing.Size(509, 637);
+            this.picimageBook.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picimageBook.TabIndex = 0;
+            this.picimageBook.TabStop = false;
+            // 
             // frmBookInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -293,6 +311,8 @@
             this.Load += new System.EventHandler(this.frmBookInfo_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.pnlBookPicture.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picimageBook)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -320,5 +340,7 @@
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.Panel pnlBookPicture;
         private System.Windows.Forms.Button btnCancle;
+        private System.Windows.Forms.PictureBox picimageBook;
+        private MySql.Data.MySqlClient.CustomInstaller customInstaller1;
     }
 }
