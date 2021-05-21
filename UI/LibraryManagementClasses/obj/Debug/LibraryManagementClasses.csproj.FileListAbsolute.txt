@@ -16,3 +16,9 @@ C:\Users\new user\Desktop\Library Man my-Branch\LibraryManagmentSystem\UI\Librar
 C:\Users\new user\Desktop\Library Man my-Branch\LibraryManagmentSystem\UI\LibraryManagementClasses\obj\Debug\LibraryManagementClasses.csproj.CoreCompileInputs.cache
 C:\Users\new user\Desktop\Library Man my-Branch\LibraryManagmentSystem\UI\LibraryManagementClasses\obj\Debug\LibraryManagementClasses.dll
 C:\Users\new user\Desktop\Library Man my-Branch\LibraryManagmentSystem\UI\LibraryManagementClasses\obj\Debug\LibraryManagementClasses.pdb
+C:\Users\new user\Desktop\OOAD intro\LibraryManagmentSystem\UI\LibraryManagementClasses\bin\Debug\LibraryManagementClasses.dll
+C:\Users\new user\Desktop\OOAD intro\LibraryManagmentSystem\UI\LibraryManagementClasses\bin\Debug\LibraryManagementClasses.pdb
+C:\Users\new user\Desktop\OOAD intro\LibraryManagmentSystem\UI\LibraryManagementClasses\obj\Debug\LibraryManagementClasses.csprojAssemblyReference.cache
+C:\Users\new user\Desktop\OOAD intro\LibraryManagmentSystem\UI\LibraryManagementClasses\obj\Debug\LibraryManagementClasses.csproj.CoreCompileInputs.cache
+C:\Users\new user\Desktop\OOAD intro\LibraryManagmentSystem\UI\LibraryManagementClasses\obj\Debug\LibraryManagementClasses.dll
+C:\Users\new user\Desktop\OOAD intro\LibraryManagmentSystem\UI\LibraryManagementClasses\obj\Debug\LibraryManagementClasses.pdb

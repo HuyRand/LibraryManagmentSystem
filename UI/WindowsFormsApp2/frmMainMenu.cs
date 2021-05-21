@@ -324,7 +324,7 @@ namespace WindowsFormsApp2
         private void btnDelete_Click(object sender, EventArgs e)
         {
             
-            string sql = $"DELETE FROM MEMBER WHERE 'MEMID' = {txbIdentityNumber.Text};";
+            string sql = $"DELETE FROM MEMBER WHERE MEMID = {txbIdentityNumber.Text};";
             MySqlCommand cmd = new MySqlCommand(sql, Program.connection);
             MySqlDataReader rdr = cmd.ExecuteReader();
             MessageBox.Show("deleted");
@@ -334,7 +334,7 @@ namespace WindowsFormsApp2
 
         private void btnDeleteBook_Click(object sender, EventArgs e)
         {
-            string sql = $"DELETE FROM BOOK WHERE 'BOOKID' = {txbBookID.Text};";
+            string sql = $"DELETE FROM BOOK WHERE BOOKID = {txbBookID.Text};";
             MySqlCommand cmd = new MySqlCommand(sql, Program.connection);
             MySqlDataReader rdr = cmd.ExecuteReader();
             MessageBox.Show("deleted");
