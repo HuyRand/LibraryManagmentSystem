@@ -12,9 +12,22 @@ namespace WindowsFormsApp2
 {
     public partial class frmMemberInfo : Form
     {
+        private string nameMember, idMember, dateMember, mailMember, typeMember, addressMember, registerdayMember, ownMember;
         public frmMemberInfo()
         {
             InitializeComponent();
+        }
+        public frmMemberInfo(string name, string id, string date, string mail, string type, string address, string registerday, string own)
+        {
+            InitializeComponent();
+            this.nameMember = name;
+            this.idMember = id;
+            this.dateMember = date;
+            this.mailMember = mail;
+            this.typeMember = type;
+            this.addressMember = address;
+            this.registerdayMember = registerday;
+            this.ownMember = own;
         }
 
         private void btnCancle_Click(object sender, EventArgs e)
@@ -34,6 +47,18 @@ namespace WindowsFormsApp2
             this.Close();
             frmBorrowTicket f = new frmBorrowTicket();
             f.ShowDialog();
+        }
+
+        private void frmMemberInfo_Load(object sender, EventArgs e)
+        {
+            txbMemberName.Text = nameMember;
+            txbIdentityNumber.Text = idMember;
+            dtpDateOfBirth.Text = dateMember;
+            txbMemberEmail.Text = mailMember;
+            cbMemberType.Text = typeMember;
+            txbMemberAddress.Text = addressMember;
+            dtpRegistrationDate.Text = registerdayMember;
+            txbTotalOwedMoney.Text = ownMember;
         }
     }
 }
