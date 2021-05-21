@@ -1145,17 +1145,8 @@
             this.cbGenre.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cbGenre.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbGenre.FormattingEnabled = true;
-<<<<<<< HEAD
-            this.cbGenre.Items.AddRange(new object[] {
-            "butt",
-            "ass",
-            "booty ",
-            "tits"});
-            this.cbGenre.Location = new System.Drawing.Point(108, 167);
-=======
             this.cbGenre.Location = new System.Drawing.Point(144, 206);
             this.cbGenre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
->>>>>>> 4e901f9fb14afb8cb9d6c61168a8c5367cef4e50
             this.cbGenre.Name = "cbGenre";
             this.cbGenre.Size = new System.Drawing.Size(265, 37);
             this.cbGenre.TabIndex = 8;
