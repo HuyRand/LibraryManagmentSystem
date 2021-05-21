@@ -241,61 +241,6 @@ namespace WindowsFormsApp2
                 dgvMemberInfo.DataSource = dt;
             }
         }
-
-        private void btnSearchUser_Click(object sender, EventArgs e)
-        {
-            do
-            {
-                foreach (DataGridViewRow row in dgvMemberInfo.Rows)
-                {
-                    try
-                    {
-                        dgvMemberInfo.Rows.Remove(row);
-                    }
-                    catch (Exception) { }
-                }
-            } while (dgvMemberInfo.Rows.Count > 0);
-
-            string strCardNumber = txbSearchWithCardnumber.Text;
-            string strName = txbSearchWithMemberName.Text;           
-
-            if (strName == "" && strCardNumber == "")
-            {
-                DataTable dt = new DataTable();
-                Program.connectionString = "SERVER=" + Program.server + ";" + "DATABASE=" +
-                    Program.database + ";" + "UID=" + Program.uid + ";" + "PASSWORD=" + Program.password + ";";
-                Program.connection = new MySql.Data.MySqlClient.MySqlConnection(Program.connectionString);
-                string query = "select * from MEMBER";
-
-                using (MySqlConnection con = new MySqlConnection(Program.connectionString))
-                {
-                    con.Open();
-                    MySqlCommand cmd = new MySqlCommand(query, con);
-                    MySqlDataReader reader = cmd.ExecuteReader();
-                    dt.Load(reader);
-                    dgvMemberInfo.DataSource = dt;
-                }
-            }
-            else
-            {
-                string query = "SELECT * FROM `MEMBER` WHERE NAME  like '%" + strName + "%' AND MEMID like '" + strCardNumber +"%'";
-                DataTable dt = new DataTable();
-                Program.connectionString = "SERVER=" + Program.server + ";" + "DATABASE=" +
-                    Program.database + ";" + "UID=" + Program.uid + ";" + "PASSWORD=" + Program.password + ";";
-                Program.connection = new MySql.Data.MySqlClient.MySqlConnection(Program.connectionString);
-                ;
-
-                using (MySqlConnection con = new MySqlConnection(Program.connectionString))
-                {
-                    con.Open();
-                    MySqlCommand cmd = new MySqlCommand(query, con);
-                    MySqlDataReader reader = cmd.ExecuteReader();
-                    dt.Load(reader);
-                    dgvMemberInfo.DataSource = dt;
-                }
-            }
-        }
-
         
 
         private void btnShowBookDetail_Click(object sender, EventArgs e)

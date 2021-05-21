@@ -450,7 +450,7 @@
             this.btnSearchUser.TabIndex = 2;
             this.btnSearchUser.Text = "Search";
             this.btnSearchUser.UseVisualStyleBackColor = true;
-            this.btnSearchUser.Click += new System.EventHandler(this.btnSearchUser_Click);
+           
             // 
             // txbSearchWithMemberName
             // 
