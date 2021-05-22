@@ -49,11 +49,25 @@
             this.lbPublisher = new System.Windows.Forms.Label();
             this.lbBookInfomation = new System.Windows.Forms.Label();
             this.btnHuy = new System.Windows.Forms.Button();
-            this.picimageBook = new System.Windows.Forms.PictureBox();
             this.customInstaller1 = new MySql.Data.MySqlClient.CustomInstaller();
+            this.pcb8 = new System.Windows.Forms.PictureBox();
+            this.pcb7 = new System.Windows.Forms.PictureBox();
+            this.pcb6 = new System.Windows.Forms.PictureBox();
+            this.pcb5 = new System.Windows.Forms.PictureBox();
+            this.pcb4 = new System.Windows.Forms.PictureBox();
+            this.pcb3 = new System.Windows.Forms.PictureBox();
+            this.pcb2 = new System.Windows.Forms.PictureBox();
+            this.pcb1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.pnlBookPicture.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picimageBook)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -97,7 +111,14 @@
             // pnlBookPicture
             // 
             this.pnlBookPicture.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pnlBookPicture.Controls.Add(this.picimageBook);
+            this.pnlBookPicture.Controls.Add(this.pcb8);
+            this.pnlBookPicture.Controls.Add(this.pcb7);
+            this.pnlBookPicture.Controls.Add(this.pcb6);
+            this.pnlBookPicture.Controls.Add(this.pcb5);
+            this.pnlBookPicture.Controls.Add(this.pcb4);
+            this.pnlBookPicture.Controls.Add(this.pcb3);
+            this.pnlBookPicture.Controls.Add(this.pcb2);
+            this.pnlBookPicture.Controls.Add(this.pcb1);
             this.pnlBookPicture.Location = new System.Drawing.Point(598, 66);
             this.pnlBookPicture.Name = "pnlBookPicture";
             this.pnlBookPicture.Size = new System.Drawing.Size(512, 640);
@@ -280,18 +301,92 @@
             this.btnHuy.Text = "button2";
             this.btnHuy.UseVisualStyleBackColor = true;
             // 
-            // picimageBook
+            // pcb8
             // 
-            this.picimageBook.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.picimageBook.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.picBack;
-            this.picimageBook.ErrorImage = global::WindowsFormsApp2.Properties.Resources.picBack;
-            this.picimageBook.Image = global::WindowsFormsApp2.Properties.Resources.pic11;
-            this.picimageBook.Location = new System.Drawing.Point(3, 3);
-            this.picimageBook.Name = "picimageBook";
-            this.picimageBook.Size = new System.Drawing.Size(509, 637);
-            this.picimageBook.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.picimageBook.TabIndex = 0;
-            this.picimageBook.TabStop = false;
+            this.pcb8.Image = global::WindowsFormsApp2.Properties.Resources.pic4;
+            this.pcb8.Location = new System.Drawing.Point(0, 3);
+            this.pcb8.Name = "pcb8";
+            this.pcb8.Size = new System.Drawing.Size(509, 634);
+            this.pcb8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcb8.TabIndex = 7;
+            this.pcb8.TabStop = false;
+            // 
+            // pcb7
+            // 
+            this.pcb7.Image = global::WindowsFormsApp2.Properties.Resources.pic1;
+            this.pcb7.Location = new System.Drawing.Point(0, 3);
+            this.pcb7.Name = "pcb7";
+            this.pcb7.Size = new System.Drawing.Size(509, 634);
+            this.pcb7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcb7.TabIndex = 6;
+            this.pcb7.TabStop = false;
+            // 
+            // pcb6
+            // 
+            this.pcb6.Image = global::WindowsFormsApp2.Properties.Resources.pic6;
+            this.pcb6.Location = new System.Drawing.Point(0, 3);
+            this.pcb6.Name = "pcb6";
+            this.pcb6.Size = new System.Drawing.Size(512, 634);
+            this.pcb6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcb6.TabIndex = 5;
+            this.pcb6.TabStop = false;
+            // 
+            // pcb5
+            // 
+            this.pcb5.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.picBack;
+            this.pcb5.Image = global::WindowsFormsApp2.Properties.Resources.pic7;
+            this.pcb5.Location = new System.Drawing.Point(0, 3);
+            this.pcb5.Name = "pcb5";
+            this.pcb5.Size = new System.Drawing.Size(509, 634);
+            this.pcb5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcb5.TabIndex = 4;
+            this.pcb5.TabStop = false;
+            // 
+            // pcb4
+            // 
+            this.pcb4.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.picBack;
+            this.pcb4.Image = global::WindowsFormsApp2.Properties.Resources.pic17;
+            this.pcb4.Location = new System.Drawing.Point(0, 3);
+            this.pcb4.Name = "pcb4";
+            this.pcb4.Size = new System.Drawing.Size(509, 634);
+            this.pcb4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcb4.TabIndex = 3;
+            this.pcb4.TabStop = false;
+            // 
+            // pcb3
+            // 
+            this.pcb3.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.picBack;
+            this.pcb3.Image = global::WindowsFormsApp2.Properties.Resources.pic12;
+            this.pcb3.Location = new System.Drawing.Point(0, 3);
+            this.pcb3.Name = "pcb3";
+            this.pcb3.Size = new System.Drawing.Size(509, 634);
+            this.pcb3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcb3.TabIndex = 2;
+            this.pcb3.TabStop = false;
+            // 
+            // pcb2
+            // 
+            this.pcb2.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.picBack;
+            this.pcb2.Image = global::WindowsFormsApp2.Properties.Resources.pic2;
+            this.pcb2.Location = new System.Drawing.Point(0, 3);
+            this.pcb2.Name = "pcb2";
+            this.pcb2.Size = new System.Drawing.Size(509, 637);
+            this.pcb2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcb2.TabIndex = 1;
+            this.pcb2.TabStop = false;
+            // 
+            // pcb1
+            // 
+            this.pcb1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.pcb1.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.picBack;
+            this.pcb1.ErrorImage = global::WindowsFormsApp2.Properties.Resources.picBack;
+            this.pcb1.Image = global::WindowsFormsApp2.Properties.Resources.pic11;
+            this.pcb1.Location = new System.Drawing.Point(3, 0);
+            this.pcb1.Name = "pcb1";
+            this.pcb1.Size = new System.Drawing.Size(509, 637);
+            this.pcb1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcb1.TabIndex = 0;
+            this.pcb1.TabStop = false;
             // 
             // frmBookInfo
             // 
@@ -312,7 +407,14 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.pnlBookPicture.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picimageBook)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -340,7 +442,14 @@
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.Panel pnlBookPicture;
         private System.Windows.Forms.Button btnCancle;
-        private System.Windows.Forms.PictureBox picimageBook;
+        private System.Windows.Forms.PictureBox pcb1;
         private MySql.Data.MySqlClient.CustomInstaller customInstaller1;
+        private System.Windows.Forms.PictureBox pcb3;
+        private System.Windows.Forms.PictureBox pcb2;
+        private System.Windows.Forms.PictureBox pcb5;
+        private System.Windows.Forms.PictureBox pcb4;
+        private System.Windows.Forms.PictureBox pcb6;
+        private System.Windows.Forms.PictureBox pcb7;
+        private System.Windows.Forms.PictureBox pcb8;
     }
 }
