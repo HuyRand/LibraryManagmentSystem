@@ -40,20 +40,28 @@ namespace WindowsFormsApp2
 
         private void btnCreateBorrowTicket_Click(object sender, EventArgs e)
         {
-            using (MySqlConnection con = new MySqlConnection(Program.connectionString))
+            if (txbBorrowMemberCardNumber.Text != "")
             {
-                con.Open();
-                MySqlCommand cmd = con.CreateCommand();
-                cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "update BOOK set AVAILABLE = 0 where BOOKID = '"+ txbId.Text + "'";
-                cmd.ExecuteNonQuery();
-                DataTable dt = new DataTable();
-                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
-                da.Fill(dt);
-                dgvBorrowBook.DataSource = dt;
+                using (MySqlConnection con = new MySqlConnection(Program.connectionString))
+                {
+                    con.Open();
+                    MySqlCommand cmd = con.CreateCommand();
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = "update BOOK set AVAILABLE = 0 where BOOKID = '" + txbIdbook.Text + "'";
+                    cmd.ExecuteNonQuery();
+                    DataTable dt = new DataTable();
+                    MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                    da.Fill(dt);
+                    dgvBorrowBook.DataSource = dt;
 
-                con.Close();
+                    con.Close();
+                }
+
+                frmBorrowedBooks f = new frmBorrowedBooks(txbBorrowMemberCardNumber.Text, txbIdbook.Text);
+                f.ShowDialog();
             }
+            else
+                MessageBox.Show("Fill card number !");
         }
 
         private void txbSearch_TextChanged(object sender, EventArgs e)
@@ -69,7 +77,7 @@ namespace WindowsFormsApp2
             if (dgvBorrowBook.CurrentRow != null)
             {
                 i = dgvBorrowBook.CurrentRow.Index;
-                txbId.Text = dgvBorrowBook.Rows[i].Cells[0].Value.ToString();
+                txbIdbook.Text = dgvBorrowBook.Rows[i].Cells[0].Value.ToString();
             }
         }
 

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnRefresh = new System.Windows.Forms.Button();
             this.btnHuy = new System.Windows.Forms.Button();
             this.lbMemberInfo = new System.Windows.Forms.Label();
             this.txbBorrowMemberCardNumber = new System.Windows.Forms.TextBox();
@@ -36,16 +37,15 @@
             this.lbBorrowMemberCardNumber = new System.Windows.Forms.Label();
             this.txblbBorrowMemberName = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txbIdbook = new System.Windows.Forms.TextBox();
+            this.txbSearch = new System.Windows.Forms.TextBox();
             this.lbError = new System.Windows.Forms.Label();
             this.cbSearchBookWithID = new System.Windows.Forms.Label();
             this.btnCreateBorrowTicket = new System.Windows.Forms.Button();
             this.lbBorrowedBook = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dgvBorrowBook = new System.Windows.Forms.DataGridView();
-            this.txbSearch = new System.Windows.Forms.TextBox();
-            this.txbId = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnRefresh = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -67,6 +67,19 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1137, 120);
             this.panel1.TabIndex = 0;
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.btnRefresh.FlatAppearance.BorderSize = 3;
+            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRefresh.Location = new System.Drawing.Point(-2, 0);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(103, 52);
+            this.btnRefresh.TabIndex = 10;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // btnHuy
             // 
@@ -138,7 +151,7 @@
             this.panel2.AutoScroll = true;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.txbId);
+            this.panel2.Controls.Add(this.txbIdbook);
             this.panel2.Controls.Add(this.txbSearch);
             this.panel2.Controls.Add(this.lbError);
             this.panel2.Controls.Add(this.cbSearchBookWithID);
@@ -150,6 +163,32 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1137, 457);
             this.panel2.TabIndex = 19;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(540, 62);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(83, 25);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "Book id:";
+            // 
+            // txbIdbook
+            // 
+            this.txbIdbook.Location = new System.Drawing.Point(630, 66);
+            this.txbIdbook.Name = "txbIdbook";
+            this.txbIdbook.Size = new System.Drawing.Size(259, 22);
+            this.txbIdbook.TabIndex = 25;
+            // 
+            // txbSearch
+            // 
+            this.txbSearch.Location = new System.Drawing.Point(199, 65);
+            this.txbSearch.Name = "txbSearch";
+            this.txbSearch.Size = new System.Drawing.Size(314, 22);
+            this.txbSearch.TabIndex = 24;
+            this.txbSearch.TextChanged += new System.EventHandler(this.txbSearch_TextChanged);
             // 
             // lbError
             // 
@@ -217,45 +256,6 @@
             this.dgvBorrowBook.TabIndex = 0;
             this.dgvBorrowBook.SelectionChanged += new System.EventHandler(this.dgvBorrowBook_SelectionChanged);
             // 
-            // txbSearch
-            // 
-            this.txbSearch.Location = new System.Drawing.Point(199, 65);
-            this.txbSearch.Name = "txbSearch";
-            this.txbSearch.Size = new System.Drawing.Size(314, 22);
-            this.txbSearch.TabIndex = 24;
-            this.txbSearch.TextChanged += new System.EventHandler(this.txbSearch_TextChanged);
-            // 
-            // txbId
-            // 
-            this.txbId.Location = new System.Drawing.Point(630, 66);
-            this.txbId.Name = "txbId";
-            this.txbId.Size = new System.Drawing.Size(259, 22);
-            this.txbId.TabIndex = 25;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(540, 62);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 25);
-            this.label1.TabIndex = 26;
-            this.label1.Text = "Book id:";
-            // 
-            // btnRefresh
-            // 
-            this.btnRefresh.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.btnRefresh.FlatAppearance.BorderSize = 3;
-            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRefresh.Location = new System.Drawing.Point(-2, 0);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(103, 52);
-            this.btnRefresh.TabIndex = 10;
-            this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.UseVisualStyleBackColor = true;
-            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
-            // 
             // frmBorrowTicket
             // 
             this.AcceptButton = this.btnCreateBorrowTicket;
@@ -299,7 +299,7 @@
         private System.Windows.Forms.DataGridView dgvBorrowBook;
         private System.Windows.Forms.TextBox txbSearch;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txbId;
+        private System.Windows.Forms.TextBox txbIdbook;
         private System.Windows.Forms.Button btnRefresh;
     }
 }
