@@ -13,6 +13,7 @@ namespace WindowsFormsApp2
 {
     public partial class frmReturnTicket : Form
     {
+        private string Member_Id, Member_Name;
         public frmReturnTicket()
         {
             InitializeComponent();
@@ -21,8 +22,18 @@ namespace WindowsFormsApp2
             Program.connection = new MySql.Data.MySqlClient.MySqlConnection(Program.connectionString);
         }
 
+        public frmReturnTicket(string M_id, string M_name)
+        {
+            InitializeComponent();
+            this.Member_Id = M_id;
+            this.Member_Name = M_name;
+        }
+
         private void frmReturnTicket_Load(object sender, EventArgs e)
         {
+            txbReturnMemberCardNumber.Text = Member_Id;
+            txbReturnMemberName.Text = Member_Name;
+
             DataTable dt = new DataTable();
             //Program.connectionString = "SERVER=" + Program.server + ";" + "DATABASE=" +
             //Program.database + ";" + "UID=" + Program.uid + ";" + "PASSWORD=" + Program.password + ";";
@@ -37,6 +48,8 @@ namespace WindowsFormsApp2
                 dt.Load(reader);
                 dgvReturnBook.DataSource = dt;
             }
+
+
         }
 
         private void btnReturn_Click(object sender, EventArgs e)
@@ -55,6 +68,8 @@ namespace WindowsFormsApp2
 
                 con.Close();
             }
+
+            refr();
         }
 
         private void dgvReturnBook_SelectionChanged(object sender, EventArgs e)

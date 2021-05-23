@@ -13,6 +13,7 @@ namespace WindowsFormsApp2
 {
     public partial class frmBorrowTicket : Form
     {
+        private string MemberName, MemberId;
         public frmBorrowTicket()
         {
             InitializeComponent();
@@ -20,9 +21,19 @@ namespace WindowsFormsApp2
                 Program.database + ";" + "UID=" + Program.uid + ";" + "PASSWORD=" + Program.password + ";";
             Program.connection = new MySql.Data.MySqlClient.MySqlConnection(Program.connectionString);
         }
+
+        public frmBorrowTicket(string MemId, string MemName)
+        {
+            InitializeComponent();
+            this.MemberId = MemId;
+            this.MemberName = MemName;     
+        }
+
         DataTable dt = new DataTable();
         private void frmBorrowTicket_Load(object sender, EventArgs e)
-        { 
+        {
+            txbBorrowMemberCardNumber.Text = MemberId;
+            txblbBorrowMemberName.Text = MemberName;
             //Program.connectionString = "SERVER=" + Program.server + ";" + "DATABASE=" +
             //Program.database + ";" + "UID=" + Program.uid + ";" + "PASSWORD=" + Program.password + ";";
             //Program.connection = new MySql.Data.MySqlClient.MySqlConnection(Program.connectionString);
@@ -59,6 +70,8 @@ namespace WindowsFormsApp2
 
                 frmBorrowedBooks f = new frmBorrowedBooks(txbBorrowMemberCardNumber.Text, txbIdbook.Text);
                 f.ShowDialog();
+
+                refr();
             }
             else
                 MessageBox.Show("Fill card number !");

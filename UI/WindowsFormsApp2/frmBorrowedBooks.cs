@@ -34,6 +34,7 @@ namespace WindowsFormsApp2
             this.Close();
         }
 
+        DataTable dt = new DataTable();
         private void refresh_Click(object sender, EventArgs e)
         {
             if (txbMemid.Text != "")
@@ -48,8 +49,8 @@ namespace WindowsFormsApp2
                     con.Close();
                 }
 
-                DataTable dt = new DataTable();
-                string query = "select * from BORROW";
+                
+                string query = "select * from BORROW where MEMID = '"+ txbMemid.Text +"'";
 
                 using (MySqlConnection con = new MySqlConnection(Program.connectionString))
                 {
@@ -70,18 +71,35 @@ namespace WindowsFormsApp2
         {
             txbMemid.Text = idMember;
             txbBookid.Text = idBook;
-
-            DataTable dt = new DataTable();
-            string query = "select * from BORROW";
-
-            using (MySqlConnection con = new MySqlConnection(Program.connectionString))
+            if (txbMemid.Text != "")
             {
-                con.Open();
-                MySqlCommand cmd = new MySqlCommand(query, con);
-                //cmd.CommandText = "delete from BORROW where MEMID = 0";
-                MySqlDataReader reader = cmd.ExecuteReader();
-                dt.Load(reader);
-                dgvBorrowedBooks.DataSource = dt;
+                DataTable dt = new DataTable();
+                string query = "select * from BORROW where MEMID = '" + txbMemid.Text + "'";
+
+                using (MySqlConnection con = new MySqlConnection(Program.connectionString))
+                {
+                    con.Open();
+                    MySqlCommand cmd = new MySqlCommand(query, con);
+                    //cmd.CommandText = "delete from BORROW where MEMID = 13";
+                    MySqlDataReader reader = cmd.ExecuteReader();
+                    dt.Load(reader);
+                    dgvBorrowedBooks.DataSource = dt;
+                }
+            }
+            else
+            {
+                DataTable dt = new DataTable();
+                string query = "select * from BORROW";
+
+                using (MySqlConnection con = new MySqlConnection(Program.connectionString))
+                {
+                    con.Open();
+                    MySqlCommand cmd = new MySqlCommand(query, con);
+                    //cmd.CommandText = "delete from BORROW where MEMID = 102";
+                    MySqlDataReader reader = cmd.ExecuteReader();
+                    dt.Load(reader);
+                    dgvBorrowedBooks.DataSource = dt;
+                }
             }
         }
     }

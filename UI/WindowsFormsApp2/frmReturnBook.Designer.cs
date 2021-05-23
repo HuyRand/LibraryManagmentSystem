@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnRefresh = new System.Windows.Forms.Button();
             this.lbReturnMemberInfo = new System.Windows.Forms.Label();
             this.txbReturnMemberCardNumber = new System.Windows.Forms.TextBox();
             this.lbReturnMemberName = new System.Windows.Forms.Label();
@@ -43,10 +44,9 @@
             this.lbTotalOwedMoney = new System.Windows.Forms.Label();
             this.btnHuy = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnReturn = new System.Windows.Forms.Button();
-            this.txbId = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnRefresh = new System.Windows.Forms.Button();
+            this.txbId = new System.Windows.Forms.TextBox();
+            this.btnReturn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvReturnBook)).BeginInit();
@@ -68,6 +68,19 @@
             this.panel1.Size = new System.Drawing.Size(1136, 120);
             this.panel1.TabIndex = 1;
             // 
+            // btnRefresh
+            // 
+            this.btnRefresh.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.btnRefresh.FlatAppearance.BorderSize = 3;
+            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRefresh.Location = new System.Drawing.Point(-2, 0);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(112, 52);
+            this.btnRefresh.TabIndex = 11;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
             // lbReturnMemberInfo
             // 
             this.lbReturnMemberInfo.AutoSize = true;
@@ -82,6 +95,8 @@
             // 
             // txbReturnMemberCardNumber
             // 
+            this.txbReturnMemberCardNumber.Enabled = false;
+            this.txbReturnMemberCardNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbReturnMemberCardNumber.Location = new System.Drawing.Point(161, 70);
             this.txbReturnMemberCardNumber.Margin = new System.Windows.Forms.Padding(4);
             this.txbReturnMemberCardNumber.Name = "txbReturnMemberCardNumber";
@@ -103,6 +118,8 @@
             // 
             // txbReturnMemberName
             // 
+            this.txbReturnMemberName.Enabled = false;
+            this.txbReturnMemberName.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbReturnMemberName.Location = new System.Drawing.Point(781, 69);
             this.txbReturnMemberName.Margin = new System.Windows.Forms.Padding(4);
             this.txbReturnMemberName.Name = "txbReturnMemberName";
@@ -229,6 +246,25 @@
             this.panel2.Size = new System.Drawing.Size(1137, 457);
             this.panel2.TabIndex = 20;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label1.Location = new System.Drawing.Point(9, 124);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(83, 25);
+            this.label1.TabIndex = 27;
+            this.label1.Text = "Book id:";
+            // 
+            // txbId
+            // 
+            this.txbId.Location = new System.Drawing.Point(138, 128);
+            this.txbId.Name = "txbId";
+            this.txbId.Size = new System.Drawing.Size(265, 22);
+            this.txbId.TabIndex = 26;
+            // 
             // btnReturn
             // 
             this.btnReturn.FlatAppearance.BorderColor = System.Drawing.Color.DarkOliveGreen;
@@ -242,38 +278,6 @@
             this.btnReturn.Text = "Return Book";
             this.btnReturn.UseVisualStyleBackColor = true;
             this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
-            // 
-            // txbId
-            // 
-            this.txbId.Location = new System.Drawing.Point(138, 128);
-            this.txbId.Name = "txbId";
-            this.txbId.Size = new System.Drawing.Size(265, 22);
-            this.txbId.TabIndex = 26;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(9, 124);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 25);
-            this.label1.TabIndex = 27;
-            this.label1.Text = "Book id:";
-            // 
-            // btnRefresh
-            // 
-            this.btnRefresh.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.btnRefresh.FlatAppearance.BorderSize = 3;
-            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRefresh.Location = new System.Drawing.Point(-2, 0);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(93, 52);
-            this.btnRefresh.TabIndex = 11;
-            this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.UseVisualStyleBackColor = true;
-            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // frmReturnTicket
             // 

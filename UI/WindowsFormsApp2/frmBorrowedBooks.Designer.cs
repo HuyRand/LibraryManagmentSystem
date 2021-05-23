@@ -60,11 +60,11 @@
             // dgvBorrowedBooks
             // 
             this.dgvBorrowedBooks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvBorrowedBooks.Location = new System.Drawing.Point(12, 258);
+            this.dgvBorrowedBooks.Location = new System.Drawing.Point(446, 139);
             this.dgvBorrowedBooks.Name = "dgvBorrowedBooks";
             this.dgvBorrowedBooks.RowHeadersWidth = 51;
             this.dgvBorrowedBooks.RowTemplate.Height = 24;
-            this.dgvBorrowedBooks.Size = new System.Drawing.Size(1187, 336);
+            this.dgvBorrowedBooks.Size = new System.Drawing.Size(740, 434);
             this.dgvBorrowedBooks.TabIndex = 1;
             // 
             // btnCancle
@@ -81,24 +81,26 @@
             // txbMemid
             // 
             this.txbMemid.Enabled = false;
-            this.txbMemid.Location = new System.Drawing.Point(117, 136);
+            this.txbMemid.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbMemid.Location = new System.Drawing.Point(179, 139);
             this.txbMemid.Name = "txbMemid";
-            this.txbMemid.Size = new System.Drawing.Size(145, 22);
+            this.txbMemid.Size = new System.Drawing.Size(181, 22);
             this.txbMemid.TabIndex = 3;
             // 
             // txbBookid
             // 
             this.txbBookid.Enabled = false;
-            this.txbBookid.Location = new System.Drawing.Point(117, 181);
+            this.txbBookid.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbBookid.Location = new System.Drawing.Point(179, 184);
             this.txbBookid.Name = "txbBookid";
-            this.txbBookid.Size = new System.Drawing.Size(145, 22);
+            this.txbBookid.Size = new System.Drawing.Size(181, 22);
             this.txbBookid.TabIndex = 4;
             // 
             // refresh
             // 
-            this.refresh.Location = new System.Drawing.Point(12, 2);
+            this.refresh.Location = new System.Drawing.Point(244, 393);
             this.refresh.Name = "refresh";
-            this.refresh.Size = new System.Drawing.Size(75, 49);
+            this.refresh.Size = new System.Drawing.Size(116, 49);
             this.refresh.TabIndex = 5;
             this.refresh.Text = "Update";
             this.refresh.UseVisualStyleBackColor = true;
@@ -107,7 +109,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 139);
+            this.label1.Location = new System.Drawing.Point(74, 142);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(78, 17);
             this.label1.TabIndex = 6;
@@ -116,7 +118,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(31, 181);
+            this.label2.Location = new System.Drawing.Point(93, 184);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(59, 17);
             this.label2.TabIndex = 7;
@@ -125,7 +127,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(573, 136);
+            this.label3.Location = new System.Drawing.Point(50, 234);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(97, 17);
             this.label3.TabIndex = 11;
@@ -134,7 +136,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(590, 181);
+            this.label4.Location = new System.Drawing.Point(77, 284);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(70, 17);
             this.label4.TabIndex = 12;
@@ -143,7 +145,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(573, 234);
+            this.label5.Location = new System.Drawing.Point(60, 332);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(87, 17);
             this.label5.TabIndex = 13;
@@ -153,7 +155,7 @@
             // 
             this.dtpReserve.CustomFormat = "yyyy/MM/dd";
             this.dtpReserve.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpReserve.Location = new System.Drawing.Point(712, 136);
+            this.dtpReserve.Location = new System.Drawing.Point(179, 234);
             this.dtpReserve.Margin = new System.Windows.Forms.Padding(4);
             this.dtpReserve.Name = "dtpReserve";
             this.dtpReserve.Size = new System.Drawing.Size(181, 22);
@@ -163,7 +165,7 @@
             // 
             this.dtpDue.CustomFormat = "yyyy/MM/dd";
             this.dtpDue.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpDue.Location = new System.Drawing.Point(712, 181);
+            this.dtpDue.Location = new System.Drawing.Point(179, 279);
             this.dtpDue.Margin = new System.Windows.Forms.Padding(4);
             this.dtpDue.Name = "dtpDue";
             this.dtpDue.Size = new System.Drawing.Size(181, 22);
@@ -173,7 +175,7 @@
             // 
             this.dtpReturn.CustomFormat = "yyyy/MM/dd";
             this.dtpReturn.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpReturn.Location = new System.Drawing.Point(712, 229);
+            this.dtpReturn.Location = new System.Drawing.Point(179, 327);
             this.dtpReturn.Margin = new System.Windows.Forms.Padding(4);
             this.dtpReturn.Name = "dtpReturn";
             this.dtpReturn.Size = new System.Drawing.Size(181, 22);

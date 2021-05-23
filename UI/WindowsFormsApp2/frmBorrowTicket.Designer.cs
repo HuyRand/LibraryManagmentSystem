@@ -106,6 +106,8 @@
             // 
             // txbBorrowMemberCardNumber
             // 
+            this.txbBorrowMemberCardNumber.Enabled = false;
+            this.txbBorrowMemberCardNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbBorrowMemberCardNumber.Location = new System.Drawing.Point(162, 74);
             this.txbBorrowMemberCardNumber.Margin = new System.Windows.Forms.Padding(4);
             this.txbBorrowMemberCardNumber.Name = "txbBorrowMemberCardNumber";
@@ -139,6 +141,8 @@
             // 
             // txblbBorrowMemberName
             // 
+            this.txblbBorrowMemberName.Enabled = false;
+            this.txblbBorrowMemberName.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txblbBorrowMemberName.Location = new System.Drawing.Point(761, 70);
             this.txblbBorrowMemberName.Margin = new System.Windows.Forms.Padding(4);
             this.txblbBorrowMemberName.Name = "txblbBorrowMemberName";

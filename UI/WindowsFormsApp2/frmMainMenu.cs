@@ -50,14 +50,20 @@ namespace WindowsFormsApp2
 
         private void createBorrowTicketToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmBorrowTicket f = new frmBorrowTicket();
-            f.ShowDialog();
+            if (txbIdentityNumber.Text != "")
+            {
+                frmBorrowTicket f = new frmBorrowTicket(txbIdentityNumber.Text, txbMemberName.Text);
+                f.ShowDialog();
+            }
         }
 
         private void createReturnTicketToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmReturnTicket f = new frmReturnTicket();
-            f.ShowDialog();
+            if (txbIdentityNumber.Text != "")
+            {
+                frmReturnTicket f = new frmReturnTicket(txbIdentityNumber.Text, txbMemberName.Text);
+                f.ShowDialog();
+            }
         }
 
         private void receivePenaltyToolStripMenuItem_Click(object sender, EventArgs e)
