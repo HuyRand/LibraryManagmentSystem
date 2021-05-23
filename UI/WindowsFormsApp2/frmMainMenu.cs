@@ -442,5 +442,21 @@ namespace WindowsFormsApp2
             frmBookInfo f = new frmBookInfo(txbBookName.Text, txbBookID.Text, cbGenre.Text, txbAuthor.Text, cbBookState.Text, txbPublisher.Text, txbPublishYear.Text, txbBookPrice.Text);
             f.ShowDialog();
         }
+        public void refr()
+        {
+            using (MySqlConnection con = new MySqlConnection(Program.connectionString))
+            {
+                string sql = "select * from BOOK";
+                MySqlDataAdapter SDA = new MySqlDataAdapter(sql, con);
+                DataSet DS = new System.Data.DataSet();
+                SDA.Fill(DS, "BOOK");
+                dgvBookInfo.DataSource = DS.Tables[0];
+            }
+        }
+
+        private void refreshToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            refr();
+        }
     }
 }
