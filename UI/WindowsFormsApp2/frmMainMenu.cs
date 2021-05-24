@@ -464,5 +464,33 @@ namespace WindowsFormsApp2
         {
             refr();
         }
+
+        private void loadStatistic(string temp1)
+        {
+            
+            DataTable dt = new DataTable();
+            string statDate = dtmThongKe.Value.ToString("MM");
+            Console.WriteLine(statDate);
+            string a = temp1;
+            string s = $"SELECT " + a + $" FROM BORROW_LOG WHERE MONTH(RESERVE_DATE) = {statDate}  group by " + a + " ORDER BY COUNT(" + a + ")  DESC LIMIT 5 ;";
+            string query = s;
+            using (MySqlConnection con = new MySqlConnection(Program.connectionString))
+            {
+                con.Open();
+                MySqlCommand cmd = new MySqlCommand(query, con);
+                MySqlDataReader reader = cmd.ExecuteReader();
+                dt.Load(reader);
+                dgvStatistics.DataSource = dt;
+            }
+        }
+
+        private void btnShowList_Click(object sender, EventArgs e)
+        {
+            string temp;
+            if (rdoTacGiaYeuThich.Checked)
+                temp = "AUTHOR";
+            else temp = "CATEGORY";
+            loadStatistic(temp);
+        }
     }
 }

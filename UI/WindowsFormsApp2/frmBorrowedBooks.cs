@@ -46,8 +46,28 @@ namespace WindowsFormsApp2
                     cmd.CommandType = CommandType.Text;
                     cmd.CommandText = "insert into BORROW values('" + txbMemid.Text + "', '" + txbBookid.Text + "', '" + dtpReserve.Text + "', '" + dtpDue.Text + "', '" + dtpReturn.Text + "')";
                     cmd.ExecuteNonQuery();
+
+                    string s, Author, Category;
+                    s = "SELECT AUTHOR, CATEGORY " + "\n" +
+                        "FROM BOOK" + "\n" +
+                        "WHERE BOOKID = '" + txbBookid.Text + "';";
+                    cmd.CommandText = s;
+                    MySqlDataReader rdr = cmd.ExecuteReader();
+
+
+                    while (rdr.Read())
+                    {
+                        Author = rdr.GetString(0);
+                        Category = rdr.GetString(1);
+                        rdr.Close();
+                        cmd.CommandText = "insert into BORROW_LOG values(NOT NULL ,'" + txbMemid.Text + "', '" + txbBookid.Text + "', '" + dtpReserve.Text + "', '" + dtpDue.Text + "', '" + dtpReturn.Text + "', '" + Author + "', '" + Category + "')";
+                        cmd.ExecuteNonQuery();
+                        break;
+                    }
+
                     con.Close();
                 }
+
 
                 
                 string query = "select * from BORROW where MEMID = '"+ txbMemid.Text +"'";
