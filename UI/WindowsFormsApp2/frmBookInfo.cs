@@ -26,7 +26,7 @@ namespace WindowsFormsApp2
             txbPublishYear.Text = publishyearBook;
             txbPrice.Text = priceBook;
 
-            if(txbBookID.Text == "1")
+            if(txbBookID.Text == "121")
             {
                 pcb1.Visible = true;
                 pcb2.Visible = false;
@@ -38,7 +38,7 @@ namespace WindowsFormsApp2
                 pcb8.Visible = false;
             }
 
-            if (txbBookID.Text == "25")
+            if (txbBookID.Text == "122")
             {
                 pcb2.Visible = true;
                 pcb1.Visible = false;
@@ -50,7 +50,7 @@ namespace WindowsFormsApp2
                 pcb8.Visible = false;
             }
 
-            if (txbBookID.Text == "26")
+            if (txbBookID.Text == "123")
             {
                 pcb3.Visible = true;
                 pcb2.Visible = false;
@@ -62,7 +62,7 @@ namespace WindowsFormsApp2
                 pcb8.Visible = false;
             }
 
-            if (txbBookID.Text == "115")
+            if (txbBookID.Text == "124")
             {
                 pcb4.Visible = true;
                 pcb2.Visible = false;
@@ -74,7 +74,7 @@ namespace WindowsFormsApp2
                 pcb8.Visible = false;
             }
 
-            if (txbBookID.Text == "116")
+            if (txbBookID.Text == "125")
             {
                 pcb5.Visible = true;
                 pcb2.Visible = false;
@@ -98,7 +98,7 @@ namespace WindowsFormsApp2
                 pcb8.Visible = false;
             }
 
-            if (txbBookID.Text == "118")
+            if (txbBookID.Text == "126")
             {
                 pcb7.Visible = true;
                 pcb2.Visible = false;
@@ -110,7 +110,7 @@ namespace WindowsFormsApp2
                 pcb8.Visible = false;
             }
 
-            if (txbBookID.Text == "119")
+            if (txbBookID.Text == "127")
             {
                 pcb8.Visible = true;
                 pcb2.Visible = false;
