@@ -44,6 +44,7 @@
             this.lbTotalOwedMoney = new System.Windows.Forms.Label();
             this.btnHuy = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.dgvReturnBorrow = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.txbId = new System.Windows.Forms.TextBox();
             this.btnReturn = new System.Windows.Forms.Button();
@@ -51,6 +52,7 @@
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvReturnBook)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReturnBorrow)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -143,20 +145,21 @@
             // 
             this.panel3.AutoScroll = true;
             this.panel3.Controls.Add(this.dgvReturnBook);
-            this.panel3.Location = new System.Drawing.Point(5, 157);
+            this.panel3.Location = new System.Drawing.Point(771, 160);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1105, 292);
+            this.panel3.Size = new System.Drawing.Size(339, 278);
             this.panel3.TabIndex = 18;
             // 
             // dgvReturnBook
             // 
             this.dgvReturnBook.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvReturnBook.Location = new System.Drawing.Point(4, 3);
+            this.dgvReturnBook.Enabled = false;
+            this.dgvReturnBook.Location = new System.Drawing.Point(3, 3);
             this.dgvReturnBook.Name = "dgvReturnBook";
             this.dgvReturnBook.RowHeadersWidth = 51;
             this.dgvReturnBook.RowTemplate.Height = 24;
-            this.dgvReturnBook.Size = new System.Drawing.Size(1098, 321);
+            this.dgvReturnBook.Size = new System.Drawing.Size(333, 275);
             this.dgvReturnBook.TabIndex = 1;
             this.dgvReturnBook.SelectionChanged += new System.EventHandler(this.dgvReturnBook_SelectionChanged);
             // 
@@ -230,6 +233,7 @@
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.dgvReturnBorrow);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.txbId);
             this.panel2.Controls.Add(this.btnReturn);
@@ -246,6 +250,17 @@
             this.panel2.Size = new System.Drawing.Size(1137, 457);
             this.panel2.TabIndex = 20;
             // 
+            // dgvReturnBorrow
+            // 
+            this.dgvReturnBorrow.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvReturnBorrow.Location = new System.Drawing.Point(14, 160);
+            this.dgvReturnBorrow.Name = "dgvReturnBorrow";
+            this.dgvReturnBorrow.RowHeadersWidth = 51;
+            this.dgvReturnBorrow.RowTemplate.Height = 24;
+            this.dgvReturnBorrow.Size = new System.Drawing.Size(734, 278);
+            this.dgvReturnBorrow.TabIndex = 28;
+            this.dgvReturnBorrow.SelectionChanged += new System.EventHandler(this.dgvReturnBorrow_SelectionChanged);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -260,6 +275,7 @@
             // 
             // txbId
             // 
+            this.txbId.Enabled = false;
             this.txbId.Location = new System.Drawing.Point(138, 128);
             this.txbId.Name = "txbId";
             this.txbId.Size = new System.Drawing.Size(265, 22);
@@ -299,6 +315,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvReturnBook)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReturnBorrow)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -324,5 +341,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txbId;
         private System.Windows.Forms.Button btnRefresh;
+        private System.Windows.Forms.DataGridView dgvReturnBorrow;
     }
 }

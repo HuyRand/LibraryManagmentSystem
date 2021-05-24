@@ -38,16 +38,20 @@
             this.txbTotalOwedMoney = new System.Windows.Forms.TextBox();
             this.lbTotalOwedMoney = new System.Windows.Forms.Label();
             this.lbMemberName = new System.Windows.Forms.Label();
-            this.txbMemberName = new System.Windows.Forms.TextBox();
+            this.txbMemberId = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnCreateBill = new System.Windows.Forms.Button();
             this.btnCancle = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txbMemberName = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.txbMemberName);
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.lbSoTienThuEx);
             this.panel1.Controls.Add(this.txbStillOwed);
             this.panel1.Controls.Add(this.lbStillOwed);
@@ -57,11 +61,11 @@
             this.panel1.Controls.Add(this.txbTotalOwedMoney);
             this.panel1.Controls.Add(this.lbTotalOwedMoney);
             this.panel1.Controls.Add(this.lbMemberName);
-            this.panel1.Controls.Add(this.txbMemberName);
+            this.panel1.Controls.Add(this.txbMemberId);
             this.panel1.Location = new System.Drawing.Point(17, 16);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(571, 241);
+            this.panel1.Size = new System.Drawing.Size(571, 282);
             this.panel1.TabIndex = 0;
             // 
             // lbSoTienThuEx
@@ -69,7 +73,7 @@
             this.lbSoTienThuEx.AutoSize = true;
             this.lbSoTienThuEx.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSoTienThuEx.ForeColor = System.Drawing.Color.Red;
-            this.lbSoTienThuEx.Location = new System.Drawing.Point(144, 185);
+            this.lbSoTienThuEx.Location = new System.Drawing.Point(144, 217);
             this.lbSoTienThuEx.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbSoTienThuEx.Name = "lbSoTienThuEx";
             this.lbSoTienThuEx.Size = new System.Drawing.Size(0, 18);
@@ -77,7 +81,7 @@
             // 
             // txbStillOwed
             // 
-            this.txbStillOwed.Location = new System.Drawing.Point(197, 207);
+            this.txbStillOwed.Location = new System.Drawing.Point(197, 239);
             this.txbStillOwed.Margin = new System.Windows.Forms.Padding(4);
             this.txbStillOwed.Name = "txbStillOwed";
             this.txbStillOwed.Size = new System.Drawing.Size(347, 22);
@@ -88,7 +92,7 @@
             this.lbStillOwed.AutoSize = true;
             this.lbStillOwed.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lbStillOwed.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lbStillOwed.Location = new System.Drawing.Point(4, 207);
+            this.lbStillOwed.Location = new System.Drawing.Point(4, 239);
             this.lbStillOwed.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbStillOwed.Name = "lbStillOwed";
             this.lbStillOwed.Size = new System.Drawing.Size(101, 25);
@@ -97,7 +101,7 @@
             // 
             // txbPaid
             // 
-            this.txbPaid.Location = new System.Drawing.Point(197, 156);
+            this.txbPaid.Location = new System.Drawing.Point(197, 188);
             this.txbPaid.Margin = new System.Windows.Forms.Padding(4);
             this.txbPaid.Name = "txbPaid";
             this.txbPaid.Size = new System.Drawing.Size(347, 22);
@@ -108,7 +112,7 @@
             this.lbPaid.AutoSize = true;
             this.lbPaid.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lbPaid.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lbPaid.Location = new System.Drawing.Point(4, 156);
+            this.lbPaid.Location = new System.Drawing.Point(4, 188);
             this.lbPaid.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbPaid.Name = "lbPaid";
             this.lbPaid.Size = new System.Drawing.Size(57, 25);
@@ -128,7 +132,7 @@
             // 
             // txbTotalOwedMoney
             // 
-            this.txbTotalOwedMoney.Location = new System.Drawing.Point(197, 110);
+            this.txbTotalOwedMoney.Location = new System.Drawing.Point(197, 142);
             this.txbTotalOwedMoney.Margin = new System.Windows.Forms.Padding(4);
             this.txbTotalOwedMoney.Name = "txbTotalOwedMoney";
             this.txbTotalOwedMoney.Size = new System.Drawing.Size(347, 22);
@@ -139,7 +143,7 @@
             this.lbTotalOwedMoney.AutoSize = true;
             this.lbTotalOwedMoney.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lbTotalOwedMoney.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lbTotalOwedMoney.Location = new System.Drawing.Point(4, 110);
+            this.lbTotalOwedMoney.Location = new System.Drawing.Point(4, 142);
             this.lbTotalOwedMoney.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTotalOwedMoney.Name = "lbTotalOwedMoney";
             this.lbTotalOwedMoney.Size = new System.Drawing.Size(172, 25);
@@ -154,23 +158,25 @@
             this.lbMemberName.Location = new System.Drawing.Point(4, 61);
             this.lbMemberName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbMemberName.Name = "lbMemberName";
-            this.lbMemberName.Size = new System.Drawing.Size(90, 25);
+            this.lbMemberName.Size = new System.Drawing.Size(114, 25);
             this.lbMemberName.TabIndex = 20;
-            this.lbMemberName.Text = "Member:";
+            this.lbMemberName.Text = "Member ID:";
             // 
-            // txbMemberName
+            // txbMemberId
             // 
-            this.txbMemberName.Location = new System.Drawing.Point(197, 65);
-            this.txbMemberName.Margin = new System.Windows.Forms.Padding(4);
-            this.txbMemberName.Name = "txbMemberName";
-            this.txbMemberName.Size = new System.Drawing.Size(347, 22);
-            this.txbMemberName.TabIndex = 19;
+            this.txbMemberId.Enabled = false;
+            this.txbMemberId.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbMemberId.Location = new System.Drawing.Point(197, 65);
+            this.txbMemberId.Margin = new System.Windows.Forms.Padding(4);
+            this.txbMemberId.Name = "txbMemberId";
+            this.txbMemberId.Size = new System.Drawing.Size(347, 22);
+            this.txbMemberId.TabIndex = 19;
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.btnCreateBill);
             this.panel2.Controls.Add(this.btnCancle);
-            this.panel2.Location = new System.Drawing.Point(17, 265);
+            this.panel2.Location = new System.Drawing.Point(17, 306);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(571, 36);
@@ -198,19 +204,40 @@
             this.btnCancle.UseVisualStyleBackColor = true;
             this.btnCancle.Click += new System.EventHandler(this.btnCancle_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label2.Location = new System.Drawing.Point(4, 100);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(70, 25);
+            this.label2.TabIndex = 29;
+            this.label2.Text = "Name:";
+            // 
+            // txbMemberName
+            // 
+            this.txbMemberName.Location = new System.Drawing.Point(197, 100);
+            this.txbMemberName.Margin = new System.Windows.Forms.Padding(4);
+            this.txbMemberName.Name = "txbMemberName";
+            this.txbMemberName.Size = new System.Drawing.Size(347, 22);
+            this.txbMemberName.TabIndex = 30;
+            // 
             // frmPenaltyBill
             // 
             this.AcceptButton = this.btnCreateBill;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancle;
-            this.ClientSize = new System.Drawing.Size(601, 311);
+            this.ClientSize = new System.Drawing.Size(601, 355);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmPenaltyBill";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bill";
+            this.Load += new System.EventHandler(this.frmPenaltyBill_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -229,10 +256,12 @@
         private System.Windows.Forms.TextBox txbTotalOwedMoney;
         private System.Windows.Forms.Label lbTotalOwedMoney;
         private System.Windows.Forms.Label lbMemberName;
-        private System.Windows.Forms.TextBox txbMemberName;
+        private System.Windows.Forms.TextBox txbMemberId;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnCreateBill;
         private System.Windows.Forms.Button btnCancle;
         private System.Windows.Forms.Label lbSoTienThuEx;
+        private System.Windows.Forms.TextBox txbMemberName;
+        private System.Windows.Forms.Label label2;
     }
 }

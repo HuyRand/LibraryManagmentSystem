@@ -68,7 +68,7 @@ namespace WindowsFormsApp2
 
         private void receivePenaltyToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmPenaltyBill f = new frmPenaltyBill();
+            frmPenaltyBill f = new frmPenaltyBill(txbIdentityNumber.Text, txbMemberName.Text, txbMemberOwedMoney.Text);
             f.ShowDialog();
         }
 
