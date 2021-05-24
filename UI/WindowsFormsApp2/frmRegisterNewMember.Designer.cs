@@ -34,12 +34,10 @@
             this.btnRegister = new System.Windows.Forms.Button();
             this.txbNewMemberEmail = new System.Windows.Forms.TextBox();
             this.txbNewMemberAddress = new System.Windows.Forms.TextBox();
-            this.txbNewMemberIDNumber = new System.Windows.Forms.TextBox();
             this.txbNewMemberName = new System.Windows.Forms.TextBox();
             this.lbNewMemberAddress = new System.Windows.Forms.Label();
             this.lbNewMemberEmail = new System.Windows.Forms.Label();
             this.lbNewMemberDateOfBirth = new System.Windows.Forms.Label();
-            this.lbNewMemberIDNumber = new System.Windows.Forms.Label();
             this.lbNewMemberName = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -52,24 +50,22 @@
             this.panel1.Controls.Add(this.btnRegister);
             this.panel1.Controls.Add(this.txbNewMemberEmail);
             this.panel1.Controls.Add(this.txbNewMemberAddress);
-            this.panel1.Controls.Add(this.txbNewMemberIDNumber);
             this.panel1.Controls.Add(this.txbNewMemberName);
             this.panel1.Controls.Add(this.lbNewMemberAddress);
             this.panel1.Controls.Add(this.lbNewMemberEmail);
             this.panel1.Controls.Add(this.lbNewMemberDateOfBirth);
-            this.panel1.Controls.Add(this.lbNewMemberIDNumber);
             this.panel1.Controls.Add(this.lbNewMemberName);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(9, 10);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(578, 347);
+            this.panel1.Size = new System.Drawing.Size(580, 304);
             this.panel1.TabIndex = 0;
             // 
             // dtpDateOfBirth
             // 
             this.dtpDateOfBirth.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
-            this.dtpDateOfBirth.Location = new System.Drawing.Point(168, 162);
+            this.dtpDateOfBirth.Location = new System.Drawing.Point(168, 118);
             this.dtpDateOfBirth.Name = "dtpDateOfBirth";
             this.dtpDateOfBirth.Size = new System.Drawing.Size(243, 28);
             this.dtpDateOfBirth.TabIndex = 3;
@@ -77,7 +73,7 @@
             // btnCancel
             // 
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(471, 303);
+            this.btnCancel.Location = new System.Drawing.Point(471, 254);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(89, 28);
@@ -89,7 +85,7 @@
             // btnRegister
             // 
             this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegister.Location = new System.Drawing.Point(371, 303);
+            this.btnRegister.Location = new System.Drawing.Point(371, 254);
             this.btnRegister.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(89, 28);
@@ -101,7 +97,7 @@
             // txbNewMemberEmail
             // 
             this.txbNewMemberEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbNewMemberEmail.Location = new System.Drawing.Point(168, 206);
+            this.txbNewMemberEmail.Location = new System.Drawing.Point(168, 162);
             this.txbNewMemberEmail.Margin = new System.Windows.Forms.Padding(2);
             this.txbNewMemberEmail.Name = "txbNewMemberEmail";
             this.txbNewMemberEmail.Size = new System.Drawing.Size(392, 28);
@@ -110,20 +106,11 @@
             // txbNewMemberAddress
             // 
             this.txbNewMemberAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbNewMemberAddress.Location = new System.Drawing.Point(168, 247);
+            this.txbNewMemberAddress.Location = new System.Drawing.Point(168, 203);
             this.txbNewMemberAddress.Margin = new System.Windows.Forms.Padding(2);
             this.txbNewMemberAddress.Name = "txbNewMemberAddress";
             this.txbNewMemberAddress.Size = new System.Drawing.Size(392, 28);
             this.txbNewMemberAddress.TabIndex = 5;
-            // 
-            // txbNewMemberIDNumber
-            // 
-            this.txbNewMemberIDNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbNewMemberIDNumber.Location = new System.Drawing.Point(168, 119);
-            this.txbNewMemberIDNumber.Margin = new System.Windows.Forms.Padding(2);
-            this.txbNewMemberIDNumber.Name = "txbNewMemberIDNumber";
-            this.txbNewMemberIDNumber.Size = new System.Drawing.Size(392, 28);
-            this.txbNewMemberIDNumber.TabIndex = 2;
             // 
             // txbNewMemberName
             // 
@@ -138,7 +125,7 @@
             // 
             this.lbNewMemberAddress.AutoSize = true;
             this.lbNewMemberAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNewMemberAddress.Location = new System.Drawing.Point(16, 249);
+            this.lbNewMemberAddress.Location = new System.Drawing.Point(16, 205);
             this.lbNewMemberAddress.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbNewMemberAddress.Name = "lbNewMemberAddress";
             this.lbNewMemberAddress.Size = new System.Drawing.Size(90, 24);
@@ -149,7 +136,7 @@
             // 
             this.lbNewMemberEmail.AutoSize = true;
             this.lbNewMemberEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNewMemberEmail.Location = new System.Drawing.Point(16, 206);
+            this.lbNewMemberEmail.Location = new System.Drawing.Point(16, 162);
             this.lbNewMemberEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbNewMemberEmail.Name = "lbNewMemberEmail";
             this.lbNewMemberEmail.Size = new System.Drawing.Size(62, 24);
@@ -160,23 +147,12 @@
             // 
             this.lbNewMemberDateOfBirth.AutoSize = true;
             this.lbNewMemberDateOfBirth.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNewMemberDateOfBirth.Location = new System.Drawing.Point(16, 162);
+            this.lbNewMemberDateOfBirth.Location = new System.Drawing.Point(16, 118);
             this.lbNewMemberDateOfBirth.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbNewMemberDateOfBirth.Name = "lbNewMemberDateOfBirth";
             this.lbNewMemberDateOfBirth.Size = new System.Drawing.Size(119, 24);
             this.lbNewMemberDateOfBirth.TabIndex = 1;
             this.lbNewMemberDateOfBirth.Text = "Date of birth :";
-            // 
-            // lbNewMemberIDNumber
-            // 
-            this.lbNewMemberIDNumber.AutoSize = true;
-            this.lbNewMemberIDNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNewMemberIDNumber.Location = new System.Drawing.Point(16, 119);
-            this.lbNewMemberIDNumber.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbNewMemberIDNumber.Name = "lbNewMemberIDNumber";
-            this.lbNewMemberIDNumber.Size = new System.Drawing.Size(144, 24);
-            this.lbNewMemberIDNumber.TabIndex = 1;
-            this.lbNewMemberIDNumber.Text = "Identity number:";
             // 
             // lbNewMemberName
             // 
@@ -204,7 +180,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 368);
+            this.ClientSize = new System.Drawing.Size(598, 328);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmRegisterNewMember";
@@ -221,13 +197,11 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbNewMemberDateOfBirth;
-        private System.Windows.Forms.Label lbNewMemberIDNumber;
         private System.Windows.Forms.Label lbNewMemberName;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnRegister;
         private System.Windows.Forms.TextBox txbNewMemberEmail;
         private System.Windows.Forms.TextBox txbNewMemberAddress;
-        private System.Windows.Forms.TextBox txbNewMemberIDNumber;
         private System.Windows.Forms.TextBox txbNewMemberName;
         private System.Windows.Forms.Label lbNewMemberAddress;
         private System.Windows.Forms.Label lbNewMemberEmail;

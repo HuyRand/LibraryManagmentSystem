@@ -30,6 +30,15 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txbNewBookShelf_ID = new System.Windows.Forms.TextBox();
+            this.txbNewBookSection_ID = new System.Windows.Forms.TextBox();
+            this.txbNewBookRowNumber = new System.Windows.Forms.TextBox();
+            this.txbNewBookLoca_ID = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.LocationID = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.lbMasSachEX = new System.Windows.Forms.Label();
             this.lbGiaTriEX = new System.Windows.Forms.Label();
             this.lbNamxbEX = new System.Windows.Forms.Label();
@@ -43,24 +52,13 @@
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.cbNewBookGenre = new System.Windows.Forms.ComboBox();
-            this.txbNewBookID = new System.Windows.Forms.TextBox();
             this.lbThemSach = new System.Windows.Forms.Label();
             this.lbPublishYear = new System.Windows.Forms.Label();
             this.lbNewBookName = new System.Windows.Forms.Label();
             this.txbNewBookName = new System.Windows.Forms.TextBox();
-            this.lbNewBookID = new System.Windows.Forms.Label();
             this.lbNewBookGenre = new System.Windows.Forms.Label();
             this.lbNewBookAuthor = new System.Windows.Forms.Label();
             this.lbNewBookPublisher = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.LocationID = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txbNewBookLoca_ID = new System.Windows.Forms.TextBox();
-            this.txbNewBookRowNumber = new System.Windows.Forms.TextBox();
-            this.txbNewBookSection_ID = new System.Windows.Forms.TextBox();
-            this.txbNewBookShelf_ID = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -88,25 +86,101 @@
             this.panel1.Controls.Add(this.btnCancel);
             this.panel1.Controls.Add(this.btnAdd);
             this.panel1.Controls.Add(this.cbNewBookGenre);
-            this.panel1.Controls.Add(this.txbNewBookID);
             this.panel1.Controls.Add(this.lbThemSach);
             this.panel1.Controls.Add(this.lbPublishYear);
             this.panel1.Controls.Add(this.lbNewBookName);
             this.panel1.Controls.Add(this.txbNewBookName);
-            this.panel1.Controls.Add(this.lbNewBookID);
             this.panel1.Controls.Add(this.lbNewBookGenre);
             this.panel1.Controls.Add(this.lbNewBookAuthor);
             this.panel1.Controls.Add(this.lbNewBookPublisher);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(732, 575);
+            this.panel1.Size = new System.Drawing.Size(720, 500);
             this.panel1.TabIndex = 17;
+            // 
+            // txbNewBookShelf_ID
+            // 
+            this.txbNewBookShelf_ID.Location = new System.Drawing.Point(591, 235);
+            this.txbNewBookShelf_ID.Name = "txbNewBookShelf_ID";
+            this.txbNewBookShelf_ID.Size = new System.Drawing.Size(109, 20);
+            this.txbNewBookShelf_ID.TabIndex = 31;
+            // 
+            // txbNewBookSection_ID
+            // 
+            this.txbNewBookSection_ID.Location = new System.Drawing.Point(591, 187);
+            this.txbNewBookSection_ID.Name = "txbNewBookSection_ID";
+            this.txbNewBookSection_ID.Size = new System.Drawing.Size(109, 20);
+            this.txbNewBookSection_ID.TabIndex = 30;
+            // 
+            // txbNewBookRowNumber
+            // 
+            this.txbNewBookRowNumber.Location = new System.Drawing.Point(591, 139);
+            this.txbNewBookRowNumber.Name = "txbNewBookRowNumber";
+            this.txbNewBookRowNumber.Size = new System.Drawing.Size(109, 20);
+            this.txbNewBookRowNumber.TabIndex = 29;
+            // 
+            // txbNewBookLoca_ID
+            // 
+            this.txbNewBookLoca_ID.Location = new System.Drawing.Point(591, 92);
+            this.txbNewBookLoca_ID.Name = "txbNewBookLoca_ID";
+            this.txbNewBookLoca_ID.Size = new System.Drawing.Size(109, 20);
+            this.txbNewBookLoca_ID.TabIndex = 28;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(484, 185);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(84, 20);
+            this.label4.TabIndex = 27;
+            this.label4.Text = "Section ID";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(484, 233);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(67, 20);
+            this.label3.TabIndex = 26;
+            this.label3.Text = "Shelf ID";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(484, 137);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(101, 20);
+            this.label2.TabIndex = 25;
+            this.label2.Text = "Row Number";
+            // 
+            // LocationID
+            // 
+            this.LocationID.AutoSize = true;
+            this.LocationID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LocationID.Location = new System.Drawing.Point(484, 90);
+            this.LocationID.Name = "LocationID";
+            this.LocationID.Size = new System.Drawing.Size(91, 20);
+            this.LocationID.TabIndex = 24;
+            this.LocationID.Text = "Location ID";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(514, 35);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(186, 31);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "Book Location";
             // 
             // lbMasSachEX
             // 
             this.lbMasSachEX.AutoSize = true;
             this.lbMasSachEX.ForeColor = System.Drawing.Color.Red;
-            this.lbMasSachEX.Location = new System.Drawing.Point(108, 165);
+            this.lbMasSachEX.Location = new System.Drawing.Point(108, 117);
             this.lbMasSachEX.Name = "lbMasSachEX";
             this.lbMasSachEX.Size = new System.Drawing.Size(0, 13);
             this.lbMasSachEX.TabIndex = 22;
@@ -115,7 +189,7 @@
             // 
             this.lbGiaTriEX.AutoSize = true;
             this.lbGiaTriEX.ForeColor = System.Drawing.Color.Red;
-            this.lbGiaTriEX.Location = new System.Drawing.Point(112, 457);
+            this.lbGiaTriEX.Location = new System.Drawing.Point(112, 409);
             this.lbGiaTriEX.Name = "lbGiaTriEX";
             this.lbGiaTriEX.Size = new System.Drawing.Size(0, 13);
             this.lbGiaTriEX.TabIndex = 21;
@@ -124,14 +198,14 @@
             // 
             this.lbNamxbEX.AutoSize = true;
             this.lbNamxbEX.ForeColor = System.Drawing.Color.Red;
-            this.lbNamxbEX.Location = new System.Drawing.Point(108, 403);
+            this.lbNamxbEX.Location = new System.Drawing.Point(108, 355);
             this.lbNamxbEX.Name = "lbNamxbEX";
             this.lbNamxbEX.Size = new System.Drawing.Size(0, 13);
             this.lbNamxbEX.TabIndex = 20;
             // 
             // txbNewBookPrice
             // 
-            this.txbNewBookPrice.Location = new System.Drawing.Point(108, 430);
+            this.txbNewBookPrice.Location = new System.Drawing.Point(108, 382);
             this.txbNewBookPrice.Name = "txbNewBookPrice";
             this.txbNewBookPrice.Size = new System.Drawing.Size(348, 20);
             this.txbNewBookPrice.TabIndex = 7;
@@ -140,7 +214,7 @@
             // 
             this.lbNewBookPrice.AutoSize = true;
             this.lbNewBookPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNewBookPrice.Location = new System.Drawing.Point(4, 426);
+            this.lbNewBookPrice.Location = new System.Drawing.Point(4, 378);
             this.lbNewBookPrice.Name = "lbNewBookPrice";
             this.lbNewBookPrice.Size = new System.Drawing.Size(48, 20);
             this.lbNewBookPrice.TabIndex = 19;
@@ -150,7 +224,7 @@
             // 
             this.dtplbNewBookAdmitDate.CustomFormat = "dd/MM/yyyy";
             this.dtplbNewBookAdmitDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtplbNewBookAdmitDate.Location = new System.Drawing.Point(108, 330);
+            this.dtplbNewBookAdmitDate.Location = new System.Drawing.Point(108, 282);
             this.dtplbNewBookAdmitDate.Name = "dtplbNewBookAdmitDate";
             this.dtplbNewBookAdmitDate.Size = new System.Drawing.Size(200, 20);
             this.dtplbNewBookAdmitDate.TabIndex = 5;
@@ -159,7 +233,7 @@
             // 
             this.lbNewBookAdmitDate.AutoSize = true;
             this.lbNewBookAdmitDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNewBookAdmitDate.Location = new System.Drawing.Point(3, 330);
+            this.lbNewBookAdmitDate.Location = new System.Drawing.Point(3, 282);
             this.lbNewBookAdmitDate.Name = "lbNewBookAdmitDate";
             this.lbNewBookAdmitDate.Size = new System.Drawing.Size(93, 20);
             this.lbNewBookAdmitDate.TabIndex = 17;
@@ -167,21 +241,21 @@
             // 
             // txbPublishYear
             // 
-            this.txbPublishYear.Location = new System.Drawing.Point(108, 379);
+            this.txbPublishYear.Location = new System.Drawing.Point(108, 331);
             this.txbPublishYear.Name = "txbPublishYear";
             this.txbPublishYear.Size = new System.Drawing.Size(348, 20);
             this.txbPublishYear.TabIndex = 6;
             // 
             // txbNewBookPublisher
             // 
-            this.txbNewBookPublisher.Location = new System.Drawing.Point(108, 283);
+            this.txbNewBookPublisher.Location = new System.Drawing.Point(108, 235);
             this.txbNewBookPublisher.Name = "txbNewBookPublisher";
             this.txbNewBookPublisher.Size = new System.Drawing.Size(348, 20);
             this.txbNewBookPublisher.TabIndex = 4;
             // 
             // txbNewBookAuthor
             // 
-            this.txbNewBookAuthor.Location = new System.Drawing.Point(108, 233);
+            this.txbNewBookAuthor.Location = new System.Drawing.Point(108, 185);
             this.txbNewBookAuthor.Name = "txbNewBookAuthor";
             this.txbNewBookAuthor.Size = new System.Drawing.Size(348, 20);
             this.txbNewBookAuthor.TabIndex = 3;
@@ -189,7 +263,7 @@
             // btnCancel
             // 
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Location = new System.Drawing.Point(494, 504);
+            this.btnCancel.Location = new System.Drawing.Point(488, 438);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(124, 44);
             this.btnCancel.TabIndex = 9;
@@ -199,7 +273,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(332, 504);
+            this.btnAdd.Location = new System.Drawing.Point(326, 438);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(124, 44);
             this.btnAdd.TabIndex = 8;
@@ -212,17 +286,10 @@
             this.cbNewBookGenre.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cbNewBookGenre.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbNewBookGenre.FormattingEnabled = true;
-            this.cbNewBookGenre.Location = new System.Drawing.Point(108, 184);
+            this.cbNewBookGenre.Location = new System.Drawing.Point(108, 136);
             this.cbNewBookGenre.Name = "cbNewBookGenre";
             this.cbNewBookGenre.Size = new System.Drawing.Size(200, 21);
             this.cbNewBookGenre.TabIndex = 2;
-            // 
-            // txbNewBookID
-            // 
-            this.txbNewBookID.Location = new System.Drawing.Point(108, 137);
-            this.txbNewBookID.Name = "txbNewBookID";
-            this.txbNewBookID.Size = new System.Drawing.Size(348, 20);
-            this.txbNewBookID.TabIndex = 1;
             // 
             // lbThemSach
             // 
@@ -238,7 +305,7 @@
             // 
             this.lbPublishYear.AutoSize = true;
             this.lbPublishYear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPublishYear.Location = new System.Drawing.Point(4, 375);
+            this.lbPublishYear.Location = new System.Drawing.Point(4, 327);
             this.lbPublishYear.Name = "lbPublishYear";
             this.lbPublishYear.Size = new System.Drawing.Size(98, 20);
             this.lbPublishYear.TabIndex = 14;
@@ -261,21 +328,11 @@
             this.txbNewBookName.Size = new System.Drawing.Size(348, 20);
             this.txbNewBookName.TabIndex = 0;
             // 
-            // lbNewBookID
-            // 
-            this.lbNewBookID.AutoSize = true;
-            this.lbNewBookID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNewBookID.Location = new System.Drawing.Point(3, 135);
-            this.lbNewBookID.Name = "lbNewBookID";
-            this.lbNewBookID.Size = new System.Drawing.Size(71, 20);
-            this.lbNewBookID.TabIndex = 3;
-            this.lbNewBookID.Text = "Book ID:";
-            // 
             // lbNewBookGenre
             // 
             this.lbNewBookGenre.AutoSize = true;
             this.lbNewBookGenre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNewBookGenre.Location = new System.Drawing.Point(3, 185);
+            this.lbNewBookGenre.Location = new System.Drawing.Point(3, 137);
             this.lbNewBookGenre.Name = "lbNewBookGenre";
             this.lbNewBookGenre.Size = new System.Drawing.Size(58, 20);
             this.lbNewBookGenre.TabIndex = 5;
@@ -285,7 +342,7 @@
             // 
             this.lbNewBookAuthor.AutoSize = true;
             this.lbNewBookAuthor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNewBookAuthor.Location = new System.Drawing.Point(3, 233);
+            this.lbNewBookAuthor.Location = new System.Drawing.Point(3, 185);
             this.lbNewBookAuthor.Name = "lbNewBookAuthor";
             this.lbNewBookAuthor.Size = new System.Drawing.Size(61, 20);
             this.lbNewBookAuthor.TabIndex = 7;
@@ -295,89 +352,11 @@
             // 
             this.lbNewBookPublisher.AutoSize = true;
             this.lbNewBookPublisher.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNewBookPublisher.Location = new System.Drawing.Point(3, 283);
+            this.lbNewBookPublisher.Location = new System.Drawing.Point(3, 235);
             this.lbNewBookPublisher.Name = "lbNewBookPublisher";
             this.lbNewBookPublisher.Size = new System.Drawing.Size(78, 20);
             this.lbNewBookPublisher.TabIndex = 9;
             this.lbNewBookPublisher.Text = "Publisher:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(514, 35);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(186, 31);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "Book Location";
-            // 
-            // LocationID
-            // 
-            this.LocationID.AutoSize = true;
-            this.LocationID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LocationID.Location = new System.Drawing.Point(484, 90);
-            this.LocationID.Name = "LocationID";
-            this.LocationID.Size = new System.Drawing.Size(91, 20);
-            this.LocationID.TabIndex = 24;
-            this.LocationID.Text = "Location ID";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(484, 137);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 20);
-            this.label2.TabIndex = 25;
-            this.label2.Text = "Row Number";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(484, 233);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 20);
-            this.label3.TabIndex = 26;
-            this.label3.Text = "Shelf ID";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(484, 185);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(84, 20);
-            this.label4.TabIndex = 27;
-            this.label4.Text = "Section ID";
-            // 
-            // txbNewBookLoca_ID
-            // 
-            this.txbNewBookLoca_ID.Location = new System.Drawing.Point(591, 92);
-            this.txbNewBookLoca_ID.Name = "txbNewBookLoca_ID";
-            this.txbNewBookLoca_ID.Size = new System.Drawing.Size(109, 20);
-            this.txbNewBookLoca_ID.TabIndex = 28;
-            // 
-            // txbNewBookRowNumber
-            // 
-            this.txbNewBookRowNumber.Location = new System.Drawing.Point(591, 139);
-            this.txbNewBookRowNumber.Name = "txbNewBookRowNumber";
-            this.txbNewBookRowNumber.Size = new System.Drawing.Size(109, 20);
-            this.txbNewBookRowNumber.TabIndex = 29;
-            // 
-            // txbNewBookSection_ID
-            // 
-            this.txbNewBookSection_ID.Location = new System.Drawing.Point(591, 187);
-            this.txbNewBookSection_ID.Name = "txbNewBookSection_ID";
-            this.txbNewBookSection_ID.Size = new System.Drawing.Size(109, 20);
-            this.txbNewBookSection_ID.TabIndex = 30;
-            // 
-            // txbNewBookShelf_ID
-            // 
-            this.txbNewBookShelf_ID.Location = new System.Drawing.Point(591, 235);
-            this.txbNewBookShelf_ID.Name = "txbNewBookShelf_ID";
-            this.txbNewBookShelf_ID.Size = new System.Drawing.Size(109, 20);
-            this.txbNewBookShelf_ID.TabIndex = 31;
             // 
             // frmAddNewBook
             // 
@@ -386,7 +365,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(756, 599);
+            this.ClientSize = new System.Drawing.Size(741, 522);
             this.Controls.Add(this.panel1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -407,12 +386,10 @@
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.ComboBox cbNewBookGenre;
-        private System.Windows.Forms.TextBox txbNewBookID;
         private System.Windows.Forms.Label lbThemSach;
         private System.Windows.Forms.Label lbPublishYear;
         private System.Windows.Forms.Label lbNewBookName;
         private System.Windows.Forms.TextBox txbNewBookName;
-        private System.Windows.Forms.Label lbNewBookID;
         private System.Windows.Forms.Label lbNewBookGenre;
         private System.Windows.Forms.Label lbNewBookAuthor;
         private System.Windows.Forms.Label lbNewBookPublisher;
