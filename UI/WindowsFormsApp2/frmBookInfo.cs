@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace WindowsFormsApp2
 {
@@ -122,17 +123,47 @@ namespace WindowsFormsApp2
             }
         }
 
+           
         public frmBookInfo(string name, string id, string genre, string author, string state, string publisher, string publishyear, string price)
         {
             InitializeComponent();
-            this.nameBook = name;
             this.idBook = id;
+            this.nameBook = name;
             this.genreBook = genre;
             this.authorBook = author;
             this.stateBook = state;
             this.publisherBook = publisher;
             this.publishyearBook = publishyear;
             this.priceBook = price;
+
+            using (MySqlConnection con = new MySqlConnection(Program.connectionString))
+            {
+                con.Open();
+                MySqlCommand cmd = con.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                if (stateBook == "True")
+                {
+                    cmd.CommandText = "SELECT * FROM LOCATION WHERE BOOKID = '" + idBook + "';";
+                    MySqlDataReader rdr = cmd.ExecuteReader();
+                    string s;
+                    while (rdr.Read())
+                    {
+                        s = "Shelf: " + rdr.GetString(2) + ", Section: " + rdr.GetString(3) + ", Row number: " + rdr.GetString(4);
+                        txbLocation.Text = s;
+                    }
+                    rdr.Close();
+                }
+                else if (stateBook=="False")
+                {
+                    cmd.CommandText = "SELECT ADDRESS FROM MEMBER,BORROW WHERE MEMBER.MEMID=BORROW.MEMID AND BORROW.BOOKID='" + idBook + "';";
+                    MySqlDataReader rdr = cmd.ExecuteReader();
+                    while (rdr.Read())
+                    {
+                        txbLocation.Text = rdr.GetString(0);
+                    }
+                }
+                con.Close();
+            }
         }
 
         private void btnCancle_Click(object sender, EventArgs e)

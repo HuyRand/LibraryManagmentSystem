@@ -31,6 +31,14 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnCancle = new System.Windows.Forms.Button();
             this.pnlBookPicture = new System.Windows.Forms.Panel();
+            this.pcb8 = new System.Windows.Forms.PictureBox();
+            this.pcb7 = new System.Windows.Forms.PictureBox();
+            this.pcb6 = new System.Windows.Forms.PictureBox();
+            this.pcb5 = new System.Windows.Forms.PictureBox();
+            this.pcb4 = new System.Windows.Forms.PictureBox();
+            this.pcb3 = new System.Windows.Forms.PictureBox();
+            this.pcb2 = new System.Windows.Forms.PictureBox();
+            this.pcb1 = new System.Windows.Forms.PictureBox();
             this.cbState = new System.Windows.Forms.ComboBox();
             this.lbState = new System.Windows.Forms.Label();
             this.txbPrice = new System.Windows.Forms.TextBox();
@@ -50,14 +58,8 @@
             this.lbBookInfomation = new System.Windows.Forms.Label();
             this.btnHuy = new System.Windows.Forms.Button();
             this.customInstaller1 = new MySql.Data.MySqlClient.CustomInstaller();
-            this.pcb8 = new System.Windows.Forms.PictureBox();
-            this.pcb7 = new System.Windows.Forms.PictureBox();
-            this.pcb6 = new System.Windows.Forms.PictureBox();
-            this.pcb5 = new System.Windows.Forms.PictureBox();
-            this.pcb4 = new System.Windows.Forms.PictureBox();
-            this.pcb3 = new System.Windows.Forms.PictureBox();
-            this.pcb2 = new System.Windows.Forms.PictureBox();
-            this.pcb1 = new System.Windows.Forms.PictureBox();
+            this.labelLocation = new System.Windows.Forms.Label();
+            this.txbLocation = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.pnlBookPicture.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcb8)).BeginInit();
@@ -72,6 +74,8 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.labelLocation);
+            this.panel1.Controls.Add(this.txbLocation);
             this.panel1.Controls.Add(this.btnCancle);
             this.panel1.Controls.Add(this.pnlBookPicture);
             this.panel1.Controls.Add(this.cbState);
@@ -91,18 +95,18 @@
             this.panel1.Controls.Add(this.lbAuthor);
             this.panel1.Controls.Add(this.lbPublisher);
             this.panel1.Controls.Add(this.lbBookInfomation);
-            this.panel1.Location = new System.Drawing.Point(16, 15);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1127, 809);
+            this.panel1.Size = new System.Drawing.Size(845, 657);
             this.panel1.TabIndex = 18;
             // 
             // btnCancle
             // 
             this.btnCancle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancle.Location = new System.Drawing.Point(923, 735);
+            this.btnCancle.Location = new System.Drawing.Point(692, 597);
+            this.btnCancle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCancle.Name = "btnCancle";
-            this.btnCancle.Size = new System.Drawing.Size(187, 60);
+            this.btnCancle.Size = new System.Drawing.Size(140, 49);
             this.btnCancle.TabIndex = 39;
             this.btnCancle.Text = "Cancle";
             this.btnCancle.UseVisualStyleBackColor = true;
@@ -119,194 +123,19 @@
             this.pnlBookPicture.Controls.Add(this.pcb3);
             this.pnlBookPicture.Controls.Add(this.pcb2);
             this.pnlBookPicture.Controls.Add(this.pcb1);
-            this.pnlBookPicture.Location = new System.Drawing.Point(598, 66);
+            this.pnlBookPicture.Location = new System.Drawing.Point(448, 54);
+            this.pnlBookPicture.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlBookPicture.Name = "pnlBookPicture";
-            this.pnlBookPicture.Size = new System.Drawing.Size(512, 640);
+            this.pnlBookPicture.Size = new System.Drawing.Size(384, 520);
             this.pnlBookPicture.TabIndex = 38;
-            // 
-            // cbState
-            // 
-            this.cbState.FormattingEnabled = true;
-            this.cbState.Location = new System.Drawing.Point(142, 421);
-            this.cbState.Margin = new System.Windows.Forms.Padding(4);
-            this.cbState.Name = "cbState";
-            this.cbState.Size = new System.Drawing.Size(265, 24);
-            this.cbState.TabIndex = 8;
-            // 
-            // lbState
-            // 
-            this.lbState.AutoSize = true;
-            this.lbState.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbState.Location = new System.Drawing.Point(4, 417);
-            this.lbState.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbState.Name = "lbState";
-            this.lbState.Size = new System.Drawing.Size(64, 25);
-            this.lbState.TabIndex = 37;
-            this.lbState.Text = "State:";
-            // 
-            // txbPrice
-            // 
-            this.txbPrice.Location = new System.Drawing.Point(142, 669);
-            this.txbPrice.Margin = new System.Windows.Forms.Padding(4);
-            this.txbPrice.Name = "txbPrice";
-            this.txbPrice.Size = new System.Drawing.Size(372, 22);
-            this.txbPrice.TabIndex = 7;
-            // 
-            // lbPrice
-            // 
-            this.lbPrice.AutoSize = true;
-            this.lbPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPrice.Location = new System.Drawing.Point(4, 665);
-            this.lbPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbPrice.Name = "lbPrice";
-            this.lbPrice.Size = new System.Drawing.Size(62, 25);
-            this.lbPrice.TabIndex = 35;
-            this.lbPrice.Text = "Price:";
-            // 
-            // txbPublishYear
-            // 
-            this.txbPublishYear.Location = new System.Drawing.Point(142, 590);
-            this.txbPublishYear.Margin = new System.Windows.Forms.Padding(4);
-            this.txbPublishYear.Name = "txbPublishYear";
-            this.txbPublishYear.Size = new System.Drawing.Size(372, 22);
-            this.txbPublishYear.TabIndex = 5;
-            // 
-            // txbPublisher
-            // 
-            this.txbPublisher.Location = new System.Drawing.Point(142, 506);
-            this.txbPublisher.Margin = new System.Windows.Forms.Padding(4);
-            this.txbPublisher.Name = "txbPublisher";
-            this.txbPublisher.Size = new System.Drawing.Size(372, 22);
-            this.txbPublisher.TabIndex = 1;
-            // 
-            // txbAuthor
-            // 
-            this.txbAuthor.Location = new System.Drawing.Point(142, 337);
-            this.txbAuthor.Margin = new System.Windows.Forms.Padding(4);
-            this.txbAuthor.Name = "txbAuthor";
-            this.txbAuthor.Size = new System.Drawing.Size(372, 22);
-            this.txbAuthor.TabIndex = 6;
-            // 
-            // cbGenre
-            // 
-            this.cbGenre.FormattingEnabled = true;
-            this.cbGenre.Location = new System.Drawing.Point(142, 248);
-            this.cbGenre.Margin = new System.Windows.Forms.Padding(4);
-            this.cbGenre.Name = "cbGenre";
-            this.cbGenre.Size = new System.Drawing.Size(265, 24);
-            this.cbGenre.TabIndex = 4;
-            // 
-            // txbBookID
-            // 
-            this.txbBookID.Location = new System.Drawing.Point(142, 165);
-            this.txbBookID.Margin = new System.Windows.Forms.Padding(4);
-            this.txbBookID.Name = "txbBookID";
-            this.txbBookID.Size = new System.Drawing.Size(372, 22);
-            this.txbBookID.TabIndex = 2;
-            // 
-            // lbPublishYear
-            // 
-            this.lbPublishYear.AutoSize = true;
-            this.lbPublishYear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPublishYear.Location = new System.Drawing.Point(4, 586);
-            this.lbPublishYear.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbPublishYear.Name = "lbPublishYear";
-            this.lbPublishYear.Size = new System.Drawing.Size(128, 25);
-            this.lbPublishYear.TabIndex = 33;
-            this.lbPublishYear.Text = "Publish Year:";
-            // 
-            // lbBookName
-            // 
-            this.lbBookName.AutoSize = true;
-            this.lbBookName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbBookName.Location = new System.Drawing.Point(4, 90);
-            this.lbBookName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbBookName.Name = "lbBookName";
-            this.lbBookName.Size = new System.Drawing.Size(70, 25);
-            this.lbBookName.TabIndex = 22;
-            this.lbBookName.Text = "Name:";
-            // 
-            // txbBookName
-            // 
-            this.txbBookName.Location = new System.Drawing.Point(142, 90);
-            this.txbBookName.Margin = new System.Windows.Forms.Padding(4);
-            this.txbBookName.Name = "txbBookName";
-            this.txbBookName.Size = new System.Drawing.Size(372, 22);
-            this.txbBookName.TabIndex = 0;
-            // 
-            // lbBookID
-            // 
-            this.lbBookID.AutoSize = true;
-            this.lbBookID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbBookID.Location = new System.Drawing.Point(4, 165);
-            this.lbBookID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbBookID.Name = "lbBookID";
-            this.lbBookID.Size = new System.Drawing.Size(87, 25);
-            this.lbBookID.TabIndex = 25;
-            this.lbBookID.Text = "Book ID:";
-            // 
-            // lbGenre
-            // 
-            this.lbGenre.AutoSize = true;
-            this.lbGenre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbGenre.Location = new System.Drawing.Point(4, 247);
-            this.lbGenre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbGenre.Name = "lbGenre";
-            this.lbGenre.Size = new System.Drawing.Size(77, 25);
-            this.lbGenre.TabIndex = 28;
-            this.lbGenre.Text = "Genre: ";
-            // 
-            // lbAuthor
-            // 
-            this.lbAuthor.AutoSize = true;
-            this.lbAuthor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAuthor.Location = new System.Drawing.Point(4, 337);
-            this.lbAuthor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbAuthor.Name = "lbAuthor";
-            this.lbAuthor.Size = new System.Drawing.Size(84, 25);
-            this.lbAuthor.TabIndex = 31;
-            this.lbAuthor.Text = "AuThor:";
-            // 
-            // lbPublisher
-            // 
-            this.lbPublisher.AutoSize = true;
-            this.lbPublisher.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPublisher.Location = new System.Drawing.Point(4, 503);
-            this.lbPublisher.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbPublisher.Name = "lbPublisher";
-            this.lbPublisher.Size = new System.Drawing.Size(99, 25);
-            this.lbPublisher.TabIndex = 32;
-            this.lbPublisher.Text = "Publisher:";
-            // 
-            // lbBookInfomation
-            // 
-            this.lbBookInfomation.AutoSize = true;
-            this.lbBookInfomation.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbBookInfomation.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lbBookInfomation.Location = new System.Drawing.Point(405, 0);
-            this.lbBookInfomation.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbBookInfomation.Name = "lbBookInfomation";
-            this.lbBookInfomation.Size = new System.Drawing.Size(337, 52);
-            this.lbBookInfomation.TabIndex = 20;
-            this.lbBookInfomation.Text = "Book Infomation";
-            // 
-            // btnHuy
-            // 
-            this.btnHuy.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnHuy.Location = new System.Drawing.Point(1333, 1231);
-            this.btnHuy.Margin = new System.Windows.Forms.Padding(4);
-            this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(100, 28);
-            this.btnHuy.TabIndex = 38;
-            this.btnHuy.Text = "button2";
-            this.btnHuy.UseVisualStyleBackColor = true;
             // 
             // pcb8
             // 
             this.pcb8.Image = global::WindowsFormsApp2.Properties.Resources.pic4;
-            this.pcb8.Location = new System.Drawing.Point(0, 3);
+            this.pcb8.Location = new System.Drawing.Point(0, 2);
+            this.pcb8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pcb8.Name = "pcb8";
-            this.pcb8.Size = new System.Drawing.Size(509, 634);
+            this.pcb8.Size = new System.Drawing.Size(382, 515);
             this.pcb8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcb8.TabIndex = 7;
             this.pcb8.TabStop = false;
@@ -314,9 +143,10 @@
             // pcb7
             // 
             this.pcb7.Image = global::WindowsFormsApp2.Properties.Resources.pic1;
-            this.pcb7.Location = new System.Drawing.Point(0, 3);
+            this.pcb7.Location = new System.Drawing.Point(0, 2);
+            this.pcb7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pcb7.Name = "pcb7";
-            this.pcb7.Size = new System.Drawing.Size(509, 634);
+            this.pcb7.Size = new System.Drawing.Size(382, 515);
             this.pcb7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcb7.TabIndex = 6;
             this.pcb7.TabStop = false;
@@ -324,9 +154,10 @@
             // pcb6
             // 
             this.pcb6.Image = global::WindowsFormsApp2.Properties.Resources.pic6;
-            this.pcb6.Location = new System.Drawing.Point(0, 3);
+            this.pcb6.Location = new System.Drawing.Point(0, 2);
+            this.pcb6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pcb6.Name = "pcb6";
-            this.pcb6.Size = new System.Drawing.Size(512, 634);
+            this.pcb6.Size = new System.Drawing.Size(384, 515);
             this.pcb6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcb6.TabIndex = 5;
             this.pcb6.TabStop = false;
@@ -335,9 +166,10 @@
             // 
             this.pcb5.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.picBack;
             this.pcb5.Image = global::WindowsFormsApp2.Properties.Resources.pic7;
-            this.pcb5.Location = new System.Drawing.Point(0, 3);
+            this.pcb5.Location = new System.Drawing.Point(0, 2);
+            this.pcb5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pcb5.Name = "pcb5";
-            this.pcb5.Size = new System.Drawing.Size(509, 634);
+            this.pcb5.Size = new System.Drawing.Size(382, 515);
             this.pcb5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcb5.TabIndex = 4;
             this.pcb5.TabStop = false;
@@ -346,9 +178,10 @@
             // 
             this.pcb4.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.picBack;
             this.pcb4.Image = global::WindowsFormsApp2.Properties.Resources.pic17;
-            this.pcb4.Location = new System.Drawing.Point(0, 3);
+            this.pcb4.Location = new System.Drawing.Point(0, 2);
+            this.pcb4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pcb4.Name = "pcb4";
-            this.pcb4.Size = new System.Drawing.Size(509, 634);
+            this.pcb4.Size = new System.Drawing.Size(382, 515);
             this.pcb4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcb4.TabIndex = 3;
             this.pcb4.TabStop = false;
@@ -357,9 +190,10 @@
             // 
             this.pcb3.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.picBack;
             this.pcb3.Image = global::WindowsFormsApp2.Properties.Resources.pic12;
-            this.pcb3.Location = new System.Drawing.Point(0, 3);
+            this.pcb3.Location = new System.Drawing.Point(0, 2);
+            this.pcb3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pcb3.Name = "pcb3";
-            this.pcb3.Size = new System.Drawing.Size(509, 634);
+            this.pcb3.Size = new System.Drawing.Size(382, 515);
             this.pcb3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcb3.TabIndex = 2;
             this.pcb3.TabStop = false;
@@ -368,9 +202,10 @@
             // 
             this.pcb2.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.picBack;
             this.pcb2.Image = global::WindowsFormsApp2.Properties.Resources.pic2;
-            this.pcb2.Location = new System.Drawing.Point(0, 3);
+            this.pcb2.Location = new System.Drawing.Point(0, 2);
+            this.pcb2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pcb2.Name = "pcb2";
-            this.pcb2.Size = new System.Drawing.Size(509, 637);
+            this.pcb2.Size = new System.Drawing.Size(382, 518);
             this.pcb2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcb2.TabIndex = 1;
             this.pcb2.TabStop = false;
@@ -381,23 +216,199 @@
             this.pcb1.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.picBack;
             this.pcb1.ErrorImage = global::WindowsFormsApp2.Properties.Resources.picBack;
             this.pcb1.Image = global::WindowsFormsApp2.Properties.Resources.pic11;
-            this.pcb1.Location = new System.Drawing.Point(3, 0);
+            this.pcb1.Location = new System.Drawing.Point(2, 0);
+            this.pcb1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pcb1.Name = "pcb1";
-            this.pcb1.Size = new System.Drawing.Size(509, 637);
+            this.pcb1.Size = new System.Drawing.Size(382, 518);
             this.pcb1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcb1.TabIndex = 0;
             this.pcb1.TabStop = false;
             // 
+            // cbState
+            // 
+            this.cbState.FormattingEnabled = true;
+            this.cbState.Location = new System.Drawing.Point(106, 342);
+            this.cbState.Name = "cbState";
+            this.cbState.Size = new System.Drawing.Size(200, 21);
+            this.cbState.TabIndex = 8;
+            // 
+            // lbState
+            // 
+            this.lbState.AutoSize = true;
+            this.lbState.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbState.Location = new System.Drawing.Point(3, 339);
+            this.lbState.Name = "lbState";
+            this.lbState.Size = new System.Drawing.Size(52, 20);
+            this.lbState.TabIndex = 37;
+            this.lbState.Text = "State:";
+            // 
+            // txbPrice
+            // 
+            this.txbPrice.Location = new System.Drawing.Point(106, 544);
+            this.txbPrice.Name = "txbPrice";
+            this.txbPrice.Size = new System.Drawing.Size(280, 20);
+            this.txbPrice.TabIndex = 7;
+            // 
+            // lbPrice
+            // 
+            this.lbPrice.AutoSize = true;
+            this.lbPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPrice.Location = new System.Drawing.Point(3, 540);
+            this.lbPrice.Name = "lbPrice";
+            this.lbPrice.Size = new System.Drawing.Size(48, 20);
+            this.lbPrice.TabIndex = 35;
+            this.lbPrice.Text = "Price:";
+            // 
+            // txbPublishYear
+            // 
+            this.txbPublishYear.Location = new System.Drawing.Point(106, 479);
+            this.txbPublishYear.Name = "txbPublishYear";
+            this.txbPublishYear.Size = new System.Drawing.Size(280, 20);
+            this.txbPublishYear.TabIndex = 5;
+            // 
+            // txbPublisher
+            // 
+            this.txbPublisher.Location = new System.Drawing.Point(106, 411);
+            this.txbPublisher.Name = "txbPublisher";
+            this.txbPublisher.Size = new System.Drawing.Size(280, 20);
+            this.txbPublisher.TabIndex = 1;
+            // 
+            // txbAuthor
+            // 
+            this.txbAuthor.Location = new System.Drawing.Point(106, 274);
+            this.txbAuthor.Name = "txbAuthor";
+            this.txbAuthor.Size = new System.Drawing.Size(280, 20);
+            this.txbAuthor.TabIndex = 6;
+            // 
+            // cbGenre
+            // 
+            this.cbGenre.FormattingEnabled = true;
+            this.cbGenre.Location = new System.Drawing.Point(106, 202);
+            this.cbGenre.Name = "cbGenre";
+            this.cbGenre.Size = new System.Drawing.Size(200, 21);
+            this.cbGenre.TabIndex = 4;
+            // 
+            // txbBookID
+            // 
+            this.txbBookID.Location = new System.Drawing.Point(106, 134);
+            this.txbBookID.Name = "txbBookID";
+            this.txbBookID.Size = new System.Drawing.Size(280, 20);
+            this.txbBookID.TabIndex = 2;
+            // 
+            // lbPublishYear
+            // 
+            this.lbPublishYear.AutoSize = true;
+            this.lbPublishYear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPublishYear.Location = new System.Drawing.Point(3, 476);
+            this.lbPublishYear.Name = "lbPublishYear";
+            this.lbPublishYear.Size = new System.Drawing.Size(102, 20);
+            this.lbPublishYear.TabIndex = 33;
+            this.lbPublishYear.Text = "Publish Year:";
+            // 
+            // lbBookName
+            // 
+            this.lbBookName.AutoSize = true;
+            this.lbBookName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbBookName.Location = new System.Drawing.Point(3, 73);
+            this.lbBookName.Name = "lbBookName";
+            this.lbBookName.Size = new System.Drawing.Size(55, 20);
+            this.lbBookName.TabIndex = 22;
+            this.lbBookName.Text = "Name:";
+            // 
+            // txbBookName
+            // 
+            this.txbBookName.Location = new System.Drawing.Point(106, 73);
+            this.txbBookName.Name = "txbBookName";
+            this.txbBookName.Size = new System.Drawing.Size(280, 20);
+            this.txbBookName.TabIndex = 0;
+            // 
+            // lbBookID
+            // 
+            this.lbBookID.AutoSize = true;
+            this.lbBookID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbBookID.Location = new System.Drawing.Point(3, 134);
+            this.lbBookID.Name = "lbBookID";
+            this.lbBookID.Size = new System.Drawing.Size(71, 20);
+            this.lbBookID.TabIndex = 25;
+            this.lbBookID.Text = "Book ID:";
+            // 
+            // lbGenre
+            // 
+            this.lbGenre.AutoSize = true;
+            this.lbGenre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbGenre.Location = new System.Drawing.Point(3, 201);
+            this.lbGenre.Name = "lbGenre";
+            this.lbGenre.Size = new System.Drawing.Size(62, 20);
+            this.lbGenre.TabIndex = 28;
+            this.lbGenre.Text = "Genre: ";
+            // 
+            // lbAuthor
+            // 
+            this.lbAuthor.AutoSize = true;
+            this.lbAuthor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAuthor.Location = new System.Drawing.Point(3, 274);
+            this.lbAuthor.Name = "lbAuthor";
+            this.lbAuthor.Size = new System.Drawing.Size(65, 20);
+            this.lbAuthor.TabIndex = 31;
+            this.lbAuthor.Text = "AuThor:";
+            // 
+            // lbPublisher
+            // 
+            this.lbPublisher.AutoSize = true;
+            this.lbPublisher.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPublisher.Location = new System.Drawing.Point(3, 409);
+            this.lbPublisher.Name = "lbPublisher";
+            this.lbPublisher.Size = new System.Drawing.Size(78, 20);
+            this.lbPublisher.TabIndex = 32;
+            this.lbPublisher.Text = "Publisher:";
+            // 
+            // lbBookInfomation
+            // 
+            this.lbBookInfomation.AutoSize = true;
+            this.lbBookInfomation.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbBookInfomation.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lbBookInfomation.Location = new System.Drawing.Point(304, 0);
+            this.lbBookInfomation.Name = "lbBookInfomation";
+            this.lbBookInfomation.Size = new System.Drawing.Size(267, 39);
+            this.lbBookInfomation.TabIndex = 20;
+            this.lbBookInfomation.Text = "Book Infomation";
+            // 
+            // btnHuy
+            // 
+            this.btnHuy.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnHuy.Location = new System.Drawing.Point(1000, 1000);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Size = new System.Drawing.Size(75, 23);
+            this.btnHuy.TabIndex = 38;
+            this.btnHuy.Text = "button2";
+            this.btnHuy.UseVisualStyleBackColor = true;
+            // 
+            // labelLocation
+            // 
+            this.labelLocation.AutoSize = true;
+            this.labelLocation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLocation.Location = new System.Drawing.Point(1, 611);
+            this.labelLocation.Name = "labelLocation";
+            this.labelLocation.Size = new System.Drawing.Size(74, 20);
+            this.labelLocation.TabIndex = 51;
+            this.labelLocation.Text = "Location:";
+            // 
+            // txbLocation
+            // 
+            this.txbLocation.Location = new System.Drawing.Point(104, 611);
+            this.txbLocation.Name = "txbLocation";
+            this.txbLocation.Size = new System.Drawing.Size(282, 20);
+            this.txbLocation.TabIndex = 50;
+            // 
             // frmBookInfo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnHuy;
-            this.ClientSize = new System.Drawing.Size(1159, 822);
+            this.ClientSize = new System.Drawing.Size(869, 668);
             this.Controls.Add(this.btnHuy);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmBookInfo";
@@ -451,5 +462,7 @@
         private System.Windows.Forms.PictureBox pcb6;
         private System.Windows.Forms.PictureBox pcb7;
         private System.Windows.Forms.PictureBox pcb8;
+        private System.Windows.Forms.Label labelLocation;
+        private System.Windows.Forms.TextBox txbLocation;
     }
 }

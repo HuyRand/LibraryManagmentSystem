@@ -357,3 +357,6 @@ C:\Users\new user\Desktop\OOAD intro\LibraryManagmentSystem\UI\WindowsFormsApp2\
 C:\Users\new user\Desktop\OOAD intro\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\LibraryManagementUI.csproj.CopyComplete
 C:\Users\new user\Desktop\OOAD intro\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
 C:\Users\new user\Desktop\OOAD intro\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\new user\Desktop\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmBookInfo.resources
+C:\Users\new user\Desktop\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmMemberInfo.resources
+C:\Users\new user\Desktop\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmBorrowedBooks.resources
