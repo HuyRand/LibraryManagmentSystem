@@ -44,17 +44,30 @@ namespace WindowsFormsApp2
                     con.Open();
                     MySqlCommand cmd = con.CreateCommand();
                     cmd.CommandType = CommandType.Text;
-                    cmd.CommandText = "insert into BORROW values('" + txbMemid.Text + "', '" + txbBookid.Text + "', '" + dtpReserve.Text + "', '" + dtpDue.Text + "', '" + dtpReturn.Text + "')";
-                    cmd.ExecuteNonQuery();
+                    cmd.CommandText = "SELECT NUMBER_OF_BOOK_ALLOWED FROM MEMBER WHERE MEMID = '" + txbMemid.Text + "';";
+                    MySqlDataReader rdr = cmd.ExecuteReader();
+                    while (rdr.Read())
+                    {
+                        if (rdr.GetInt16(0) <= Program.MAXIMUM_NUMBER_OF_BOOK_CAN_BE_BORROWED)
+                        {
+                            rdr.Close();
+                            cmd.CommandText = "insert into BORROW values('" + txbMemid.Text + "', '" + txbBookid.Text + "', '" + dtpReserve.Text + "', '" + dtpDue.Text + "', '" + dtpReturn.Text + "')";
+                            cmd.ExecuteNonQuery();
+                            break;
+                        }
+                        else
+                        {
+                            MessageBox.Show("Maximum number of books borrowed exceeded");
+                            return;
+                        }
+                    }
 
                     string s, Author, Category;
                     s = "SELECT AUTHOR, CATEGORY " + "\n" +
                         "FROM BOOK" + "\n" +
                         "WHERE BOOKID = '" + txbBookid.Text + "';";
                     cmd.CommandText = s;
-                    MySqlDataReader rdr = cmd.ExecuteReader();
-
-
+                    rdr = cmd.ExecuteReader();
                     while (rdr.Read())
                     {
                         Author = rdr.GetString(0);
@@ -65,6 +78,17 @@ namespace WindowsFormsApp2
                         break;
                     }
 
+                    s = "SELECT NUMBER_OF_BOOK_ALLOWED FROM MEMBER WHERE MEMID = '" + txbMemid.Text + "';";
+                    cmd.CommandText = s;
+                    rdr = cmd.ExecuteReader();
+                    while (rdr.Read())
+                    {
+                        int temp = rdr.GetInt32(0) + 1;
+                        rdr.Close();
+                        cmd.CommandText = "UPDATE MEMBER SET NUMBER_OF_BOOK_ALLOWED = '" + temp + "' WHERE MEMID = '" + txbMemid.Text + "';";
+                        cmd.ExecuteNonQuery();
+                        break;
+                    }
                     con.Close();
                 }
 

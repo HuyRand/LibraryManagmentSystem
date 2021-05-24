@@ -19,6 +19,7 @@ namespace WindowsFormsApp2
         public static List<Member> MemberData=new List<Member>();
         public static List<Borrower> BorrowerData = new List<Borrower>();
         public static List<Location> Book_LocationData = new List<Location>();
+        public const int MAXIMUM_NUMBER_OF_BOOK_CAN_BE_BORROWED = 10;
 
         /// <summary>
         /// The main entry point for the application.

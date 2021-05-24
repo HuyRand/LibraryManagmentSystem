@@ -23,6 +23,7 @@ namespace WindowsFormsApp2
                 Program.database + ";" + "UID=" + Program.uid + ";" + "PASSWORD=" + Program.password + ";";
             Program.connection = new MySql.Data.MySqlClient.MySqlConnection(Program.connectionString);
 
+
         }
         private void btnRegisterNewMember_Click(object sender, EventArgs e)
         {
@@ -74,6 +75,7 @@ namespace WindowsFormsApp2
 
         private void connectToTheDbServerToolStripMenuItem_Click(object sender, EventArgs e)
         {
+
             try
             {
                 Program.connection.Open();

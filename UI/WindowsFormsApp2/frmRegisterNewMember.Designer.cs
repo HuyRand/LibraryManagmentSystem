@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dtpDateOfBirth = new System.Windows.Forms.DateTimePicker();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnRegister = new System.Windows.Forms.Button();
             this.txbNewMemberEmail = new System.Windows.Forms.TextBox();
@@ -41,16 +42,11 @@
             this.lbNewMemberIDNumber = new System.Windows.Forms.Label();
             this.lbNewMemberName = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dtpDateOfBirth = new System.Windows.Forms.DateTimePicker();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txbNewMemberBooksAllowed = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.txbNewMemberBooksAllowed);
-            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.dtpDateOfBirth);
             this.panel1.Controls.Add(this.btnCancel);
             this.panel1.Controls.Add(this.btnRegister);
@@ -65,16 +61,24 @@
             this.panel1.Controls.Add(this.lbNewMemberName);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(9, 10);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(628, 410);
+            this.panel1.Size = new System.Drawing.Size(578, 347);
             this.panel1.TabIndex = 0;
+            // 
+            // dtpDateOfBirth
+            // 
+            this.dtpDateOfBirth.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
+            this.dtpDateOfBirth.Location = new System.Drawing.Point(168, 162);
+            this.dtpDateOfBirth.Name = "dtpDateOfBirth";
+            this.dtpDateOfBirth.Size = new System.Drawing.Size(243, 28);
+            this.dtpDateOfBirth.TabIndex = 3;
             // 
             // btnCancel
             // 
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(471, 344);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCancel.Location = new System.Drawing.Point(471, 303);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(89, 28);
             this.btnCancel.TabIndex = 7;
@@ -85,8 +89,8 @@
             // btnRegister
             // 
             this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegister.Location = new System.Drawing.Point(371, 344);
-            this.btnRegister.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRegister.Location = new System.Drawing.Point(371, 303);
+            this.btnRegister.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(89, 28);
             this.btnRegister.TabIndex = 6;
@@ -98,7 +102,7 @@
             // 
             this.txbNewMemberEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbNewMemberEmail.Location = new System.Drawing.Point(168, 206);
-            this.txbNewMemberEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txbNewMemberEmail.Margin = new System.Windows.Forms.Padding(2);
             this.txbNewMemberEmail.Name = "txbNewMemberEmail";
             this.txbNewMemberEmail.Size = new System.Drawing.Size(392, 28);
             this.txbNewMemberEmail.TabIndex = 4;
@@ -107,7 +111,7 @@
             // 
             this.txbNewMemberAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbNewMemberAddress.Location = new System.Drawing.Point(168, 247);
-            this.txbNewMemberAddress.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txbNewMemberAddress.Margin = new System.Windows.Forms.Padding(2);
             this.txbNewMemberAddress.Name = "txbNewMemberAddress";
             this.txbNewMemberAddress.Size = new System.Drawing.Size(392, 28);
             this.txbNewMemberAddress.TabIndex = 5;
@@ -116,7 +120,7 @@
             // 
             this.txbNewMemberIDNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbNewMemberIDNumber.Location = new System.Drawing.Point(168, 119);
-            this.txbNewMemberIDNumber.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txbNewMemberIDNumber.Margin = new System.Windows.Forms.Padding(2);
             this.txbNewMemberIDNumber.Name = "txbNewMemberIDNumber";
             this.txbNewMemberIDNumber.Size = new System.Drawing.Size(392, 28);
             this.txbNewMemberIDNumber.TabIndex = 2;
@@ -125,7 +129,7 @@
             // 
             this.txbNewMemberName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbNewMemberName.Location = new System.Drawing.Point(168, 75);
-            this.txbNewMemberName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txbNewMemberName.Margin = new System.Windows.Forms.Padding(2);
             this.txbNewMemberName.Name = "txbNewMemberName";
             this.txbNewMemberName.Size = new System.Drawing.Size(392, 28);
             this.txbNewMemberName.TabIndex = 1;
@@ -196,40 +200,13 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Register new member";
             // 
-            // dtpDateOfBirth
-            // 
-            this.dtpDateOfBirth.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
-            this.dtpDateOfBirth.Location = new System.Drawing.Point(168, 162);
-            this.dtpDateOfBirth.Name = "dtpDateOfBirth";
-            this.dtpDateOfBirth.Size = new System.Drawing.Size(243, 28);
-            this.dtpDateOfBirth.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(16, 295);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(135, 48);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Number of\r\nBooks Allowed";
-            // 
-            // txbNewMemberBooksAllowed
-            // 
-            this.txbNewMemberBooksAllowed.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
-            this.txbNewMemberBooksAllowed.Location = new System.Drawing.Point(168, 295);
-            this.txbNewMemberBooksAllowed.Name = "txbNewMemberBooksAllowed";
-            this.txbNewMemberBooksAllowed.Size = new System.Drawing.Size(392, 28);
-            this.txbNewMemberBooksAllowed.TabIndex = 9;
-            // 
             // frmRegisterNewMember
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(648, 431);
+            this.ClientSize = new System.Drawing.Size(600, 368);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmRegisterNewMember";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Register new member";
@@ -255,7 +232,5 @@
         private System.Windows.Forms.Label lbNewMemberAddress;
         private System.Windows.Forms.Label lbNewMemberEmail;
         private System.Windows.Forms.DateTimePicker dtpDateOfBirth;
-        private System.Windows.Forms.TextBox txbNewMemberBooksAllowed;
-        private System.Windows.Forms.Label label2;
     }
 }

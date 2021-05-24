@@ -134,25 +134,6 @@
             this.rdoTacGiaYeuThich = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvStatistics = new System.Windows.Forms.DataGridView();
-            this.tpRegulation = new System.Windows.Forms.TabPage();
-            this.btnUpdateRegulation = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.txbQuyDinhTienPhat = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txbQuyDinhKhoangCachNamXB = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.txbQuyDinhTuoiToiThieu = new System.Windows.Forms.TextBox();
-            this.txbQuyDinhTuoiToiDa = new System.Windows.Forms.TextBox();
-            this.txbQuyDinhSoNgayDuocMuon = new System.Windows.Forms.TextBox();
-            this.txbQuyDinhSoSachDuocMuon = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.btnHuy = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
@@ -177,10 +158,6 @@
             this.tpStatistics.SuspendLayout();
             this.pnlTypeOfStatistic.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStatistics)).BeginInit();
-            this.tpRegulation.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -365,7 +342,6 @@
             this.tcMainMenu.Controls.Add(this.tpMember);
             this.tcMainMenu.Controls.Add(this.tpBook);
             this.tcMainMenu.Controls.Add(this.tpStatistics);
-            this.tcMainMenu.Controls.Add(this.tpRegulation);
             this.tcMainMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.tcMainMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tcMainMenu.ItemSize = new System.Drawing.Size(150, 50);
@@ -1236,189 +1212,6 @@
             this.dgvStatistics.Size = new System.Drawing.Size(507, 477);
             this.dgvStatistics.TabIndex = 0;
             // 
-            // tpRegulation
-            // 
-            this.tpRegulation.Controls.Add(this.btnUpdateRegulation);
-            this.tpRegulation.Controls.Add(this.panel5);
-            this.tpRegulation.Location = new System.Drawing.Point(4, 54);
-            this.tpRegulation.Name = "tpRegulation";
-            this.tpRegulation.Padding = new System.Windows.Forms.Padding(3);
-            this.tpRegulation.Size = new System.Drawing.Size(962, 491);
-            this.tpRegulation.TabIndex = 6;
-            this.tpRegulation.Text = "  Regulation  ";
-            this.tpRegulation.UseVisualStyleBackColor = true;
-            // 
-            // btnUpdateRegulation
-            // 
-            this.btnUpdateRegulation.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdateRegulation.Location = new System.Drawing.Point(712, 259);
-            this.btnUpdateRegulation.Name = "btnUpdateRegulation";
-            this.btnUpdateRegulation.Size = new System.Drawing.Size(242, 73);
-            this.btnUpdateRegulation.TabIndex = 1;
-            this.btnUpdateRegulation.Text = "Update Regulation";
-            this.btnUpdateRegulation.UseVisualStyleBackColor = true;
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.panel7);
-            this.panel5.Controls.Add(this.panel6);
-            this.panel5.Location = new System.Drawing.Point(9, 7);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(945, 246);
-            this.panel5.TabIndex = 0;
-            // 
-            // panel7
-            // 
-            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel7.Controls.Add(this.txbQuyDinhTienPhat);
-            this.panel7.Controls.Add(this.label9);
-            this.panel7.Controls.Add(this.txbQuyDinhKhoangCachNamXB);
-            this.panel7.Controls.Add(this.label8);
-            this.panel7.Controls.Add(this.label7);
-            this.panel7.Location = new System.Drawing.Point(485, 4);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(457, 239);
-            this.panel7.TabIndex = 1;
-            // 
-            // txbQuyDinhTienPhat
-            // 
-            this.txbQuyDinhTienPhat.Enabled = false;
-            this.txbQuyDinhTienPhat.Location = new System.Drawing.Point(213, 109);
-            this.txbQuyDinhTienPhat.Name = "txbQuyDinhTienPhat";
-            this.txbQuyDinhTienPhat.Size = new System.Drawing.Size(231, 29);
-            this.txbQuyDinhTienPhat.TabIndex = 8;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(7, 112);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(169, 24);
-            this.label9.TabIndex = 7;
-            this.label9.Text = "Late return penalty:";
-            // 
-            // txbQuyDinhKhoangCachNamXB
-            // 
-            this.txbQuyDinhKhoangCachNamXB.Enabled = false;
-            this.txbQuyDinhKhoangCachNamXB.Location = new System.Drawing.Point(213, 65);
-            this.txbQuyDinhKhoangCachNamXB.Name = "txbQuyDinhKhoangCachNamXB";
-            this.txbQuyDinhKhoangCachNamXB.Size = new System.Drawing.Size(231, 29);
-            this.txbQuyDinhKhoangCachNamXB.TabIndex = 6;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(13, 9);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(303, 42);
-            this.label8.TabIndex = 5;
-            this.label8.Text = "Book Regulation:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(7, 68);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(187, 24);
-            this.label7.TabIndex = 5;
-            this.label7.Text = "Publish day distance:";
-            // 
-            // panel6
-            // 
-            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Controls.Add(this.txbQuyDinhTuoiToiThieu);
-            this.panel6.Controls.Add(this.txbQuyDinhTuoiToiDa);
-            this.panel6.Controls.Add(this.txbQuyDinhSoNgayDuocMuon);
-            this.panel6.Controls.Add(this.txbQuyDinhSoSachDuocMuon);
-            this.panel6.Controls.Add(this.label6);
-            this.panel6.Controls.Add(this.label5);
-            this.panel6.Controls.Add(this.label4);
-            this.panel6.Controls.Add(this.label3);
-            this.panel6.Controls.Add(this.label2);
-            this.panel6.Location = new System.Drawing.Point(4, 4);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(474, 239);
-            this.panel6.TabIndex = 0;
-            // 
-            // txbQuyDinhTuoiToiThieu
-            // 
-            this.txbQuyDinhTuoiToiThieu.Enabled = false;
-            this.txbQuyDinhTuoiToiThieu.Location = new System.Drawing.Point(208, 65);
-            this.txbQuyDinhTuoiToiThieu.Name = "txbQuyDinhTuoiToiThieu";
-            this.txbQuyDinhTuoiToiThieu.Size = new System.Drawing.Size(252, 29);
-            this.txbQuyDinhTuoiToiThieu.TabIndex = 8;
-            // 
-            // txbQuyDinhTuoiToiDa
-            // 
-            this.txbQuyDinhTuoiToiDa.Enabled = false;
-            this.txbQuyDinhTuoiToiDa.Location = new System.Drawing.Point(208, 109);
-            this.txbQuyDinhTuoiToiDa.Name = "txbQuyDinhTuoiToiDa";
-            this.txbQuyDinhTuoiToiDa.Size = new System.Drawing.Size(252, 29);
-            this.txbQuyDinhTuoiToiDa.TabIndex = 7;
-            // 
-            // txbQuyDinhSoNgayDuocMuon
-            // 
-            this.txbQuyDinhSoNgayDuocMuon.Enabled = false;
-            this.txbQuyDinhSoNgayDuocMuon.Location = new System.Drawing.Point(208, 152);
-            this.txbQuyDinhSoNgayDuocMuon.Name = "txbQuyDinhSoNgayDuocMuon";
-            this.txbQuyDinhSoNgayDuocMuon.Size = new System.Drawing.Size(251, 29);
-            this.txbQuyDinhSoNgayDuocMuon.TabIndex = 6;
-            // 
-            // txbQuyDinhSoSachDuocMuon
-            // 
-            this.txbQuyDinhSoSachDuocMuon.Enabled = false;
-            this.txbQuyDinhSoSachDuocMuon.Location = new System.Drawing.Point(209, 199);
-            this.txbQuyDinhSoSachDuocMuon.Name = "txbQuyDinhSoSachDuocMuon";
-            this.txbQuyDinhSoSachDuocMuon.Size = new System.Drawing.Size(251, 29);
-            this.txbQuyDinhSoSachDuocMuon.TabIndex = 5;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(5, 199);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(209, 24);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Maximum borrow book:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(5, 152);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(202, 24);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Maximum borrow time:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(5, 109);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(135, 24);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Maximum age:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(5, 68);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(130, 24);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Minimum age:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(10, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(353, 42);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Member Regulation:";
-            // 
             // btnHuy
             // 
             this.btnHuy.DialogResult = System.Windows.Forms.DialogResult.Cancel;
@@ -1479,12 +1272,6 @@
             this.pnlTypeOfStatistic.ResumeLayout(false);
             this.pnlTypeOfStatistic.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStatistics)).EndInit();
-            this.tpRegulation.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1583,26 +1370,7 @@
         private System.Windows.Forms.RadioButton rdoTacGiaYeuThich;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvStatistics;
-        private System.Windows.Forms.TabPage tpRegulation;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txbQuyDinhKhoangCachNamXB;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txbQuyDinhTuoiToiThieu;
-        private System.Windows.Forms.TextBox txbQuyDinhTuoiToiDa;
-        private System.Windows.Forms.TextBox txbQuyDinhSoNgayDuocMuon;
-        private System.Windows.Forms.TextBox txbQuyDinhSoSachDuocMuon;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button btnUpdateRegulation;
         private System.Windows.Forms.Button btnHuy;
-        private System.Windows.Forms.TextBox txbQuyDinhTienPhat;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label lbCmndEX;
         private System.Windows.Forms.Label lbEmailEX;
         private System.Windows.Forms.Label lbTenbandocEX;

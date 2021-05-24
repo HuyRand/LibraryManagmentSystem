@@ -77,6 +77,18 @@ namespace WindowsFormsApp2
                 da.Fill(dt);
                 dgvReturnBook.DataSource = dt;
 
+                string s = "SELECT NUMBER_OF_BOOK_ALLOWED FROM MEMBER WHERE MEMID = '" + txbReturnMemberCardNumber.Text + "';";
+                cmd.CommandText = s;
+                MySqlDataReader rdr = cmd.ExecuteReader();
+                while (rdr.Read())
+                {
+                    int temp = rdr.GetInt32(0) - 1;
+                    rdr.Close();
+                    cmd.CommandText = "UPDATE MEMBER SET NUMBER_OF_BOOK_ALLOWED = '" + temp + "' WHERE MEMID = '" + txbReturnMemberCardNumber.Text + "';";
+                    cmd.ExecuteNonQuery();
+                    break;
+                }
+
                 con.Close();
             }
 
