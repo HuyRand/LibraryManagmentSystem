@@ -348,6 +348,13 @@ namespace WindowsFormsApp2
             MessageBox.Show("deleted");
             rdr.Close();
 
+            string sql2 = $"DELETE FROM LOCATION WHERE BOOKID = {txbBookID.Text};";
+            MySqlCommand cmd2 = new MySqlCommand(sql2, Program.connection);
+            MySqlDataReader rdr2 = cmd2.ExecuteReader();
+            MessageBox.Show("deleted");
+            rdr2.Close();
+
+
         }
 
         private void btnChange_Click(object sender, EventArgs e)
