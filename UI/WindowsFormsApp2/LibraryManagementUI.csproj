@@ -89,6 +89,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="fmrAttachImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmrAttachImage.Designer.cs">
+      <DependentUpon>fmrAttachImage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,6 +178,9 @@
     <EmbeddedResource Include="borrowBookLine.resx">
       <DependentUpon>borrowBookLine.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fmrAttachImage.resx">
+      <DependentUpon>fmrAttachImage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -207,19 +216,19 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -236,51 +245,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\pic1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pic2.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pic6.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pic7.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pic11.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pic12.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pic16.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pic17.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\picBack.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Resources\pic10.jpg" />
-    <None Include="Resources\pic101.jpg" />
-    <Content Include="Resources\pic13.jpg" />
-    <None Include="Resources\pic131.jpg" />
-    <Content Include="Resources\pic14.jpg" />
-    <None Include="Resources\pic141.jpg" />
-    <Content Include="Resources\pic15.jpg" />
-    <None Include="Resources\pic151.jpg" />
-    <Content Include="Resources\pic3.jpg" />
-    <None Include="Resources\pic91.jpg" />
-    <None Include="Resources\pic31.jpg" />
-    <Content Include="Resources\pic4.jpg" />
-    <None Include="Resources\pic41.jpg" />
-    <Content Include="Resources\pic5.jpg" />
-    <None Include="Resources\pic51.jpg" />
-    <Content Include="Resources\pic8.jpg" />
-    <None Include="Resources\pic81.jpg" />
-    <Content Include="Resources\pic9.jpg" />
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -360,3 +360,4 @@ C:\Users\new user\Desktop\OOAD intro\LibraryManagmentSystem\UI\WindowsFormsApp2\
 C:\Users\new user\Desktop\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmBookInfo.resources
 C:\Users\new user\Desktop\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmMemberInfo.resources
 C:\Users\new user\Desktop\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmBorrowedBooks.resources
+C:\Users\new user\Desktop\Library Man my-Branch\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.fmrAttachImage.resources

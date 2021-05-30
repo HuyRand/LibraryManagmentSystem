@@ -59,11 +59,13 @@
             this.lbNewBookGenre = new System.Windows.Forms.Label();
             this.lbNewBookAuthor = new System.Windows.Forms.Label();
             this.lbNewBookPublisher = new System.Windows.Forms.Label();
+            this.btnAddImage = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnAddImage);
             this.panel1.Controls.Add(this.txbNewBookShelf_ID);
             this.panel1.Controls.Add(this.txbNewBookSection_ID);
             this.panel1.Controls.Add(this.txbNewBookRowNumber);
@@ -263,7 +265,7 @@
             // btnCancel
             // 
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Location = new System.Drawing.Point(488, 438);
+            this.btnCancel.Location = new System.Drawing.Point(576, 438);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(124, 44);
             this.btnCancel.TabIndex = 9;
@@ -273,7 +275,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(326, 438);
+            this.btnAdd.Location = new System.Drawing.Point(276, 438);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(124, 44);
             this.btnAdd.TabIndex = 8;
@@ -358,6 +360,16 @@
             this.lbNewBookPublisher.TabIndex = 9;
             this.lbNewBookPublisher.Text = "Publisher:";
             // 
+            // btnAddImage
+            // 
+            this.btnAddImage.Location = new System.Drawing.Point(428, 438);
+            this.btnAddImage.Name = "btnAddImage";
+            this.btnAddImage.Size = new System.Drawing.Size(123, 44);
+            this.btnAddImage.TabIndex = 32;
+            this.btnAddImage.Text = "Add Image";
+            this.btnAddImage.UseVisualStyleBackColor = true;
+            this.btnAddImage.Click += new System.EventHandler(this.btnAddImage_Click);
+            // 
             // frmAddNewBook
             // 
             this.AcceptButton = this.btnAdd;
@@ -410,5 +422,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label LocationID;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnAddImage;
     }
 }

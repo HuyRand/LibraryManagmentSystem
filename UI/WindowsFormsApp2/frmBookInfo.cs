@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using System.IO;
 
 namespace WindowsFormsApp2
 {
@@ -26,104 +27,13 @@ namespace WindowsFormsApp2
             txbPublishYear.Text = publishyearBook;
             txbPrice.Text = priceBook;
 
-            if(txbBookID.Text == "121")
-            {
-                pcb1.Visible = true;
-                pcb2.Visible = false;
-                pcb3.Visible = false;
-                pcb4.Visible = false;
-                pcb5.Visible = false;
-                pcb6.Visible = false;
-                pcb7.Visible = false;
-                pcb8.Visible = false;
-            }
+            // path is AppDomain.CurrentDomain.BaseDirectory + "/Book_Images/" + BOOK_IMG_ID;
+            if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + $"Resources\\{nameBook}{authorBook}.jpg"))
+                pictureBox1.Image=Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + $"Resources\\{nameBook}{authorBook}.jpg");
+            else pictureBox1.Image= Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + $"Resources\\NotAvailable.jpg");
 
-            if (txbBookID.Text == "122")
-            {
-                pcb2.Visible = true;
-                pcb1.Visible = false;
-                pcb3.Visible = false;
-                pcb4.Visible = false;
-                pcb5.Visible = false;
-                pcb6.Visible = false;
-                pcb7.Visible = false;
-                pcb8.Visible = false;
-            }
 
-            if (txbBookID.Text == "123")
-            {
-                pcb3.Visible = true;
-                pcb2.Visible = false;
-                pcb1.Visible = false;
-                pcb4.Visible = false;
-                pcb5.Visible = false;
-                pcb6.Visible = false;
-                pcb7.Visible = false;
-                pcb8.Visible = false;
-            }
-
-            if (txbBookID.Text == "124")
-            {
-                pcb4.Visible = true;
-                pcb2.Visible = false;
-                pcb3.Visible = false;
-                pcb1.Visible = false;
-                pcb5.Visible = false;
-                pcb6.Visible = false;
-                pcb7.Visible = false;
-                pcb8.Visible = false;
-            }
-
-            if (txbBookID.Text == "125")
-            {
-                pcb5.Visible = true;
-                pcb2.Visible = false;
-                pcb3.Visible = false;
-                pcb4.Visible = false;
-                pcb1.Visible = false;
-                pcb6.Visible = false;
-                pcb7.Visible = false;
-                pcb8.Visible = false;
-            }
-
-            if (txbBookID.Text == "117")
-            {
-                pcb6.Visible = true;
-                pcb2.Visible = false;
-                pcb3.Visible = false;
-                pcb4.Visible = false;
-                pcb1.Visible = false;
-                pcb5.Visible = false;
-                pcb7.Visible = false;
-                pcb8.Visible = false;
-            }
-
-            if (txbBookID.Text == "126")
-            {
-                pcb7.Visible = true;
-                pcb2.Visible = false;
-                pcb3.Visible = false;
-                pcb4.Visible = false;
-                pcb5.Visible = false;
-                pcb6.Visible = false;
-                pcb1.Visible = false;
-                pcb8.Visible = false;
-            }
-
-            if (txbBookID.Text == "127")
-            {
-                pcb8.Visible = true;
-                pcb2.Visible = false;
-                pcb3.Visible = false;
-                pcb4.Visible = false;
-                pcb5.Visible = false;
-                pcb6.Visible = false;
-                pcb7.Visible = false;
-                pcb1.Visible = false;
-            }
         }
-
-           
         public frmBookInfo(string name, string id, string genre, string author, string state, string publisher, string publishyear, string price)
         {
             InitializeComponent();

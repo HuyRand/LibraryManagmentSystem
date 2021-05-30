@@ -70,5 +70,12 @@ namespace WindowsFormsApp2
             MessageBox.Show("Added");
             Close();
         }
+
+        private void btnAddImage_Click(object sender, EventArgs e)
+        {
+            fmrAttachImage f = new fmrAttachImage(txbNewBookName.Text, txbNewBookAuthor.Text);
+            f.ShowDialog();
+
+        }
     }
 }
