@@ -52,12 +52,14 @@
             this.lbBookInfomation = new System.Windows.Forms.Label();
             this.btnHuy = new System.Windows.Forms.Button();
             this.customInstaller1 = new MySql.Data.MySqlClient.CustomInstaller();
+            this.btnAddImage = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnAddImage);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.labelLocation);
             this.panel1.Controls.Add(this.txbLocation);
@@ -282,6 +284,18 @@
             this.btnHuy.Text = "button2";
             this.btnHuy.UseVisualStyleBackColor = true;
             // 
+            // btnAddImage
+            // 
+            this.btnAddImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddImage.Location = new System.Drawing.Point(537, 597);
+            this.btnAddImage.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAddImage.Name = "btnAddImage";
+            this.btnAddImage.Size = new System.Drawing.Size(140, 49);
+            this.btnAddImage.TabIndex = 53;
+            this.btnAddImage.Text = "Add Image";
+            this.btnAddImage.UseVisualStyleBackColor = true;
+            this.btnAddImage.Click += new System.EventHandler(this.btnAddImage_Click);
+            // 
             // frmBookInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -330,5 +344,6 @@
         private System.Windows.Forms.Label labelLocation;
         private System.Windows.Forms.TextBox txbLocation;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnAddImage;
     }
 }

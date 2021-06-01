@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using LibraryManagementClasses;
+using System.IO;
 namespace WindowsFormsApp2
 {
                
@@ -342,18 +343,20 @@ namespace WindowsFormsApp2
 
         private void btnDeleteBook_Click(object sender, EventArgs e)
         {
+            if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + $"Resources\\{txbBookName.Text}{txbAuthor.Text}.jpg"))
+                File.Delete(AppDomain.CurrentDomain.BaseDirectory + $"Resources\\{txbBookName.Text}{txbAuthor.Text}.jpg");
+
             string sql = $"DELETE FROM BOOK WHERE BOOKID = {txbBookID.Text};";
             MySqlCommand cmd = new MySqlCommand(sql, Program.connection);
             MySqlDataReader rdr = cmd.ExecuteReader();
-            MessageBox.Show("deleted");
             rdr.Close();
 
             string sql2 = $"DELETE FROM LOCATION WHERE BOOKID = {txbBookID.Text};";
             MySqlCommand cmd2 = new MySqlCommand(sql2, Program.connection);
             MySqlDataReader rdr2 = cmd2.ExecuteReader();
-            MessageBox.Show("deleted");
             rdr2.Close();
 
+            MessageBox.Show("deleted");
 
         }
 

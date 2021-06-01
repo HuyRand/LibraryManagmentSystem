@@ -16,6 +16,15 @@ namespace WindowsFormsApp2
     {
         private string nameBook, idBook, genreBook, authorBook, stateBook, publisherBook, publishyearBook, priceBook;
 
+        private void btnAddImage_Click(object sender, EventArgs e)
+        {
+            if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + $"Resources\\{nameBook}{authorBook}.jpg"))
+                pictureBox1.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + $"Resources\\NotAvailable.jpg");
+            fmrAttachImage f = new fmrAttachImage(nameBook, authorBook);
+            f.ShowDialog();
+            frmBookInfo_Load(sender,e);
+        }
+
         private void frmBookInfo_Load(object sender, EventArgs e)
         {
             txbBookName.Text = nameBook;

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace WindowsFormsApp2
 {
@@ -40,7 +41,11 @@ namespace WindowsFormsApp2
         private void Save_Click(object sender, EventArgs e)
         {
             //if SAVE_ == True -> procceed
-            pictureBox1.Image.Save(AppDomain.CurrentDomain.BaseDirectory + $"Resources\\{Book_Name}{Author}.jpg");
+            if (pictureBox1.Image != null) { 
+                if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + $"Resources\\{Book_Name}{Author}.jpg"))
+                    File.Delete(AppDomain.CurrentDomain.BaseDirectory + $"Resources\\{Book_Name}{Author}.jpg");
+                pictureBox1.Image.Save(AppDomain.CurrentDomain.BaseDirectory + $"Resources\\{Book_Name}{Author}.jpg");
+            }
             this.Close();
             // OUT
         }
