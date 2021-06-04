@@ -47,11 +47,11 @@
             this.btnCreateBorrowTicket = new System.Windows.Forms.Button();
             this.btnHuy = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.addImageBtton = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txbRegistrationDate = new System.Windows.Forms.TextBox();
             this.txbDateOfBirth = new System.Windows.Forms.TextBox();
             this.btnCancle = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.addImageBtton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -260,32 +260,16 @@
             this.panel1.Size = new System.Drawing.Size(807, 550);
             this.panel1.TabIndex = 17;
             // 
-            // txbRegistrationDate
+            // addImageBtton
             // 
-            this.txbRegistrationDate.Location = new System.Drawing.Point(167, 272);
-            this.txbRegistrationDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txbRegistrationDate.Name = "txbRegistrationDate";
-            this.txbRegistrationDate.Size = new System.Drawing.Size(200, 20);
-            this.txbRegistrationDate.TabIndex = 21;
-            // 
-            // txbDateOfBirth
-            // 
-            this.txbDateOfBirth.Location = new System.Drawing.Point(167, 177);
-            this.txbDateOfBirth.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txbDateOfBirth.Name = "txbDateOfBirth";
-            this.txbDateOfBirth.Size = new System.Drawing.Size(200, 20);
-            this.txbDateOfBirth.TabIndex = 20;
-            // 
-            // btnCancle
-            // 
-            this.btnCancle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancle.Location = new System.Drawing.Point(342, 473);
-            this.btnCancle.Name = "btnCancle";
-            this.btnCancle.Size = new System.Drawing.Size(89, 53);
-            this.btnCancle.TabIndex = 17;
-            this.btnCancle.Text = "Cancle";
-            this.btnCancle.UseVisualStyleBackColor = true;
-            this.btnCancle.Click += new System.EventHandler(this.btnCancle_Click);
+            this.addImageBtton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addImageBtton.Location = new System.Drawing.Point(624, 473);
+            this.addImageBtton.Name = "addImageBtton";
+            this.addImageBtton.Size = new System.Drawing.Size(89, 53);
+            this.addImageBtton.TabIndex = 23;
+            this.addImageBtton.Text = "Add Image";
+            this.addImageBtton.UseVisualStyleBackColor = true;
+            this.addImageBtton.Click += new System.EventHandler(this.addImageBtton_Click);
             // 
             // pictureBox1
             // 
@@ -297,16 +281,32 @@
             this.pictureBox1.TabIndex = 22;
             this.pictureBox1.TabStop = false;
             // 
-            // addImageBtton
+            // txbRegistrationDate
             // 
-            this.addImageBtton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addImageBtton.Location = new System.Drawing.Point(624, 473);
-            this.addImageBtton.Name = "addImageBtton";
-            this.addImageBtton.Size = new System.Drawing.Size(89, 53);
-            this.addImageBtton.TabIndex = 23;
-            this.addImageBtton.Text = "Add Image";
-            this.addImageBtton.UseVisualStyleBackColor = true;
-            this.addImageBtton.Click += new System.EventHandler(this.addImageBtton_Click);
+            this.txbRegistrationDate.Location = new System.Drawing.Point(167, 272);
+            this.txbRegistrationDate.Margin = new System.Windows.Forms.Padding(2);
+            this.txbRegistrationDate.Name = "txbRegistrationDate";
+            this.txbRegistrationDate.Size = new System.Drawing.Size(200, 20);
+            this.txbRegistrationDate.TabIndex = 21;
+            // 
+            // txbDateOfBirth
+            // 
+            this.txbDateOfBirth.Location = new System.Drawing.Point(167, 177);
+            this.txbDateOfBirth.Margin = new System.Windows.Forms.Padding(2);
+            this.txbDateOfBirth.Name = "txbDateOfBirth";
+            this.txbDateOfBirth.Size = new System.Drawing.Size(200, 20);
+            this.txbDateOfBirth.TabIndex = 20;
+            // 
+            // btnCancle
+            // 
+            this.btnCancle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancle.Location = new System.Drawing.Point(342, 473);
+            this.btnCancle.Name = "btnCancle";
+            this.btnCancle.Size = new System.Drawing.Size(89, 53);
+            this.btnCancle.TabIndex = 17;
+            this.btnCancle.Text = "Cancel";
+            this.btnCancle.UseVisualStyleBackColor = true;
+            this.btnCancle.Click += new System.EventHandler(this.btnCancle_Click);
             // 
             // frmMemberInfo
             // 
