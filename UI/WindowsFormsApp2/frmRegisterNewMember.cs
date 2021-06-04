@@ -8,6 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using System.Text.RegularExpressions;
+
 
 namespace WindowsFormsApp2
 {
@@ -38,6 +41,49 @@ namespace WindowsFormsApp2
             rdr.Close();
             MessageBox.Show("Added");
             Close();
+        }
+
+        private void addImageBttn_Click(object sender, EventArgs e)
+        {
+            if (txbNewMemberName.Text == "" || txbNewMemberAddress.Text == "" || txbNewMemberEmail.Text == "")
+            {
+                MessageBox.Show("Enter Name, Email, Address to add image");
+                return;
+            }
+            fmrAttachImage f = new fmrAttachImage(2,txbNewMemberName.Text, txbNewMemberEmail.Text,txbNewMemberAddress.Text,null);
+            f.ShowDialog();
+            frmRegisterNewMember_Load(sender, e);
+        }
+
+        private void frmRegisterNewMember_Load(object sender, EventArgs e)
+        {
+            if (txbNewMemberEmail.Text!="" && txbNewMemberAddress.Text!="")
+                showPicture();
+        }
+        private void showPicture()
+        {
+            string tempEmail = EmailChop(txbNewMemberEmail.Text);
+            string tempAddress = Normalizer(txbNewMemberAddress.Text);
+            string temp = AppDomain.CurrentDomain.BaseDirectory + $"Resources\\Member_Images\\{txbNewMemberName.Text}{tempEmail}{tempAddress}.jpg";
+            if (File.Exists(temp))
+                pictureBox1.Image = Image.FromFile(temp);
+            else pictureBox1.Image = Image.FromFile(temp);
+        }
+        public string Normalizer(string s)
+        {
+            string temp = s;
+            temp = Regex.Replace(temp, @"[.,,/,@]|[,]{2}", "_");
+            return temp;
+        }
+        public string EmailChop(string s)
+        {
+            string temp = s.Substring(0, s.IndexOf('@'));
+            return temp;
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

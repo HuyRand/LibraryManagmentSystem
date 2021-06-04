@@ -18,9 +18,9 @@ namespace WindowsFormsApp2
 
         private void btnAddImage_Click(object sender, EventArgs e)
         {
-            if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + $"Resources\\{nameBook}{authorBook}.jpg"))
-                pictureBox1.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + $"Resources\\NotAvailable.jpg");
-            fmrAttachImage f = new fmrAttachImage(nameBook, authorBook);
+            if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + $"Resources\\Book_Images\\{nameBook}{authorBook}.jpg"))
+                pictureBox1.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + $"Resources\\Book_Images\\NotAvailable.jpg");
+            fmrAttachImage f = new fmrAttachImage(1,nameBook,null,null, authorBook);
             f.ShowDialog();
             frmBookInfo_Load(sender,e);
         }
@@ -37,9 +37,9 @@ namespace WindowsFormsApp2
             txbPrice.Text = priceBook;
 
             // path is AppDomain.CurrentDomain.BaseDirectory + "/Book_Images/" + BOOK_IMG_ID;
-            if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + $"Resources\\{nameBook}{authorBook}.jpg"))
-                pictureBox1.Image=Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + $"Resources\\{nameBook}{authorBook}.jpg");
-            else pictureBox1.Image= Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + $"Resources\\NotAvailable.jpg");
+            if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + $"Resources\\Book_Images\\{nameBook}{authorBook}.jpg"))
+                pictureBox1.Image=Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + $"Resources\\Book_Images\\{nameBook}{authorBook}.jpg");
+            else pictureBox1.Image= Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + $"Resources\\Book_Images\\NotAvailable.jpg");
 
 
         }

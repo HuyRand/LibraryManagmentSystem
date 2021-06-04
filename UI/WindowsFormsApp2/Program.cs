@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using LibraryManagementClasses;
+using System.Text.RegularExpressions;
 namespace WindowsFormsApp2
 {
     static class Program
@@ -31,6 +32,17 @@ namespace WindowsFormsApp2
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmMainMenu());
+        }
+        public static string Normalizer(string s)
+        {
+            string temp = s;
+            temp = Regex.Replace(temp, @"[.,,/,@]|[,]{2}", "_");
+            return temp;
+        }
+        public static string EmailChop(string s)
+        {
+            string temp = s.Substring(0, s.IndexOf('@'));
+            return temp;
         }
     }
 }

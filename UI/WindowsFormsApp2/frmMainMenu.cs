@@ -23,6 +23,7 @@ namespace WindowsFormsApp2
             Program.connectionString = "SERVER=" + Program.server + ";" + "DATABASE=" +
                 Program.database + ";" + "UID=" + Program.uid + ";" + "PASSWORD=" + Program.password + ";";
             Program.connection = new MySql.Data.MySqlClient.MySqlConnection(Program.connectionString);
+            connectDb();
 
 
         }
@@ -73,8 +74,7 @@ namespace WindowsFormsApp2
             frmPenaltyBill f = new frmPenaltyBill(txbIdentityNumber.Text, txbMemberName.Text, txbMemberOwedMoney.Text);
             f.ShowDialog();
         }
-
-        private void connectToTheDbServerToolStripMenuItem_Click(object sender, EventArgs e)
+        private void connectDb()
         {
 
             try
@@ -100,7 +100,6 @@ namespace WindowsFormsApp2
                 MessageBox.Show(ex.ToString());
             }
         }
-
         private void frmMainMenu_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (Program.connection.State == ConnectionState.Open)
@@ -332,7 +331,11 @@ namespace WindowsFormsApp2
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            
+            string tempMemberEmail = Program.EmailChop(txbMemberEmail.Text);
+            string tempMemberAddress = Program.Normalizer(txbMemberAddress.Text);
+            string tempMemberPath = AppDomain.CurrentDomain.BaseDirectory + $"Resources\\Member_Images\\{txbMemberName.Text}{tempMemberEmail}{tempMemberAddress}.jpg";
+            if (File.Exists(tempMemberPath))
+                File.Delete(tempMemberPath);
             string sql = $"DELETE FROM MEMBER WHERE MEMID = {txbIdentityNumber.Text};";
             MySqlCommand cmd = new MySqlCommand(sql, Program.connection);
             MySqlDataReader rdr = cmd.ExecuteReader();
@@ -343,8 +346,8 @@ namespace WindowsFormsApp2
 
         private void btnDeleteBook_Click(object sender, EventArgs e)
         {
-            if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + $"Resources\\{txbBookName.Text}{txbAuthor.Text}.jpg"))
-                File.Delete(AppDomain.CurrentDomain.BaseDirectory + $"Resources\\{txbBookName.Text}{txbAuthor.Text}.jpg");
+            if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + $"Resources\\Book_Images\\{txbBookName.Text}{txbAuthor.Text}.jpg"))
+                File.Delete(AppDomain.CurrentDomain.BaseDirectory + $"Resources\\Book_Images\\{txbBookName.Text}{txbAuthor.Text}.jpg");
 
             string sql = $"DELETE FROM BOOK WHERE BOOKID = {txbBookID.Text};";
             MySqlCommand cmd = new MySqlCommand(sql, Program.connection);

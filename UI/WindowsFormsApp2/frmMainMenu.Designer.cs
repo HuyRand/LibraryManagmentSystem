@@ -32,7 +32,6 @@
             this.updateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.RegisterNewMemberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addNewBookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.connectToTheDbServerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ManageborrowReturnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.createBorrowTicketToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.createReturnTicketToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -179,8 +178,7 @@
             // 
             this.updateToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.RegisterNewMemberToolStripMenuItem,
-            this.addNewBookToolStripMenuItem,
-            this.connectToTheDbServerToolStripMenuItem});
+            this.addNewBookToolStripMenuItem});
             this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
             this.updateToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
             this.updateToolStripMenuItem.Text = "Update";
@@ -201,13 +199,6 @@
             this.addNewBookToolStripMenuItem.Size = new System.Drawing.Size(232, 22);
             this.addNewBookToolStripMenuItem.Text = "Add new book";
             this.addNewBookToolStripMenuItem.Click += new System.EventHandler(this.addNewBookToolStripMenuItem_Click);
-            // 
-            // connectToTheDbServerToolStripMenuItem
-            // 
-            this.connectToTheDbServerToolStripMenuItem.Name = "connectToTheDbServerToolStripMenuItem";
-            this.connectToTheDbServerToolStripMenuItem.Size = new System.Drawing.Size(232, 22);
-            this.connectToTheDbServerToolStripMenuItem.Text = "Connect to the db server";
-            this.connectToTheDbServerToolStripMenuItem.Click += new System.EventHandler(this.connectToTheDbServerToolStripMenuItem_Click);
             // 
             // ManageborrowReturnToolStripMenuItem
             // 
@@ -1381,7 +1372,6 @@
         private System.Windows.Forms.StatusStrip sttError;
         private System.Windows.Forms.ToolStripStatusLabel sttErrorLabel;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
-        private System.Windows.Forms.ToolStripMenuItem connectToTheDbServerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem borrowedBooksToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem borrowedBooksDetailToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem refreshToolStripMenuItem;

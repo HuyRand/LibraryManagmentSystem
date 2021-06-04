@@ -7,12 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
+using System.IO;
 
 namespace WindowsFormsApp2
 {
     public partial class frmMemberInfo : Form
     {
         private string nameMember, idMember, dateMember, mailMember, typeMember, addressMember, registerdayMember, ownMember;
+
+        private void addImageBtton_Click(object sender, EventArgs e)
+        {
+            fmrAttachImage f = new fmrAttachImage(2, nameMember, mailMember, addressMember, null);
+            f.ShowDialog();
+            frmMemberInfo_Load(sender, e);
+        }
 
         public frmMemberInfo()
         {
@@ -39,14 +48,14 @@ namespace WindowsFormsApp2
         private void btnCreateReturnTicket_Click(object sender, EventArgs e)
         {
             this.Close();
-            frmReturnTicket f = new frmReturnTicket();
+            frmReturnTicket f = new frmReturnTicket(idMember,nameMember);
             f.ShowDialog();
         }
 
         private void btnCreateBorrowTicket_Click(object sender, EventArgs e)
         {
             this.Close();
-            frmBorrowTicket f = new frmBorrowTicket();
+            frmBorrowTicket f = new frmBorrowTicket(idMember,nameMember);
             f.ShowDialog();
         }
 
@@ -60,6 +69,28 @@ namespace WindowsFormsApp2
             txbMemberAddress.Text = addressMember;
             txbRegistrationDate.Text = registerdayMember;
             txbTotalOwedMoney.Text = ownMember;
+            showPicture();
         }
+        private void showPicture()
+        {
+            string tempEmail = EmailChop(mailMember);
+            string tempAddress = Normalizer(addressMember);
+            string temp = AppDomain.CurrentDomain.BaseDirectory + $"Resources\\Member_Images\\{nameMember}{tempEmail}{tempAddress}.jpg";
+            if (File.Exists(temp))
+                pictureBox1.Image = Image.FromFile(temp);
+            else pictureBox1.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + $"Resources\\Member_Images\\NotAvailable.jpg");
+        }
+        public string Normalizer(string s)
+        {
+            string temp = s;
+            temp = Regex.Replace(temp, @"[.,,/,@]|[,]{2}", "_");
+            return temp;
+        }
+        public string EmailChop(string s)
+        {
+            string temp = s.Substring(0, s.IndexOf('@'));
+            return temp;
+        }
+
     }
 }

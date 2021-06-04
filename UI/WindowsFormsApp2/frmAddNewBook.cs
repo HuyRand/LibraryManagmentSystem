@@ -73,7 +73,7 @@ namespace WindowsFormsApp2
 
         private void btnAddImage_Click(object sender, EventArgs e)
         {
-            fmrAttachImage f = new fmrAttachImage(txbNewBookName.Text, txbNewBookAuthor.Text);
+            fmrAttachImage f = new fmrAttachImage(1, txbNewBookName.Text, null,null, txbNewBookAuthor.Text);
             f.ShowDialog();
 
         }
