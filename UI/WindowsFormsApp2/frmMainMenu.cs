@@ -20,12 +20,6 @@ namespace WindowsFormsApp2
         public frmMainMenu()
         {
             InitializeComponent();
-            Program.connectionString = "SERVER=" + Program.server + ";" + "DATABASE=" +
-                Program.database + ";" + "UID=" + Program.uid + ";" + "PASSWORD=" + Program.password + ";";
-            Program.connection = new MySql.Data.MySqlClient.MySqlConnection(Program.connectionString);
-            connectDb();
-
-
         }
         private void btnRegisterNewMember_Click(object sender, EventArgs e)
         {
@@ -74,36 +68,12 @@ namespace WindowsFormsApp2
             frmPenaltyBill f = new frmPenaltyBill(txbIdentityNumber.Text, txbMemberName.Text, txbMemberOwedMoney.Text);
             f.ShowDialog();
         }
-        private void connectDb()
-        {
 
-            try
-            {
-                Program.connection.Open();
-                if (Program.connection.State == ConnectionState.Open)
-                {
-                    MessageBox.Show("Data entered succesfully.");
-                    readBooksData();
-                    readMembersData();
-                    readBorrowersData();
-                    readBooksLocationData();
-
-                }
-                else
-                {
-                    MessageBox.Show("Database connection failed.");
-                }
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
-        }
         private void frmMainMenu_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (Program.connection.State == ConnectionState.Open)
                 Program.connection.Close();
+            //Program.OpenMainMenuFormOnClose = false;
         }
         public void readMembersData()
         {

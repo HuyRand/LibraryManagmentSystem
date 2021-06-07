@@ -359,3 +359,4 @@ C:\Users\new user\Desktop\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\W
 C:\Users\new user\Desktop\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmMemberInfo.resources
 C:\Users\new user\Desktop\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmBorrowedBooks.resources
 C:\Users\new user\Desktop\Library Man my-Branch\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.fmrAttachImage.resources
+C:\Users\new user\Desktop\Library Man my-Branch\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form1.resources

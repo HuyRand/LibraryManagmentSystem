@@ -7,27 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagementUI", "Wind
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagementClasses", "LibraryManagementClasses\LibraryManagementClasses.csproj", "{87630AC0-1272-4A0D-8013-E11B8D20977A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BookImage", "BookImage", "{54696DF5-DEF6-4646-B57D-DAA6FD3FB215}"
-	ProjectSection(SolutionItems) = preProject
-		C:\Users\dell\Downloads\ImageBook\pic1.jpg = C:\Users\dell\Downloads\ImageBook\pic1.jpg
-		C:\Users\dell\Downloads\ImageBook\pic10.jpg = C:\Users\dell\Downloads\ImageBook\pic10.jpg
-		C:\Users\dell\Downloads\ImageBook\pic11.jpg = C:\Users\dell\Downloads\ImageBook\pic11.jpg
-		C:\Users\dell\Downloads\ImageBook\pic12.jpg = C:\Users\dell\Downloads\ImageBook\pic12.jpg
-		C:\Users\dell\Downloads\ImageBook\pic13.jpg = C:\Users\dell\Downloads\ImageBook\pic13.jpg
-		C:\Users\dell\Downloads\ImageBook\pic14.jpg = C:\Users\dell\Downloads\ImageBook\pic14.jpg
-		C:\Users\dell\Downloads\ImageBook\pic15.jpg = C:\Users\dell\Downloads\ImageBook\pic15.jpg
-		C:\Users\dell\Downloads\ImageBook\pic16.jpg = C:\Users\dell\Downloads\ImageBook\pic16.jpg
-		C:\Users\dell\Downloads\ImageBook\pic17.jpg = C:\Users\dell\Downloads\ImageBook\pic17.jpg
-		C:\Users\dell\Downloads\ImageBook\pic2.jpg = C:\Users\dell\Downloads\ImageBook\pic2.jpg
-		C:\Users\dell\Downloads\ImageBook\pic3.jpg = C:\Users\dell\Downloads\ImageBook\pic3.jpg
-		C:\Users\dell\Downloads\ImageBook\pic4.jpg = C:\Users\dell\Downloads\ImageBook\pic4.jpg
-		C:\Users\dell\Downloads\ImageBook\pic5.jpg = C:\Users\dell\Downloads\ImageBook\pic5.jpg
-		C:\Users\dell\Downloads\ImageBook\pic6.jpg = C:\Users\dell\Downloads\ImageBook\pic6.jpg
-		C:\Users\dell\Downloads\ImageBook\pic7.jpg = C:\Users\dell\Downloads\ImageBook\pic7.jpg
-		C:\Users\dell\Downloads\ImageBook\pic8.jpg = C:\Users\dell\Downloads\ImageBook\pic8.jpg
-		C:\Users\dell\Downloads\ImageBook\pic9.jpg = C:\Users\dell\Downloads\ImageBook\pic9.jpg
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
