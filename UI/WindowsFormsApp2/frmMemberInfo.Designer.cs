@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMemberInfo));
             this.lbMemberAddress = new System.Windows.Forms.Label();
             this.lbMemberEmail = new System.Windows.Forms.Label();
             this.lbDateOfBirth = new System.Windows.Forms.Label();
@@ -316,6 +317,7 @@
             this.CancelButton = this.btnHuy;
             this.ClientSize = new System.Drawing.Size(831, 567);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmMemberInfo";

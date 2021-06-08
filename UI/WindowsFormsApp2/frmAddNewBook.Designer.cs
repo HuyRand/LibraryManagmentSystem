@@ -29,7 +29,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAddNewBook));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnAddImage = new System.Windows.Forms.Button();
             this.txbNewBookShelf_ID = new System.Windows.Forms.TextBox();
             this.txbNewBookSection_ID = new System.Windows.Forms.TextBox();
             this.txbNewBookRowNumber = new System.Windows.Forms.TextBox();
@@ -59,7 +61,6 @@
             this.lbNewBookGenre = new System.Windows.Forms.Label();
             this.lbNewBookAuthor = new System.Windows.Forms.Label();
             this.lbNewBookPublisher = new System.Windows.Forms.Label();
-            this.btnAddImage = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -99,6 +100,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(720, 500);
             this.panel1.TabIndex = 17;
+            // 
+            // btnAddImage
+            // 
+            this.btnAddImage.Location = new System.Drawing.Point(428, 438);
+            this.btnAddImage.Name = "btnAddImage";
+            this.btnAddImage.Size = new System.Drawing.Size(123, 44);
+            this.btnAddImage.TabIndex = 32;
+            this.btnAddImage.Text = "Add Image";
+            this.btnAddImage.UseVisualStyleBackColor = true;
+            this.btnAddImage.Click += new System.EventHandler(this.btnAddImage_Click);
             // 
             // txbNewBookShelf_ID
             // 
@@ -360,16 +371,6 @@
             this.lbNewBookPublisher.TabIndex = 9;
             this.lbNewBookPublisher.Text = "Publisher:";
             // 
-            // btnAddImage
-            // 
-            this.btnAddImage.Location = new System.Drawing.Point(428, 438);
-            this.btnAddImage.Name = "btnAddImage";
-            this.btnAddImage.Size = new System.Drawing.Size(123, 44);
-            this.btnAddImage.TabIndex = 32;
-            this.btnAddImage.Text = "Add Image";
-            this.btnAddImage.UseVisualStyleBackColor = true;
-            this.btnAddImage.Click += new System.EventHandler(this.btnAddImage_Click);
-            // 
             // frmAddNewBook
             // 
             this.AcceptButton = this.btnAdd;
@@ -379,6 +380,7 @@
             this.CancelButton = this.btnCancel;
             this.ClientSize = new System.Drawing.Size(741, 522);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmAddNewBook";
