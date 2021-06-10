@@ -35,11 +35,9 @@
             this.txbNewBookShelf_ID = new System.Windows.Forms.TextBox();
             this.txbNewBookSection_ID = new System.Windows.Forms.TextBox();
             this.txbNewBookRowNumber = new System.Windows.Forms.TextBox();
-            this.txbNewBookLoca_ID = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.LocationID = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lbMasSachEX = new System.Windows.Forms.Label();
             this.lbGiaTriEX = new System.Windows.Forms.Label();
@@ -70,11 +68,9 @@
             this.panel1.Controls.Add(this.txbNewBookShelf_ID);
             this.panel1.Controls.Add(this.txbNewBookSection_ID);
             this.panel1.Controls.Add(this.txbNewBookRowNumber);
-            this.panel1.Controls.Add(this.txbNewBookLoca_ID);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.LocationID);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.lbMasSachEX);
             this.panel1.Controls.Add(this.lbGiaTriEX);
@@ -113,37 +109,30 @@
             // 
             // txbNewBookShelf_ID
             // 
-            this.txbNewBookShelf_ID.Location = new System.Drawing.Point(591, 235);
+            this.txbNewBookShelf_ID.Location = new System.Drawing.Point(591, 187);
             this.txbNewBookShelf_ID.Name = "txbNewBookShelf_ID";
             this.txbNewBookShelf_ID.Size = new System.Drawing.Size(109, 20);
             this.txbNewBookShelf_ID.TabIndex = 31;
             // 
             // txbNewBookSection_ID
             // 
-            this.txbNewBookSection_ID.Location = new System.Drawing.Point(591, 187);
+            this.txbNewBookSection_ID.Location = new System.Drawing.Point(591, 139);
             this.txbNewBookSection_ID.Name = "txbNewBookSection_ID";
             this.txbNewBookSection_ID.Size = new System.Drawing.Size(109, 20);
             this.txbNewBookSection_ID.TabIndex = 30;
             // 
             // txbNewBookRowNumber
             // 
-            this.txbNewBookRowNumber.Location = new System.Drawing.Point(591, 139);
+            this.txbNewBookRowNumber.Location = new System.Drawing.Point(591, 92);
             this.txbNewBookRowNumber.Name = "txbNewBookRowNumber";
             this.txbNewBookRowNumber.Size = new System.Drawing.Size(109, 20);
             this.txbNewBookRowNumber.TabIndex = 29;
-            // 
-            // txbNewBookLoca_ID
-            // 
-            this.txbNewBookLoca_ID.Location = new System.Drawing.Point(591, 92);
-            this.txbNewBookLoca_ID.Name = "txbNewBookLoca_ID";
-            this.txbNewBookLoca_ID.Size = new System.Drawing.Size(109, 20);
-            this.txbNewBookLoca_ID.TabIndex = 28;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(484, 185);
+            this.label4.Location = new System.Drawing.Point(484, 134);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(84, 20);
             this.label4.TabIndex = 27;
@@ -153,7 +142,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(484, 233);
+            this.label3.Location = new System.Drawing.Point(484, 185);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(67, 20);
             this.label3.TabIndex = 26;
@@ -163,21 +152,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(484, 137);
+            this.label2.Location = new System.Drawing.Point(484, 90);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(101, 20);
             this.label2.TabIndex = 25;
             this.label2.Text = "Row Number";
-            // 
-            // LocationID
-            // 
-            this.LocationID.AutoSize = true;
-            this.LocationID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LocationID.Location = new System.Drawing.Point(484, 90);
-            this.LocationID.Name = "LocationID";
-            this.LocationID.Size = new System.Drawing.Size(91, 20);
-            this.LocationID.TabIndex = 24;
-            this.LocationID.Text = "Location ID";
             // 
             // label1
             // 
@@ -418,11 +397,9 @@
         private System.Windows.Forms.TextBox txbNewBookShelf_ID;
         private System.Windows.Forms.TextBox txbNewBookSection_ID;
         private System.Windows.Forms.TextBox txbNewBookRowNumber;
-        private System.Windows.Forms.TextBox txbNewBookLoca_ID;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label LocationID;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnAddImage;
     }

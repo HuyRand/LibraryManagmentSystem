@@ -60,8 +60,8 @@ namespace WindowsFormsApp2
             //dbcmd.ExecuteNonQuery();
 
 
-            string sql2 = "INSERT INTO `LOCATION` (BOOKID, LOCA_ID, ROW_NUMBER, SECTION_ID, SHELF_ID) " +
-                $"VALUES ('{last_bookid_inserted}', '{txbNewBookLoca_ID.Text}', '{txbNewBookRowNumber.Text}', "
+            string sql2 = "INSERT INTO `LOCATION` (BOOKID, ROW_NUMBER, SECTION_ID, SHELF_ID) " +
+                $"VALUES ('{last_bookid_inserted}', '{txbNewBookRowNumber.Text}', "
                 + $"'{txbNewBookSection_ID.Text}', '{txbNewBookShelf_ID.Text}');";
             MySqlCommand cmd2 = new MySqlCommand(sql2, Program.connection);
             MySqlDataReader rdr2 = cmd2.ExecuteReader();

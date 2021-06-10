@@ -458,14 +458,40 @@ namespace WindowsFormsApp2
 
         private void btnUserInfoDetail_Click(object sender, EventArgs e)
         {
-            frmMemberInfo f = new frmMemberInfo(txbMemberName.Text, txbIdentityNumber.Text, dtpDayOfBirth.Text, txbMemberEmail.Text, cbMemberType.Text, txbMemberAddress.Text, dtpRegistrationerDate.Text, txbMemberOwedMoney.Text);
-            f.ShowDialog();
+            int i;
+            if (dgvMemberInfo.CurrentRow != null)
+            {
+                i = dgvMemberInfo.CurrentRow.Index;
+                string txbMemberName = dgvMemberInfo.Rows[i].Cells[1].Value.ToString();
+                string txbIdentityNumber = dgvMemberInfo.Rows[i].Cells[0].Value.ToString();
+                string dtpDayOfBirth = dgvMemberInfo.Rows[i].Cells[2].Value.ToString();
+                string txbMemberEmail = dgvMemberInfo.Rows[i].Cells[4].Value.ToString();
+                string txbMemberAddress = dgvMemberInfo.Rows[i].Cells[5].Value.ToString();
+                string cbMemberType = dgvMemberInfo.Rows[i].Cells[6].Value.ToString();
+                frmMemberInfo f = new frmMemberInfo(txbMemberName, txbIdentityNumber, dtpDayOfBirth, txbMemberEmail, cbMemberType, txbMemberAddress, dtpRegistrationerDate.Text, txbMemberOwedMoney.Text);
+                f.ShowDialog();
+            }
+ 
         }
 
         private void btnBookInfoDetail_Click(object sender, EventArgs e)
         {
-            frmBookInfo f = new frmBookInfo(txbBookName.Text, txbBookID.Text, cbGenre.Text, txbAuthor.Text, cbBookState.Text, txbPublisher.Text, txbPublishYear.Text, txbBookPrice.Text);
-            f.ShowDialog();
+            int i;
+            if (dgvBookInfo.CurrentRow != null)
+            {
+                i = dgvBookInfo.CurrentRow.Index;
+                string Book_Name = dgvBookInfo.Rows[i].Cells[1].Value.ToString();
+                string Book_ID = dgvBookInfo.Rows[i].Cells[0].Value.ToString();
+                string Book_Genre = dgvBookInfo.Rows[i].Cells[4].Value.ToString();
+                string Author = dgvBookInfo.Rows[i].Cells[3].Value.ToString();
+                string Publisher = dgvBookInfo.Rows[i].Cells[2].Value.ToString();
+                string PublishYear = dgvBookInfo.Rows[i].Cells[7].Value.ToString();
+                string Book_Price = dgvBookInfo.Rows[i].Cells[6].Value.ToString();
+                string Book_State = dgvBookInfo.Rows[i].Cells[5].Value.ToString();
+                frmBookInfo f = new frmBookInfo(Book_Name, Book_ID, Book_Genre, Author, Book_State, Publisher, PublishYear, Book_State);
+                f.ShowDialog();
+            }
+
         }
         public void refr()
         {
