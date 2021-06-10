@@ -20,13 +20,26 @@ namespace WindowsFormsApp2
         {
             InitializeComponent();
         }
+
+        private void fmrAttachImage_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (pictureBox1.Image!=null)
+                pictureBox1.Image.Dispose();
+        }
+
+        private void fmrAttachImage_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (pictureBox1.Image != null)
+                pictureBox1.Image.Dispose();
+        }
+
         public fmrAttachImage(int type, string Name, string Email, string Address, string Author)
         {
             this.saveType = type;
             this.SaveName = Name;
             if (type == 2 && Email !="" && Address!="") { 
-            this.Email = EmailChop(Email);
-            this.Address = Normalizer(Address);
+            this.Email = Program.EmailChop(Email);
+            this.Address = Program.Normalizer(Address);
             }
             else
             {
@@ -78,16 +91,6 @@ namespace WindowsFormsApp2
             this.Close();
             // OUT
         }
-        public string Normalizer(string s)
-        {
-            string temp = s;
-            temp = Regex.Replace(temp, @"[.,,/,@]|[,]{2}", "_");
-            return temp;
-        }
-        public string EmailChop(string s)
-        {
-            string temp = s.Substring(0, s.IndexOf('@'));
-            return temp;
-        }
+    
     }
 }

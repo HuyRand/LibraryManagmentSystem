@@ -40,7 +40,6 @@
             this.receivePenaltyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.borrowedBooksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.borrowedBooksDetailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.refreshToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tìmKiếmBạnĐọcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tìmKiếmSáchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thốngKêSáchTrảTrễToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -125,7 +124,6 @@
             this.lbAuthor = new System.Windows.Forms.Label();
             this.lbPublisher = new System.Windows.Forms.Label();
             this.tpStatistics = new System.Windows.Forms.TabPage();
-            this.btnPrintList = new System.Windows.Forms.Button();
             this.btnShowList = new System.Windows.Forms.Button();
             this.lbTimeOfStatistic = new System.Windows.Forms.Label();
             this.dtmThongKe = new System.Windows.Forms.DateTimePicker();
@@ -167,8 +165,7 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.updateToolStripMenuItem,
             this.ManageborrowReturnToolStripMenuItem,
-            this.borrowedBooksToolStripMenuItem,
-            this.refreshToolStripMenuItem});
+            this.borrowedBooksToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(970, 24);
@@ -256,13 +253,6 @@
             this.borrowedBooksDetailToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.borrowedBooksDetailToolStripMenuItem.Text = "Borrowed books detail";
             this.borrowedBooksDetailToolStripMenuItem.Click += new System.EventHandler(this.borrowedBooksDetailToolStripMenuItem_Click);
-            // 
-            // refreshToolStripMenuItem
-            // 
-            this.refreshToolStripMenuItem.Name = "refreshToolStripMenuItem";
-            this.refreshToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
-            this.refreshToolStripMenuItem.Text = "Refresh";
-            this.refreshToolStripMenuItem.Click += new System.EventHandler(this.refreshToolStripMenuItem_Click);
             // 
             // tìmKiếmBạnĐọcToolStripMenuItem
             // 
@@ -914,8 +904,9 @@
             this.panel4.Controls.Add(this.lbPublisher);
             this.panel4.Location = new System.Drawing.Point(3, 3);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(445, 532);
+            this.panel4.Size = new System.Drawing.Size(445, 478);
             this.panel4.TabIndex = 6;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // lbNamxbEX
             // 
@@ -949,21 +940,25 @@
             // 
             // cbBookState
             // 
+            this.cbBookState.Enabled = false;
             this.cbBookState.FormattingEnabled = true;
             this.cbBookState.Location = new System.Drawing.Point(108, 487);
             this.cbBookState.Name = "cbBookState";
             this.cbBookState.Size = new System.Drawing.Size(200, 32);
             this.cbBookState.TabIndex = 14;
+            this.cbBookState.Visible = false;
             // 
             // lbBookState
             // 
             this.lbBookState.AutoSize = true;
+            this.lbBookState.Enabled = false;
             this.lbBookState.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbBookState.Location = new System.Drawing.Point(3, 488);
             this.lbBookState.Name = "lbBookState";
             this.lbBookState.Size = new System.Drawing.Size(52, 20);
             this.lbBookState.TabIndex = 39;
             this.lbBookState.Text = "State:";
+            this.lbBookState.Visible = false;
             // 
             // btnBookInfoDetail
             // 
@@ -1100,7 +1095,6 @@
             // 
             // tpStatistics
             // 
-            this.tpStatistics.Controls.Add(this.btnPrintList);
             this.tpStatistics.Controls.Add(this.btnShowList);
             this.tpStatistics.Controls.Add(this.lbTimeOfStatistic);
             this.tpStatistics.Controls.Add(this.dtmThongKe);
@@ -1114,18 +1108,9 @@
             this.tpStatistics.Text = "  Statistics  ";
             this.tpStatistics.UseVisualStyleBackColor = true;
             // 
-            // btnPrintList
-            // 
-            this.btnPrintList.Location = new System.Drawing.Point(766, 210);
-            this.btnPrintList.Name = "btnPrintList";
-            this.btnPrintList.Size = new System.Drawing.Size(188, 57);
-            this.btnPrintList.TabIndex = 5;
-            this.btnPrintList.Text = "Print List";
-            this.btnPrintList.UseVisualStyleBackColor = true;
-            // 
             // btnShowList
             // 
-            this.btnShowList.Location = new System.Drawing.Point(541, 210);
+            this.btnShowList.Location = new System.Drawing.Point(541, 215);
             this.btnShowList.Name = "btnShowList";
             this.btnShowList.Size = new System.Drawing.Size(188, 57);
             this.btnShowList.TabIndex = 4;
@@ -1336,8 +1321,6 @@
         private System.Windows.Forms.Button btnDeleteBook;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel5;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.ComboBox cbBookState;
-        private System.Windows.Forms.Label lbBookState;
         private System.Windows.Forms.Button btnBookInfoDetail;
         private System.Windows.Forms.TextBox txbBookPrice;
         private System.Windows.Forms.Label lbBookPrice;
@@ -1354,7 +1337,6 @@
         private System.Windows.Forms.Label lbAuthor;
         private System.Windows.Forms.Label lbPublisher;
         private System.Windows.Forms.TabPage tpStatistics;
-        private System.Windows.Forms.Button btnPrintList;
         private System.Windows.Forms.Button btnShowList;
         private System.Windows.Forms.Label lbTimeOfStatistic;
         private System.Windows.Forms.DateTimePicker dtmThongKe;
@@ -1376,6 +1358,7 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripMenuItem borrowedBooksToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem borrowedBooksDetailToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem refreshToolStripMenuItem;
+        private System.Windows.Forms.ComboBox cbBookState;
+        private System.Windows.Forms.Label lbBookState;
     }
 }

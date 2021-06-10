@@ -40,6 +40,12 @@ namespace WindowsFormsApp2
             this.ownMember = own;
         }
 
+        private void frmMemberInfo_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (pictureBox1.Image!=null)
+                pictureBox1.Image.Dispose();
+        }
+
         private void btnCancle_Click(object sender, EventArgs e)
         {
             this.Close();

@@ -81,6 +81,8 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "fmrAttachImage";
             this.Text = "Select Image";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.fmrAttachImage_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.fmrAttachImage_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

@@ -54,8 +54,17 @@ namespace WindowsFormsApp2
         }
         public static string EmailChop(string s)
         {
-            string temp = s.Substring(0, s.IndexOf('@'));
-            return temp;
+            if (s.Contains('@'))
+            {
+                string temp = s.Substring(0, s.IndexOf('@'));
+                return temp;
+            }
+            if (s.Contains('.'))
+            {
+                string temp = s.Substring(0, s.IndexOf('.'));
+                return temp;
+            }
+            return s;
         }
     }
 }

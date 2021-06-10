@@ -62,24 +62,14 @@ namespace WindowsFormsApp2
         }
         private void showPicture()
         {
-            string tempEmail = EmailChop(txbNewMemberEmail.Text);
-            string tempAddress = Normalizer(txbNewMemberAddress.Text);
+            string tempEmail = Program.EmailChop(txbNewMemberEmail.Text);
+            string tempAddress = Program.Normalizer(txbNewMemberAddress.Text);
             string temp = AppDomain.CurrentDomain.BaseDirectory + $"Resources\\Member_Images\\{txbNewMemberName.Text}{tempEmail}{tempAddress}.jpg";
             if (File.Exists(temp))
                 pictureBox1.Image = Image.FromFile(temp);
             else pictureBox1.Image = Image.FromFile(temp);
         }
-        public string Normalizer(string s)
-        {
-            string temp = s;
-            temp = Regex.Replace(temp, @"[.,,/,@]|[,]{2}", "_");
-            return temp;
-        }
-        public string EmailChop(string s)
-        {
-            string temp = s.Substring(0, s.IndexOf('@'));
-            return temp;
-        }
+
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {

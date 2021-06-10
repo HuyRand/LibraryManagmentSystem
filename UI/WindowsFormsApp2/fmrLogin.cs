@@ -54,7 +54,9 @@ namespace WindowsFormsApp2
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Wrong username or password");
+                    //MessageBox.Show("Wrong username or password");
+                    MessageBox.Show(ex.ToString());
+                    this.Show();
                 }
             }
         }

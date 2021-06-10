@@ -310,6 +310,7 @@ namespace WindowsFormsApp2
             MySqlCommand cmd = new MySqlCommand(sql, Program.connection);
             MySqlDataReader rdr = cmd.ExecuteReader();
             MessageBox.Show("deleted");
+            btnSearchUser.PerformClick();
             rdr.Close();
 
         }
@@ -328,9 +329,8 @@ namespace WindowsFormsApp2
             MySqlCommand cmd2 = new MySqlCommand(sql2, Program.connection);
             MySqlDataReader rdr2 = cmd2.ExecuteReader();
             rdr2.Close();
-
             MessageBox.Show("deleted");
-
+            btnBookSearch.PerformClick();
         }
 
         private void btnChange_Click(object sender, EventArgs e)
@@ -344,10 +344,26 @@ namespace WindowsFormsApp2
                 $"ADDRESS = '{txbMemberAddress.Text}'\n" +
                 $"WHERE MEMID = {txbIdentityNumber.Text};";
 
+            int i = dgvMemberInfo.CurrentRow.Index;
+            string tempOldName = dgvMemberInfo.Rows[i].Cells[1].Value.ToString();
+            string tempOldEmail =Program.EmailChop(dgvMemberInfo.Rows[i].Cells[4].Value.ToString());
+            string tempOldAddress = Program.Normalizer(dgvMemberInfo.Rows[i].Cells[5].Value.ToString());
+            string oldImageFileName = AppDomain.CurrentDomain.BaseDirectory + $"Resources\\Member_Images\\{tempOldName}{tempOldEmail}{tempOldAddress}.jpg";
+            string newImageFileName = AppDomain.CurrentDomain.BaseDirectory + $"Resources\\Member_Images\\" +
+                $"{txbMemberName.Text}{Program.EmailChop(txbMemberEmail.Text)}{Program.Normalizer(txbMemberAddress.Text)}.jpg";
             MySqlCommand cmd = new MySqlCommand(sql, Program.connection);
             MySqlDataReader rdr = cmd.ExecuteReader();
-            MessageBox.Show("updated");
             rdr.Close();
+            MessageBox.Show("updated");
+            if (oldImageFileName != newImageFileName && File.Exists(oldImageFileName))
+            {
+                if (File.Exists(newImageFileName))
+                {
+                    File.Delete(newImageFileName);
+                }
+                File.Move(oldImageFileName, newImageFileName);
+            }
+            btnSearchUser.PerformClick();
 
         }
 
@@ -359,14 +375,32 @@ namespace WindowsFormsApp2
                $"PUBLISHER = '{txbPublisher.Text}',\n" +
                $"CATEGORY = '{cbGenre.Text}',\n" +
                $"PRICE = {txbBookPrice.Text},\n" +
+               $"AUTHOR = '{txbAuthor.Text}',\n" +
                $"YEAR = {txbPublishYear.Text}\n" +
                $"WHERE BOOKID = {txbBookID.Text};";
+           
 
-            MessageBox.Show(sql);
+            int i = dgvBookInfo.CurrentRow.Index;
+            string tempOldAuthor = dgvBookInfo.Rows[i].Cells[3].Value.ToString();
+            string tempOldBookName= dgvBookInfo.Rows[i].Cells[1].Value.ToString();
+            string oldImageFileName = AppDomain.CurrentDomain.BaseDirectory + $"Resources\\Book_Images\\{tempOldBookName}{tempOldAuthor}.jpg";
+            string newImageFileName = AppDomain.CurrentDomain.BaseDirectory + $"Resources\\Book_Images\\{txbBookName.Text}{txbAuthor.Text}.jpg";
             MySqlCommand cmd = new MySqlCommand(sql, Program.connection);
             MySqlDataReader rdr = cmd.ExecuteReader();
-            MessageBox.Show("updated");
             rdr.Close();
+
+            MessageBox.Show("updated");
+            btnBookSearch.PerformClick();
+            if (oldImageFileName != newImageFileName && File.Exists(oldImageFileName)) {
+                if (File.Exists(newImageFileName))
+                {
+                    File.Delete(newImageFileName);
+                }
+                File.Move(oldImageFileName, newImageFileName);
+                //File.Copy(oldImageFileName, newImageFileName);
+                //File.Delete(oldImageFileName);
+            }
+
         }
 
         private void btnBookSearch_Click(object sender, EventArgs e)
@@ -476,6 +510,11 @@ namespace WindowsFormsApp2
                 temp = "AUTHOR";
             else temp = "CATEGORY";
             loadStatistic(temp);
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

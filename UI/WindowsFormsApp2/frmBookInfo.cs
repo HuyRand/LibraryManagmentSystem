@@ -16,6 +16,18 @@ namespace WindowsFormsApp2
     {
         private string nameBook, idBook, genreBook, authorBook, stateBook, publisherBook, publishyearBook, priceBook;
 
+        private void frmBookInfo_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (pictureBox1.Image != null)
+                pictureBox1.Image.Dispose();
+        }
+
+        private void frmBookInfo_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (pictureBox1.Image != null)
+                pictureBox1.Image.Dispose();
+        }
+
         private void btnAddImage_Click(object sender, EventArgs e)
         {
             if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + $"Resources\\Book_Images\\{nameBook}{authorBook}.jpg"))
