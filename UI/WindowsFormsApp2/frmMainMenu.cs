@@ -490,7 +490,7 @@ namespace WindowsFormsApp2
                 string PublishYear = dgvBookInfo.Rows[i].Cells[7].Value.ToString();
                 string Book_Price = dgvBookInfo.Rows[i].Cells[6].Value.ToString();
                 string Book_State = dgvBookInfo.Rows[i].Cells[5].Value.ToString();
-                frmBookInfo f = new frmBookInfo(Book_Name, Book_ID, Book_Genre, Author, Book_State, Publisher, PublishYear, Book_State);
+                frmBookInfo f = new frmBookInfo(Book_Name, Book_ID, Book_Genre, Author, Book_State, Publisher, PublishYear, Book_Price);
                 f.ShowDialog();
             }
 
