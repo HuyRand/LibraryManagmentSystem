@@ -25,6 +25,7 @@ namespace WindowsFormsApp2
         {
             frmRegisterNewMember f = new frmRegisterNewMember();
             f.ShowDialog();
+            btnSearchUser.PerformClick();
         }
 
         private void RegisterNewMemberToolStripMenuItem_Click(object sender, EventArgs e)
@@ -37,6 +38,7 @@ namespace WindowsFormsApp2
         {
             frmAddNewBook f = new frmAddNewBook();
             f.ShowDialog();
+            btnBookSearch.PerformClick();
         }
 
         private void addNewBookToolStripMenuItem_Click(object sender, EventArgs e)

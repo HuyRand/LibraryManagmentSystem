@@ -31,6 +31,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAddNewBook));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnAddImage = new System.Windows.Forms.Button();
             this.txbNewBookShelf_ID = new System.Windows.Forms.TextBox();
             this.txbNewBookSection_ID = new System.Windows.Forms.TextBox();
@@ -60,10 +61,12 @@
             this.lbNewBookAuthor = new System.Windows.Forms.Label();
             this.lbNewBookPublisher = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.btnAddImage);
             this.panel1.Controls.Add(this.txbNewBookShelf_ID);
             this.panel1.Controls.Add(this.txbNewBookSection_ID);
@@ -94,12 +97,22 @@
             this.panel1.Controls.Add(this.lbNewBookPublisher);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(720, 500);
+            this.panel1.Size = new System.Drawing.Size(739, 558);
             this.panel1.TabIndex = 17;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pictureBox1.Location = new System.Drawing.Point(505, 259);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(198, 265);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 33;
+            this.pictureBox1.TabStop = false;
             // 
             // btnAddImage
             // 
-            this.btnAddImage.Location = new System.Drawing.Point(428, 438);
+            this.btnAddImage.Location = new System.Drawing.Point(184, 467);
             this.btnAddImage.Name = "btnAddImage";
             this.btnAddImage.Size = new System.Drawing.Size(123, 44);
             this.btnAddImage.TabIndex = 32;
@@ -255,7 +268,7 @@
             // btnCancel
             // 
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Location = new System.Drawing.Point(576, 438);
+            this.btnCancel.Location = new System.Drawing.Point(332, 467);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(124, 44);
             this.btnCancel.TabIndex = 9;
@@ -265,7 +278,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(276, 438);
+            this.btnAdd.Location = new System.Drawing.Point(32, 467);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(124, 44);
             this.btnAdd.TabIndex = 8;
@@ -357,7 +370,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(741, 522);
+            this.ClientSize = new System.Drawing.Size(763, 582);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -365,8 +378,11 @@
             this.Name = "frmAddNewBook";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add new book";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmAddNewBook_FormClosing);
+            this.Load += new System.EventHandler(this.frmAddNewBook_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -402,5 +418,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnAddImage;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

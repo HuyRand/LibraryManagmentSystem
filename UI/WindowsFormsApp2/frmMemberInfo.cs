@@ -79,23 +79,12 @@ namespace WindowsFormsApp2
         }
         private void showPicture()
         {
-            string tempEmail = EmailChop(mailMember);
-            string tempAddress = Normalizer(addressMember);
+            string tempEmail = Program.EmailChop(mailMember);
+            string tempAddress = Program.Normalizer(addressMember);
             string temp = AppDomain.CurrentDomain.BaseDirectory + $"Resources\\Member_Images\\{nameMember}{tempEmail}{tempAddress}.jpg";
             if (File.Exists(temp))
                 pictureBox1.Image = Image.FromFile(temp);
             else pictureBox1.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + $"Resources\\Member_Images\\NotAvailable.jpg");
-        }
-        public string Normalizer(string s)
-        {
-            string temp = s;
-            temp = Regex.Replace(temp, @"[.,,/,@]|[,]{2}", "_");
-            return temp;
-        }
-        public string EmailChop(string s)
-        {
-            string temp = s.Substring(0, s.IndexOf('@'));
-            return temp;
         }
 
     }

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace WindowsFormsApp2
 {
@@ -73,9 +74,35 @@ namespace WindowsFormsApp2
 
         private void btnAddImage_Click(object sender, EventArgs e)
         {
-            fmrAttachImage f = new fmrAttachImage(1, txbNewBookName.Text, null,null, txbNewBookAuthor.Text);
+            if (txbNewBookName.Text == "" || txbNewBookAuthor.Text == "")
+            {
+                MessageBox.Show("Enter Name, Email, Address to add image");
+                return;
+            }
+            fmrAttachImage f = new fmrAttachImage(1, txbNewBookName.Text, null,null,txbNewBookAuthor.Text);
             f.ShowDialog();
+            frmAddNewBook_Load(sender, e);
 
+
+        }
+
+        private void frmAddNewBook_Load(object sender, EventArgs e)
+        {
+            if (txbNewBookName.Text != "" && txbNewBookAuthor.Text != "")
+                showPicture();
+        }
+        private void showPicture()
+        {
+            string temp = AppDomain.CurrentDomain.BaseDirectory + $"Resources\\Book_Images\\{txbNewBookName.Text}{txbNewBookAuthor.Text}.jpg";
+            if (File.Exists(temp))
+                pictureBox1.Image = Image.FromFile(temp);
+            else pictureBox1.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + $"Resources\\Book_Images\\NotAvailable.jpg");
+        }
+
+        private void frmAddNewBook_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (pictureBox1.Image != null)
+                pictureBox1.Image.Dispose();
         }
     }
 }
