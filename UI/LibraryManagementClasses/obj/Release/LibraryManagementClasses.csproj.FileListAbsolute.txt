@@ -4,3 +4,9 @@ C:\Users\new user\Desktop\Library Man my-Branch\LibraryManagmentSystem\UI\Librar
 C:\Users\new user\Desktop\Library Man my-Branch\LibraryManagmentSystem\UI\LibraryManagementClasses\obj\Release\LibraryManagementClasses.csproj.CoreCompileInputs.cache
 C:\Users\new user\Desktop\Library Man my-Branch\LibraryManagmentSystem\UI\LibraryManagementClasses\obj\Release\LibraryManagementClasses.dll
 C:\Users\new user\Desktop\Library Man my-Branch\LibraryManagmentSystem\UI\LibraryManagementClasses\obj\Release\LibraryManagementClasses.pdb
+D:\UIT STUFF\LibraryManagmentSystem\UI\LibraryManagementClasses\bin\Release\LibraryManagementClasses.dll
+D:\UIT STUFF\LibraryManagmentSystem\UI\LibraryManagementClasses\bin\Release\LibraryManagementClasses.pdb
+D:\UIT STUFF\LibraryManagmentSystem\UI\LibraryManagementClasses\obj\Release\LibraryManagementClasses.csprojAssemblyReference.cache
+D:\UIT STUFF\LibraryManagmentSystem\UI\LibraryManagementClasses\obj\Release\LibraryManagementClasses.csproj.CoreCompileInputs.cache
+D:\UIT STUFF\LibraryManagmentSystem\UI\LibraryManagementClasses\obj\Release\LibraryManagementClasses.dll
+D:\UIT STUFF\LibraryManagmentSystem\UI\LibraryManagementClasses\obj\Release\LibraryManagementClasses.pdb
