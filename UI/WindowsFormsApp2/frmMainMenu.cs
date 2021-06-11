@@ -23,6 +23,8 @@ namespace WindowsFormsApp2
         }
         private void btnRegisterNewMember_Click(object sender, EventArgs e)
         {
+            if (Program.connection.State == ConnectionState.Broken || Program.connection.State == ConnectionState.Closed) 
+                Program.connection.Open();
             frmRegisterNewMember f = new frmRegisterNewMember();
             f.ShowDialog();
             btnSearchUser.PerformClick();
@@ -36,6 +38,8 @@ namespace WindowsFormsApp2
 
         private void btnAddNewBook_Click(object sender, EventArgs e)
         {
+            if (Program.connection.State == ConnectionState.Broken || Program.connection.State == ConnectionState.Closed)
+                Program.connection.Open();
             frmAddNewBook f = new frmAddNewBook();
             f.ShowDialog();
             btnBookSearch.PerformClick();
@@ -303,6 +307,8 @@ namespace WindowsFormsApp2
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+            if (Program.connection.State == ConnectionState.Broken || Program.connection.State == ConnectionState.Closed)
+                Program.connection.Open();
             string tempMemberEmail = Program.EmailChop(txbMemberEmail.Text);
             string tempMemberAddress = Program.Normalizer(txbMemberAddress.Text);
             string tempMemberPath = AppDomain.CurrentDomain.BaseDirectory + $"Resources\\Member_Images\\{txbMemberName.Text}{tempMemberEmail}{tempMemberAddress}.jpg";
@@ -319,6 +325,8 @@ namespace WindowsFormsApp2
 
         private void btnDeleteBook_Click(object sender, EventArgs e)
         {
+            if (Program.connection.State == ConnectionState.Broken || Program.connection.State == ConnectionState.Closed)
+                Program.connection.Open();
             if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + $"Resources\\Book_Images\\{txbBookName.Text}{txbAuthor.Text}.jpg"))
                 File.Delete(AppDomain.CurrentDomain.BaseDirectory + $"Resources\\Book_Images\\{txbBookName.Text}{txbAuthor.Text}.jpg");
 
@@ -337,7 +345,8 @@ namespace WindowsFormsApp2
 
         private void btnChange_Click(object sender, EventArgs e)
         {
-
+            if (Program.connection.State == ConnectionState.Broken || Program.connection.State == ConnectionState.Closed)
+                Program.connection.Open();
             string sql = $"UPDATE MEMBER\n" +
                 $"SET\n" +
                 $"NAME = '{txbMemberName.Text}',\n" +
@@ -371,6 +380,8 @@ namespace WindowsFormsApp2
 
         private void btnChangeBookInfo_Click(object sender, EventArgs e)
         {
+            if (Program.connection.State == ConnectionState.Broken || Program.connection.State == ConnectionState.Closed)
+                Program.connection.Open();
             string sql = $"UPDATE BOOK\n" +
                $"SET\n" +
                $"NAME = '{txbBookName.Text}',\n" +
