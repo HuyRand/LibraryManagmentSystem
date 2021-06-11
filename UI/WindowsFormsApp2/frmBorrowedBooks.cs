@@ -37,8 +37,19 @@ namespace WindowsFormsApp2
         DataTable dt = new DataTable();
         private void refresh_Click(object sender, EventArgs e)
         {
-            if (txbMemid.Text != "")
+            if (txbMemid.Text != "" && txbBookid.Text!="")
             {
+                using (MySqlConnection con = new MySqlConnection(Program.connectionString))
+                {
+
+                    con.Open();
+                    MySqlCommand cmd = con.CreateCommand();
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = "update BOOK set AVAILABLE = 0 where BOOKID = '" + txbBookid.Text + "'";
+                    cmd.ExecuteNonQuery();
+                    con.Close();
+                }
+
                 using (MySqlConnection con = new MySqlConnection(Program.connectionString))
                 {
                     con.Open();

@@ -51,26 +51,10 @@ namespace WindowsFormsApp2
 
         private void btnCreateBorrowTicket_Click(object sender, EventArgs e)
         {
-            if (txbBorrowMemberCardNumber.Text != "")
+            if (txbBorrowMemberCardNumber.Text != "" && txbIdbook.Text!="")
             {
-                using (MySqlConnection con = new MySqlConnection(Program.connectionString))
-                {
-                    con.Open();
-                    MySqlCommand cmd = con.CreateCommand();
-                    cmd.CommandType = CommandType.Text;
-                    cmd.CommandText = "update BOOK set AVAILABLE = 0 where BOOKID = '" + txbIdbook.Text + "'";
-                    cmd.ExecuteNonQuery();
-                    DataTable dt = new DataTable();
-                    MySqlDataAdapter da = new MySqlDataAdapter(cmd);
-                    da.Fill(dt);
-                    dgvBorrowBook.DataSource = dt;
-
-                    con.Close();
-                }
-
                 frmBorrowedBooks f = new frmBorrowedBooks(txbBorrowMemberCardNumber.Text, txbIdbook.Text);
                 f.ShowDialog();
-
                 refr();
             }
             else
