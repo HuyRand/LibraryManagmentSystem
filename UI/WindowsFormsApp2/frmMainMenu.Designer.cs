@@ -332,6 +332,7 @@
             this.tcMainMenu.SelectedIndex = 0;
             this.tcMainMenu.Size = new System.Drawing.Size(970, 549);
             this.tcMainMenu.TabIndex = 1;
+            this.tcMainMenu.Click += new System.EventHandler(this.btnBookSearch_Click);
             // 
             // tpMember
             // 

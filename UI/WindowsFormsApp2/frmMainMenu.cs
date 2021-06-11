@@ -347,7 +347,6 @@ namespace WindowsFormsApp2
             btnSearchUser.PerformClick();
 
         }
-
         private void btnDeleteBook_Click(object sender, EventArgs e)
         {
             if (Program.connection.State == ConnectionState.Broken || Program.connection.State == ConnectionState.Closed)
