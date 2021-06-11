@@ -216,6 +216,7 @@
             this.Name = "frmRegisterNewMember";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Register new member";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmRegisterNewMember_FormClosing);
             this.Load += new System.EventHandler(this.frmRegisterNewMember_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

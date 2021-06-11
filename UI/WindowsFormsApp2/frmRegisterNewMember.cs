@@ -75,5 +75,11 @@ namespace WindowsFormsApp2
         {
 
         }
+
+        private void frmRegisterNewMember_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (pictureBox1.Image != null)
+                pictureBox1.Image.Dispose();
+        }
     }
 }
