@@ -28,3 +28,9 @@ C:\Users\new user\Desktop\LibraryManagmentSystem\UI\LibraryManagementClasses\obj
 C:\Users\new user\Desktop\LibraryManagmentSystem\UI\LibraryManagementClasses\obj\Debug\LibraryManagementClasses.csproj.CoreCompileInputs.cache
 C:\Users\new user\Desktop\LibraryManagmentSystem\UI\LibraryManagementClasses\obj\Debug\LibraryManagementClasses.dll
 C:\Users\new user\Desktop\LibraryManagmentSystem\UI\LibraryManagementClasses\obj\Debug\LibraryManagementClasses.pdb
+D:\UIT STUFF\LibraryManagmentSystem\UI\LibraryManagementClasses\bin\Debug\LibraryManagementClasses.dll
+D:\UIT STUFF\LibraryManagmentSystem\UI\LibraryManagementClasses\bin\Debug\LibraryManagementClasses.pdb
+D:\UIT STUFF\LibraryManagmentSystem\UI\LibraryManagementClasses\obj\Debug\LibraryManagementClasses.csprojAssemblyReference.cache
+D:\UIT STUFF\LibraryManagmentSystem\UI\LibraryManagementClasses\obj\Debug\LibraryManagementClasses.csproj.CoreCompileInputs.cache
+D:\UIT STUFF\LibraryManagmentSystem\UI\LibraryManagementClasses\obj\Debug\LibraryManagementClasses.dll
+D:\UIT STUFF\LibraryManagmentSystem\UI\LibraryManagementClasses\obj\Debug\LibraryManagementClasses.pdb
