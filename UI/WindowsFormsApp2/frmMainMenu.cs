@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using LibraryManagementClasses;
 using System.IO;
+using System.Text.RegularExpressions;
 namespace WindowsFormsApp2
 {
                
@@ -609,6 +610,33 @@ namespace WindowsFormsApp2
         private void NumberOnlyInput(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) )
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txbMemberAddress_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Regex regex = new Regex(@"[^a-zA-Z0-9 @., \b\s]");
+            if (regex.IsMatch(e.KeyChar.ToString()))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txbMemberName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Regex regex = new Regex(@"[^a-zA-Z0-9 \b\s]");
+            if (regex.IsMatch(e.KeyChar.ToString()))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txbBookName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Regex regex = new Regex(@"[^a-zA-Z0-9 _\b\s]");
+            if (regex.IsMatch(e.KeyChar.ToString()))
             {
                 e.Handled = true;
             }

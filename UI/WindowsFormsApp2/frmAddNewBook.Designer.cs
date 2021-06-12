@@ -267,6 +267,7 @@
             this.txbNewBookPublisher.Name = "txbNewBookPublisher";
             this.txbNewBookPublisher.Size = new System.Drawing.Size(348, 20);
             this.txbNewBookPublisher.TabIndex = 4;
+            this.txbNewBookPublisher.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.LimitCertainKeyInput);
             // 
             // txbNewBookAuthor
             // 
@@ -274,6 +275,7 @@
             this.txbNewBookAuthor.Name = "txbNewBookAuthor";
             this.txbNewBookAuthor.Size = new System.Drawing.Size(348, 20);
             this.txbNewBookAuthor.TabIndex = 3;
+            this.txbNewBookAuthor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.LimitCertainKeyInput);
             // 
             // btnCancel
             // 
@@ -305,6 +307,7 @@
             this.cbNewBookGenre.Name = "cbNewBookGenre";
             this.cbNewBookGenre.Size = new System.Drawing.Size(200, 21);
             this.cbNewBookGenre.TabIndex = 2;
+            this.cbNewBookGenre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.LimitCertainKeyInput);
             // 
             // lbThemSach
             // 
@@ -342,6 +345,7 @@
             this.txbNewBookName.Name = "txbNewBookName";
             this.txbNewBookName.Size = new System.Drawing.Size(348, 20);
             this.txbNewBookName.TabIndex = 0;
+            this.txbNewBookName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.LimitCertainKeyInput);
             // 
             // lbNewBookGenre
             // 

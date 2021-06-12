@@ -131,6 +131,7 @@
             this.txbNewMemberEmail.Name = "txbNewMemberEmail";
             this.txbNewMemberEmail.Size = new System.Drawing.Size(392, 28);
             this.txbNewMemberEmail.TabIndex = 4;
+            this.txbNewMemberEmail.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbNewMemberEmail_KeyPress);
             // 
             // txbNewMemberAddress
             // 
@@ -140,6 +141,7 @@
             this.txbNewMemberAddress.Name = "txbNewMemberAddress";
             this.txbNewMemberAddress.Size = new System.Drawing.Size(392, 28);
             this.txbNewMemberAddress.TabIndex = 5;
+            this.txbNewMemberAddress.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbNewMemberEmail_KeyPress);
             // 
             // txbNewMemberName
             // 
@@ -149,6 +151,7 @@
             this.txbNewMemberName.Name = "txbNewMemberName";
             this.txbNewMemberName.Size = new System.Drawing.Size(392, 28);
             this.txbNewMemberName.TabIndex = 1;
+            this.txbNewMemberName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbNewMemberName_KeyPress);
             // 
             // lbNewMemberAddress
             // 

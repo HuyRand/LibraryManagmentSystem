@@ -123,6 +123,7 @@
             // 
             this.txbLocation.Location = new System.Drawing.Point(104, 611);
             this.txbLocation.Name = "txbLocation";
+            this.txbLocation.ReadOnly = true;
             this.txbLocation.Size = new System.Drawing.Size(282, 20);
             this.txbLocation.TabIndex = 50;
             // 
@@ -160,6 +161,7 @@
             // 
             this.txbPrice.Location = new System.Drawing.Point(106, 544);
             this.txbPrice.Name = "txbPrice";
+            this.txbPrice.ReadOnly = true;
             this.txbPrice.Size = new System.Drawing.Size(280, 20);
             this.txbPrice.TabIndex = 7;
             // 
@@ -177,6 +179,7 @@
             // 
             this.txbPublishYear.Location = new System.Drawing.Point(106, 479);
             this.txbPublishYear.Name = "txbPublishYear";
+            this.txbPublishYear.ReadOnly = true;
             this.txbPublishYear.Size = new System.Drawing.Size(280, 20);
             this.txbPublishYear.TabIndex = 5;
             // 
@@ -184,6 +187,7 @@
             // 
             this.txbPublisher.Location = new System.Drawing.Point(106, 411);
             this.txbPublisher.Name = "txbPublisher";
+            this.txbPublisher.ReadOnly = true;
             this.txbPublisher.Size = new System.Drawing.Size(280, 20);
             this.txbPublisher.TabIndex = 1;
             // 
@@ -191,6 +195,7 @@
             // 
             this.txbAuthor.Location = new System.Drawing.Point(106, 274);
             this.txbAuthor.Name = "txbAuthor";
+            this.txbAuthor.ReadOnly = true;
             this.txbAuthor.Size = new System.Drawing.Size(280, 20);
             this.txbAuthor.TabIndex = 6;
             // 
@@ -206,6 +211,7 @@
             // 
             this.txbBookID.Location = new System.Drawing.Point(106, 134);
             this.txbBookID.Name = "txbBookID";
+            this.txbBookID.ReadOnly = true;
             this.txbBookID.Size = new System.Drawing.Size(280, 20);
             this.txbBookID.TabIndex = 2;
             // 
@@ -233,6 +239,7 @@
             // 
             this.txbBookName.Location = new System.Drawing.Point(106, 73);
             this.txbBookName.Name = "txbBookName";
+            this.txbBookName.ReadOnly = true;
             this.txbBookName.Size = new System.Drawing.Size(280, 20);
             this.txbBookName.TabIndex = 0;
             // 

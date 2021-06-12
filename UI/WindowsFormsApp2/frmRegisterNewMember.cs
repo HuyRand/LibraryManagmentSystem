@@ -86,5 +86,23 @@ namespace WindowsFormsApp2
             if (pictureBox1.Image != null)
                 pictureBox1.Image.Dispose();
         }
+
+        private void txbNewMemberEmail_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Regex regex = new Regex(@"[^a-zA-Z0-9 @., \b\s]");
+            if (regex.IsMatch(e.KeyChar.ToString()))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txbNewMemberName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Regex regex = new Regex(@"[^a-zA-Z0-9 \b\s]");
+            if (regex.IsMatch(e.KeyChar.ToString()))
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

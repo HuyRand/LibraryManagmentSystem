@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
-
+using System.Text.RegularExpressions;
 namespace WindowsFormsApp2
 {
     public partial class frmAddNewBook : Form
@@ -101,6 +101,15 @@ namespace WindowsFormsApp2
                 e.Handled = true;
             }
 
+        }
+
+        private void LimitCertainKeyInput(object sender, KeyPressEventArgs e)
+        { 
+            Regex regex = new Regex(@"[^a-zA-Z0-9 _\b\s]");
+            if (regex.IsMatch(e.KeyChar.ToString()))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

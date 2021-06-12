@@ -594,6 +594,7 @@
             this.txbMemberAddress.Name = "txbMemberAddress";
             this.txbMemberAddress.Size = new System.Drawing.Size(325, 29);
             this.txbMemberAddress.TabIndex = 5;
+            this.txbMemberAddress.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbMemberAddress_KeyPress);
             // 
             // dtpDayOfBirth
             // 
@@ -610,6 +611,7 @@
             this.txbMemberEmail.Name = "txbMemberEmail";
             this.txbMemberEmail.Size = new System.Drawing.Size(325, 29);
             this.txbMemberEmail.TabIndex = 4;
+            this.txbMemberEmail.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbMemberAddress_KeyPress);
             // 
             // cbMemberType
             // 
@@ -655,6 +657,7 @@
             this.txbMemberName.Name = "txbMemberName";
             this.txbMemberName.Size = new System.Drawing.Size(325, 29);
             this.txbMemberName.TabIndex = 1;
+            this.txbMemberName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbMemberName_KeyPress);
             // 
             // lbIdentityNumber
             // 
@@ -1003,6 +1006,7 @@
             this.txbPublisher.Name = "txbPublisher";
             this.txbPublisher.Size = new System.Drawing.Size(327, 29);
             this.txbPublisher.TabIndex = 10;
+            this.txbPublisher.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbBookName_KeyPress);
             // 
             // txbAuthor
             // 
@@ -1010,6 +1014,7 @@
             this.txbAuthor.Name = "txbAuthor";
             this.txbAuthor.Size = new System.Drawing.Size(327, 29);
             this.txbAuthor.TabIndex = 9;
+            this.txbAuthor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbBookName_KeyPress);
             // 
             // cbGenre
             // 
@@ -1055,6 +1060,7 @@
             this.txbBookName.Name = "txbBookName";
             this.txbBookName.Size = new System.Drawing.Size(327, 29);
             this.txbBookName.TabIndex = 6;
+            this.txbBookName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbBookName_KeyPress);
             // 
             // lbBookID
             // 

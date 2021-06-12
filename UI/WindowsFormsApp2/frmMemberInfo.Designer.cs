@@ -105,6 +105,7 @@
             // 
             this.txbMemberName.Location = new System.Drawing.Point(167, 127);
             this.txbMemberName.Name = "txbMemberName";
+            this.txbMemberName.ReadOnly = true;
             this.txbMemberName.Size = new System.Drawing.Size(289, 20);
             this.txbMemberName.TabIndex = 0;
             // 
@@ -145,6 +146,7 @@
             // 
             this.txbIdentityNumber.Location = new System.Drawing.Point(167, 79);
             this.txbIdentityNumber.Name = "txbIdentityNumber";
+            this.txbIdentityNumber.ReadOnly = true;
             this.txbIdentityNumber.Size = new System.Drawing.Size(264, 20);
             this.txbIdentityNumber.TabIndex = 1;
             // 
@@ -160,6 +162,7 @@
             // 
             this.txbMemberEmail.Location = new System.Drawing.Point(167, 313);
             this.txbMemberEmail.Name = "txbMemberEmail";
+            this.txbMemberEmail.ReadOnly = true;
             this.txbMemberEmail.Size = new System.Drawing.Size(264, 20);
             this.txbMemberEmail.TabIndex = 3;
             // 
@@ -167,6 +170,7 @@
             // 
             this.txbMemberAddress.Location = new System.Drawing.Point(167, 362);
             this.txbMemberAddress.Name = "txbMemberAddress";
+            this.txbMemberAddress.ReadOnly = true;
             this.txbMemberAddress.Size = new System.Drawing.Size(264, 20);
             this.txbMemberAddress.TabIndex = 5;
             // 
@@ -207,6 +211,7 @@
             // 
             this.txbTotalOwedMoney.Location = new System.Drawing.Point(167, 408);
             this.txbTotalOwedMoney.Name = "txbTotalOwedMoney";
+            this.txbTotalOwedMoney.ReadOnly = true;
             this.txbTotalOwedMoney.Size = new System.Drawing.Size(264, 20);
             this.txbTotalOwedMoney.TabIndex = 16;
             // 
@@ -287,6 +292,7 @@
             this.txbRegistrationDate.Location = new System.Drawing.Point(167, 272);
             this.txbRegistrationDate.Margin = new System.Windows.Forms.Padding(2);
             this.txbRegistrationDate.Name = "txbRegistrationDate";
+            this.txbRegistrationDate.ReadOnly = true;
             this.txbRegistrationDate.Size = new System.Drawing.Size(200, 20);
             this.txbRegistrationDate.TabIndex = 21;
             // 
@@ -295,6 +301,7 @@
             this.txbDateOfBirth.Location = new System.Drawing.Point(167, 177);
             this.txbDateOfBirth.Margin = new System.Windows.Forms.Padding(2);
             this.txbDateOfBirth.Name = "txbDateOfBirth";
+            this.txbDateOfBirth.ReadOnly = true;
             this.txbDateOfBirth.Size = new System.Drawing.Size(200, 20);
             this.txbDateOfBirth.TabIndex = 20;
             // 
