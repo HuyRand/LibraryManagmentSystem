@@ -121,7 +121,7 @@ namespace WindowsFormsApp2
                 txbBookid.Text = "";
             }
         }
-
+         
         private void frmBorrowedBooks_Load(object sender, EventArgs e)
         {
             txbMemid.Text = idMember;

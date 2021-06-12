@@ -307,6 +307,7 @@ namespace WindowsFormsApp2
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+            string temp = txbIdentityNumber.Text;
             if (Program.connection.State == ConnectionState.Broken || Program.connection.State == ConnectionState.Closed)
                 Program.connection.Open();
             string tempMemberEmail = Program.EmailChop(txbMemberEmail.Text);
@@ -317,12 +318,35 @@ namespace WindowsFormsApp2
             string sql = $"DELETE FROM MEMBER WHERE MEMID = {txbIdentityNumber.Text};";
             MySqlCommand cmd = new MySqlCommand(sql, Program.connection);
             MySqlDataReader rdr = cmd.ExecuteReader();
+            rdr.Close();
+            // check if the dude still has the books
+            int [] Holder = new int[10];
+            int size = 0;
+            sql = $"SELECT BOOKID FROM BORROW WHERE MEMID = {temp}";
+            MySqlCommand cmd2 = new MySqlCommand(sql, Program.connection);
+            MySqlDataReader rdr2 = cmd2.ExecuteReader();
+            while (rdr2.Read())
+            {
+                if (rdr2.GetString(0) != null) 
+                {
+                    Holder[size] = rdr2.GetInt32(0);
+                    size++;
+                }
+            }
+            rdr2.Close();
+            for (int i = 0; i < size;  i++)
+            {
+                int Temp = Holder[i];
+                sql = $"DELETE  FROM BOOK WHERE BOOKID = {Temp}";
+                MySqlCommand cmd3 = new MySqlCommand(sql, Program.connection);
+                MySqlDataReader rdr3 = cmd3.ExecuteReader();
+                rdr3.Close();
+            }
+
             MessageBox.Show("deleted");
             btnSearchUser.PerformClick();
-            rdr.Close();
 
         }
-
         private void btnDeleteBook_Click(object sender, EventArgs e)
         {
             if (Program.connection.State == ConnectionState.Broken || Program.connection.State == ConnectionState.Closed)
