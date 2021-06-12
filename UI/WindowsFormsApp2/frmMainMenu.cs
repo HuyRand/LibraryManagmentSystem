@@ -307,6 +307,8 @@ namespace WindowsFormsApp2
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+            if (dgvMemberInfo.CurrentRow == null)
+                return;
             string temp = txbIdentityNumber.Text;
             if (Program.connection.State == ConnectionState.Broken || Program.connection.State == ConnectionState.Closed)
                 Program.connection.Open();
@@ -341,14 +343,26 @@ namespace WindowsFormsApp2
                 MySqlCommand cmd3 = new MySqlCommand(sql, Program.connection);
                 MySqlDataReader rdr3 = cmd3.ExecuteReader();
                 rdr3.Close();
+
+                string sql2 = $"DELETE  FROM BORROW WHERE BOOKID = {Temp}";
+                cmd3=new MySqlCommand(sql2, Program.connection);
+                rdr3 = cmd3.ExecuteReader();
+                rdr3.Close();
             }
 
             MessageBox.Show("deleted");
+            txbMemberName.Text = "";
+            txbMemberEmail.Text = "";
+            txbMemberAddress.Text = "";
+            txbIdentityNumber.Text = "";
+            btnBookSearch.PerformClick();
             btnSearchUser.PerformClick();
 
         }
         private void btnDeleteBook_Click(object sender, EventArgs e)
         {
+            if (dgvBookInfo.CurrentRow == null)
+                return;
             if (Program.connection.State == ConnectionState.Broken || Program.connection.State == ConnectionState.Closed)
                 Program.connection.Open();
             if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + $"Resources\\Book_Images\\{txbBookName.Text}{txbAuthor.Text}.jpg"))
@@ -364,6 +378,13 @@ namespace WindowsFormsApp2
             MySqlDataReader rdr2 = cmd2.ExecuteReader();
             rdr2.Close();
             MessageBox.Show("deleted");
+            txbBookName.Text = "";
+            txbPublisher.Text = "";
+            cbGenre.Text = "";
+            txbBookPrice.Text = "";
+            txbAuthor.Text = "";
+            txbPublishYear.Text = "";
+            txbBookID.Text = "";
             btnBookSearch.PerformClick();
         }
 
@@ -379,7 +400,10 @@ namespace WindowsFormsApp2
                 $"ADDRESS = '{txbMemberAddress.Text}'\n" +
                 $"WHERE MEMID = {txbIdentityNumber.Text};";
 
-            int i = dgvMemberInfo.CurrentRow.Index;
+            int i = new int();
+            if (dgvMemberInfo.CurrentRow != null)
+                i = dgvMemberInfo.CurrentRow.Index;
+            else return;
             string tempOldName = dgvMemberInfo.Rows[i].Cells[1].Value.ToString();
             string tempOldEmail =Program.EmailChop(dgvMemberInfo.Rows[i].Cells[4].Value.ToString());
             string tempOldAddress = Program.Normalizer(dgvMemberInfo.Rows[i].Cells[5].Value.ToString());
@@ -415,9 +439,11 @@ namespace WindowsFormsApp2
                $"AUTHOR = '{txbAuthor.Text}',\n" +
                $"YEAR = {txbPublishYear.Text}\n" +
                $"WHERE BOOKID = {txbBookID.Text};";
-           
 
-            int i = dgvBookInfo.CurrentRow.Index;
+            int i= new int ();
+            if (dgvBookInfo.CurrentRow != null)
+                i = dgvBookInfo.CurrentRow.Index;
+            else return;
             string tempOldAuthor = dgvBookInfo.Rows[i].Cells[3].Value.ToString();
             string tempOldBookName= dgvBookInfo.Rows[i].Cells[1].Value.ToString();
             string oldImageFileName = AppDomain.CurrentDomain.BaseDirectory + $"Resources\\Book_Images\\{tempOldBookName}{tempOldAuthor}.jpg";
@@ -578,6 +604,14 @@ namespace WindowsFormsApp2
         private void panel4_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void NumberOnlyInput(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) )
+            {
+                e.Handled = true;
+            }
         }
     }
 }

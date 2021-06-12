@@ -123,23 +123,29 @@
             // txbNewBookShelf_ID
             // 
             this.txbNewBookShelf_ID.Location = new System.Drawing.Point(591, 187);
+            this.txbNewBookShelf_ID.MaxLength = 5;
             this.txbNewBookShelf_ID.Name = "txbNewBookShelf_ID";
             this.txbNewBookShelf_ID.Size = new System.Drawing.Size(109, 20);
             this.txbNewBookShelf_ID.TabIndex = 31;
+            this.txbNewBookShelf_ID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NumberOnlyInput_registerForm);
             // 
             // txbNewBookSection_ID
             // 
             this.txbNewBookSection_ID.Location = new System.Drawing.Point(591, 139);
+            this.txbNewBookSection_ID.MaxLength = 5;
             this.txbNewBookSection_ID.Name = "txbNewBookSection_ID";
             this.txbNewBookSection_ID.Size = new System.Drawing.Size(109, 20);
             this.txbNewBookSection_ID.TabIndex = 30;
+            this.txbNewBookSection_ID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NumberOnlyInput_registerForm);
             // 
             // txbNewBookRowNumber
             // 
             this.txbNewBookRowNumber.Location = new System.Drawing.Point(591, 92);
+            this.txbNewBookRowNumber.MaxLength = 5;
             this.txbNewBookRowNumber.Name = "txbNewBookRowNumber";
             this.txbNewBookRowNumber.Size = new System.Drawing.Size(109, 20);
             this.txbNewBookRowNumber.TabIndex = 29;
+            this.txbNewBookRowNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NumberOnlyInput_registerForm);
             // 
             // label4
             // 
@@ -211,9 +217,11 @@
             // txbNewBookPrice
             // 
             this.txbNewBookPrice.Location = new System.Drawing.Point(108, 382);
+            this.txbNewBookPrice.MaxLength = 10;
             this.txbNewBookPrice.Name = "txbNewBookPrice";
             this.txbNewBookPrice.Size = new System.Drawing.Size(348, 20);
             this.txbNewBookPrice.TabIndex = 7;
+            this.txbNewBookPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NumberOnlyInput_registerForm);
             // 
             // lbNewBookPrice
             // 
@@ -247,9 +255,11 @@
             // txbPublishYear
             // 
             this.txbPublishYear.Location = new System.Drawing.Point(108, 331);
+            this.txbPublishYear.MaxLength = 10;
             this.txbPublishYear.Name = "txbPublishYear";
             this.txbPublishYear.Size = new System.Drawing.Size(348, 20);
             this.txbPublishYear.TabIndex = 6;
+            this.txbPublishYear.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NumberOnlyInput_registerForm);
             // 
             // txbNewBookPublisher
             // 

@@ -27,6 +27,12 @@ namespace WindowsFormsApp2
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            if (txbNewBookName.Text=="" || txbNewBookSection_ID.Text=="" 
+                || txbNewBookRowNumber.Text==""|| txbNewBookShelf_ID.Text=="")
+            {
+                MessageBox.Show("Book name and Location can't be empty!");
+                return;
+            }    
 
             string sql = "INSERT INTO `BOOK` (NAME, PUBLISHER, AUTHOR, CATEGORY, AVAILABLE, PRICE, YEAR, BOOK_IMG_ID) " +
               $"VALUES ('{txbNewBookName.Text}', '{txbNewBookPublisher.Text}', '{txbNewBookAuthor.Text}', " +
@@ -44,23 +50,6 @@ namespace WindowsFormsApp2
                last_bookid_inserted = reader.GetInt32(0);
             reader.Close();
 
-
-            //string sql3 = "SELECT LAST_INSERT_ID();";
-            //MySqlCommand cmd3 = new MySqlCommand(sql3, Program.connection);
-            //MySqlDataReader rdr3 = cmd3.ExecuteReader();
-            //while (rdr3.Read())
-            //{
-            //    last_bookid_inserted = rdr3.GetInt32(0);
-            //}
-            //rdr3.Close();
-
-            //Console.WriteLine(last_bookid_inserted.ToString());
-
-            //MySqlCommand dbcmd = _conn.CreateCommand();
-            //dbcmd.CommandText = sqlCommandString;
-            //dbcmd.ExecuteNonQuery();
-
-
             string sql2 = "INSERT INTO `LOCATION` (BOOKID, ROW_NUMBER, SECTION_ID, SHELF_ID) " +
                 $"VALUES ('{last_bookid_inserted}', '{txbNewBookRowNumber.Text}', "
                 + $"'{txbNewBookSection_ID.Text}', '{txbNewBookShelf_ID.Text}');";
@@ -76,7 +65,7 @@ namespace WindowsFormsApp2
         {
             if (txbNewBookName.Text == "" || txbNewBookAuthor.Text == "")
             {
-                MessageBox.Show("Enter Name, Email, Address to add image");
+                MessageBox.Show("Enter Name, Author to add image");
                 return;
             }
             fmrAttachImage f = new fmrAttachImage(1, txbNewBookName.Text, null,null,txbNewBookAuthor.Text);
@@ -103,6 +92,15 @@ namespace WindowsFormsApp2
         {
             if (pictureBox1.Image != null)
                 pictureBox1.Image.Dispose();
+        }
+
+        private void NumberOnlyInput_registerForm(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+
         }
     }
 }

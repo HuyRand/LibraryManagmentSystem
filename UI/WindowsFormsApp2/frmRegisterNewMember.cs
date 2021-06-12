@@ -28,6 +28,11 @@ namespace WindowsFormsApp2
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
+            if (txbNewMemberName.Text=="")
+            {
+                MessageBox.Show("Member name can't be empty!");
+                return;
+            }
             string ass =dtpDateOfBirth.Value.Date.ToString("yyyy-MM-dd");
             DateTime dt = DateTime.ParseExact(ass, "yyyy-MM-dd", System.Globalization.CultureInfo.InvariantCulture);
             Console.WriteLine(dt.ToString("yyyy-MM-dd"));

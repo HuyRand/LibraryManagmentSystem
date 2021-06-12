@@ -977,6 +977,7 @@
             this.txbBookPrice.Name = "txbBookPrice";
             this.txbBookPrice.Size = new System.Drawing.Size(327, 29);
             this.txbBookPrice.TabIndex = 13;
+            this.txbBookPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NumberOnlyInput);
             // 
             // lbBookPrice
             // 
@@ -994,6 +995,7 @@
             this.txbPublishYear.Name = "txbPublishYear";
             this.txbPublishYear.Size = new System.Drawing.Size(327, 29);
             this.txbPublishYear.TabIndex = 12;
+            this.txbPublishYear.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NumberOnlyInput);
             // 
             // txbPublisher
             // 
