@@ -27,7 +27,7 @@ namespace WindowsFormsApp2
         {
             InitializeComponent();
         }
-        public frmMemberInfo(string name, string id, string date, string mail, string type, string address, string registerday, string own)
+        public frmMemberInfo(string name, string id, string date, string mail, string type, string address, string registerday)
         {
             InitializeComponent();
             this.nameMember = name;
@@ -36,8 +36,7 @@ namespace WindowsFormsApp2
             this.mailMember = mail;
             this.typeMember = type;
             this.addressMember = address;
-            this.registerdayMember = registerday;
-            this.ownMember = own;
+            this.registerdayMember = registerday;           
         }
 
         private void frmMemberInfo_FormClosing(object sender, FormClosingEventArgs e)
@@ -73,8 +72,7 @@ namespace WindowsFormsApp2
             txbMemberEmail.Text = mailMember;
             cbMemberType.Text = typeMember;
             txbMemberAddress.Text = addressMember;
-            txbRegistrationDate.Text = registerdayMember;
-            txbTotalOwedMoney.Text = ownMember;
+            txbRegistrationDate.Text = registerdayMember;         
             showPicture();
         }
         private void showPicture()

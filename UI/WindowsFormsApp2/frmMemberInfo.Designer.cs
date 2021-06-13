@@ -41,10 +41,8 @@
             this.cbMemberType = new System.Windows.Forms.ComboBox();
             this.txbMemberEmail = new System.Windows.Forms.TextBox();
             this.txbMemberAddress = new System.Windows.Forms.TextBox();
-            this.lbTotalOwedMoney = new System.Windows.Forms.Label();
             this.lbRegistrationDate = new System.Windows.Forms.Label();
             this.btnCreateReturnTicket = new System.Windows.Forms.Button();
-            this.txbTotalOwedMoney = new System.Windows.Forms.TextBox();
             this.btnCreateBorrowTicket = new System.Windows.Forms.Button();
             this.btnHuy = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -62,9 +60,10 @@
             this.lbMemberAddress.AutoSize = true;
             this.lbMemberAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lbMemberAddress.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lbMemberAddress.Location = new System.Drawing.Point(14, 362);
+            this.lbMemberAddress.Location = new System.Drawing.Point(19, 446);
+            this.lbMemberAddress.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbMemberAddress.Name = "lbMemberAddress";
-            this.lbMemberAddress.Size = new System.Drawing.Size(72, 20);
+            this.lbMemberAddress.Size = new System.Drawing.Size(91, 25);
             this.lbMemberAddress.TabIndex = 9;
             this.lbMemberAddress.Text = "Address:";
             // 
@@ -73,9 +72,10 @@
             this.lbMemberEmail.AutoSize = true;
             this.lbMemberEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lbMemberEmail.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lbMemberEmail.Location = new System.Drawing.Point(14, 313);
+            this.lbMemberEmail.Location = new System.Drawing.Point(19, 385);
+            this.lbMemberEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbMemberEmail.Name = "lbMemberEmail";
-            this.lbMemberEmail.Size = new System.Drawing.Size(52, 20);
+            this.lbMemberEmail.Size = new System.Drawing.Size(66, 25);
             this.lbMemberEmail.TabIndex = 7;
             this.lbMemberEmail.Text = "Email:";
             // 
@@ -84,9 +84,10 @@
             this.lbDateOfBirth.AutoSize = true;
             this.lbDateOfBirth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lbDateOfBirth.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lbDateOfBirth.Location = new System.Drawing.Point(14, 174);
+            this.lbDateOfBirth.Location = new System.Drawing.Point(19, 214);
+            this.lbDateOfBirth.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbDateOfBirth.Name = "lbDateOfBirth";
-            this.lbDateOfBirth.Size = new System.Drawing.Size(101, 20);
+            this.lbDateOfBirth.Size = new System.Drawing.Size(122, 25);
             this.lbDateOfBirth.TabIndex = 5;
             this.lbDateOfBirth.Text = "Date of birth:";
             // 
@@ -95,18 +96,20 @@
             this.lbIdentityNumber.AutoSize = true;
             this.lbIdentityNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lbIdentityNumber.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lbIdentityNumber.Location = new System.Drawing.Point(14, 79);
+            this.lbIdentityNumber.Location = new System.Drawing.Point(19, 97);
+            this.lbIdentityNumber.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbIdentityNumber.Name = "lbIdentityNumber";
-            this.lbIdentityNumber.Size = new System.Drawing.Size(123, 20);
+            this.lbIdentityNumber.Size = new System.Drawing.Size(151, 25);
             this.lbIdentityNumber.TabIndex = 3;
             this.lbIdentityNumber.Text = "Identity number:";
             // 
             // txbMemberName
             // 
-            this.txbMemberName.Location = new System.Drawing.Point(167, 127);
+            this.txbMemberName.Location = new System.Drawing.Point(223, 156);
+            this.txbMemberName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txbMemberName.Name = "txbMemberName";
             this.txbMemberName.ReadOnly = true;
-            this.txbMemberName.Size = new System.Drawing.Size(289, 20);
+            this.txbMemberName.Size = new System.Drawing.Size(384, 22);
             this.txbMemberName.TabIndex = 0;
             // 
             // lbMemberName
@@ -114,9 +117,10 @@
             this.lbMemberName.AutoSize = true;
             this.lbMemberName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lbMemberName.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lbMemberName.Location = new System.Drawing.Point(14, 127);
+            this.lbMemberName.Location = new System.Drawing.Point(19, 156);
+            this.lbMemberName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbMemberName.Name = "lbMemberName";
-            this.lbMemberName.Size = new System.Drawing.Size(55, 20);
+            this.lbMemberName.Size = new System.Drawing.Size(70, 25);
             this.lbMemberName.TabIndex = 1;
             this.lbMemberName.Text = "Name:";
             // 
@@ -125,9 +129,10 @@
             this.lbMemberType.AutoSize = true;
             this.lbMemberType.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lbMemberType.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lbMemberType.Location = new System.Drawing.Point(14, 224);
+            this.lbMemberType.Location = new System.Drawing.Point(19, 276);
+            this.lbMemberType.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbMemberType.Name = "lbMemberType";
-            this.lbMemberType.Size = new System.Drawing.Size(109, 20);
+            this.lbMemberType.Size = new System.Drawing.Size(140, 25);
             this.lbMemberType.TabIndex = 14;
             this.lbMemberType.Text = "Member Type:";
             // 
@@ -136,91 +141,80 @@
             this.lbMemberInfo.AutoSize = true;
             this.lbMemberInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbMemberInfo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lbMemberInfo.Location = new System.Drawing.Point(303, -1);
+            this.lbMemberInfo.Location = new System.Drawing.Point(404, -1);
+            this.lbMemberInfo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbMemberInfo.Name = "lbMemberInfo";
-            this.lbMemberInfo.Size = new System.Drawing.Size(316, 39);
+            this.lbMemberInfo.Size = new System.Drawing.Size(399, 52);
             this.lbMemberInfo.TabIndex = 0;
             this.lbMemberInfo.Text = "Member Infomation";
             // 
             // txbIdentityNumber
             // 
-            this.txbIdentityNumber.Location = new System.Drawing.Point(167, 79);
+            this.txbIdentityNumber.Location = new System.Drawing.Point(223, 97);
+            this.txbIdentityNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txbIdentityNumber.Name = "txbIdentityNumber";
             this.txbIdentityNumber.ReadOnly = true;
-            this.txbIdentityNumber.Size = new System.Drawing.Size(264, 20);
+            this.txbIdentityNumber.Size = new System.Drawing.Size(351, 22);
             this.txbIdentityNumber.TabIndex = 1;
             // 
             // cbMemberType
             // 
             this.cbMemberType.FormattingEnabled = true;
-            this.cbMemberType.Location = new System.Drawing.Point(167, 222);
+            this.cbMemberType.Location = new System.Drawing.Point(223, 273);
+            this.cbMemberType.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbMemberType.Name = "cbMemberType";
-            this.cbMemberType.Size = new System.Drawing.Size(200, 21);
+            this.cbMemberType.Size = new System.Drawing.Size(265, 24);
             this.cbMemberType.TabIndex = 4;
             // 
             // txbMemberEmail
             // 
-            this.txbMemberEmail.Location = new System.Drawing.Point(167, 313);
+            this.txbMemberEmail.Location = new System.Drawing.Point(223, 385);
+            this.txbMemberEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txbMemberEmail.Name = "txbMemberEmail";
             this.txbMemberEmail.ReadOnly = true;
-            this.txbMemberEmail.Size = new System.Drawing.Size(264, 20);
+            this.txbMemberEmail.Size = new System.Drawing.Size(351, 22);
             this.txbMemberEmail.TabIndex = 3;
             // 
             // txbMemberAddress
             // 
-            this.txbMemberAddress.Location = new System.Drawing.Point(167, 362);
+            this.txbMemberAddress.Location = new System.Drawing.Point(223, 446);
+            this.txbMemberAddress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txbMemberAddress.Name = "txbMemberAddress";
             this.txbMemberAddress.ReadOnly = true;
-            this.txbMemberAddress.Size = new System.Drawing.Size(264, 20);
+            this.txbMemberAddress.Size = new System.Drawing.Size(351, 22);
             this.txbMemberAddress.TabIndex = 5;
-            // 
-            // lbTotalOwedMoney
-            // 
-            this.lbTotalOwedMoney.AutoSize = true;
-            this.lbTotalOwedMoney.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lbTotalOwedMoney.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lbTotalOwedMoney.Location = new System.Drawing.Point(14, 408);
-            this.lbTotalOwedMoney.Name = "lbTotalOwedMoney";
-            this.lbTotalOwedMoney.Size = new System.Drawing.Size(145, 20);
-            this.lbTotalOwedMoney.TabIndex = 18;
-            this.lbTotalOwedMoney.Text = "Total owed money: ";
             // 
             // lbRegistrationDate
             // 
             this.lbRegistrationDate.AutoSize = true;
             this.lbRegistrationDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lbRegistrationDate.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lbRegistrationDate.Location = new System.Drawing.Point(14, 269);
+            this.lbRegistrationDate.Location = new System.Drawing.Point(19, 331);
+            this.lbRegistrationDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbRegistrationDate.Name = "lbRegistrationDate";
-            this.lbRegistrationDate.Size = new System.Drawing.Size(138, 20);
+            this.lbRegistrationDate.Size = new System.Drawing.Size(166, 25);
             this.lbRegistrationDate.TabIndex = 17;
             this.lbRegistrationDate.Text = "Registration Date:";
             // 
             // btnCreateReturnTicket
             // 
             this.btnCreateReturnTicket.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCreateReturnTicket.Location = new System.Drawing.Point(198, 473);
+            this.btnCreateReturnTicket.Location = new System.Drawing.Point(264, 582);
+            this.btnCreateReturnTicket.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCreateReturnTicket.Name = "btnCreateReturnTicket";
-            this.btnCreateReturnTicket.Size = new System.Drawing.Size(114, 53);
+            this.btnCreateReturnTicket.Size = new System.Drawing.Size(152, 65);
             this.btnCreateReturnTicket.TabIndex = 18;
             this.btnCreateReturnTicket.Text = "Create return ticket";
             this.btnCreateReturnTicket.UseVisualStyleBackColor = true;
             this.btnCreateReturnTicket.Click += new System.EventHandler(this.btnCreateReturnTicket_Click);
             // 
-            // txbTotalOwedMoney
-            // 
-            this.txbTotalOwedMoney.Location = new System.Drawing.Point(167, 408);
-            this.txbTotalOwedMoney.Name = "txbTotalOwedMoney";
-            this.txbTotalOwedMoney.ReadOnly = true;
-            this.txbTotalOwedMoney.Size = new System.Drawing.Size(264, 20);
-            this.txbTotalOwedMoney.TabIndex = 16;
-            // 
             // btnCreateBorrowTicket
             // 
             this.btnCreateBorrowTicket.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCreateBorrowTicket.Location = new System.Drawing.Point(42, 473);
+            this.btnCreateBorrowTicket.Location = new System.Drawing.Point(56, 582);
+            this.btnCreateBorrowTicket.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCreateBorrowTicket.Name = "btnCreateBorrowTicket";
-            this.btnCreateBorrowTicket.Size = new System.Drawing.Size(136, 53);
+            this.btnCreateBorrowTicket.Size = new System.Drawing.Size(181, 65);
             this.btnCreateBorrowTicket.TabIndex = 17;
             this.btnCreateBorrowTicket.Text = "Create borrow ticket";
             this.btnCreateBorrowTicket.UseVisualStyleBackColor = true;
@@ -229,9 +223,10 @@
             // btnHuy
             // 
             this.btnHuy.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnHuy.Location = new System.Drawing.Point(1000, 1000);
+            this.btnHuy.Location = new System.Drawing.Point(1333, 1231);
+            this.btnHuy.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(75, 23);
+            this.btnHuy.Size = new System.Drawing.Size(100, 28);
             this.btnHuy.TabIndex = 19;
             this.btnHuy.Text = "button2";
             this.btnHuy.UseVisualStyleBackColor = true;
@@ -245,10 +240,8 @@
             this.panel1.Controls.Add(this.btnHuy);
             this.panel1.Controls.Add(this.btnCancle);
             this.panel1.Controls.Add(this.btnCreateBorrowTicket);
-            this.panel1.Controls.Add(this.txbTotalOwedMoney);
             this.panel1.Controls.Add(this.btnCreateReturnTicket);
             this.panel1.Controls.Add(this.lbRegistrationDate);
-            this.panel1.Controls.Add(this.lbTotalOwedMoney);
             this.panel1.Controls.Add(this.txbMemberAddress);
             this.panel1.Controls.Add(this.txbMemberEmail);
             this.panel1.Controls.Add(this.cbMemberType);
@@ -261,17 +254,19 @@
             this.panel1.Controls.Add(this.lbDateOfBirth);
             this.panel1.Controls.Add(this.lbMemberEmail);
             this.panel1.Controls.Add(this.lbMemberAddress);
-            this.panel1.Location = new System.Drawing.Point(12, 5);
+            this.panel1.Location = new System.Drawing.Point(16, 6);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(807, 550);
+            this.panel1.Size = new System.Drawing.Size(1076, 677);
             this.panel1.TabIndex = 17;
             // 
             // addImageBtton
             // 
             this.addImageBtton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addImageBtton.Location = new System.Drawing.Point(624, 473);
+            this.addImageBtton.Location = new System.Drawing.Point(832, 582);
+            this.addImageBtton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.addImageBtton.Name = "addImageBtton";
-            this.addImageBtton.Size = new System.Drawing.Size(89, 53);
+            this.addImageBtton.Size = new System.Drawing.Size(119, 65);
             this.addImageBtton.TabIndex = 23;
             this.addImageBtton.Text = "Add Image";
             this.addImageBtton.UseVisualStyleBackColor = true;
@@ -280,37 +275,39 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.pictureBox1.Location = new System.Drawing.Point(533, 79);
+            this.pictureBox1.Location = new System.Drawing.Point(711, 97);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(255, 340);
+            this.pictureBox1.Size = new System.Drawing.Size(340, 418);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 22;
             this.pictureBox1.TabStop = false;
             // 
             // txbRegistrationDate
             // 
-            this.txbRegistrationDate.Location = new System.Drawing.Point(167, 272);
-            this.txbRegistrationDate.Margin = new System.Windows.Forms.Padding(2);
+            this.txbRegistrationDate.Location = new System.Drawing.Point(223, 335);
+            this.txbRegistrationDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbRegistrationDate.Name = "txbRegistrationDate";
             this.txbRegistrationDate.ReadOnly = true;
-            this.txbRegistrationDate.Size = new System.Drawing.Size(200, 20);
+            this.txbRegistrationDate.Size = new System.Drawing.Size(265, 22);
             this.txbRegistrationDate.TabIndex = 21;
             // 
             // txbDateOfBirth
             // 
-            this.txbDateOfBirth.Location = new System.Drawing.Point(167, 177);
-            this.txbDateOfBirth.Margin = new System.Windows.Forms.Padding(2);
+            this.txbDateOfBirth.Location = new System.Drawing.Point(223, 218);
+            this.txbDateOfBirth.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbDateOfBirth.Name = "txbDateOfBirth";
             this.txbDateOfBirth.ReadOnly = true;
-            this.txbDateOfBirth.Size = new System.Drawing.Size(200, 20);
+            this.txbDateOfBirth.Size = new System.Drawing.Size(265, 22);
             this.txbDateOfBirth.TabIndex = 20;
             // 
             // btnCancle
             // 
             this.btnCancle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancle.Location = new System.Drawing.Point(342, 473);
+            this.btnCancle.Location = new System.Drawing.Point(456, 582);
+            this.btnCancle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCancle.Name = "btnCancle";
-            this.btnCancle.Size = new System.Drawing.Size(89, 53);
+            this.btnCancle.Size = new System.Drawing.Size(119, 65);
             this.btnCancle.TabIndex = 17;
             this.btnCancle.Text = "Cancel";
             this.btnCancle.UseVisualStyleBackColor = true;
@@ -318,13 +315,14 @@
             // 
             // frmMemberInfo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.CancelButton = this.btnHuy;
-            this.ClientSize = new System.Drawing.Size(831, 567);
+            this.ClientSize = new System.Drawing.Size(1108, 698);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmMemberInfo";
@@ -353,10 +351,8 @@
         private System.Windows.Forms.ComboBox cbMemberType;
         private System.Windows.Forms.TextBox txbMemberEmail;
         private System.Windows.Forms.TextBox txbMemberAddress;
-        private System.Windows.Forms.Label lbTotalOwedMoney;
         private System.Windows.Forms.Label lbRegistrationDate;
         private System.Windows.Forms.Button btnCreateReturnTicket;
-        private System.Windows.Forms.TextBox txbTotalOwedMoney;
         private System.Windows.Forms.Button btnCreateBorrowTicket;
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.Panel panel1;

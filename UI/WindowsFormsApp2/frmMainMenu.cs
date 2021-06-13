@@ -528,7 +528,7 @@ namespace WindowsFormsApp2
                 string txbMemberEmail = dgvMemberInfo.Rows[i].Cells[4].Value.ToString();
                 string txbMemberAddress = dgvMemberInfo.Rows[i].Cells[5].Value.ToString();
                 string cbMemberType = dgvMemberInfo.Rows[i].Cells[6].Value.ToString();
-                frmMemberInfo f = new frmMemberInfo(txbMemberName, txbIdentityNumber, dtpDayOfBirth, txbMemberEmail, cbMemberType, txbMemberAddress, dtpRegistrationerDate.Text, txbMemberOwedMoney.Text);
+                frmMemberInfo f = new frmMemberInfo(txbMemberName, txbIdentityNumber, dtpDayOfBirth, txbMemberEmail, cbMemberType, txbMemberAddress, dtpRegistrationerDate.Text);
                 f.ShowDialog();
             }
  
