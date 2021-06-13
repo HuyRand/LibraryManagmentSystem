@@ -31,7 +31,6 @@ C:\Users\new user\Desktop\Library Man my-Branch\LibraryManagmentSystem\UI\Window
 C:\Users\new user\Desktop\Library Man my-Branch\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Release\WindowsFormsApp2.frmBookInfo.resources
 C:\Users\new user\Desktop\Library Man my-Branch\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Release\WindowsFormsApp2.frmMemberInfo.resources
 C:\Users\new user\Desktop\Library Man my-Branch\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Release\WindowsFormsApp2.frmBorrowedBooks.resources
-C:\Users\new user\Desktop\Library Man my-Branch\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Release\WindowsFormsApp2.frmPenaltyBill.resources
 C:\Users\new user\Desktop\Library Man my-Branch\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Release\WindowsFormsApp2.frmReturnTicket.resources
 C:\Users\new user\Desktop\Library Man my-Branch\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Release\WindowsFormsApp2.frmAddNewBook.resources
 C:\Users\new user\Desktop\Library Man my-Branch\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Release\WindowsFormsApp2.frmBorrowTicket.resources
