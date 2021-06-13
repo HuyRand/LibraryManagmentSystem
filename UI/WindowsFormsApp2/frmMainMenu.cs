@@ -70,11 +70,7 @@ namespace WindowsFormsApp2
             }
         }
 
-        private void receivePenaltyToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmPenaltyBill f = new frmPenaltyBill(txbIdentityNumber.Text, txbMemberName.Text, txbMemberOwedMoney.Text);
-            f.ShowDialog();
-        }
+       
 
         private void frmMainMenu_FormClosing(object sender, FormClosingEventArgs e)
         {
