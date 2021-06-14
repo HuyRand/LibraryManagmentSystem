@@ -637,5 +637,11 @@ namespace WindowsFormsApp2
                 e.Handled = true;
             }
         }
+
+        private void receivePenaltyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPenaltyBill f = new frmPenaltyBill();
+            f.ShowDialog();
+        }
     }
 }

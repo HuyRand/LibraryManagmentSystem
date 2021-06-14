@@ -226,3 +226,4 @@ C:\Users\Admin\Documents\GitHub\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\R
 C:\Users\Admin\Documents\GitHub\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Release\LibraryManagementUI.csproj.CopyComplete
 C:\Users\Admin\Documents\GitHub\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Release\WindowsFormsApp2.exe
 C:\Users\Admin\Documents\GitHub\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Release\WindowsFormsApp2.pdb
+C:\Users\Admin\Documents\GitHub\LibraryManagmentSystem\UI\WindowsFormsApp2\obj\Release\WindowsFormsApp2.frmPenaltyBill.resources

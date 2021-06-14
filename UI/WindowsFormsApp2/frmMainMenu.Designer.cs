@@ -130,6 +130,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dgvStatistics = new System.Windows.Forms.DataGridView();
             this.btnHuy = new System.Windows.Forms.Button();
+            this.lbOwedMoney = new System.Windows.Forms.Label();
+            this.txbOwedMoney = new System.Windows.Forms.TextBox();
+            this.receivePenaltyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
             this.toolStripContainer1.TopToolStripPanel.SuspendLayout();
@@ -200,8 +203,10 @@
             this.ManageborrowReturnToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.createBorrowTicketToolStripMenuItem,
             this.createReturnTicketToolStripMenuItem,
-            this.toolStripMenuItem1});
+            this.toolStripMenuItem1,
+            this.receivePenaltyToolStripMenuItem});
             this.ManageborrowReturnToolStripMenuItem.Name = "ManageborrowReturnToolStripMenuItem";
+            this.ManageborrowReturnToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
             this.ManageborrowReturnToolStripMenuItem.Size = new System.Drawing.Size(182, 24);
             this.ManageborrowReturnToolStripMenuItem.Text = "Manage Borrow/Return ";
             // 
@@ -494,11 +499,13 @@
             this.panel3.Controls.Add(this.dtpRegistrationerDate);
             this.panel3.Controls.Add(this.lbRegistrationDate);
             this.panel3.Controls.Add(this.btnUserInfoDetail);
+            this.panel3.Controls.Add(this.txbOwedMoney);
             this.panel3.Controls.Add(this.txbMemberAddress);
             this.panel3.Controls.Add(this.dtpDayOfBirth);
             this.panel3.Controls.Add(this.txbMemberEmail);
             this.panel3.Controls.Add(this.cbMemberType);
             this.panel3.Controls.Add(this.txbIdentityNumber);
+            this.panel3.Controls.Add(this.lbOwedMoney);
             this.panel3.Controls.Add(this.lbMemberType);
             this.panel3.Controls.Add(this.lbMemberName);
             this.panel3.Controls.Add(this.txbMemberName);
@@ -1262,6 +1269,34 @@
             this.btnHuy.Text = "button1";
             this.btnHuy.UseVisualStyleBackColor = true;
             // 
+            // lbOwedMoney
+            // 
+            this.lbOwedMoney.AutoSize = true;
+            this.lbOwedMoney.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbOwedMoney.Location = new System.Drawing.Point(4, 557);
+            this.lbOwedMoney.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbOwedMoney.Name = "lbOwedMoney";
+            this.lbOwedMoney.Size = new System.Drawing.Size(135, 25);
+            this.lbOwedMoney.TabIndex = 14;
+            this.lbOwedMoney.Text = "Owed Money:";
+            // 
+            // txbOwedMoney
+            // 
+            this.txbOwedMoney.Location = new System.Drawing.Point(144, 551);
+            this.txbOwedMoney.Margin = new System.Windows.Forms.Padding(4);
+            this.txbOwedMoney.Name = "txbOwedMoney";
+            this.txbOwedMoney.Size = new System.Drawing.Size(432, 34);
+            this.txbOwedMoney.TabIndex = 5;
+            this.txbOwedMoney.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbMemberAddress_KeyPress);
+            // 
+            // receivePenaltyToolStripMenuItem
+            // 
+            this.receivePenaltyToolStripMenuItem.Name = "receivePenaltyToolStripMenuItem";
+            this.receivePenaltyToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
+            this.receivePenaltyToolStripMenuItem.Size = new System.Drawing.Size(309, 26);
+            this.receivePenaltyToolStripMenuItem.Text = "Receive Penalty";
+            this.receivePenaltyToolStripMenuItem.Click += new System.EventHandler(this.receivePenaltyToolStripMenuItem_Click);
+            // 
             // frmMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1421,5 +1456,8 @@
         private System.Windows.Forms.ToolStripMenuItem borrowedBooksDetailToolStripMenuItem;
         private System.Windows.Forms.ComboBox cbBookState;
         private System.Windows.Forms.Label lbBookState;
+        private System.Windows.Forms.TextBox txbOwedMoney;
+        private System.Windows.Forms.Label lbOwedMoney;
+        private System.Windows.Forms.ToolStripMenuItem receivePenaltyToolStripMenuItem;
     }
 }

@@ -137,6 +137,12 @@
     <Compile Include="frmBorrowedBooks.Designer.cs">
       <DependentUpon>frmBorrowedBooks.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPenaltyBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPenaltyBill.Designer.cs">
+      <DependentUpon>frmPenaltyBill.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmReturnBook.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -198,6 +204,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmBorrowedBooks.resx">
       <DependentUpon>frmBorrowedBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPenaltyBill.resx">
+      <DependentUpon>frmPenaltyBill.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmReturnBook.resx">
       <DependentUpon>frmReturnBook.cs</DependentUpon>
