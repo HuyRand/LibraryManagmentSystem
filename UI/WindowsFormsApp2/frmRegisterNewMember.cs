@@ -38,9 +38,9 @@ namespace WindowsFormsApp2
             Console.WriteLine(dt.ToString("yyyy-MM-dd"));
 
 
-            string sql = "INSERT INTO `MEMBER` (NAME, DOB, NUMBER_OF_BOOK_ALLOWED, EMAIL, ADDRESS, MEM_IMG_ID) " +
+            string sql = "INSERT INTO `MEMBER` (NAME, DOB, NUMBER_OF_BOOK_ALLOWED, EMAIL, ADDRESS, BILL) " +
               $"VALUES ('{txbNewMemberName.Text}', '{dt.ToString("yyyy-MM-dd")}', '0'," +
-              $" '{txbNewMemberEmail.Text}', '{txbNewMemberAddress.Text}', 'test');";
+              $" '{txbNewMemberEmail.Text}', '{txbNewMemberAddress.Text}', 0);";
             MySqlCommand cmd = new MySqlCommand(sql, Program.connection);
             MySqlDataReader rdr = cmd.ExecuteReader();
             rdr.Close();
