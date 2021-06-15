@@ -171,7 +171,7 @@
             // btnCreateReturnTicket
             // 
             this.btnCreateReturnTicket.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCreateReturnTicket.Location = new System.Drawing.Point(325, 472);
+            this.btnCreateReturnTicket.Location = new System.Drawing.Point(191, 441);
             this.btnCreateReturnTicket.Name = "btnCreateReturnTicket";
             this.btnCreateReturnTicket.Size = new System.Drawing.Size(131, 29);
             this.btnCreateReturnTicket.TabIndex = 18;
@@ -182,7 +182,7 @@
             // btnCreateBorrowTicket
             // 
             this.btnCreateBorrowTicket.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCreateBorrowTicket.Location = new System.Drawing.Point(169, 472);
+            this.btnCreateBorrowTicket.Location = new System.Drawing.Point(35, 441);
             this.btnCreateBorrowTicket.Name = "btnCreateBorrowTicket";
             this.btnCreateBorrowTicket.Size = new System.Drawing.Size(132, 29);
             this.btnCreateBorrowTicket.TabIndex = 17;
@@ -229,7 +229,7 @@
             this.panel1.Controls.Add(this.lbMemberAddress);
             this.panel1.Location = new System.Drawing.Point(12, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(807, 524);
+            this.panel1.Size = new System.Drawing.Size(807, 491);
             this.panel1.TabIndex = 17;
             // 
             // txbMemberMajor
@@ -316,7 +316,7 @@
             // btnCancle
             // 
             this.btnCancle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancle.Location = new System.Drawing.Point(476, 472);
+            this.btnCancle.Location = new System.Drawing.Point(342, 441);
             this.btnCancle.Name = "btnCancle";
             this.btnCancle.Size = new System.Drawing.Size(89, 29);
             this.btnCancle.TabIndex = 17;
@@ -326,7 +326,7 @@
             // 
             // txbOwedMoney
             // 
-            this.txbOwedMoney.Location = new System.Drawing.Point(169, 399);
+            this.txbOwedMoney.Location = new System.Drawing.Point(167, 386);
             this.txbOwedMoney.Name = "txbOwedMoney";
             this.txbOwedMoney.ReadOnly = true;
             this.txbOwedMoney.Size = new System.Drawing.Size(264, 20);
@@ -337,7 +337,7 @@
             this.lbOwedMoney.AutoSize = true;
             this.lbOwedMoney.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lbOwedMoney.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lbOwedMoney.Location = new System.Drawing.Point(16, 399);
+            this.lbOwedMoney.Location = new System.Drawing.Point(14, 386);
             this.lbOwedMoney.Name = "lbOwedMoney";
             this.lbOwedMoney.Size = new System.Drawing.Size(105, 20);
             this.lbOwedMoney.TabIndex = 9;
@@ -349,7 +349,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.CancelButton = this.btnHuy;
-            this.ClientSize = new System.Drawing.Size(826, 539);
+            this.ClientSize = new System.Drawing.Size(826, 508);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;

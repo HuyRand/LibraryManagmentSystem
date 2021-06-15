@@ -509,7 +509,7 @@
             this.panel3.Controls.Add(this.lbMemberAddress);
             this.panel3.Location = new System.Drawing.Point(3, 3);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(445, 539);
+            this.panel3.Size = new System.Drawing.Size(445, 491);
             this.panel3.TabIndex = 3;
             // 
             // txbMemberMajor
@@ -619,6 +619,7 @@
             // 
             this.txbOwedMoney.Location = new System.Drawing.Point(109, 427);
             this.txbOwedMoney.Name = "txbOwedMoney";
+            this.txbOwedMoney.ReadOnly = true;
             this.txbOwedMoney.Size = new System.Drawing.Size(325, 29);
             this.txbOwedMoney.TabIndex = 5;
             this.txbOwedMoney.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbMemberAddress_KeyPress);

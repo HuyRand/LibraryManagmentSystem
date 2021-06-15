@@ -647,8 +647,18 @@ namespace WindowsFormsApp2
 
         private void receivePenaltyToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmPenaltyBill f = new frmPenaltyBill();
-            f.ShowDialog();
+            int i=0;
+            if (dgvMemberInfo.CurrentRow != null)
+            {
+                i = dgvMemberInfo.CurrentRow.Index;
+                string tempMemID=dgvMemberInfo.Rows[i].Cells[0].Value.ToString();
+                string tempMemName= dgvMemberInfo.Rows[i].Cells[1].Value.ToString();
+                int tempMemOwedMoney= Convert.ToInt32(dgvMemberInfo.Rows[i].Cells[6].Value.ToString());
+                i = dgvMemberInfo.CurrentRow.Index;
+                frmPenaltyBill f = new frmPenaltyBill(tempMemID, tempMemName, tempMemOwedMoney);
+                f.ShowDialog();
+                btnSearchUser.PerformClick();
+            }
         }
     }
 }
