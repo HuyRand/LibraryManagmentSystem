@@ -15,7 +15,17 @@ namespace LibraryManagementClasses
 		public string EMAIL;
 		public string ADDRESS;
 		public string MEM_IMG_ID;
-		public Member()
+        private int v1;
+        private string v2;
+        private DateTime dateTime;
+        private int v3;
+        private string v4;
+        private string v5;
+        private int v6;
+        private string v7;
+        private string v8;
+
+        public Member()
 		{
 			MEMID = 0;
 			NAME = "unknown";
@@ -39,6 +49,19 @@ namespace LibraryManagementClasses
 			if (index > 0)
 			MEM_IMG_ID = Email.Substring(0, index);
 		}
-	}
+
+        public Member(int v1, string v2, DateTime dateTime, int v3, string v4, string v5, int v6, string v7, string v8)
+        {
+            this.v1 = v1;
+            this.v2 = v2;
+            this.dateTime = dateTime;
+            this.v3 = v3;
+            this.v4 = v4;
+            this.v5 = v5;
+            this.v6 = v6;
+            this.v7 = v7;
+            this.v8 = v8;
+        }
+    }
 
 }
