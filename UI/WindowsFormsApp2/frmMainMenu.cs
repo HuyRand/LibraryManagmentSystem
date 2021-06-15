@@ -179,8 +179,9 @@ namespace WindowsFormsApp2
                 dtpDayOfBirth.Text = dgvMemberInfo.Rows[i].Cells[2].Value.ToString();
                 txbMemberEmail.Text = dgvMemberInfo.Rows[i].Cells[4].Value.ToString();
                 txbMemberAddress.Text = dgvMemberInfo.Rows[i].Cells[5].Value.ToString();
-                cbMemberType.Text = dgvMemberInfo.Rows[i].Cells[6].Value.ToString();
-                //txbMemberOwedMoney.Text = dgvMemberInfo.Rows[i].Cells[4].Value.ToString();
+                txbOwedMoney.Text = dgvMemberInfo.Rows[i].Cells[6].Value.ToString();
+                txbMemberClass.Text = dgvMemberInfo.Rows[i].Cells[7].Value.ToString();
+                txbMemberMajor.Text = dgvMemberInfo.Rows[i].Cells[8].Value.ToString();
                 //dtpRegiserDay.Text = dgvMemberInfo.Rows[i].Cells[4].Value.ToString();
             }
         }

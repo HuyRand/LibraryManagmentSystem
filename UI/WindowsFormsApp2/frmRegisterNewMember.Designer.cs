@@ -43,12 +43,22 @@
             this.lbNewMemberDateOfBirth = new System.Windows.Forms.Label();
             this.lbNewMemberName = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txbNewMemberMajor = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txbNewMemberClass = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.txbNewMemberMajor);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.txbNewMemberClass);
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.addImageBttn);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.dtpDateOfBirth);
@@ -65,14 +75,14 @@
             this.panel1.Location = new System.Drawing.Point(9, 10);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(858, 342);
+            this.panel1.Size = new System.Drawing.Size(862, 345);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // addImageBttn
             // 
             this.addImageBttn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addImageBttn.Location = new System.Drawing.Point(471, 257);
+            this.addImageBttn.Location = new System.Drawing.Point(673, 302);
             this.addImageBttn.Margin = new System.Windows.Forms.Padding(2);
             this.addImageBttn.Name = "addImageBttn";
             this.addImageBttn.Size = new System.Drawing.Size(89, 28);
@@ -86,7 +96,7 @@
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.pictureBox1.Location = new System.Drawing.Point(608, 17);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(225, 300);
+            this.pictureBox1.Size = new System.Drawing.Size(210, 280);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
@@ -94,7 +104,7 @@
             // dtpDateOfBirth
             // 
             this.dtpDateOfBirth.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
-            this.dtpDateOfBirth.Location = new System.Drawing.Point(168, 118);
+            this.dtpDateOfBirth.Location = new System.Drawing.Point(168, 161);
             this.dtpDateOfBirth.Name = "dtpDateOfBirth";
             this.dtpDateOfBirth.Size = new System.Drawing.Size(243, 28);
             this.dtpDateOfBirth.TabIndex = 3;
@@ -102,7 +112,7 @@
             // btnCancel
             // 
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(278, 257);
+            this.btnCancel.Location = new System.Drawing.Point(278, 302);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(89, 28);
@@ -114,7 +124,7 @@
             // btnRegister
             // 
             this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegister.Location = new System.Drawing.Point(169, 257);
+            this.btnRegister.Location = new System.Drawing.Point(169, 302);
             this.btnRegister.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(89, 28);
@@ -126,7 +136,7 @@
             // txbNewMemberEmail
             // 
             this.txbNewMemberEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbNewMemberEmail.Location = new System.Drawing.Point(168, 162);
+            this.txbNewMemberEmail.Location = new System.Drawing.Point(168, 205);
             this.txbNewMemberEmail.Margin = new System.Windows.Forms.Padding(2);
             this.txbNewMemberEmail.Name = "txbNewMemberEmail";
             this.txbNewMemberEmail.Size = new System.Drawing.Size(392, 28);
@@ -136,7 +146,7 @@
             // txbNewMemberAddress
             // 
             this.txbNewMemberAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbNewMemberAddress.Location = new System.Drawing.Point(168, 203);
+            this.txbNewMemberAddress.Location = new System.Drawing.Point(168, 246);
             this.txbNewMemberAddress.Margin = new System.Windows.Forms.Padding(2);
             this.txbNewMemberAddress.Name = "txbNewMemberAddress";
             this.txbNewMemberAddress.Size = new System.Drawing.Size(392, 28);
@@ -157,7 +167,7 @@
             // 
             this.lbNewMemberAddress.AutoSize = true;
             this.lbNewMemberAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNewMemberAddress.Location = new System.Drawing.Point(16, 205);
+            this.lbNewMemberAddress.Location = new System.Drawing.Point(16, 248);
             this.lbNewMemberAddress.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbNewMemberAddress.Name = "lbNewMemberAddress";
             this.lbNewMemberAddress.Size = new System.Drawing.Size(90, 24);
@@ -168,7 +178,7 @@
             // 
             this.lbNewMemberEmail.AutoSize = true;
             this.lbNewMemberEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNewMemberEmail.Location = new System.Drawing.Point(16, 162);
+            this.lbNewMemberEmail.Location = new System.Drawing.Point(16, 205);
             this.lbNewMemberEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbNewMemberEmail.Name = "lbNewMemberEmail";
             this.lbNewMemberEmail.Size = new System.Drawing.Size(62, 24);
@@ -179,7 +189,7 @@
             // 
             this.lbNewMemberDateOfBirth.AutoSize = true;
             this.lbNewMemberDateOfBirth.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNewMemberDateOfBirth.Location = new System.Drawing.Point(16, 118);
+            this.lbNewMemberDateOfBirth.Location = new System.Drawing.Point(16, 161);
             this.lbNewMemberDateOfBirth.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbNewMemberDateOfBirth.Name = "lbNewMemberDateOfBirth";
             this.lbNewMemberDateOfBirth.Size = new System.Drawing.Size(119, 24);
@@ -208,11 +218,62 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Register new member";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(163, 124);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(60, 24);
+            this.label4.TabIndex = 19;
+            this.label4.Text = "Class:";
+            // 
+            // txbNewMemberMajor
+            // 
+            this.txbNewMemberMajor.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbNewMemberMajor.Location = new System.Drawing.Point(423, 120);
+            this.txbNewMemberMajor.Margin = new System.Windows.Forms.Padding(2);
+            this.txbNewMemberMajor.Name = "txbNewMemberMajor";
+            this.txbNewMemberMajor.Size = new System.Drawing.Size(89, 28);
+            this.txbNewMemberMajor.TabIndex = 18;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(357, 120);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(62, 24);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "Major:";
+            // 
+            // txbNewMemberClass
+            // 
+            this.txbNewMemberClass.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbNewMemberClass.Location = new System.Drawing.Point(227, 120);
+            this.txbNewMemberClass.Margin = new System.Windows.Forms.Padding(2);
+            this.txbNewMemberClass.Name = "txbNewMemberClass";
+            this.txbNewMemberClass.Size = new System.Drawing.Size(89, 28);
+            this.txbNewMemberClass.TabIndex = 16;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(12, 120);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(107, 24);
+            this.label2.TabIndex = 15;
+            this.label2.Text = "Class/Major";
+            // 
             // frmRegisterNewMember
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(881, 367);
+            this.ClientSize = new System.Drawing.Size(881, 363);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -244,5 +305,10 @@
         private System.Windows.Forms.DateTimePicker dtpDateOfBirth;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button addImageBttn;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txbNewMemberMajor;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txbNewMemberClass;
+        private System.Windows.Forms.Label label2;
     }
 }
