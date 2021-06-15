@@ -13,6 +13,7 @@ create table MEMBER
 
 CREATE TABLE BOOK (
   BOOKID int  auto_increment primary key,
+  NAME varchar(50),
   PUBLISHER varchar(50),
   AUTHOR Varchar(50),
   CATEGORY varchar(20),
@@ -32,7 +33,7 @@ CREATE TABLE BORROW (
   );
 
 CREATE TABLE LOCATION (
-  LOCA_ID varchar (5) primary key,
+  LOCA_ID int auto_increment primary key,
   BOOKID INTEGER REFERENCES BOOK(BOOKID),
   SHELF_ID intEGER(5),
   SECTION_ID intEGER(5), 
