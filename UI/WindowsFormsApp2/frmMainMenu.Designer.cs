@@ -64,6 +64,10 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.txbMemberMajor = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txbMemberClass = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.lbTenbandocEX = new System.Windows.Forms.Label();
             this.lbEmailEX = new System.Windows.Forms.Label();
             this.lbCmndEX = new System.Windows.Forms.Label();
@@ -74,10 +78,8 @@
             this.txbMemberAddress = new System.Windows.Forms.TextBox();
             this.dtpDayOfBirth = new System.Windows.Forms.DateTimePicker();
             this.txbMemberEmail = new System.Windows.Forms.TextBox();
-            this.cbMemberType = new System.Windows.Forms.ComboBox();
             this.txbIdentityNumber = new System.Windows.Forms.TextBox();
             this.lbOwedMoney = new System.Windows.Forms.Label();
-            this.lbMemberType = new System.Windows.Forms.Label();
             this.lbMemberName = new System.Windows.Forms.Label();
             this.txbMemberName = new System.Windows.Forms.TextBox();
             this.lbIdentityNumber = new System.Windows.Forms.Label();
@@ -133,10 +135,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dgvStatistics = new System.Windows.Forms.DataGridView();
             this.btnHuy = new System.Windows.Forms.Button();
-            this.txbMemberMajor = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txbMemberClass = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
             this.toolStripContainer1.TopToolStripPanel.SuspendLayout();
@@ -347,7 +345,7 @@
             this.tpMember.Controls.Add(this.flowLayoutPanel3);
             this.tpMember.Location = new System.Drawing.Point(4, 54);
             this.tpMember.Name = "tpMember";
-            this.tpMember.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tpMember.Padding = new System.Windows.Forms.Padding(3);
             this.tpMember.Size = new System.Drawing.Size(962, 491);
             this.tpMember.TabIndex = 0;
             this.tpMember.Text = "   Member  ";
@@ -501,10 +499,8 @@
             this.panel3.Controls.Add(this.txbMemberAddress);
             this.panel3.Controls.Add(this.dtpDayOfBirth);
             this.panel3.Controls.Add(this.txbMemberEmail);
-            this.panel3.Controls.Add(this.cbMemberType);
             this.panel3.Controls.Add(this.txbIdentityNumber);
             this.panel3.Controls.Add(this.lbOwedMoney);
-            this.panel3.Controls.Add(this.lbMemberType);
             this.panel3.Controls.Add(this.lbMemberName);
             this.panel3.Controls.Add(this.txbMemberName);
             this.panel3.Controls.Add(this.lbIdentityNumber);
@@ -515,6 +511,46 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(445, 539);
             this.panel3.TabIndex = 3;
+            // 
+            // txbMemberMajor
+            // 
+            this.txbMemberMajor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.txbMemberMajor.Location = new System.Drawing.Point(219, 171);
+            this.txbMemberMajor.Margin = new System.Windows.Forms.Padding(2);
+            this.txbMemberMajor.Name = "txbMemberMajor";
+            this.txbMemberMajor.Size = new System.Drawing.Size(89, 29);
+            this.txbMemberMajor.TabIndex = 44;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F);
+            this.label3.Location = new System.Drawing.Point(202, 171);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(20, 29);
+            this.label3.TabIndex = 43;
+            this.label3.Text = "/";
+            // 
+            // txbMemberClass
+            // 
+            this.txbMemberClass.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.txbMemberClass.Location = new System.Drawing.Point(109, 171);
+            this.txbMemberClass.Margin = new System.Windows.Forms.Padding(2);
+            this.txbMemberClass.Name = "txbMemberClass";
+            this.txbMemberClass.Size = new System.Drawing.Size(89, 29);
+            this.txbMemberClass.TabIndex = 42;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(1, 180);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(95, 20);
+            this.label2.TabIndex = 41;
+            this.label2.Text = "Class/Major:";
             // 
             // lbTenbandocEX
             // 
@@ -553,7 +589,7 @@
             // 
             this.dtpRegistrationerDate.CustomFormat = "dd/MM/yyyy";
             this.dtpRegistrationerDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpRegistrationerDate.Location = new System.Drawing.Point(130, 443);
+            this.dtpRegistrationerDate.Location = new System.Drawing.Point(134, 373);
             this.dtpRegistrationerDate.Name = "dtpRegistrationerDate";
             this.dtpRegistrationerDate.Size = new System.Drawing.Size(200, 29);
             this.dtpRegistrationerDate.TabIndex = 19;
@@ -563,7 +599,7 @@
             this.lbRegistrationDate.AutoSize = true;
             this.lbRegistrationDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbRegistrationDate.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lbRegistrationDate.Location = new System.Drawing.Point(9, 443);
+            this.lbRegistrationDate.Location = new System.Drawing.Point(5, 382);
             this.lbRegistrationDate.Name = "lbRegistrationDate";
             this.lbRegistrationDate.Size = new System.Drawing.Size(123, 18);
             this.lbRegistrationDate.TabIndex = 21;
@@ -581,7 +617,7 @@
             // 
             // txbOwedMoney
             // 
-            this.txbOwedMoney.Location = new System.Drawing.Point(113, 490);
+            this.txbOwedMoney.Location = new System.Drawing.Point(109, 427);
             this.txbOwedMoney.Name = "txbOwedMoney";
             this.txbOwedMoney.Size = new System.Drawing.Size(325, 29);
             this.txbOwedMoney.TabIndex = 5;
@@ -612,16 +648,6 @@
             this.txbMemberEmail.TabIndex = 4;
             this.txbMemberEmail.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbMemberAddress_KeyPress);
             // 
-            // cbMemberType
-            // 
-            this.cbMemberType.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cbMemberType.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cbMemberType.FormattingEnabled = true;
-            this.cbMemberType.Location = new System.Drawing.Point(108, 377);
-            this.cbMemberType.Name = "cbMemberType";
-            this.cbMemberType.Size = new System.Drawing.Size(200, 32);
-            this.cbMemberType.TabIndex = 6;
-            // 
             // txbIdentityNumber
             // 
             this.txbIdentityNumber.Enabled = false;
@@ -634,21 +660,11 @@
             // 
             this.lbOwedMoney.AutoSize = true;
             this.lbOwedMoney.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbOwedMoney.Location = new System.Drawing.Point(8, 495);
+            this.lbOwedMoney.Location = new System.Drawing.Point(5, 436);
             this.lbOwedMoney.Name = "lbOwedMoney";
             this.lbOwedMoney.Size = new System.Drawing.Size(105, 20);
             this.lbOwedMoney.TabIndex = 14;
             this.lbOwedMoney.Text = "Owed Money:";
-            // 
-            // lbMemberType
-            // 
-            this.lbMemberType.AutoSize = true;
-            this.lbMemberType.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMemberType.Location = new System.Drawing.Point(8, 383);
-            this.lbMemberType.Name = "lbMemberType";
-            this.lbMemberType.Size = new System.Drawing.Size(85, 20);
-            this.lbMemberType.TabIndex = 14;
-            this.lbMemberType.Text = "User Type:";
             // 
             // lbMemberName
             // 
@@ -716,7 +732,7 @@
             this.tpBook.Controls.Add(this.flowLayoutPanel5);
             this.tpBook.Location = new System.Drawing.Point(4, 54);
             this.tpBook.Name = "tpBook";
-            this.tpBook.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tpBook.Padding = new System.Windows.Forms.Padding(3);
             this.tpBook.Size = new System.Drawing.Size(962, 491);
             this.tpBook.TabIndex = 1;
             this.tpBook.Text = "    Book   ";
@@ -1120,7 +1136,7 @@
             this.tpStatistics.Controls.Add(this.dgvStatistics);
             this.tpStatistics.Location = new System.Drawing.Point(4, 54);
             this.tpStatistics.Name = "tpStatistics";
-            this.tpStatistics.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tpStatistics.Padding = new System.Windows.Forms.Padding(3);
             this.tpStatistics.Size = new System.Drawing.Size(962, 491);
             this.tpStatistics.TabIndex = 5;
             this.tpStatistics.Text = "  Statistics  ";
@@ -1217,46 +1233,6 @@
             this.btnHuy.Text = "button1";
             this.btnHuy.UseVisualStyleBackColor = true;
             // 
-            // txbMemberMajor
-            // 
-            this.txbMemberMajor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.txbMemberMajor.Location = new System.Drawing.Point(219, 171);
-            this.txbMemberMajor.Margin = new System.Windows.Forms.Padding(2);
-            this.txbMemberMajor.Name = "txbMemberMajor";
-            this.txbMemberMajor.Size = new System.Drawing.Size(89, 29);
-            this.txbMemberMajor.TabIndex = 44;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F);
-            this.label3.Location = new System.Drawing.Point(202, 171);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(20, 29);
-            this.label3.TabIndex = 43;
-            this.label3.Text = "/";
-            // 
-            // txbMemberClass
-            // 
-            this.txbMemberClass.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.txbMemberClass.Location = new System.Drawing.Point(109, 171);
-            this.txbMemberClass.Margin = new System.Windows.Forms.Padding(2);
-            this.txbMemberClass.Name = "txbMemberClass";
-            this.txbMemberClass.Size = new System.Drawing.Size(89, 29);
-            this.txbMemberClass.TabIndex = 42;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(1, 180);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 20);
-            this.label2.TabIndex = 41;
-            this.label2.Text = "Class/Major:";
-            // 
             // frmMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1349,9 +1325,7 @@
         private System.Windows.Forms.TextBox txbMemberAddress;
         private System.Windows.Forms.DateTimePicker dtpDayOfBirth;
         private System.Windows.Forms.TextBox txbMemberEmail;
-        private System.Windows.Forms.ComboBox cbMemberType;
         private System.Windows.Forms.TextBox txbIdentityNumber;
-        private System.Windows.Forms.Label lbMemberType;
         private System.Windows.Forms.Label lbMemberName;
         private System.Windows.Forms.TextBox txbMemberName;
         private System.Windows.Forms.Label lbIdentityNumber;

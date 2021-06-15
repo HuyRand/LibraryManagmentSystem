@@ -85,7 +85,7 @@ namespace WindowsFormsApp2
             MySqlDataReader rdr = cmd.ExecuteReader();
             while (rdr.Read())
             {
-                Program.MemberData.Add(new Member(Convert.ToInt32(rdr.GetValue(0)), rdr.GetString(1),rdr.GetDateTime(2), rdr.GetInt32(3), rdr.GetString(4), rdr.GetString(5)));
+                Program.MemberData.Add(new Member(Convert.ToInt32(rdr.GetValue(0)), rdr.GetString(1),rdr.GetDateTime(2), rdr.GetInt32(3), rdr.GetString(4), rdr.GetString(5),rdr.GetInt32(6),rdr.GetString(7),rdr.GetString(8)));
             }
 
             //testing if data dump is successful
@@ -395,6 +395,9 @@ namespace WindowsFormsApp2
                 $"NAME = '{txbMemberName.Text}',\n" +
                 $"DOB = '{dtpDayOfBirth.Value.ToString("yyyy-MM-dd")}',\n" +
                 $"EMAIL = '{txbMemberEmail.Text}',\n" +
+                $"CLASS = '{txbMemberClass.Text}',\n" +
+                $"MAJOR = '{txbMemberMajor.Text}',\n" +
+                $"PENALTY = {txbOwedMoney.Text},\n" +
                 $"ADDRESS = '{txbMemberAddress.Text}'\n" +
                 $"WHERE MEMID = {txbIdentityNumber.Text};";
 
@@ -435,6 +438,7 @@ namespace WindowsFormsApp2
                $"CATEGORY = '{cbGenre.Text}',\n" +
                $"PRICE = {txbBookPrice.Text},\n" +
                $"AUTHOR = '{txbAuthor.Text}',\n" +
+
                $"YEAR = {txbPublishYear.Text}\n" +
                $"WHERE BOOKID = {txbBookID.Text};";
 
@@ -529,7 +533,9 @@ namespace WindowsFormsApp2
                 string txbMemberEmail = dgvMemberInfo.Rows[i].Cells[4].Value.ToString();
                 string txbMemberAddress = dgvMemberInfo.Rows[i].Cells[5].Value.ToString();
                 string cbMemberType = dgvMemberInfo.Rows[i].Cells[6].Value.ToString();
-                frmMemberInfo f = new frmMemberInfo(txbMemberName, txbIdentityNumber, dtpDayOfBirth, txbMemberEmail, cbMemberType, txbMemberAddress, dtpRegistrationerDate.Text);
+                string txbMemberClass = dgvMemberInfo.Rows[i].Cells[7].Value.ToString();
+                string txbMemberMajor = dgvMemberInfo.Rows[i].Cells[8].Value.ToString();
+                frmMemberInfo f = new frmMemberInfo(txbMemberName, txbIdentityNumber, dtpDayOfBirth, txbMemberEmail, txbMemberAddress, dtpRegistrationerDate.Text,cbMemberType,txbMemberClass,txbMemberMajor);
                 f.ShowDialog();
             }
  

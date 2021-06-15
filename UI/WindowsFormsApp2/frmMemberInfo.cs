@@ -14,7 +14,7 @@ namespace WindowsFormsApp2
 {
     public partial class frmMemberInfo : Form
     {
-        private string nameMember, idMember, dateMember, mailMember, typeMember, addressMember, registerdayMember, ownMember;
+        private string nameMember, idMember, dateMember, mailMember, addressMember, registerdayMember, ownMember,classMember,majorMember;
 
         private void addImageBtton_Click(object sender, EventArgs e)
         {
@@ -27,16 +27,19 @@ namespace WindowsFormsApp2
         {
             InitializeComponent();
         }
-        public frmMemberInfo(string name, string id, string date, string mail, string type, string address, string registerday)
+        public frmMemberInfo(string name, string id, string date, string mail, string address, string registerday,string money,string class_,string major)
         {
             InitializeComponent();
             this.nameMember = name;
             this.idMember = id;
             this.dateMember = date;
             this.mailMember = mail;
-            this.typeMember = type;
+
             this.addressMember = address;
-            this.registerdayMember = registerday;           
+            this.registerdayMember = registerday;
+            this.classMember = class_;
+            this.majorMember = major;
+            this.ownMember = money;
         }
 
         private void frmMemberInfo_FormClosing(object sender, FormClosingEventArgs e)
@@ -70,9 +73,11 @@ namespace WindowsFormsApp2
             txbIdentityNumber.Text = idMember;
             txbDateOfBirth.Text = dateMember;
             txbMemberEmail.Text = mailMember;
-            cbMemberType.Text = typeMember;
             txbMemberAddress.Text = addressMember;
-            txbRegistrationDate.Text = registerdayMember;         
+            txbRegistrationDate.Text = registerdayMember;
+            txbMemberMajor.Text = majorMember;
+            txbMemberClass.Text = classMember;
+            txbOwedMoney.Text = ownMember;
             showPicture();
         }
         private void showPicture()
