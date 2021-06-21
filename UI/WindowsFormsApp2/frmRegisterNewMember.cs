@@ -72,7 +72,7 @@ namespace WindowsFormsApp2
             string temp = AppDomain.CurrentDomain.BaseDirectory + $"Resources\\Member_Images\\{txbNewMemberName.Text}{tempEmail}{tempAddress}.jpg";
             if (File.Exists(temp))
                 pictureBox1.Image = Image.FromFile(temp);
-            else pictureBox1.Image = Image.FromFile(temp);
+            else pictureBox1.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + $"Resources\\Member_Images\\NotAvailable.jpg");
         }
 
 
