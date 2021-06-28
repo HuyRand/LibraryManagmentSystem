@@ -1,0 +1,78 @@
+-- phpMyAdmin SQL Dump
+-- version 4.7.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: sql6.freesqldatabase.com
+-- Generation Time: Jun 28, 2021 at 12:44 PM
+-- Server version: 5.5.62-0ubuntu0.14.04.1
+-- PHP Version: 7.0.33-0ubuntu0.16.04.16
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `sql6420476`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `MEMBER`
+--
+
+CREATE TABLE `MEMBER` (
+  `MEMID` int(11) NOT NULL,
+  `NAME` varchar(50) NOT NULL,
+  `DOB` datetime DEFAULT NULL,
+  `NUMBER_OF_BOOK_ALLOWED` int(5) DEFAULT NULL,
+  `EMAIL` varchar(50) DEFAULT NULL,
+  `ADDRESS` varchar(80) DEFAULT NULL,
+  `PENALTY` int(20) DEFAULT NULL,
+  `CLASS` varchar(50) DEFAULT NULL,
+  `MAJOR` varchar(50) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `MEMBER`
+--
+
+INSERT INTO `MEMBER` (`MEMID`, `NAME`, `DOB`, `NUMBER_OF_BOOK_ALLOWED`, `EMAIL`, `ADDRESS`, `PENALTY`, `CLASS`, `MAJOR`) VALUES
+(2, 'Vickie Watson', '2021-06-21 00:00:00', 0, 'WaoVikie197@gmail.com', '3927  Deer Haven Drive, Greenville City', 0, '7B', 'Earth Sciences '),
+(4, 'Allen Bailey', '2021-06-21 00:00:00', 0, 'BarryAllenFastestManAlive@gmail.com', '1964  Elm Drive, New York', 0, '6A', 'Theoretical Physics'),
+(5, 'Ernest Mcbride', '2021-06-21 00:00:00', 0, 'McRippingAFatOne@gmail.com', '1777  Tyler Avenue, Miami', 0, '4C', ' Zoology : Malacology'),
+(6, 'Hank Gwenu Blin', '2021-06-21 00:00:00', 0, 'HankSussyBadBussy@hotmail.com', '3711  Cerullo Road, Louisville', 0, '6O9', 'Prejudice and Discrimination'),
+(7, 'Eren Mushchijaeger', '2021-06-21 00:00:00', 0, 'OnlyYmirKnow@eldian.net', '854 Shiganshina Paradis', 0, '139', 'Bird Social Sciences'),
+(8, 'Micheal Sauce', '2021-06-21 00:00:00', 0, 'JamieOniisanKuns4ma@JPWyneHighSchool.edu.com', '1067  Watson Lane, Brevard', 0, '420B', 'Chemistry'),
+(9, 'Pane mezinárodní', '2021-06-21 00:00:00', 0, 'LacertiliaLord@facebook.com', '3134  Walnut Avenue, Piscataway', 0, 'Zucc5K', 'Social Psychology');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `MEMBER`
+--
+ALTER TABLE `MEMBER`
+  ADD PRIMARY KEY (`MEMID`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `MEMBER`
+--
+ALTER TABLE `MEMBER`
+  MODIFY `MEMID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
